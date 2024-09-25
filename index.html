@@ -42,7 +42,7 @@
 
 <body> 
 <!-- The body tag contains the elements that visitors to our page will see. -->
-    <h1 class="big" style="margin-bottom: 0px;"> <!-- We have added a class to the header called "big" which we can use to style it in the CSS -->
+    <h1 class="big" style="margin-bottom: 0px; color: rgb(0, 0, 0)"> <!-- We have added a class to the header called "big" which we can use to style it in the CSS -->
         <!-- This is a header, it is the largest text on the page -->
         Mia Wilson
     </h1>
@@ -51,42 +51,58 @@
         Mia Wilson | <a href="https://www.linkedin.com/in/mia-wilson-950990206/">LinkedIn</a> | <a
             href="https://github.com/miswilson/miswilson.github.io">GitHub</a>
     </p>
-    <h3 class="small"> <!-- We have added a class to the header called "small" which we can use to style it in the CSS -->
-        This page acts as your portfolio of charts. You can use it as a good starting point to display your work but make sure to customise it to make it your own, or even start from scratch.  
+    <h3 class="chart-description"; style="margin-bottom: 0px; color: rgb(0, 0, 0)"> <!-- We have added a class to the header called "small" which we can use to style it in the CSS -->
+        This page collates the collection of charts and data visualisations I have completed. Through this portfolio I aim to demonstrate the outcomes of the 10 coding challenges, through my ability to analyse and interpret data effectively. 
     </h3>
 
     <!-- We're organising the page into sections, with each section containing a chart, title and a description -->
     <section>
         <div class="chart-description">
-            <h2>Section 1: A basic chart</h2>
+            <h2>Section 1: Exploring Scatter Charts</h2>
             <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-                We've organised the page into sections, with each section containing a chart, title and a description. Here, we can describe the chart and give some context.
-                As a first example, we're using a basic chart from our repo.
+                The scatter plot below visualises the relationship between GDP per capita (on a logarithmic scale) and life expectancy, across different regions of the world. The x-axis presents GDP per capita (PPP, international $), whilst the y-axis illustrates life expectancy in years.
             </p>
         </div>
         <figure id="Location1"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+        <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+            Each point represents a country - by region coded by colour - and the size of the points reflects population size. The data follows the general trend that wealthier countries have better health outcomes, as indicated by higher life expectancies. By eye, countries in Africa are concentrated in the ranges with lower GDP and life expectancy, whilst Europe and parts of Oceania are more concentrated in the upper, right hand region of the chart. This demonstrates the correlation between higher GDP and life expectancy.      </p>
     </section>
 
     <section>
         <div class="chart-description">
-            <h2>Section 2: A basic chart</h2>
+            <h2>Section 2: Exploring Bar Charts</h2>
             <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-                We've organised the page into sections, with each section containing a chart, title and a description. Here, we can describe the chart and give some context.
-                As a first example, we're using a basic chart from our repo.
+                Using a bar chart can be useful to illustrate quantative data and its position attributes. The following bar chart illustrates GDP per capita by country. With countries on the x-axis and GDP per capita on the y-axis, the viewer can compare living standards across countries.
             </p>
         </div>
         <figure id="Location2"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+        <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+            The chart contends that GDP per capita in the USA is highest; its GDP per capita, close to $75,000, followed by the UK with over $50,000. The DR Congo displays the lowest GDP per capita, being a low of approximately $1,000. This contends to the sever disparity in living standards across regions. This stark difference highlights the severe global economic inequality and disparity in living standards between developed nations and developing regions, reinforcing how unevenly wealth is distributed globally.       </p>
     </section>
 
     <section>
         <div class="chart-description">
-            <h2>Section 3: A basic chart</h2>
+            <h2>Section 3: Exploring Line Charts</h2>
             <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-                We've organised the page into sections, with each section containing a chart, title and a description. Here, we can describe the chart and give some context.
-                As a first example, we're using a basic chart from our repo.
+                This line chart effectively illustrates the widening global economic disparities, using PPP rates of Real GDP per Capita ($) from 1990 to 2022. Across the six countries it can be seen that the rapid rise of China stands out.
             </p>
         </div>
         <figure id="Location3"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+        <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+            The data reads that the US and UK show consistently high GDP per capita, with the UK experiencing sharper growth after 2015, reaching around $70,000 in 2022. China follows a more significant growth trajectory, especially after 2005, rising sharply to over $20,000 by 2022. India, Nigeria, and Congo remain much lower in comparison, though all three exhibit gradual upward trends. The gap between more developed economies (US, UK) and developing countries (Congo, Nigeria, India) remains substantial throughout the period.        </p>
+    </section>
+
+    <section>
+        <div class="chart-description">
+            <h2>Section 4: My visualisation</h2>
+            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+                This is my visualisation using the Economics Observatory Data Hub.
+            </p>
+        </div>
+        <figure id="Location4"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+        <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+            The data reads 
+                </p>
     </section>
 
     <!-- Do you want to add more sections? -->
@@ -101,12 +117,14 @@
 
         let figure_1_spec = "https://raw.githubusercontent.com/EconomicsObservatory/courses/main/2/s2_chart2.json"; // We're storing the URL of the graph we want to display in a variable
         let figure_2_spec = "wk1_chart1.json"; // We're storing the URL of the graph we want to display in a variable
-        let figure_3_spec = "wk1_chart2.json"
+        let figure_3_spec = "wk1_chart2.json";
+        let figure_4_spec = "week 2 chart.json"
         // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
 
         vegaEmbed('#Location1', figure_1_spec) // We're using the vegaEmbed function to put a graph in the element with id figure_1
         vegaEmbed('#Location2', figure_2_spec) 
         vegaEmbed('#Location3', figure_3_spec)
+        vegaEmbed('#Location4', figure_4_spec)
         // Do you want to add more graphs?
         // try defining a new variable for figure_3_spec, adding VegaEmbed for Location3, and adding a new section in the HTML
         // e.g. 
