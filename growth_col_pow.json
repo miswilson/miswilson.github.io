@@ -1,0 +1,82 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/growth_col_pow.csv"
+    },
+    "width": 250,
+    "height": 300,
+    "title": {
+      "text": " Levels of GDP Per Capita in European Colonial Powers and Former Colonies, 1500–1998 (1990 international dollars)",
+      "orient":"top",
+      "fontSize": 15,
+      "subtitle": "Source: The Impact of Western Development on the Rest of the World - OECD 2006",
+      "baseline": "bottom",
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 12,
+      "anchor": "start",
+      "color": "black"
+    },
+    "resolve": {
+      "axis": {"y": "independent"},
+      "scale": {"y": "independent"}
+    },
+
+    "hconcat": [
+      {
+    "title": {
+          "text": "European Colonial Powers",
+      "fontSize": 12,
+      "anchor": "middle",
+      "fontStyle": "normal",
+      "alignFont": "center",
+      "color": "black"
+    },
+         "mark": {
+          "type": "line",
+          "color": "red"
+        },
+        "encoding": {
+          "x": {"field": "country_p", "sort": "-y", "type": "ordinal", "title": null},
+          "y": {
+            "field": ["1500_p", "1700_p", "1820_p", "1913_p", "1950_p", "1998_p"],
+            "title": "Levels of GDP Per Capita",
+            "type": "quantitative"
+            
+          },
+        
+           "title":{
+            "text": "Spending by Country, 2020",
+            "fontStyle": "italic",
+            "fontSize": 10,
+            "anchor": "middle",
+            "color": "black",
+            "fontWeight": "normal"}
+        }
+      },
+        {
+        "mark": {
+            "type": "line",
+          "color": "mediumpurple"
+        },
+
+            "title": {
+      "text": "Former Colonies",
+      "fontSize": 12,
+            "alignFont": "center",
+      "anchor": "middle",
+      "fontStyle": "normal",
+      "color": "black"
+    },
+
+        "encoding": {
+          "x": {"field": "country_c", "sort": "-y", "type": "ordinal", "title": null},
+          "y": {
+            "field": ["1500_c", "1700_c", "1820_c", "1913_c", "1950_c", "1998_c"],
+            "title": "Levels of GDP Per Capita",
+            "type": "quantitative"
+          
+          }
+        }
+      }
+    ]
+  }
