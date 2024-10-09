@@ -118,6 +118,20 @@
                 </p>
     </section>
 
+    <section>
+        <div class="chart-description">
+            <h2>Section 6:  Comparing World Consumption Habits Using Concat</h2>
+            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+                To create my own data observation on consumption habits - particularly mass consumption habits, I used the concat function. This enables comparision by subtopic by country. I.e. which country spent the most on clothes, against which country purchased the most clothing.
+            </p>
+        </div>
+        <figure id="Location6"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+        <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+            I combined 3 sets of data to explore worldwide consumption habits during Covid (2020). By using the concat function, I was able to layer the data for best analysis. The 2020 data illustrates the significant variation in apparel purchasing habits across countries. Norway spent the most on clothes, with an average expenditure of $1,150 per person, followed closely by the UK, $950, and the USA, $900. However, Norway's spending aligns with more selective consumption, purchasing on average fewer items (15 per person). This data suggests that countries like Norway prioritises quality and invest more per garment, resulting in a higher average spend of $27 per item. Unsurprisingly, aligning with their mass consumption behaviour, the USA bought the most clothing, with 50 items per person, but spent $18 per an item (less). This reflects the trend of mass consumption, comparatively low level spending on quality and instead focusing on quantity. The UK also followed a similar pattern, with 35 items purchased per person at an average of $25 per item.   
+                </p>
+    </section>
+
+
     <!-- Do you want to add more sections? -->
         <!-- Try copying pasting the section above -->
         <!-- You'll need to change the id of the figure "<figure id="Location3"... -->
@@ -132,7 +146,8 @@
         let figure_2_spec = "wk1_chart1.json"; // We're storing the URL of the graph we want to display in a variable
         let figure_3_spec = "wk1_chart2.json";
         let figure_4_spec = "visualization.vl.json";
-        let figure_5_spec = "fr_uk.json"
+        let figure_5_spec = "fr_uk.json";
+        let figure_6_spec = "habits.json"
 
         // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
 
@@ -141,6 +156,7 @@
         vegaEmbed('#Location3', figure_3_spec)
         vegaEmbed('#Location4', figure_4_spec)
         vegaEmbed('#Location5', figure_5_spec)
+        vegaEmbed('#Location6', figure_6_spec)
         // Do you want to add more graphs?
         // try defining a new variable for figure_3_spec, adding VegaEmbed for Location3, and adding a new section in the HTML
         // e.g. 

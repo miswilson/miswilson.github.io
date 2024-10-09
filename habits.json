@@ -1,0 +1,103 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/habits.csv"
+  },
+  "width": 250,
+  "height": 300,
+  "title": {
+    "text": "Apparel consumer purchasing habits across the globe",
+    "orient": "top",
+    "fontSize": 15,
+    "subtitle": "Countries in 2020, source: Based on data 'Number of apparel units purchased per country, 2017 from Market Research Provider, Euromonitor International",
+    "baseline": "bottom",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 12,
+    "anchor": "start",
+    "color": "black"
+  },
+  "resolve": {"axis": {"y": "independent"}, "scale": {"y": "independent"}},
+  "hconcat": [
+    {
+      "title": {
+        "text": "Which country spent the most on clothes in 2020?",
+        "fontSize": 12,
+        "anchor": "start",
+        "fontStyle": "normal",
+        "alignFont": "center",
+        "color": "black"
+      },
+      "mark": {"type": "bar", "color": "red"},
+      "encoding": {
+        "x": {
+          "field": "Country",
+          "sort": "-y",
+          "type": "ordinal",
+          "title": null
+        },
+        "y": {
+          "field": "Value_pp",
+          "title": "Value Spent per Person",
+          "type": "quantitative"
+        },
+        "title": {
+          "text": "Spending by Country, 2020",
+          "fontStyle": "italic",
+          "fontSize": 10,
+          "anchor": "start",
+          "color": "black",
+          "fontWeight": "normal"
+        }
+      }
+    },
+    {
+      "mark": {"type": "bar", "color": "mediumpurple"},
+      "title": {
+        "text": "How many new items were purchased in 2020 per person?",
+        "fontSize": 12,
+        "alignFont": "center",
+        "anchor": "start",
+        "fontStyle": "normal",
+        "color": "black"
+      },
+      "encoding": {
+        "x": {
+          "field": "Country",
+          "sort": "-y",
+          "type": "ordinal",
+          "title": null
+        },
+        "y": {
+          "field": "Items_pp",
+          "title": "Items Purchased per Person",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "mark": {"type": "bar", "color": "limegreen"},
+      "title": {
+        "text": "What is the average value spent per item??",
+        "fontSize": 12,
+        "anchor": "start",
+        "fontStyle": "normal",
+        "color": "black",
+        "alignFont": "center"
+      },
+      "encoding": {
+        "x": {
+          "field": "Country",
+          "sort": "-y",
+          "type": "ordinal",
+          "title": null
+        },
+        "y": {
+          "field": "Av_pi",
+          "title": "Average Value per Item",
+          "type": "quantitative"
+        }
+      }
+    }
+  ],
+  "config": {}
+}
