@@ -1,1 +1,11 @@
-type,date,valuePepper,1688-70,25.3Textiles,1688-70,56.6Raw Silk,1688-70,0.6Tea,1688-70,0.03Other,1688-70,17.5Pepper,1758Ð60,4.4Textiles,1758Ð60,54.5Raw Silk,1758Ð60,12.3Tea,1758Ð60,25.3Other,1758Ð60,4.5
+type,date,value
+Pepper,1688-70,25.3
+Textiles,1688-70,56.6
+Raw Silk,1688-70,0.6
+Tea,1688-70,0.03
+Other,1688-70,17.5
+Pepper,1758-60,4.4
+Textiles,1758-60,54.5
+Raw Silk,1758-60,12.3
+Tea,1758-60,25.3
+Other,1758-60,4.5
