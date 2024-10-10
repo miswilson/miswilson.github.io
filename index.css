@@ -65,3 +65,5 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.flex_container { display: flex;}

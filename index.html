@@ -134,11 +134,13 @@
     <section>
         <div class="chart-description">
             <h2>Section 7:  The Festival of Economics: Legacies of Empire</h2>
-            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-""
-            </p>
         </div>
-        <figure id="Location7"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+        <div class="flex_container">
+            <figure id="Location7"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+            <figure id="Location8"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+    
+        </div>
+       
         <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
 ""
         </p>
@@ -161,7 +163,8 @@
         let figure_4_spec = "visualization.vl.json";
         let figure_5_spec = "fr_uk.json";
         let figure_6_spec = "habits.json";
-        let figure_7_spec = "empire.json"
+        let figure_7_spec = "empire.json";
+        let figure_8_spec = "colonies_powers.json"
 
         // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
 
@@ -172,6 +175,7 @@
         vegaEmbed('#Location5', figure_5_spec)
         vegaEmbed('#Location6', figure_6_spec)
         vegaEmbed('#Location7', figure_7_spec)
+        vegaEmbed('#Location8', figure_8_spec)
         // Do you want to add more graphs?
         // try defining a new variable for figure_3_spec, adding VegaEmbed for Location3, and adding a new section in the HTML
         // e.g. 
