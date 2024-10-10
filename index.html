@@ -55,72 +55,103 @@
         This page collates the collection of charts and data visualisations I have completed. Through this portfolio I aim to demonstrate the outcomes of the 10 coding challenges, through my ability to analyse and interpret data effectively. 
     </p>
 
-    <!-- We're organising the page into sections, with each section containing a chart, title and a description -->
-    <section>
-        <div class="chart-description">
-            <h2>Section 1: Exploring Scatter Charts</h2>
-            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-                The scatter plot below visualises the relationship between GDP per capita (on a logarithmic scale) and life expectancy, across different regions of the world. The x-axis presents GDP per capita (PPP, international $), whilst the y-axis illustrates life expectancy in years.
-            </p>
+<!-- Organising the page into sections, with each section containing a chart, title, and a description -->
+<section>
+    <div class="chart-description">
+        <h2 class="title" style="margin-bottom: 0px; color: rgb(64, 0, 161)"> 
+            Week 1: Hosting
+        </h2>
+    </div>
+    <div class="flex_container">
+        <figure id="Location1"></figure> <!-- Vega-lite graph goes here -->
+        <figure id="Location2"></figure> <!-- Vega-lite graph goes here -->
+        <figure id="Location3"></figure> <!-- Vega-lite graph goes here -->
+    </div>
+</section>
+
+<!-- Section for Scatter Charts -->
+<section>
+    <div class="chart-description">
+        <h2> Section 1: Exploring Scatter Charts</h2>
+        <div class="flex_container">
+            <figure id="scatterChart"></figure> <!-- Vega-lite scatter chart goes here -->
         </div>
-        <figure id="Location1"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
-        <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-            Each point represents a country - by region coded by colour - and the size of the points reflects population size. The data follows the general trend that wealthier countries have better health outcomes, as indicated by higher life expectancies. By eye, countries in Africa are concentrated in the ranges with lower GDP and life expectancy, whilst Europe and parts of Oceania are more concentrated in the upper, right hand region of the chart. This demonstrates the correlation between higher GDP and life expectancy.      </p>
-    </section>
+        <p>
+            The scatter plot below visualises the relationship between GDP per capita (on a logarithmic scale) and life expectancy, across different regions of the world. The x-axis presents GDP per capita (PPP, international $), whilst the y-axis illustrates life expectancy in years.
+            Each point represents a country - by region coded by colour - and the size of the points reflects population size. The data follows the general trend that wealthier countries have better health outcomes, as indicated by higher life expectancies. By eye, countries in Africa are concentrated in the ranges with lower GDP and life expectancy, whilst Europe and parts of Oceania are more concentrated in the upper, right-hand region of the chart. This demonstrates the correlation between higher GDP and life expectancy.
+        </p>
+    </div>
+</section>
+
+<!-- Section for Bar Charts -->
+<section>
+    <div class="chart-description">
+        <h2> Section 2: Exploring Bar Charts</h2>
+        <div class="flex_container">
+            <figure id="barChart"></figure> <!-- Vega-lite bar chart goes here -->
+        </div>
+        <p>
+            Using a bar chart can be useful to illustrate quantitative data and its position attributes. The following bar chart illustrates GDP per capita by country. With countries on the x-axis and GDP per capita on the y-axis, the viewer can compare living standards across countries.
+        </p>
+    </div>
+</section>
+
+<!-- Section for Line Charts -->
+<section>
+    <div class="chart-description">
+        <h2> Section 3: Exploring Line Charts</h2>
+        <div class="flex_container">
+            <figure id="lineChart"></figure> <!-- Vega-lite line chart goes here -->
+        </div>
+        <p>
+            This line chart effectively illustrates the widening global economic disparities, using PPP rates of Real GDP per Capita ($) from 1990 to 2022. Across the six countries it can be seen that the rapid rise of China stands out.
+        </p>
+        <p>
+            The data reads that the US and UK show consistently high GDP per capita, with the UK experiencing sharper growth after 2015, reaching around $70,000 in 2022. China follows a more significant growth trajectory, especially after 2005, rising sharply to over $20,000 by 2022. India, Nigeria, and Congo remain much lower in comparison, though all three exhibit gradual upward trends. The gap between more developed economies (US, UK) and developing countries (Congo, Nigeria, India) remains substantial throughout the period.
+        </p>
+    </div>
+</section>
+
+
+    </div>
 
     <section>
         <div class="chart-description">
-            <h2>Section 2: Exploring Bar Charts</h2>
-            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-                Using a bar chart can be useful to illustrate quantative data and its position attributes. The following bar chart illustrates GDP per capita by country. With countries on the x-axis and GDP per capita on the y-axis, the viewer can compare living standards across countries.
-            </p>
-        </div>
-        <figure id="Location2"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
-        <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-            The chart contends that GDP per capita in the USA is highest; its GDP per capita, close to $75,000, followed by the UK with over $50,000. The DR Congo displays the lowest GDP per capita, being a low of approximately $1,000. This contends to the sever disparity in living standards across regions. This stark difference highlights the severe global economic inequality and disparity in living standards between developed nations and developing regions, reinforcing how unevenly wealth is distributed globally.       </p>
-    </section>
-
-    <section>
-        <div class="chart-description">
-            <h2>Section 3: Exploring Line Charts</h2>
-            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-                This line chart effectively illustrates the widening global economic disparities, using PPP rates of Real GDP per Capita ($) from 1990 to 2022. Across the six countries it can be seen that the rapid rise of China stands out.
-            </p>
-        </div>
-        <figure id="Location3"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
-        <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-            The data reads that the US and UK show consistently high GDP per capita, with the UK experiencing sharper growth after 2015, reaching around $70,000 in 2022. China follows a more significant growth trajectory, especially after 2005, rising sharply to over $20,000 by 2022. India, Nigeria, and Congo remain much lower in comparison, though all three exhibit gradual upward trends. The gap between more developed economies (US, UK) and developing countries (Congo, Nigeria, India) remains substantial throughout the period.        </p>
-    </section>
-
-    <section>
-        <div class="chart-description">
-            <h2>Section 4: My visualisation - Economics Observatory Hub</h2>
+            <div class="chart-description">
+                <h2 class="title" style="margin-bottom: 0px; color: rgb(64, 0, 161)"> <!-- We have added a class to the header called "big" which we can use to style it in the CSS -->
+                    <!-- This is a header, it is the largest text on the page -->
+                    Week 2: Building
+                </h2>
+    
+            <h2>Section 4: My visualisations - Economics Observatory Hub</h2>
             <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
                 This is my visualisation using the Economics Observatory Data Hub.
             </p>
         </div>
-        <figure id="Location4"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+        <div class="flex_container">
+            <figure id="Location4"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+            <figure id="Location5"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->            <figure id="Location3"></figure> <!-- Vega-lite graph goes here -->
+        </div>
+    </section>
         <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
             The data reads a bar chart displaying the inflation rate in Japan, measured by CPI (%), from 1960 to 2020. This chart highlights Japan’s transition from high post-war inflation to a prolonged period of price stability and deflation, reflecting broader economic changes. Inflation peaked at over 20% in 1974 during the global oil crisis. Since the 1980s, inflation has drastically decreased, with very low levels through the 1990s and 2000s, with some periods of deflation (negative inflation).
                 </p>
     </section>
 
     <section>
-        <div class="chart-description">
-            <h2>Section 5: My visualisation 2 - Economics Observatory Hub</h2>
+
             <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
                 This is my 2nd visualisation using the Economics Observatory Data Hub. I had to use code to layer the data from Economics Observatory on renewables in France and the United Kingdom. This line graph compares the renewable energy output (in GWh) for France (shown in blue) and the United Kingdom (red) from the 1970s to 2021. 
             </p>
-        </div>
-        <figure id="Location5"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
         <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
             Key observations from the data are that France had a significantly higher renewable energy output from 1970 to around 2010, with fluctuations between 40,000 and 80,000 GWh over this period. The red line illustrates UK renewable energy output to have had a sharp increase in 2010, surpassing France by 2020, peaking at over 120,000 GWh. Both countries experience fluctuations, with recent data showing a slight dip after peaking. Overall, renewable energy output in France exceeded that of the UK, from 2015 onwards UK renewable output overtook France, which had an earlier and more stable trajectory.  
                 </p>
     </section>
 
+
     <section>
         <div class="chart-description">
-            <h2>Section 6:  Comparing World Consumption Habits Using Concat</h2>
+            <h2>Section 5:  Comparing World Consumption Habits Using Concat</h2>
             <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
                 To create my own data observation on consumption habits - particularly mass consumption habits, I used the concat function. This enables comparision by subtopic by country. I.e. which country spent the most on clothes, against which country purchased the most clothing.
             </p>
@@ -130,6 +161,14 @@
             I combined 3 sets of data to explore worldwide consumption habits during Covid (2020). By using the concat function, I was able to layer the data for best analysis. The 2020 data illustrates the significant variation in apparel purchasing habits across countries. Norway spent the most on clothes, with an average expenditure of $1,150 per person, followed closely by the UK, $950, and the USA, $900. However, Norway's spending aligns with more selective consumption, purchasing on average fewer items (15 per person). This data suggests that countries like Norway prioritises quality and invest more per garment, resulting in a higher average spend of $27 per item. Unsurprisingly, aligning with their mass consumption behaviour, the USA bought the most clothing, with 50 items per person, but spent $18 per an item (less). This reflects the trend of mass consumption, comparatively low level spending on quality and instead focusing on quantity. The UK also followed a similar pattern, with 35 items purchased per person at an average of $25 per item.   
                 </p>
     </section>
+
+    <section>
+        <div class="chart-description">
+            <div class="chart-description">
+                <h2 class="title" style="margin-bottom: 0px; color: rgb(64, 0, 161)"> <!-- We have added a class to the header called "big" which we can use to style it in the CSS -->
+                    <!-- This is a header, it is the largest text on the page -->
+                    Week 3: Debating
+                </h2>
 
     <section>
         <div class="chart-description">
