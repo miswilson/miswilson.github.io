@@ -1,0 +1,43 @@
+country,year,value
+China,1500,600
+India,1500,550
+Indonesia,1500,565
+Brazil,1500,400
+Mexico,1500,425
+United States,1500,400
+Ireland,1500,526
+China,1700,600
+India,1700,550
+Indonesia,1700,580
+Brazil,1700,460
+Mexico,1700,568
+United States,1700,527
+Ireland,1700,715
+China,1820,600
+India,1820,533
+Indonesia,1820,612
+Brazil,1820,646
+Mexico,1820,759
+United States,1820,1257
+Ireland,1820,880
+China,1913,552
+India,1913,673
+Indonesia,1913,904
+Brazil,1913,811
+Mexico,1913,1732
+United States,1913,5301
+Ireland,1913,2736
+China,1950,439
+India,1950,619
+Indonesia,1950,840
+Brazil,1950,1672
+Mexico,1950,2365
+United States,1950,9561
+Ireland,1950,3446
+China,1998,3117
+India,1998,1746
+Indonesia,1998,3070
+Brazil,1998,5459
+Mexico,1998,6655
+United States,1998,27331
+Ireland,1998,18183
