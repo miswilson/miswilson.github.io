@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "Explore"
+		},
+		{
+			"path": "../Downloads/DataProj"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Explore"
+	}
+}
