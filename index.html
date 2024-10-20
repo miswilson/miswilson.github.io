@@ -1,230 +1,74 @@
-<!-- This HTML file provides a simple example of a portfolio page. It contains a header, a few sections, and a few charts. -->
-<!-- It works with the three css files in this folder: example1.css, example2.css and example3.css. -->
-<!-- The HTML file defines the structure of the page, and the CSS files define how it looks. -->
-<!-- The CSS examples are all designed to work with this page. Try swapping them out on line 29 and see what happens. -->
-
-<!-- Take a look around and make your own copy to adapt for your own use. -->
-
-<!-- This is a comment -->
-<!-- Comments are not displayed in the browser -->
-<!-- They can be used to leave notes in the code -->
-
 <!DOCTYPE html>
-<html> 
-    <!-- HTML is heirarchial: tags like this define elements on the page. 
-    Each tag does something different. For example:
-        - The <html> tag defines the whole document.
-        - The <h1> tag defines a large heading
-        - The <p> tag defines a paragraph
-        - Tags appear as an opening <div> and closing </div> pair
-    -->
-
-<head>    
-    <!-- The head tag links to resources our page needs and defines information about it. Tags in the <head> aren't displayed on the page. -->
-
-    <!-- This is a link to a stylesheet which contains rules about how each element on the page should be defined-->
-    <!-- Try swapping example1.css to another, and take a look at example1.css to see if you understand it-->
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <title>My Portfolio</title> <!-- The title displayed in the browser tab, not on the page itself -->
-
-    <!-- This is a link to the vega-lite which we're using to make graphs -->
-    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
-
-    <style>
-        #chartGrid {
-            display: flex;
-        }
-        
-    </style>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="medianqueries.css" />
 </head>
-
-<body> 
-<!-- The body tag contains the elements that visitors to our page will see. -->
-    <h1 class="big" style="margin-bottom: 0px; color: rgb(0, 0, 0)"> <!-- We have added a class to the header called "big" which we can use to style it in the CSS -->
-        <!-- This is a header, it is the largest text on the page -->
-        Mia Wilson
-    </h1>
-    <p style="margin-top: 0px; color: darkblue">
-        <!-- we're setting the margin to 0px so the header and authour name are close together -->
-        Mia Wilson | <a href="https://www.linkedin.com/in/mia-wilson-950990206/">LinkedIn</a> | <a
-            href="https://github.com/miswilson/miswilson.github.io">GitHub</a>
-    </p>
-    <p class="chart-description"; style="margin-bottom: 0px; color: rgb(0, 0, 0)"> <!-- We have added a class to the header called "small" which we can use to style it in the CSS -->
-        This page collates the collection of charts and data visualisations I have completed. Through this portfolio I aim to demonstrate the outcomes of the 10 coding challenges, through my ability to analyse and interpret data effectively. 
-    </p>
-
-<!-- Organising the page into sections, with each section containing a chart, title, and a description -->
-<section>
-    <div class="chart-description">
-        <h2 class="title" style="margin-bottom: 0px; color: rgb(64, 0, 161)"> 
-            Week 1: Hosting
-        </h2>
-    </div>
-    <div class="flex_container">
-        <figure id="Location1"></figure> <!-- Vega-lite graph goes here -->
-        <figure id="Location2"></figure> <!-- Vega-lite graph goes here -->
-        <figure id="Location3"></figure> <!-- Vega-lite graph goes here -->
-    </div>
-</section>
-
-<!-- Section for Scatter Charts -->
-<section>
-    <div class="chart-description">
-        <h2> Section 1: Exploring Scatter Charts</h2>
-        <div class="flex_container">
-            <figure id="scatterChart"></figure> <!-- Vega-lite scatter chart goes here -->
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Mia Wilson</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
-        <p>
-            The scatter plot below visualises the relationship between GDP per capita (on a logarithmic scale) and life expectancy, across different regions of the world. The x-axis presents GDP per capita (PPP, international $), whilst the y-axis illustrates life expectancy in years.
-            Each point represents a country - by region coded by colour - and the size of the points reflects population size. The data follows the general trend that wealthier countries have better health outcomes, as indicated by higher life expectancies. By eye, countries in Africa are concentrated in the ranges with lower GDP and life expectancy, whilst Europe and parts of Oceania are more concentrated in the upper, right-hand region of the chart. This demonstrates the correlation between higher GDP and life expectancy.
-        </p>
-    </div>
-</section>
-
-<!-- Section for Bar Charts -->
-<section>
-    <div class="chart-description">
-        <h2> Section 2: Exploring Bar Charts</h2>
-        <div class="flex_container">
-            <figure id="barChart"></figure> <!-- Vega-lite bar chart goes here -->
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Mia Wilson</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#portfolio" onclick="toggleMenu()">Portfolio</a></li>
+                <li><a href="#project" onclick="toggleMenu()">Project</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
         </div>
-        <p>
-            Using a bar chart can be useful to illustrate quantitative data and its position attributes. The following bar chart illustrates GDP per capita by country. With countries on the x-axis and GDP per capita on the y-axis, the viewer can compare living standards across countries.
-        </p>
-    </div>
-</section>
-
-<!-- Section for Line Charts -->
-<section>
-    <div class="chart-description">
-        <h2> Section 3: Exploring Line Charts</h2>
-        <div class="flex_container">
-            <figure id="lineChart"></figure> <!-- Vega-lite line chart goes here -->
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/nyc.HEIC" alt="Mia Wilson intro picture" /
+            >
         </div>
-        <p>
-            This line chart effectively illustrates the widening global economic disparities, using PPP rates of Real GDP per Capita ($) from 1990 to 2022. Across the six countries it can be seen that the rapid rise of China stands out.
-        </p>
-        <p>
-            The data reads that the US and UK show consistently high GDP per capita, with the UK experiencing sharper growth after 2015, reaching around $70,000 in 2022. China follows a more significant growth trajectory, especially after 2005, rising sharply to over $20,000 by 2022. India, Nigeria, and Congo remain much lower in comparison, though all three exhibit gradual upward trends. The gap between more developed economies (US, UK) and developing countries (Congo, Nigeria, India) remains substantial throughout the period.
-        </p>
-    </div>
-</section>
-
-
-    </div>
-
-    <section>
-        <div class="chart-description">
-            <div class="chart-description">
-                <h2 class="title" style="margin-bottom: 0px; color: rgb(64, 0, 161)"> <!-- We have added a class to the header called "big" which we can use to style it in the CSS -->
-                    <!-- This is a header, it is the largest text on the page -->
-                    Week 2: Building
-                </h2>
-    
-            </p>
-        </div>
-        <div class="flex_container">
-            <figure id="Location4"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
-            <figure id="Location5"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->            <figure id="Location3"></figure> <!-- Vega-lite graph goes here -->
-        </div>
+            <div class="section__text">
+                <p class="section__text__p1">Hello, I am</p>
+                <h1 class="title">Mia Wilson</h1>
+                <p class="section__text__p2">Welcome to my Data Science Assignment</p>
+                <div class="btn-container">
+                    <button 
+                    class="btn btn-colour-2" 
+                    onclick="window.open('./assets/resume.pdf')"
+                    >
+                    Download CV
+                    </button>
+                    <button 
+                    class="btn btn-colour-1" 
+                    onclick="location.href=('./#contact')">
+                    Contact Info
+                </button>
+                </div>
+                <div id="socials-container">
+                    <img src="./assets/linkedin.png" alt="My linkedin Profile"
+                    class="icon" 
+                    onclick="location.href='https://www.linkedin.com/in/mia-wilson-950990206/'"
+                    />
+                    <img src="./assets/github.png" alt="My Github Profile"
+                    class="icon" 
+                    onclick="location.href='https://https://github.com/miswilson/miswilson.github.io'"
+                    />
+                </div>
+            </div>
     </section>
-    <h2>Section 4: My visualisation - Economics Observatory Hub</h2>
-
-        <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-            The data reads a bar chart displaying the inflation rate in Japan, measured by CPI (%), from 1960 to 2020. This chart highlights Japan’s transition from high post-war inflation to a prolonged period of price stability and deflation, reflecting broader economic changes. Inflation peaked at over 20% in 1974 during the global oil crisis. Since the 1980s, inflation has drastically decreased, with very low levels through the 1990s and 2000s, with some periods of deflation (negative inflation).
-                </p>
-    </section>
-
-    <section>
-        <h2>Section 5: My 2nd visualisation - Economics Observatory Hub</h2>
-
-            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-                This is my 2nd visualisation using the Economics Observatory Data Hub. I had to use code to layer the data from Economics Observatory on renewables in France and the United Kingdom. This line graph compares the renewable energy output (in GWh) for France (shown in blue) and the United Kingdom (red) from the 1970s to 2021. 
-            </p>
-        <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-            Key observations from the data are that France had a significantly higher renewable energy output from 1970 to around 2010, with fluctuations between 40,000 and 80,000 GWh over this period. The red line illustrates UK renewable energy output to have had a sharp increase in 2010, surpassing France by 2020, peaking at over 120,000 GWh. Both countries experience fluctuations, with recent data showing a slight dip after peaking. Overall, renewable energy output in France exceeded that of the UK, from 2015 onwards UK renewable output overtook France, which had an earlier and more stable trajectory.  
-                </p>
-    </section>
-
-
-    <section>
-        <div class="chart-description">
-            <h2>Section 6:  Comparing World Consumption Habits Using Concat</h2>
-            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-                To create my own data observation on consumption habits - particularly mass consumption habits, I used the concat function. This enables comparision by subtopic by country. I.e. which country spent the most on clothes, against which country purchased the most clothing.
-            </p>
-        </div>
-        <figure id="Location6"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
-        <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-            I combined 3 sets of data to explore worldwide consumption habits during Covid (2020). By using the concat function, I was able to layer the data for best analysis. The 2020 data illustrates the significant variation in apparel purchasing habits across countries. Norway spent the most on clothes, with an average expenditure of $1,150 per person, followed closely by the UK, $950, and the USA, $900. However, Norway's spending aligns with more selective consumption, purchasing on average fewer items (15 per person). This data suggests that countries like Norway prioritises quality and invest more per garment, resulting in a higher average spend of $27 per item. Unsurprisingly, aligning with their mass consumption behaviour, the USA bought the most clothing, with 50 items per person, but spent $18 per an item (less). This reflects the trend of mass consumption, comparatively low level spending on quality and instead focusing on quantity. The UK also followed a similar pattern, with 35 items purchased per person at an average of $25 per item.   
-                </p>
-    </section>
-
-    <section>
-        <div class="chart-description">
-            <div class="chart-description">
-                <h2 class="title" style="margin-bottom: 0px; color: rgb(64, 0, 161)"> <!-- We have added a class to the header called "big" which we can use to style it in the CSS -->
-                    <!-- This is a header, it is the largest text on the page -->
-                    Week 3: Debating
-                </h2>
-
-    <section>
-        <div class="chart-description">
-            <h2>Section 7:  The Festival of Economics: Legacies of Empire</h2>
-        </div>
-    </p>
-</div>
-<div class="flex_container">
-    <figure id="Location7"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
-    <figure id="Location8"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->            <figure id="Location3"></figure> <!-- Vega-lite graph goes here -->
-</div>
-       
-        <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-""
-        </p>
-    </section>
-
-
-    <!-- Do you want to add more sections? -->
-        <!-- Try copying pasting the section above -->
-        <!-- You'll need to change the id of the figure "<figure id="Location3"... -->
-        <!-- ... and add a new variable for the graph spec in the script at the bottom of the page -->
-
-
-    <!-- This is a script, it's a way to run JavaScript code on the page -->
-    <script>
-        // This is a comment in JavaScript - it's a different language to HTML and CSS
-
-        let figure_1_spec = "https://raw.githubusercontent.com/EconomicsObservatory/courses/main/2/s2_chart2.json"; // We're storing the URL of the graph we want to display in a variable
-        let figure_2_spec = "wk1_chart1.json"; // We're storing the URL of the graph we want to display in a variable
-        let figure_3_spec = "wk1_chart2.json";
-        let figure_4_spec = "visualization.vl.json";
-        let figure_5_spec = "fr_uk.json";
-        let figure_6_spec = "habits.json";
-        let figure_7_spec = "empire.json";
-        let figure_8_spec = "colonies_powers.json"
-
-        // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
-
-        vegaEmbed('#Location1', figure_1_spec) // We're using the vegaEmbed function to put a graph in the element with id figure_1
-        vegaEmbed('#Location2', figure_2_spec) 
-        vegaEmbed('#Location3', figure_3_spec)
-        vegaEmbed('#Location4', figure_4_spec)
-        vegaEmbed('#Location5', figure_5_spec)
-        vegaEmbed('#Location6', figure_6_spec)
-        vegaEmbed('#Location7', figure_7_spec)
-        vegaEmbed('#Location8', figure_8_spec)
-        // Do you want to add more graphs?
-        // try defining a new variable for figure_3_spec, adding VegaEmbed for Location3, and adding a new section in the HTML
-        // e.g. 
-        // let figure_3_spec = ...
-        // vegaEmbed('#Location3', figure_3_spec)
-
-
-    </script>
-
+    <script src="script.js"></script>
 </body>
-    
 </html>
