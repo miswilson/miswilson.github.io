@@ -278,10 +278,6 @@ background: rgb(0, 0, 0);
     display: flex;
 }
 
-.about-pic {
-    border-radius: 2rem;
-}
-
 .arrow {
     position: absolute;
     right: -5rem;
