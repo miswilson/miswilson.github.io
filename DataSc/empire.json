@@ -1,0 +1,57 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/empire.csv"
+    },
+    "width": 300,
+    "height": 300,
+    "title": {
+      "text": "Commodity Composition of European Exports by English East India Company",
+      "orient": "top",
+      "fontSize": 15,
+      "subtitle": "EIC corporate monopoly operating mainly from Bombay, Calcutta and Madras, measured by % by value",
+      "baseline": "bottom",
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 12,
+      "anchor": "start",
+      "color": "black"
+    },
+    "encoding": {
+      "x": {
+        "field": "type",
+        "type": "nominal",
+        "title": null,
+        "axis": {"labelAngle": 0}
+      },
+      "y": {
+        "title": "EIC Commodity Composition of European Exports as a Percentage, %",
+        "type": "quantitative"
+      },
+      "xOffset": {
+        "field": "timePeriod",
+        "title": "Time Period"
+      },
+      "color": {
+        "field": "timePeriod",
+        "scale": {
+          "domain": ["1688-70", "1758-60"],
+          "range": ["red", "mediumpurple"]
+        },
+        "legend": {"title": "Time Period"}
+      }
+    },
+    "transform": [
+      {"fold": ["1688-70", "1758-60"], "as": ["timePeriod", "value"]}
+    ],
+    "layer": [
+      {
+        "mark": {
+          "type": "bar"
+        },
+        "encoding": {
+          "y": {"field": "value", "type": "quantitative"}
+        }
+      }
+    ]
+  }
+  

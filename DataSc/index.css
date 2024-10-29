@@ -1,0 +1,116 @@
+/* This is an example CSS file. If you include it in your portfolio, it'll provide some clean and basic styling */
+/* for your page. Feel free to experiment with the values, or copy them into a new file and use that instead. */
+
+/* These are comments in CSS. Comments don't do anything except explain your working to make code easier to understand. */
+
+
+body { /* We can style any HTML element by using its name - here we're styling the body */
+  /* We want text that uses a clean sans-serif font, is usually 16px big and close to black */
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  /* we want a white page, that's centered and not too wide */
+  background-color: rgb(255, 255, 255);
+  margin:0 auto;
+  max-width: 800px !important;
+  padding-top: 60px;
+}
+
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #333;
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/* We want the headings to be a little bigger than the paragraph text */
+.big { /* This is the class we created in the HTML file, you can use it to style any element */
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 1.75em;
+}
+
+.small {
+  font-size: 1.25em;
+}
+
+/* Paragraph */
+p {
+  margin-bottom: 1em;
+  font-weight: 300;
+}
+
+section {
+  margin-bottom: 2.5em;  /* We want a little more space between sections */
+}
+
+/* Links */
+/* We want the links to be a little more visible  and a different color */
+a {
+  color: #065f46;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+  
+/* Images */
+img {
+    border: 1px solid #000000;
+    border-radius: 4px;
+    padding: 1px;
+    width: 150px;
+  }
+
+div.flex_container {
+   display: flex;
+  overflow-x: scroll;} 
+
+  .popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+  }
+
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }

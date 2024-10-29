@@ -1,0 +1,86 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/empire.csv"
+    },
+    "width": 250,
+    "height": 300,
+    "title": {
+      "text": "Commodity Composition of European Exports by English East India Company",
+      "orient":"top",
+      "fontSize": 15,
+      "subtitle": "EIC corporate monopoly operating mainly from Bombay, Calcutta and Madras, measured by % by value",
+      "baseline": "bottom",
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 12,
+      "anchor": "start",
+      "color": "black"
+    },
+    "resolve": {
+      "axis": {"y": "shared"},
+      "scale": {"y": "shared"}
+    },
+
+    "layer": [
+      {
+         "mark": {
+          "type": "bar",
+          "color": "red"
+        },
+        "encoding": {
+          "x": {"field": "type", "sort": "y", "type": "nominal", "title": null},
+          "y": {
+            "field": "1688-70",
+           "title": "EIC Commodity Composition of European Exports as a Percentage, %", 
+            "fontStyle": "normal",
+            "type": "quantitative"
+        },
+          }
+          },
+      
+                {
+        "mark": {
+            "type": "bar",
+          "color": "mediumpurple"
+        },
+        "encoding": {
+          "x": {"field": "type", "sort": "y", "type": "nominal", "title": null},
+  
+          "y": {
+            "field": "1758-60",
+            "type": "quantitative"
+          
+          }
+        }
+      },
+
+      {
+      "data": {"values": [{"country": "1688-70"}]},
+      "mark": {"type": "text", "color": "red"},
+      "encoding": {
+        "text": {"field": "country", "type": "nominal"},
+        "x": {"value": 300},
+        "y": {"value": 30}
+      }
+    },
+    {
+      "data": {"values": [{"country": "Time Period"}]},
+      "mark": {"type": "text", "color": "black", "fontStyle": "bold"},
+      "encoding": {
+        "text": {"field": "country", "type": "nominal"},
+        "x": {"value": 310},
+        "y": {"value": 10}
+      }
+    }, 
+    {
+      "data": {"values": [{"country": "1758-60"}]},
+      "mark": {"type": "text", "color": "mediumpurple"},
+      "encoding": {
+        "text": {"field": "country", "type": "nominal"},
+        "x": {"value": 300},
+        "y": {"value": 50}
+      }
+    }
+        
+    ]
+  }
