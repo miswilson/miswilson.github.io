@@ -1,0 +1,145 @@
+<html lang="en"><head>
+
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: rgb(255, 255, 255);
+            color: rgb(12, 12, 12);
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 60%;
+            height: 450px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .chart-section {
+            width: 60%;
+        }
+
+        /* Position embedded charts in centre of display */
+        .vega-embed {
+            margin: 0 auto;
+        }
+
+        .info-section {
+            width: 35%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .nav-button {
+            position: absolute;
+            font-size: 3em;
+            cursor: pointer;
+            color: rgb(0, 0, 139);
+        }
+
+        .nav-button.prev {
+            left: 15%;
+            /* 15% from the left-hand side. */
+        }
+
+        .nav-button.next {
+            right: 15%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="chart-container"></div>
+        <div class="info-section">
+            <h2>Hosting - Exploring Scatter Charts:</h2>
+                <h5><p>The scatter plot below visualises the relationship between GDP per capita (on a logarithmic scale) and life expectancy, across different regions of the world. The x-axis presents GDP per capita (PPP, international $), whilst the y-axis illustrates life expectancy in years.
+                    Each point represents a country - by region coded by colour - and the size of the points reflects population size. The data follows the general trend that wealthier countries have better health outcomes, as indicated by higher life expectancies. By eye, countries in Africa are concentrated in the ranges with lower GDP and life expectancy, whilst Europe and parts of Oceania are more concentrated in the upper, right-hand region of the chart. This demonstrates the correlation between higher GDP and life expectancy.</p>
+                </h5>
+            <h1 class="chart-title">Hosting</h1>
+        </div>
+    </div>
+ 
+    <div class="nav-button prev" id="prev">◀</div>
+    <div class="nav-button next" id="next">▶</div>
+
+    <script>
+        // Load CSV data and initialise variables
+        let currentIndex = 0;
+        let chartData = [];
+
+       /*charts*/
+        const charts = [
+            ['https://raw.githubusercontent.com/EconomicsObservatory/courses/main/2/s2_chart2.json', 'Life Expectancy & GDP per capita'], 
+            ['Explore/DataSc/wk1_chart1.json', 'GDP per capita'], 
+            ['wk1_chart2.json', 'Real GDP Per Capita'],
+            ['visualization.vl.json', 'CPI inflation, Japan'],
+            ['fr_uk.json', 'Renewables in Fr & UK: 1970-2021'],
+            ['habits.json', 'World Consumption Habits'],
+            ['empire.json', 'European Exports by EEIC'],
+            ['colonies_powers.json', 'GDP per capita (Colonial Powers vs Former Colonies)'],
+        ];
+
+        // Define the path to folder with charts
+        let path = '';
+
+        // Embed chart at index `currentIndex` into the chart container
+        function embedChart(index) {
+            // Update the path to the chart. (Get index of the chart from the list of charts, then select the first element of the chart list)
+            const chartPath = path + charts[index][0];
+            // Embed the Vega-Lite chart (we can pass an extra json object to change some of the chart options, e.g. background colour)
+            vegaEmbed('.chart-container', chartPath, {
+                "config": {
+                    "background": "rgba(0,0,0,0)",
+                },
+                "width": 500,
+            }).catch(console.error);
+
+            // Update the chart title. (Get index of the chart from the list of charts, then select the second element of the chart list)
+            document.querySelector('.chart-title').textContent = charts[index][1];
+
+        }
+        // Run our function to embed first chart
+        embedChart(currentIndex);
+
+
+
+        // Function to update the chart and info section (run when the next or prev button is clicked)
+        function updateChart(index) {
+            const data = chartData[index];
+            embedChart(index);
+        }
+
+
+
+        // Navigation
+        document.getElementById('next').addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % charts.length;
+            updateChart(currentIndex);
+        });
+
+        document.getElementById('prev').addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + charts.length) % charts.length;
+            updateChart(currentIndex);
+        });
+
+    </script>
+
+
+</body></html>
