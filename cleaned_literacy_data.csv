@@ -1,0 +1,2864 @@
+country,code,dates,rate
+Barbados,BRB,1970,99.0
+Grenada,GRD,1970,98.0
+St. Vincent and the Grenadines,VCT,1970,96.0
+Middle East & North Africa (excluding high income),MNA,1972,25.0855293273926
+Somalia,SOM,1972,3.68717002868652
+Middle East & North Africa (IDA & IBRD countries),TMN,1972,24.6529693603516
+Middle East & North Africa (excluding high income),MNA,1973,25.5720195770264
+Middle East & North Africa (IDA & IBRD countries),TMN,1973,25.1435604095459
+Latin America & Caribbean (excluding high income),LAC,1974,74.8664779663086
+Latin America & Caribbean,LCN,1974,75.9799194335938
+Middle East & North Africa,MEA,1974,29.3330001831055
+Middle East & North Africa (excluding high income),MNA,1974,26.0783004760742
+Latin America & the Caribbean (IDA & IBRD countries),TLA,1974,75.1483612060547
+Middle East & North Africa (IDA & IBRD countries),TMN,1974,25.6541004180908
+United Arab Emirates,ARE,1975,38.0
+Burkina Faso,BFA,1975,3.0
+Central African Republic,CAF,1975,8.0
+Early-demographic dividend,EAR,1975,37.3548011779785
+IBRD only,IBD,1975,50.6502685546875
+IDA & IBRD total,IBT,1975,47.5999488830566
+Kuwait,KWT,1975,48.0
+Latin America & Caribbean (excluding high income),LAC,1975,74.8897094726562
+Latin America & Caribbean,LCN,1975,76.0022277832031
+Lower middle income,LMC,1975,31.6221408843994
+Low & middle income,LMY,1975,46.7770004272461
+Middle East & North Africa,MEA,1975,29.8581104278564
+Middle income,MIC,1975,47.707950592041
+Middle East & North Africa (excluding high income),MNA,1975,26.6405696868896
+South Asia,SAS,1975,21.274169921875
+Latin America & the Caribbean (IDA & IBRD countries),TLA,1975,75.1715698242188
+Middle East & North Africa (IDA & IBRD countries),TMN,1975,26.2210998535156
+South Asia (IDA & IBRD),TSA,1975,21.274169921875
+Turkiye,TUR,1975,45.0
+Uruguay,URY,1975,94.0
+Bolivia,BOL,1976,51.0
+Cameroon,CMR,1976,29.0
+East Asia & Pacific (excluding high income),EAP,1976,49.9351806640625
+Early-demographic dividend,EAR,1976,37.6319007873535
+East Asia & Pacific,EAS,1976,52.9263191223145
+"Egypt, Arab Rep.",EGY,1976,22.0
+IBRD only,IBD,1976,50.8727912902832
+IDA & IBRD total,IBT,1976,47.7967414855957
+"Iran, Islamic Rep.",IRN,1976,24.0
+Latin America & Caribbean (excluding high income),LAC,1976,75.3757171630859
+Latin America & Caribbean,LCN,1976,76.4456024169922
+Lower middle income,LMC,1976,31.7480392456055
+Low & middle income,LMY,1976,46.9760894775391
+Late-demographic dividend,LTE,1976,58.2189788818359
+Middle East & North Africa,MEA,1976,30.399019241333
+Middle income,MIC,1976,47.9103698730469
+Mali,MLI,1976,6.0
+Middle East & North Africa (excluding high income),MNA,1976,27.2224102020264
+New Caledonia,NCL,1976,90.0
+South Asia,SAS,1976,21.277250289917
+Eswatini,SWZ,1976,54.0
+East Asia & Pacific (IDA & IBRD countries),TEA,1976,49.2014389038086
+Latin America & the Caribbean (IDA & IBRD countries),TLA,1976,75.6297378540039
+Middle East & North Africa (IDA & IBRD countries),TMN,1976,26.8078193664551
+Tonga,TON,1976,100.0
+South Asia (IDA & IBRD),TSA,1976,21.277250289917
+Upper middle income,UMC,1976,54.7662010192871
+World,WLD,1976,56.6814117431641
+East Asia & Pacific (excluding high income),EAP,1977,50.1523284912109
+Early-demographic dividend,EAR,1977,38.3404083251953
+East Asia & Pacific,EAS,1977,53.1723785400391
+IBRD only,IBD,1977,51.2799301147461
+IDA & IBRD total,IBT,1977,48.1804809570312
+Latin America & Caribbean (excluding high income),LAC,1977,75.9159393310547
+Latin America & Caribbean,LCN,1977,76.9680023193359
+Lower middle income,LMC,1977,32.3599510192871
+Low & middle income,LMY,1977,47.3626594543457
+Late-demographic dividend,LTE,1977,58.3570213317871
+Maldives,MDV,1977,82.0
+Middle East & North Africa,MEA,1977,31.019100189209
+Middle income,MIC,1977,48.3074493408203
+Middle East & North Africa (excluding high income),MNA,1977,27.8789596557617
+South Asia,SAS,1977,22.0148296356201
+East Asia & Pacific (IDA & IBRD countries),TEA,1977,49.4217796325684
+Latin America & the Caribbean (IDA & IBRD countries),TLA,1977,76.1704864501953
+Middle East & North Africa (IDA & IBRD countries),TMN,1977,27.4699001312256
+South Asia (IDA & IBRD),TSA,1977,22.0148296356201
+Upper middle income,UMC,1977,55.0503311157227
+World,WLD,1977,57.0249099731445
+Arab World,ARB,1978,31.767240524292
+East Asia & Pacific (excluding high income),EAP,1978,51.6761703491211
+Early-demographic dividend,EAR,1978,39.0725402832031
+East Asia & Pacific,EAS,1978,54.5682106018066
+IBRD only,IBD,1978,52.3293190002441
+IDA & IBRD total,IBT,1978,49.1010284423828
+Latin America & Caribbean (excluding high income),LAC,1978,76.4907989501953
+Latin America & Caribbean,LCN,1978,77.5310516357422
+Lower middle income,LMC,1978,33.0080604553223
+Low & middle income,LMY,1978,48.2956695556641
+Late-demographic dividend,LTE,1978,59.6021385192871
+Middle East & North Africa,MEA,1978,31.7428207397461
+Middle income,MIC,1978,49.2844200134277
+Middle East & North Africa (excluding high income),MNA,1978,28.6531600952148
+Poland,POL,1978,98.0
+Rwanda,RWA,1978,27.0
+South Asia,SAS,1978,22.7707195281982
+East Asia & Pacific (IDA & IBRD countries),TEA,1978,50.9679489135742
+Latin America & the Caribbean (IDA & IBRD countries),TLA,1978,76.7536010742188
+Middle East & North Africa (IDA & IBRD countries),TMN,1978,28.2506103515625
+South Asia (IDA & IBRD),TSA,1978,22.7707195281982
+Upper middle income,UMC,1978,56.3452415466309
+World,WLD,1978,57.790699005127
+Afghanistan,AFG,1979,5.0
+Arab World,ARB,1979,32.3515510559082
+Burundi,BDI,1979,12.0
+Benin,BEN,1979,10.0
+East Asia & Pacific (excluding high income),EAP,1979,53.4379196166992
+Early-demographic dividend,EAR,1979,39.7583618164062
+East Asia & Pacific,EAS,1979,56.173469543457
+Guinea-Bissau,GNB,1979,9.0
+IBRD only,IBD,1979,53.4527282714844
+IDA & IBRD total,IBT,1979,50.0893096923828
+Jordan,JOR,1979,52.0
+Latin America & Caribbean (excluding high income),LAC,1979,77.0197601318359
+Latin America & Caribbean,LCN,1979,78.0511703491211
+Lower middle income,LMC,1979,33.6744117736816
+Low & middle income,LMY,1979,49.297908782959
+Late-demographic dividend,LTE,1979,61.0341300964355
+Middle East & North Africa,MEA,1979,32.514518737793
+Middle income,MIC,1979,50.334529876709
+Middle East & North Africa (excluding high income),MNA,1979,29.4482593536377
+South Asia,SAS,1979,23.540979385376
+East Asia & Pacific (IDA & IBRD countries),TEA,1979,52.7555084228516
+Latin America & the Caribbean (IDA & IBRD countries),TLA,1979,77.292106628418
+Middle East & North Africa (IDA & IBRD countries),TMN,1979,29.0524005889893
+South Asia (IDA & IBRD),TSA,1979,23.540979385376
+Upper middle income,UMC,1979,57.7581405639648
+Viet Nam,VNM,1979,78.0
+Vanuatu,VUT,1979,48.0
+World,WLD,1979,58.6107215881348
+Arab World,ARB,1980,33.0195808410645
+Argentina,ARG,1980,94.0
+American Samoa,ASM,1980,97.0
+Brazil,BRA,1980,73.0
+Barbados,BRB,1980,99.5
+Comoros,COM,1980,40.0
+East Asia & Pacific (excluding high income),EAP,1980,55.0178108215332
+Early-demographic dividend,EAR,1980,40.4898681640625
+East Asia & Pacific,EAS,1980,57.6153907775879
+Grenada,GRD,1980,98.3000030517578
+Guam,GUM,1980,96.0
+Hungary,HUN,1980,98.0
+IBRD only,IBD,1980,54.5172080993652
+IDA & IBRD total,IBT,1980,51.0275688171387
+IDA blend,IDB,1980,36.3711814880371
+Indonesia,IDN,1980,58.0
+Kuwait,KWT,1980,59.0
+Latin America & Caribbean (excluding high income),LAC,1980,77.5036087036133
+Latin America & Caribbean,LCN,1980,78.5284805297852
+Lower middle income,LMC,1980,34.3267402648926
+Low & middle income,LMY,1980,50.2494812011719
+Late-demographic dividend,LTE,1980,62.3116188049316
+Middle East & North Africa,MEA,1980,33.3633804321289
+Mexico,MEX,1980,80.0
+Middle income,MIC,1980,51.329891204834
+Middle East & North Africa (excluding high income),MNA,1980,30.3653793334961
+Mozambique,MOZ,1980,12.0
+Malaysia,MYS,1980,61.0
+Panama,PAN,1980,88.0
+Philippines,PHL,1980,83.0
+Palau,PLW,1980,91.0
+Puerto Rico,PRI,1980,86.0
+South Asia,SAS,1980,24.284049987793
+Singapore,SGP,1980,74.0
+East Asia & Pacific (IDA & IBRD countries),TEA,1980,54.3585586547852
+Thailand,THA,1980,84.0
+Latin America & the Caribbean (IDA & IBRD countries),TLA,1980,77.7861404418945
+Middle East & North Africa (IDA & IBRD countries),TMN,1980,29.9772396087646
+South Asia (IDA & IBRD),TSA,1980,24.284049987793
+Trinidad and Tobago,TTO,1980,93.0
+Turkiye,TUR,1980,50.0
+Upper middle income,UMC,1980,59.0829811096191
+St. Vincent and the Grenadines,VCT,1980,96.9000015258789
+World,WLD,1980,59.3887596130371
+South Africa,ZAF,1980,75.0
+Arab World,ARB,1981,33.695240020752
+Bangladesh,BGD,1981,18.0
+Bahrain,BHR,1981,59.0
+Brunei Darussalam,BRN,1981,69.0
+Central Europe and the Baltics,CEB,1981,96.9991226196289
+Dominican Republic,DOM,1981,73.0
+East Asia & Pacific (excluding high income),EAP,1981,56.5198516845703
+Early-demographic dividend,EAR,1981,41.2148094177246
+East Asia & Pacific,EAS,1981,58.9864311218262
+Spain,ESP,1981,90.0
+Greece,GRC,1981,85.0
+IBRD only,IBD,1981,55.5488510131836
+IDA & IBRD total,IBT,1981,51.937198638916
+IDA total,IDA,1981,34.5158081054688
+IDA blend,IDB,1981,36.7092094421387
+IDA only,IDX,1981,33.4686508178711
+India,IND,1981,26.0
+Italy,ITA,1981,96.0
+Latin America & Caribbean (excluding high income),LAC,1981,78.0322570800781
+Latin America & Caribbean,LCN,1981,79.0435104370117
+Least developed countries: UN classification,LDC,1981,29.5031700134277
+Sri Lanka,LKA,1981,82.0
+Lower middle income,LMC,1981,34.9710006713867
+Low & middle income,LMY,1981,51.1720085144043
+Late-demographic dividend,LTE,1981,63.5324401855469
+"Macao SAR, China",MAC,1981,86.0
+Middle East & North Africa,MEA,1981,34.2269287109375
+Middle income,MIC,1981,52.2935600280762
+Middle East & North Africa (excluding high income),MNA,1981,31.300630569458
+Montenegro,MNE,1981,83.0
+Nepal,NPL,1981,9.0
+Pakistan,PAK,1981,15.0
+Peru,PER,1981,74.0
+Portugal,PRT,1981,75.0
+South Asia,SAS,1981,24.9996204376221
+Sao Tome and Principe,STP,1981,42.0
+Syrian Arab Republic,SYR,1981,37.0
+East Asia & Pacific (IDA & IBRD countries),TEA,1981,55.8826103210449
+Latin America & the Caribbean (IDA & IBRD countries),TLA,1981,78.3192596435547
+Middle East & North Africa (IDA & IBRD countries),TMN,1981,30.9203491210938
+South Asia (IDA & IBRD),TSA,1981,24.9996204376221
+Upper middle income,UMC,1981,60.356819152832
+"Venezuela, RB",VEN,1981,83.0
+World,WLD,1981,60.1468696594238
+Arab World,ARB,1982,34.4745903015137
+Central Europe and the Baltics,CEB,1982,97.0323333740234
+Chile,CHL,1982,91.0
+China,CHN,1982,51.0
+East Asia & Pacific (excluding high income),EAP,1982,57.9139595031738
+Early-demographic dividend,EAR,1982,41.9775810241699
+East Asia & Pacific,EAS,1982,60.2653999328613
+Ecuador,ECU,1982,80.0
+Haiti,HTI,1982,33.0
+IBRD only,IBD,1982,56.5419998168945
+IDA & IBRD total,IBT,1982,52.8203315734863
+IDA total,IDA,1982,34.8682899475098
+IDA blend,IDB,1982,37.0882186889648
+IDA only,IDX,1982,33.808479309082
+Latin America & Caribbean (excluding high income),LAC,1982,78.5474624633789
+Latin America & Caribbean,LCN,1982,79.5451889038086
+Least developed countries: UN classification,LDC,1982,29.83669090271
+Lower middle income,LMC,1982,35.6565895080566
+Low & middle income,LMY,1982,52.0677909851074
+Late-demographic dividend,LTE,1982,64.6701583862305
+Morocco,MAR,1982,18.0
+Middle East & North Africa,MEA,1982,35.212230682373
+Middle income,MIC,1982,53.228099822998
+Middle East & North Africa (excluding high income),MNA,1982,32.281909942627
+Paraguay,PRY,1982,76.0
+South Asia,SAS,1982,25.7807807922363
+East Asia & Pacific (IDA & IBRD countries),TEA,1982,57.2971496582031
+Latin America & the Caribbean (IDA & IBRD countries),TLA,1982,78.8385925292969
+Middle East & North Africa (IDA & IBRD countries),TMN,1982,31.9098796844482
+South Asia (IDA & IBRD),TSA,1982,25.7807807922363
+Upper middle income,UMC,1982,61.5498809814453
+World,WLD,1982,60.8878211975098
+Zimbabwe,ZWE,1982,72.0
+Arab World,ARB,1983,34.8901481628418
+Central Europe and the Baltics,CEB,1983,97.0661087036133
+East Asia & Pacific (excluding high income),EAP,1983,59.2517700195312
+Early-demographic dividend,EAR,1983,42.7644081115723
+East Asia & Pacific,EAS,1983,61.4942817687988
+IBRD only,IBD,1983,57.5197906494141
+IDA & IBRD total,IBT,1983,53.6939010620117
+IDA total,IDA,1983,35.239128112793
+IDA blend,IDB,1983,37.4572486877441
+IDA only,IDX,1983,34.1801795959473
+Israel,ISR,1983,89.0
+Latin America & Caribbean (excluding high income),LAC,1983,79.0539169311523
+Latin America & Caribbean,LCN,1983,80.0381927490234
+Least developed countries: UN classification,LDC,1983,30.2013206481934
+Lower middle income,LMC,1983,36.2877998352051
+Low & middle income,LMY,1983,52.9538497924805
+Late-demographic dividend,LTE,1983,65.7528228759766
+Middle East & North Africa,MEA,1983,36.2855491638184
+Middle income,MIC,1983,54.1492385864258
+Myanmar,MMR,1983,72.0
+Middle East & North Africa (excluding high income),MNA,1983,33.443920135498
+South Asia,SAS,1983,26.5774803161621
+East Asia & Pacific (IDA & IBRD countries),TEA,1983,58.6545715332031
+Europe & Central Asia (IDA & IBRD countries),TEC,1983,91.6857986450195
+Latin America & the Caribbean (IDA & IBRD countries),TLA,1983,79.3490676879883
+Middle East & North Africa (IDA & IBRD countries),TMN,1983,33.0816688537598
+South Asia (IDA & IBRD),TSA,1983,26.5774803161621
+Upper middle income,UMC,1983,62.7568092346191
+World,WLD,1983,61.6174011230469
+Arab World,ARB,1984,35.8045196533203
+Central Europe and the Baltics,CEB,1984,97.1183090209961
+"Congo, Rep.",COG,1984,49.0
+Costa Rica,CRI,1984,93.0
+East Asia & Pacific (excluding high income),EAP,1984,60.685489654541
+Early-demographic dividend,EAR,1984,43.7831993103027
+East Asia & Pacific,EAS,1984,62.8062782287598
+IBRD only,IBD,1984,58.6656188964844
+IDA & IBRD total,IBT,1984,54.7179908752441
+IDA total,IDA,1984,35.6759796142578
+IDA blend,IDB,1984,37.8307304382324
+IDA only,IDX,1984,34.6472702026367
+Latin America & Caribbean (excluding high income),LAC,1984,79.5495910644531
+Liberia,LBR,1984,19.0
+Libya,LBY,1984,42.0
+Latin America & Caribbean,LCN,1984,80.520263671875
+Least developed countries: UN classification,LDC,1984,30.6598091125488
+Lower middle income,LMC,1984,37.0206298828125
+Low & middle income,LMY,1984,53.9935302734375
+Late-demographic dividend,LTE,1984,66.9200973510742
+Middle East & North Africa,MEA,1984,37.374439239502
+Middle income,MIC,1984,55.234489440918
+Middle East & North Africa (excluding high income),MNA,1984,34.5995788574219
+Other small states,OSS,1984,67.1471862792969
+South Asia,SAS,1984,27.3861999511719
+East Asia & Pacific (IDA & IBRD countries),TEA,1984,60.1092910766602
+Europe & Central Asia (IDA & IBRD countries),TEC,1984,92.6586685180664
+Latin America & the Caribbean (IDA & IBRD countries),TLA,1984,79.8482666015625
+Middle East & North Africa (IDA & IBRD countries),TMN,1984,34.2470512390137
+South Asia (IDA & IBRD),TSA,1984,27.3861999511719
+Tunisia,TUN,1984,36.0
+Upper middle income,UMC,1984,64.186279296875
+Vanuatu,VUT,1984,53.7000007629395
+World,WLD,1984,62.4651489257812
+Africa Western and Central,AFW,1985,28.558349609375
+Arab World,ARB,1985,36.7085800170898
+United Arab Emirates,ARE,1985,69.0
+Central Europe and the Baltics,CEB,1985,97.1619873046875
+East Asia & Pacific (excluding high income),EAP,1985,62.0498390197754
+Early-demographic dividend,EAR,1985,44.5701904296875
+East Asia & Pacific,EAS,1985,64.055419921875
+IBRD only,IBD,1985,59.6726913452148
+IDA & IBRD total,IBT,1985,55.6312217712402
+IDA total,IDA,1985,36.1365699768066
+IDA blend,IDB,1985,38.2086486816406
+IDA only,IDX,1985,35.1473388671875
+Kuwait,KWT,1985,69.0
+Latin America & Caribbean (excluding high income),LAC,1985,80.035758972168
+Latin America & Caribbean,LCN,1985,80.992561340332
+Least developed countries: UN classification,LDC,1985,31.1520099639893
+Lower middle income,LMC,1985,37.7636489868164
+Low & middle income,LMY,1985,54.9202690124512
+Late-demographic dividend,LTE,1985,68.0536193847656
+Maldives,MDV,1985,92.0
+Middle East & North Africa,MEA,1985,38.4574012756348
+Middle income,MIC,1985,56.1973609924316
+Malta,MLT,1985,87.0
+Middle East & North Africa (excluding high income),MNA,1985,35.7770805358887
+Other small states,OSS,1985,67.4823989868164
+South Asia,SAS,1985,28.2024707794189
+Sub-Saharan Africa (excluding high income),SSA,1985,39.1187286376953
+Sub-Saharan Africa,SSF,1985,39.1263008117676
+East Asia & Pacific (IDA & IBRD countries),TEA,1985,61.4936485290527
+Europe & Central Asia (IDA & IBRD countries),TEC,1985,92.8974685668945
+Latin America & the Caribbean (IDA & IBRD countries),TLA,1985,80.3373718261719
+Middle East & North Africa (IDA & IBRD countries),TMN,1985,35.4344482421875
+South Asia (IDA & IBRD),TSA,1985,28.2024707794189
+Sub-Saharan Africa (IDA & IBRD countries),TSS,1985,39.1263008117676
+Turkiye,TUR,1985,64.0
+Upper middle income,UMC,1985,65.3693618774414
+Uruguay,URY,1985,96.0
+World,WLD,1985,63.223461151123
+Africa Western and Central,AFW,1986,28.8379497528076
+Arab World,ARB,1986,37.6204605102539
+Central Europe and the Baltics,CEB,1986,97.2062835693359
+East Asia & Pacific (excluding high income),EAP,1986,63.2267417907715
+Early-demographic dividend,EAR,1986,45.3617095947266
+East Asia & Pacific,EAS,1986,65.1162261962891
+"Egypt, Arab Rep.",EGY,1986,31.0
+Fragile and conflict affected situations,FCS,1986,49.0557594299316
+Heavily indebted poor countries (HIPC),HPC,1986,32.7025909423828
+IBRD only,IBD,1986,60.5918617248535
+IDA & IBRD total,IBT,1986,56.4697303771973
+IDA total,IDA,1986,36.5860214233398
+IDA blend,IDB,1986,38.6030197143555
+IDA only,IDX,1986,35.6230812072754
+"Iran, Islamic Rep.",IRN,1986,41.0
+Latin America & Caribbean (excluding high income),LAC,1986,80.5136108398438
+Latin America & Caribbean,LCN,1986,81.4562683105469
+Least developed countries: UN classification,LDC,1986,31.6161804199219
+Lower middle income,LMC,1986,38.3351211547852
+Low & middle income,LMY,1986,55.7709083557129
+Late-demographic dividend,LTE,1986,69.0318908691406
+Middle East & North Africa,MEA,1986,39.546028137207
+Middle income,MIC,1986,57.0825881958008
+Middle East & North Africa (excluding high income),MNA,1986,36.9618186950684
+Other small states,OSS,1986,67.8891830444336
+Pre-demographic dividend,PRE,1986,36.3266792297363
+Qatar,QAT,1986,72.0
+South Asia,SAS,1986,29.0315704345703
+Sub-Saharan Africa (excluding high income),SSA,1986,39.5011787414551
+Sub-Saharan Africa,SSF,1986,39.5087814331055
+Eswatini,SWZ,1986,65.0
+East Asia & Pacific (IDA & IBRD countries),TEA,1986,62.6877899169922
+Europe & Central Asia (IDA & IBRD countries),TEC,1986,93.1389236450195
+Latin America & the Caribbean (IDA & IBRD countries),TLA,1986,80.8175430297852
+Middle East & North Africa (IDA & IBRD countries),TMN,1986,36.6291618347168
+South Asia (IDA & IBRD),TSA,1986,29.0315704345703
+Sub-Saharan Africa (IDA & IBRD countries),TSS,1986,39.5087814331055
+Upper middle income,UMC,1986,66.5326766967773
+World,WLD,1986,63.9141693115234
+Africa Eastern and Southern,AFE,1987,47.1497802734375
+Africa Western and Central,AFW,1987,29.6168308258057
+Arab World,ARB,1987,38.5295295715332
+Central Europe and the Baltics,CEB,1987,97.2604675292969
+Algeria,DZA,1987,36.0
+East Asia & Pacific (excluding high income),EAP,1987,64.7203826904297
+Early-demographic dividend,EAR,1987,46.3423690795898
+East Asia & Pacific,EAS,1987,66.5240707397461
+Fragile and conflict affected situations,FCS,1987,49.6236381530762
+Heavily indebted poor countries (HIPC),HPC,1987,33.3619613647461
+IBRD only,IBD,1987,61.6435317993164
+IDA & IBRD total,IBT,1987,57.4508209228516
+IDA total,IDA,1987,37.2266006469727
+IDA blend,IDB,1987,39.3770217895508
+IDA only,IDX,1987,36.1999588012695
+Latin America & Caribbean (excluding high income),LAC,1987,80.8101806640625
+Latin America & Caribbean,LCN,1987,81.7453994750977
+Least developed countries: UN classification,LDC,1987,32.1944999694824
+Lower middle income,LMC,1987,39.3738212585449
+Low & middle income,LMY,1987,56.7689399719238
+Late-demographic dividend,LTE,1987,70.0684814453125
+Middle East & North Africa,MEA,1987,40.6330986022949
+Middle income,MIC,1987,58.1120681762695
+Middle East & North Africa (excluding high income),MNA,1987,38.1484413146973
+Malawi,MWI,1987,34.0
+Other small states,OSS,1987,68.4847717285156
+Pre-demographic dividend,PRE,1987,37.0977897644043
+South Asia,SAS,1987,29.8734703063965
+Sub-Saharan Africa (excluding high income),SSA,1987,40.1931800842285
+Sub-Saharan Africa,SSF,1987,40.2007484436035
+Small states,SST,1987,74.2067489624023
+Seychelles,SYC,1987,85.0
+East Asia & Pacific (IDA & IBRD countries),TEA,1987,64.2033309936523
+Europe & Central Asia (IDA & IBRD countries),TEC,1987,93.3821868896484
+Latin America & the Caribbean (IDA & IBRD countries),TLA,1987,81.1062774658203
+Middle East & North Africa (IDA & IBRD countries),TMN,1987,37.8257484436035
+South Asia (IDA & IBRD),TSA,1987,29.8734703063965
+Sub-Saharan Africa (IDA & IBRD countries),TSS,1987,40.2007484436035
+Upper middle income,UMC,1987,67.630241394043
+World,WLD,1987,64.7417068481445
+Africa Eastern and Southern,AFE,1988,47.6577911376953
+Africa Western and Central,AFW,1988,30.3316802978516
+Arab World,ARB,1988,39.5514183044434
+Central African Republic,CAF,1988,20.0
+Central Europe and the Baltics,CEB,1988,97.4032974243164
+Cote d'Ivoire,CIV,1988,23.0
+East Asia & Pacific (excluding high income),EAP,1988,70.4422988891602
+Early-demographic dividend,EAR,1988,46.720588684082
+East Asia & Pacific,EAS,1988,71.6329727172852
+Fragile and conflict affected situations,FCS,1988,50.2035598754883
+Heavily indebted poor countries (HIPC),HPC,1988,33.8446388244629
+IBRD only,IBD,1988,64.4910888671875
+IDA & IBRD total,IBT,1988,59.9383087158203
+IDA total,IDA,1988,37.9772415161133
+IDA blend,IDB,1988,40.1779899597168
+IDA only,IDX,1988,36.9265785217285
+Latin America & Caribbean (excluding high income),LAC,1988,81.3798217773438
+Latin America & Caribbean,LCN,1988,82.3494491577148
+Least developed countries: UN classification,LDC,1988,32.9348297119141
+Low income,LIC,1988,35.7952117919922
+Lower middle income,LMC,1988,39.5968017578125
+Low & middle income,LMY,1988,59.29248046875
+Late-demographic dividend,LTE,1988,74.8624267578125
+Middle East & North Africa,MEA,1988,41.8159790039062
+Middle income,MIC,1988,60.7687492370605
+Middle East & North Africa (excluding high income),MNA,1988,39.3382987976074
+Other small states,OSS,1988,69.5726089477539
+Poland,POL,1988,99.0
+Pre-demographic dividend,PRE,1988,37.7486114501953
+South Asia,SAS,1988,29.8611793518066
+Senegal,SEN,1988,18.0
+Sub-Saharan Africa (excluding high income),SSA,1988,40.7831687927246
+Sub-Saharan Africa,SSF,1988,40.7907409667969
+Small states,SST,1988,74.9846572875977
+East Asia & Pacific (IDA & IBRD countries),TEA,1988,70.0090866088867
+Europe & Central Asia (IDA & IBRD countries),TEC,1988,93.6546401977539
+Latin America & the Caribbean (IDA & IBRD countries),TLA,1988,81.7340927124023
+Middle East & North Africa (IDA & IBRD countries),TMN,1988,39.0256195068359
+South Asia (IDA & IBRD),TSA,1988,29.8611793518066
+Sub-Saharan Africa (IDA & IBRD countries),TSS,1988,40.7907409667969
+Tanzania,TZA,1988,48.0
+Upper middle income,UMC,1988,72.2015533447266
+World,WLD,1988,66.8254623413086
+Africa Eastern and Southern,AFE,1989,48.0540885925293
+Africa Western and Central,AFW,1989,31.2255592346191
+Arab World,ARB,1989,40.5765914916992
+Armenia,ARM,1989,98.0
+Belarus,BLR,1989,97.0
+Central Europe and the Baltics,CEB,1989,97.5007629394531
+East Asia & Pacific (excluding high income),EAP,1989,71.3926696777344
+Early-demographic dividend,EAR,1989,47.5346412658691
+East Asia & Pacific,EAS,1989,72.5109634399414
+Europe & Central Asia (excluding high income),ECA,1989,90.0458984375
+Estonia,EST,1989,100.0
+Fragile and conflict affected situations,FCS,1989,50.631908416748
+Heavily indebted poor countries (HIPC),HPC,1989,34.464599609375
+IBRD only,IBD,1989,65.3109893798828
+IDA & IBRD total,IBT,1989,60.7278518676758
+IDA total,IDA,1989,38.6203384399414
+IDA blend,IDB,1989,40.8172988891602
+IDA only,IDX,1989,37.5714797973633
+Kazakhstan,KAZ,1989,96.0
+Latin America & Caribbean (excluding high income),LAC,1989,81.9356231689453
+Latin America & Caribbean,LCN,1989,82.9044494628906
+Least developed countries: UN classification,LDC,1989,33.5694999694824
+Low income,LIC,1989,36.2281188964844
+Lower middle income,LMC,1989,40.4434089660645
+Low & middle income,LMY,1989,60.088939666748
+Late-demographic dividend,LTE,1989,75.6563034057617
+Lithuania,LTU,1989,98.0
+Latvia,LVA,1989,99.0
+Moldova,MDA,1989,94.0
+Middle East & North Africa,MEA,1989,43.0008316040039
+Middle income,MIC,1989,61.5880584716797
+Middle East & North Africa (excluding high income),MNA,1989,40.5328712463379
+New Caledonia,NCL,1989,92.0
+Other small states,OSS,1989,70.3037109375
+Pre-demographic dividend,PRE,1989,38.5173110961914
+Russian Federation,RUS,1989,97.0
+South Asia,SAS,1989,30.7882499694824
+Sub-Saharan Africa (excluding high income),SSA,1989,41.3766899108887
+Sub-Saharan Africa,SSF,1989,41.3842582702637
+Small states,SST,1989,75.5173721313477
+East Asia & Pacific (IDA & IBRD countries),TEA,1989,70.973388671875
+Europe & Central Asia (IDA & IBRD countries),TEC,1989,93.7811889648438
+Tajikistan,TJK,1989,97.0
+Latin America & the Caribbean (IDA & IBRD countries),TLA,1989,82.3109970092773
+Middle East & North Africa (IDA & IBRD countries),TMN,1989,40.2302398681641
+South Asia (IDA & IBRD),TSA,1989,30.7882499694824
+Sub-Saharan Africa (IDA & IBRD countries),TSS,1989,41.3842582702637
+Upper middle income,UMC,1989,73.0573883056641
+Viet Nam,VNM,1989,83.0
+World,WLD,1989,67.487922668457
+Africa Eastern and Southern,AFE,1990,48.6949081420898
+Africa Western and Central,AFW,1990,32.0875396728516
+Arab World,ARB,1990,41.6636085510254
+Burundi,BDI,1990,28.0
+Central Europe and the Baltics,CEB,1990,97.6005706787109
+China,CHN,1990,68.0
+Cabo Verde,CPV,1990,53.0
+East Asia & Pacific (excluding high income),EAP,1990,72.2718505859375
+Early-demographic dividend,EAR,1990,48.5691795349121
+East Asia & Pacific,EAS,1990,73.3238525390625
+Europe & Central Asia (excluding high income),ECA,1990,90.3442001342773
+Ecuador,ECU,1990,86.0
+Fragile and conflict affected situations,FCS,1990,51.2373695373535
+Guam,GUM,1990,99.0
+Heavily indebted poor countries (HIPC),HPC,1990,35.086971282959
+Hungary,HUN,1990,98.8000030517578
+IBRD only,IBD,1990,66.1874084472656
+IDA & IBRD total,IBT,1990,61.5775299072266
+IDA total,IDA,1990,39.3410491943359
+IDA blend,IDB,1990,41.6764183044434
+Indonesia,IDN,1990,75.0
+IDA only,IDX,1990,38.2261199951172
+Latin America & Caribbean (excluding high income),LAC,1990,82.3838195800781
+Latin America & Caribbean,LCN,1990,83.3322219848633
+Least developed countries: UN classification,LDC,1990,34.2313919067383
+Low income,LIC,1990,36.7596092224121
+Lower middle income,LMC,1990,41.3103713989258
+Low & middle income,LMY,1990,60.9499893188477
+Late-demographic dividend,LTE,1990,76.3864822387695
+Maldives,MDV,1990,96.0
+Middle East & North Africa,MEA,1990,45.7060012817383
+Mexico,MEX,1990,85.0
+Middle income,MIC,1990,62.4698104858398
+Middle East & North Africa (excluding high income),MNA,1990,43.4154586791992
+Mauritius,MUS,1990,75.0
+Other small states,OSS,1990,70.914909362793
+Panama,PAN,1990,88.0
+Philippines,PHL,1990,93.0
+Pre-demographic dividend,PRE,1990,39.2178916931152
+Puerto Rico,PRI,1990,90.0
+South Asia,SAS,1990,31.7026100158691
+Singapore,SGP,1990,83.0
+Sub-Saharan Africa (excluding high income),SSA,1990,42.1051788330078
+Sub-Saharan Africa,SSF,1990,42.1127281188965
+Small states,SST,1990,75.9667205810547
+East Asia & Pacific (IDA & IBRD countries),TEA,1990,71.8654632568359
+Europe & Central Asia (IDA & IBRD countries),TEC,1990,94.0136566162109
+Latin America & the Caribbean (IDA & IBRD countries),TLA,1990,82.7555236816406
+Middle East & North Africa (IDA & IBRD countries),TMN,1990,43.1370811462402
+South Asia (IDA & IBRD),TSA,1990,31.7026100158691
+Sub-Saharan Africa (IDA & IBRD countries),TSS,1990,42.1127281188965
+Trinidad and Tobago,TTO,1990,96.0
+Turkiye,TUR,1990,69.0
+Upper middle income,UMC,1990,74.0124206542969
+"Venezuela, RB",VEN,1990,89.0
+World,WLD,1990,68.1959228515625
+Zambia,ZMB,1990,57.0
+Africa Eastern and Southern,AFE,1991,48.648998260498
+Africa Western and Central,AFW,1991,32.9863395690918
+Arab World,ARB,1991,42.7137489318848
+Argentina,ARG,1991,96.0
+Burkina Faso,BFA,1991,8.0
+Bangladesh,BGD,1991,26.0
+Bahrain,BHR,1991,77.0
+Bosnia and Herzegovina,BIH,1991,82.0
+Belize,BLZ,1991,70.0
+Brunei Darussalam,BRN,1991,82.0
+Botswana,BWA,1991,71.0
+Central Europe and the Baltics,CEB,1991,97.6947402954102
+East Asia & Pacific (excluding high income),EAP,1991,73.0925521850586
+Early-demographic dividend,EAR,1991,49.3738594055176
+East Asia & Pacific,EAS,1991,74.0843200683594
+Europe & Central Asia (excluding high income),ECA,1991,90.538818359375
+Spain,ESP,1991,95.0
+Fragile and conflict affected situations,FCS,1991,51.5535202026367
+Greece,GRC,1991,89.0
+Heavily indebted poor countries (HIPC),HPC,1991,35.5340385437012
+Croatia,HRV,1991,95.0
+IBRD only,IBD,1991,66.8461685180664
+IDA & IBRD total,IBT,1991,62.2090911865234
+IDA total,IDA,1991,39.9666900634766
+IDA blend,IDB,1991,42.5327796936035
+IDA only,IDX,1991,38.7351303100586
+India,IND,1991,34.0
+"Iran, Islamic Rep.",IRN,1991,56.0
+Latin America & Caribbean (excluding high income),LAC,1991,83.0635223388672
+Latin America & Caribbean,LCN,1991,83.9629211425781
+Least developed countries: UN classification,LDC,1991,34.7485198974609
+Low income,LIC,1991,37.0270614624023
+Lower middle income,LMC,1991,42.1770210266113
+Low & middle income,LMY,1991,61.5967788696289
+Late-demographic dividend,LTE,1991,77.0625381469727
+Middle East & North Africa,MEA,1991,47.0366897583008
+Middle income,MIC,1991,63.1403884887695
+Middle East & North Africa (excluding high income),MNA,1991,44.8930511474609
+Montenegro,MNE,1991,98.0
+Malaysia,MYS,1991,77.0
+Namibia,NAM,1991,74.0
+Nigeria,NGA,1991,44.0
+Nepal,NPL,1991,17.0
+Other small states,OSS,1991,71.308837890625
+Pre-demographic dividend,PRE,1991,39.8047714233398
+Portugal,PRT,1991,85.0
+South Asia,SAS,1991,32.6067695617676
+Sub-Saharan Africa (excluding high income),SSA,1991,42.4428291320801
+Sub-Saharan Africa,SSF,1991,42.4503517150879
+Small states,SST,1991,76.2107696533203
+Sao Tome and Principe,STP,1991,62.0
+Slovenia,SVN,1991,99.0
+East Asia & Pacific (IDA & IBRD countries),TEA,1991,72.699348449707
+Europe & Central Asia (IDA & IBRD countries),TEC,1991,94.1902236938477
+Latin America & the Caribbean (IDA & IBRD countries),TLA,1991,83.4175567626953
+Middle East & North Africa (IDA & IBRD countries),TMN,1991,44.6261901855469
+South Asia (IDA & IBRD),TSA,1991,32.6067695617676
+Sub-Saharan Africa (IDA & IBRD countries),TSS,1991,42.4503517150879
+Uganda,UGA,1991,45.0
+Upper middle income,UMC,1991,74.7259979248047
+World,WLD,1991,68.6674423217773
+Samoa,WSM,1991,97.0
+Africa Eastern and Southern,AFE,1992,49.0647888183594
+Africa Western and Central,AFW,1992,33.8582496643066
+Arab World,ARB,1992,43.9511413574219
+Benin,BEN,1992,17.0
+Bolivia,BOL,1992,72.0
+Central Europe and the Baltics,CEB,1992,97.7855224609375
+Chile,CHL,1992,94.0
+Cyprus,CYP,1992,91.0
+East Asia & Pacific (excluding high income),EAP,1992,73.8778076171875
+Early-demographic dividend,EAR,1992,50.2319793701172
+East Asia & Pacific,EAS,1992,74.8060302734375
+Europe & Central Asia (excluding high income),ECA,1992,90.7383575439453
+Fragile and conflict affected situations,FCS,1992,51.8193893432617
+Heavily indebted poor countries (HIPC),HPC,1992,35.9281311035156
+IBRD only,IBD,1992,67.5160293579102
+IDA & IBRD total,IBT,1992,62.8451995849609
+IDA total,IDA,1992,40.615421295166
+IDA blend,IDB,1992,43.464771270752
+IDA only,IDX,1992,39.2430610656738
+Latin America & Caribbean (excluding high income),LAC,1992,83.7399673461914
+Latin America & Caribbean,LCN,1992,84.5907287597656
+Least developed countries: UN classification,LDC,1992,35.2405815124512
+Low income,LIC,1992,37.2138404846191
+Lower middle income,LMC,1992,43.0553817749023
+Low & middle income,LMY,1992,62.2470703125
+Late-demographic dividend,LTE,1992,77.7093276977539
+Middle East & North Africa,MEA,1992,48.3487396240234
+Middle income,MIC,1992,63.8271713256836
+Middle East & North Africa (excluding high income),MNA,1992,46.2084693908691
+Other small states,OSS,1992,71.6549224853516
+Pre-demographic dividend,PRE,1992,40.3786392211914
+Paraguay,PRY,1992,89.0
+Romania,ROU,1992,95.0
+South Asia,SAS,1992,33.5255889892578
+Saudi Arabia,SAU,1992,57.0
+El Salvador,SLV,1992,71.0
+Sub-Saharan Africa (excluding high income),SSA,1992,43.0291595458984
+Sub-Saharan Africa,SSF,1992,43.0365104675293
+Small states,SST,1992,76.4372787475586
+East Asia & Pacific (IDA & IBRD countries),TEA,1992,73.4972686767578
+Europe & Central Asia (IDA & IBRD countries),TEC,1992,94.3624496459961
+Latin America & the Caribbean (IDA & IBRD countries),TLA,1992,84.0768280029297
+Middle East & North Africa (IDA & IBRD countries),TMN,1992,45.950008392334
+South Asia (IDA & IBRD),TSA,1992,33.5255889892578
+Sub-Saharan Africa (IDA & IBRD countries),TSS,1992,43.0365104675293
+Upper middle income,UMC,1992,75.4789505004883
+World,WLD,1992,69.134162902832
+Zimbabwe,ZWE,1992,79.0
+Africa Eastern and Southern,AFE,1993,49.7175216674805
+Africa Western and Central,AFW,1993,34.7813911437988
+Arab World,ARB,1993,44.3244209289551
+Central Europe and the Baltics,CEB,1993,97.8657073974609
+Colombia,COL,1993,91.0
+Caribbean small states,CSS,1993,88.9220199584961
+East Asia & Pacific (excluding high income),EAP,1993,74.6324996948242
+Early-demographic dividend,EAR,1993,51.0471305847168
+East Asia & Pacific,EAS,1993,75.5037384033203
+Europe & Central Asia (excluding high income),ECA,1993,90.9152526855469
+Fragile and conflict affected situations,FCS,1993,52.0890998840332
+Gabon,GAB,1993,65.0
+Heavily indebted poor countries (HIPC),HPC,1993,36.3877410888672
+IBRD only,IBD,1993,68.1252822875977
+IDA & IBRD total,IBT,1993,63.4368705749512
+IDA total,IDA,1993,41.314338684082
+IDA blend,IDB,1993,44.5341300964355
+IDA only,IDX,1993,39.7740097045898
+Latin America & Caribbean (excluding high income),LAC,1993,84.3888168334961
+Latin America & Caribbean,LCN,1993,85.1944885253906
+Least developed countries: UN classification,LDC,1993,35.789421081543
+Low income,LIC,1993,37.4961395263672
+Lower middle income,LMC,1993,43.8736610412598
+Low & middle income,LMY,1993,62.851749420166
+Late-demographic dividend,LTE,1993,78.3248596191406
+Middle East & North Africa,MEA,1993,48.9220314025879
+Middle income,MIC,1993,64.4704132080078
+Middle East & North Africa (excluding high income),MNA,1993,46.7094612121582
+Other small states,OSS,1993,72.1672134399414
+Peru,PER,1993,82.0
+Pre-demographic dividend,PRE,1993,41.0080108642578
+South Asia,SAS,1993,34.4439392089844
+Sub-Saharan Africa (excluding high income),SSA,1993,43.7805595397949
+Sub-Saharan Africa,SSF,1993,43.7877502441406
+Small states,SST,1993,76.8060836791992
+Chad,TCD,1993,5.0
+East Asia & Pacific (IDA & IBRD countries),TEA,1993,74.2639312744141
+Europe & Central Asia (IDA & IBRD countries),TEC,1993,94.5267181396484
+Latin America & the Caribbean (IDA & IBRD countries),TLA,1993,84.7113418579102
+Middle East & North Africa (IDA & IBRD countries),TMN,1993,46.4418983459473
+South Asia (IDA & IBRD),TSA,1993,34.4439392089844
+Sub-Saharan Africa (IDA & IBRD countries),TSS,1993,43.7877502441406
+Upper middle income,UMC,1993,76.1921310424805
+World,WLD,1993,69.5851974487305
+Africa Eastern and Southern,AFE,1994,50.3447113037109
+Africa Western and Central,AFW,1994,35.7780113220215
+Arab World,ARB,1994,45.4606094360352
+Central Europe and the Baltics,CEB,1994,97.9456405639648
+Caribbean small states,CSS,1994,88.9909286499023
+East Asia & Pacific (excluding high income),EAP,1994,75.4328231811523
+Early-demographic dividend,EAR,1994,51.9679985046387
+East Asia & Pacific,EAS,1994,76.2617263793945
+Europe & Central Asia (excluding high income),ECA,1994,91.0859527587891
+Europe & Central Asia,ECS,1994,94.4675369262695
+Ethiopia,ETH,1994,19.0
+Fragile and conflict affected situations,FCS,1994,52.7355499267578
+Guatemala,GTM,1994,57.0
+Heavily indebted poor countries (HIPC),HPC,1994,36.9095611572266
+IBRD only,IBD,1994,68.7619400024414
+IDA & IBRD total,IBT,1994,64.0782699584961
+IDA total,IDA,1994,42.2081108093262
+IDA blend,IDB,1994,45.4254989624023
+IDA only,IDX,1994,40.6672592163086
+Latin America & Caribbean (excluding high income),LAC,1994,85.0252227783203
+Libya,LBY,1994,63.7000007629395
+Latin America & Caribbean,LCN,1994,85.7858428955078
+Least developed countries: UN classification,LDC,1994,36.743221282959
+Low income,LIC,1994,37.8657302856445
+Lower middle income,LMC,1994,44.844409942627
+Low & middle income,LMY,1994,63.5065116882324
+Late-demographic dividend,LTE,1994,78.9257202148438
+Morocco,MAR,1994,29.0
+Middle East & North Africa,MEA,1994,50.0711708068848
+Middle income,MIC,1994,65.1564178466797
+North Macedonia,MKD,1994,91.0
+Middle East & North Africa (excluding high income),MNA,1994,47.8387794494629
+Other small states,OSS,1994,72.4965286254883
+Philippines,PHL,1994,95.0
+Pre-demographic dividend,PRE,1994,41.7285003662109
+South Asia,SAS,1994,35.3673515319824
+Sub-Saharan Africa (excluding high income),SSA,1994,44.5528793334961
+Sub-Saharan Africa,SSF,1994,44.5599403381348
+Small states,SST,1994,77.0309829711914
+Seychelles,SYC,1994,89.0
+East Asia & Pacific (IDA & IBRD countries),TEA,1994,75.0766372680664
+Europe & Central Asia (IDA & IBRD countries),TEC,1994,94.6878433227539
+Latin America & the Caribbean (IDA & IBRD countries),TLA,1994,85.3329086303711
+Middle East & North Africa (IDA & IBRD countries),TMN,1994,47.5661888122559
+South Asia (IDA & IBRD),TSA,1994,35.3673515319824
+Sub-Saharan Africa (IDA & IBRD countries),TSS,1994,44.5599403381348
+Upper middle income,UMC,1994,76.8952407836914
+Vanuatu,VUT,1994,65.5999984741211
+World,WLD,1994,70.0834808349609
+"Yemen, Rep.",YEM,1994,17.0
+Africa Eastern and Southern,AFE,1995,51.0756301879883
+Africa Western and Central,AFW,1995,36.2378616333008
+Arab World,ARB,1995,46.6182708740234
+Central Europe and the Baltics,CEB,1995,98.0220184326172
+Caribbean small states,CSS,1995,89.2908630371094
+East Asia & Pacific (excluding high income),EAP,1995,76.2424468994141
+Early-demographic dividend,EAR,1995,52.9874382019043
+East Asia & Pacific,EAS,1995,77.0280990600586
+Europe & Central Asia (excluding high income),ECA,1995,91.2532577514648
+Europe & Central Asia,ECS,1995,94.6534423828125
+Fragile and conflict affected situations,FCS,1995,53.2521705627441
+Heavily indebted poor countries (HIPC),HPC,1995,37.2690887451172
+IBRD only,IBD,1995,69.4453277587891
+IDA & IBRD total,IBT,1995,64.7531967163086
+IDA total,IDA,1995,43.0610885620117
+IDA blend,IDB,1995,46.3541793823242
+IDA only,IDX,1995,41.4849700927734
+Kuwait,KWT,1995,74.0
+Latin America & Caribbean (excluding high income),LAC,1995,85.6565475463867
+Lao PDR,LAO,1995,48.0
+Latin America & Caribbean,LCN,1995,86.3721008300781
+Least developed countries: UN classification,LDC,1995,37.7472305297852
+Low income,LIC,1995,38.2984809875488
+Lower middle income,LMC,1995,45.8046417236328
+Low & middle income,LMY,1995,64.1954574584961
+Late-demographic dividend,LTE,1995,79.536979675293
+Maldives,MDV,1995,96.0
+Middle East & North Africa,MEA,1995,51.9755897521973
+Middle income,MIC,1995,65.8776626586914
+Malta,MLT,1995,89.0
+Middle East & North Africa (excluding high income),MNA,1995,49.8226013183594
+Other small states,OSS,1995,72.8957901000977
+Pre-demographic dividend,PRE,1995,42.3439712524414
+South Asia,SAS,1995,36.3256797790527
+Sub-Saharan Africa (excluding high income),SSA,1995,45.1804504394531
+Sub-Saharan Africa,SSF,1995,45.1874313354492
+Small states,SST,1995,77.3764801025391
+East Asia & Pacific (IDA & IBRD countries),TEA,1995,75.8992309570312
+Europe & Central Asia (IDA & IBRD countries),TEC,1995,94.8494491577148
+Turkmenistan,TKM,1995,98.0
+Latin America & the Caribbean (IDA & IBRD countries),TLA,1995,85.9488525390625
+Middle East & North Africa (IDA & IBRD countries),TMN,1995,49.554759979248
+South Asia (IDA & IBRD),TSA,1995,36.3256797790527
+Sub-Saharan Africa (IDA & IBRD countries),TSS,1995,45.1874313354492
+Upper middle income,UMC,1995,77.6555099487305
+World,WLD,1995,70.6088790893555
+Africa Eastern and Southern,AFE,1996,51.8616905212402
+Africa Western and Central,AFW,1996,37.2734413146973
+Arab World,ARB,1996,47.994068145752
+Burkina Faso,BFA,1996,8.0
+Colombia,COL,1996,91.0
+Caribbean small states,CSS,1996,89.5848083496094
+East Asia & Pacific (excluding high income),EAP,1996,76.9634780883789
+Early-demographic dividend,EAR,1996,53.8701515197754
+East Asia & Pacific,EAS,1996,77.7007369995117
+Europe & Central Asia (excluding high income),ECA,1996,91.6206436157227
+Europe & Central Asia,ECS,1996,94.8782272338867
+"Egypt, Arab Rep.",EGY,1996,44.0
+Fragile and conflict affected situations,FCS,1996,53.7076683044434
+Guinea,GIN,1996,10.0
+Heavily indebted poor countries (HIPC),HPC,1996,37.9316291809082
+IBRD only,IBD,1996,70.0962524414062
+IDA & IBRD total,IBT,1996,65.3990631103516
+IDA total,IDA,1996,43.8941802978516
+IDA blend,IDB,1996,47.4113082885742
+IDA only,IDX,1996,42.2046585083008
+"Iran, Islamic Rep.",IRN,1996,66.0
+Latin America & Caribbean (excluding high income),LAC,1996,86.0962219238281
+Latin America & Caribbean,LCN,1996,86.7865524291992
+Least developed countries: UN classification,LDC,1996,38.4643287658691
+Low income,LIC,1996,38.8050498962402
+Lower middle income,LMC,1996,46.744571685791
+Low & middle income,LMY,1996,64.8551712036133
+Late-demographic dividend,LTE,1996,80.1270217895508
+Middle East & North Africa,MEA,1996,53.3722915649414
+Middle income,MIC,1996,66.5597534179688
+Middle East & North Africa (excluding high income),MNA,1996,51.2504997253418
+New Caledonia,NCL,1996,95.0
+Other small states,OSS,1996,73.5185699462891
+Pre-demographic dividend,PRE,1996,43.2214508056641
+South Asia,SAS,1996,37.3126487731934
+Sub-Saharan Africa (excluding high income),SSA,1996,46.0622901916504
+Sub-Saharan Africa,SSF,1996,46.0691604614258
+Small states,SST,1996,77.8708190917969
+East Asia & Pacific (IDA & IBRD countries),TEA,1996,76.6330032348633
+Europe & Central Asia (IDA & IBRD countries),TEC,1996,95.094367980957
+Latin America & the Caribbean (IDA & IBRD countries),TLA,1996,86.3856811523438
+Middle East & North Africa (IDA & IBRD countries),TMN,1996,50.9828910827637
+Tonga,TON,1996,99.0
+South Asia (IDA & IBRD),TSA,1996,37.3126487731934
+Sub-Saharan Africa (IDA & IBRD countries),TSS,1996,46.0691604614258
+Upper middle income,UMC,1996,78.3533172607422
+Uruguay,URY,1996,97.0
+World,WLD,1996,71.1043014526367
+South Africa,ZAF,1996,81.0
+Africa Eastern and Southern,AFE,1997,52.9156608581543
+Africa Western and Central,AFW,1997,38.4017601013184
+Arab World,ARB,1997,49.370548248291
+Caribbean small states,CSS,1997,89.8688812255859
+East Asia & Pacific (excluding high income),EAP,1997,85.0124282836914
+Early-demographic dividend,EAR,1997,54.7390594482422
+East Asia & Pacific,EAS,1997,84.8733367919922
+Europe & Central Asia (excluding high income),ECA,1997,91.8075714111328
+Europe & Central Asia,ECS,1997,95.0500106811523
+Fragile and conflict affected situations,FCS,1997,54.3899688720703
+Heavily indebted poor countries (HIPC),HPC,1997,38.865650177002
+IBRD only,IBD,1997,74.2135162353516
+IDA & IBRD total,IBT,1997,68.9121704101562
+IDA total,IDA,1997,44.8454284667969
+IDA blend,IDB,1997,48.4611206054688
+IDA only,IDX,1997,43.1004104614258
+Latin America & Caribbean (excluding high income),LAC,1997,86.3761978149414
+Latin America & Caribbean,LCN,1997,87.060676574707
+Least developed countries: UN classification,LDC,1997,39.3873405456543
+Low income,LIC,1997,39.6609497070312
+Lower middle income,LMC,1997,47.708911895752
+Low & middle income,LMY,1997,68.4349822998047
+Late-demographic dividend,LTE,1997,86.949348449707
+Middle East & North Africa,MEA,1997,54.7637901306152
+Middle income,MIC,1997,70.3277816772461
+Middle East & North Africa (excluding high income),MNA,1997,52.6767387390137
+Mozambique,MOZ,1997,25.0
+Other small states,OSS,1997,74.0489196777344
+Pre-demographic dividend,PRE,1997,44.3054618835449
+West Bank and Gaza,PSE,1997,80.0
+Qatar,QAT,1997,81.0
+South Asia,SAS,1997,38.3096199035645
+Sub-Saharan Africa (excluding high income),SSA,1997,47.1424217224121
+Sub-Saharan Africa,SSF,1997,47.1491584777832
+Small states,SST,1997,78.30078125
+East Asia & Pacific (IDA & IBRD countries),TEA,1997,84.7990188598633
+Europe & Central Asia (IDA & IBRD countries),TEC,1997,95.2531661987305
+Latin America & the Caribbean (IDA & IBRD countries),TLA,1997,86.676399230957
+Middle East & North Africa (IDA & IBRD countries),TMN,1997,52.4099884033203
+South Asia (IDA & IBRD),TSA,1997,38.3096199035645
+Sub-Saharan Africa (IDA & IBRD countries),TSS,1997,47.1491584777832
+Upper middle income,UMC,1997,84.6334915161133
+World,WLD,1997,73.9001007080078
+Africa Eastern and Southern,AFE,1998,53.2861709594727
+Africa Western and Central,AFW,1998,39.6568298339844
+Arab World,ARB,1998,50.7868881225586
+Cote d'Ivoire,CIV,1998,28.0
+Caribbean small states,CSS,1998,90.1499633789062
+East Asia & Pacific (excluding high income),EAP,1998,85.5623626708984
+Early-demographic dividend,EAR,1998,57.5786781311035
+East Asia & Pacific,EAS,1998,85.4015884399414
+Europe & Central Asia (excluding high income),ECA,1998,92.1829605102539
+Europe & Central Asia,ECS,1998,95.2974700927734
+Fragile and conflict affected situations,FCS,1998,55.060920715332
+Heavily indebted poor countries (HIPC),HPC,1998,39.3017501831055
+IBRD only,IBD,1998,75.7675628662109
+IDA & IBRD total,IBT,1998,70.3898010253906
+IDA total,IDA,1998,46.1753807067871
+IDA blend,IDB,1998,49.4837188720703
+IDA only,IDX,1998,44.5716705322266
+Cambodia,KHM,1998,57.0
+Latin America & Caribbean (excluding high income),LAC,1998,86.7826538085938
+Latin America & Caribbean,LCN,1998,87.4570083618164
+Least developed countries: UN classification,LDC,1998,40.9749488830566
+Low income,LIC,1998,40.402759552002
+Lower middle income,LMC,1998,50.9404716491699
+Low & middle income,LMY,1998,69.939826965332
+Late-demographic dividend,LTE,1998,87.4426727294922
+Middle East & North Africa,MEA,1998,56.2225914001465
+Middle income,MIC,1998,71.8905563354492
+Mali,MLI,1998,12.0
+Middle East & North Africa (excluding high income),MNA,1998,54.1214790344238
+Malawi,MWI,1998,54.0
+Other small states,OSS,1998,74.7796783447266
+Pakistan,PAK,1998,29.0
+Pre-demographic dividend,PRE,1998,44.9764213562012
+South Asia,SAS,1998,42.8381118774414
+Sub-Saharan Africa (excluding high income),SSA,1998,47.8527412414551
+Sub-Saharan Africa,SSF,1998,47.8593482971191
+Small states,SST,1998,78.8684463500977
+East Asia & Pacific (IDA & IBRD countries),TEA,1998,85.3586502075195
+Europe & Central Asia (IDA & IBRD countries),TEC,1998,95.7154388427734
+Latin America & the Caribbean (IDA & IBRD countries),TLA,1998,87.092643737793
+Middle East & North Africa (IDA & IBRD countries),TMN,1998,53.8565483093262
+South Asia (IDA & IBRD),TSA,1998,42.8381118774414
+Sub-Saharan Africa (IDA & IBRD countries),TSS,1998,47.8593482971191
+Upper middle income,UMC,1998,85.1827087402344
+World,WLD,1998,75.0516586303711
+Africa Eastern and Southern,AFE,1999,54.1241188049316
+Africa Western and Central,AFW,1999,40.6893005371094
+Arab World,ARB,1999,52.1447982788086
+Azerbaijan,AZE,1999,98.0
+Belarus,BLR,1999,99.0
+Caribbean small states,CSS,1999,90.4337615966797
+East Asia & Pacific (excluding high income),EAP,1999,85.9904708862305
+Early-demographic dividend,EAR,1999,58.4230194091797
+East Asia & Pacific,EAS,1999,85.8446578979492
+Europe & Central Asia (excluding high income),ECA,1999,92.415657043457
+Europe & Central Asia,ECS,1999,95.4518280029297
+Fragile and conflict affected situations,FCS,1999,55.6824798583984
+Heavily indebted poor countries (HIPC),HPC,1999,40.0975494384766
+IBRD only,IBD,1999,76.2659225463867
+IDA & IBRD total,IBT,1999,70.9259872436523
+IDA total,IDA,1999,47.1303787231445
+IDA blend,IDB,1999,50.5296592712402
+IDA only,IDX,1999,45.4778785705566
+Jamaica,JAM,1999,86.0
+Kazakhstan,KAZ,1999,99.0
+Kyrgyz Republic,KGZ,1999,98.0
+Latin America & Caribbean (excluding high income),LAC,1999,87.1758422851562
+Latin America & Caribbean,LCN,1999,87.82470703125
+Least developed countries: UN classification,LDC,1999,41.9281883239746
+Low income,LIC,1999,41.050708770752
+Lower middle income,LMC,1999,51.8674812316895
+Low & middle income,LMY,1999,70.4912567138672
+Late-demographic dividend,LTE,1999,87.8346099853516
+Middle East & North Africa,MEA,1999,57.6296882629395
+Middle income,MIC,1999,72.4497680664062
+Middle East & North Africa (excluding high income),MNA,1999,55.5533790588379
+Other small states,OSS,1999,75.3600463867188
+Pre-demographic dividend,PRE,1999,45.9284896850586
+South Asia,SAS,1999,43.8919486999512
+Solomon Islands,SLB,1999,69.0
+Sub-Saharan Africa (excluding high income),SSA,1999,48.764461517334
+Sub-Saharan Africa,SSF,1999,48.7709312438965
+Small states,SST,1999,79.3335113525391
+East Asia & Pacific (IDA & IBRD countries),TEA,1999,85.7942886352539
+Europe & Central Asia (IDA & IBRD countries),TEC,1999,95.8154830932617
+Latin America & the Caribbean (IDA & IBRD countries),TLA,1999,87.4782409667969
+Middle East & North Africa (IDA & IBRD countries),TMN,1999,55.2925300598145
+South Asia (IDA & IBRD),TSA,1999,43.8919486999512
+Sub-Saharan Africa (IDA & IBRD countries),TSS,1999,48.7709312438965
+Upper middle income,UMC,1999,85.6735763549805
+Viet Nam,VNM,1999,87.0
+World,WLD,1999,75.4796676635742
+Zambia,ZMB,1999,60.0
+Aruba,ABW,2000,97.0
+Africa Eastern and Southern,AFE,2000,54.8834800720215
+Africa Western and Central,AFW,2000,35.9609794616699
+Arab World,ARB,2000,53.4153785705566
+Burundi,BDI,2000,52.0
+Bosnia and Herzegovina,BIH,2000,94.0
+Brazil,BRA,2000,87.0
+Central African Republic,CAF,2000,35.0
+China,CHN,2000,87.0
+Cote d'Ivoire,CIV,2000,39.0
+Cameroon,CMR,2000,59.0
+Comoros,COM,2000,63.0
+Cabo Verde,CPV,2000,69.4445571899414
+Costa Rica,CRI,2000,95.0
+Caribbean small states,CSS,2000,90.7227020263672
+East Asia & Pacific (excluding high income),EAP,2000,86.4837112426758
+Early-demographic dividend,EAR,2000,59.3237991333008
+East Asia & Pacific,EAS,2000,86.3198089599609
+Europe & Central Asia (excluding high income),ECA,2000,92.3821411132812
+Europe & Central Asia,ECS,2000,95.4768295288086
+Estonia,EST,2000,100.0
+Fragile and conflict affected situations,FCS,2000,53.6383399963379
+Ghana,GHA,2000,50.0
+"Gambia, The",GMB,2000,25.0
+Guinea-Bissau,GNB,2000,27.0
+Equatorial Guinea,GNQ,2000,82.0
+Guam,GUM,2000,99.5699996948242
+Heavily indebted poor countries (HIPC),HPC,2000,41.1893692016602
+IBRD only,IBD,2000,76.7907180786133
+IDA & IBRD total,IBT,2000,71.2205276489258
+IDA total,IDA,2000,46.6376800537109
+IDA blend,IDB,2000,46.9897804260254
+IDA only,IDX,2000,46.4659805297852
+Iraq,IRQ,2000,64.0
+Kenya,KEN,2000,78.0
+Latin America & Caribbean (excluding high income),LAC,2000,87.5532531738281
+Lao PDR,LAO,2000,58.0
+Latin America & Caribbean,LCN,2000,88.1842727661133
+Least developed countries: UN classification,LDC,2000,42.7820892333984
+Low income,LIC,2000,41.6878509521484
+Lower middle income,LMC,2000,52.1195602416992
+Low & middle income,LMY,2000,70.789680480957
+Lesotho,LSO,2000,92.0
+Late-demographic dividend,LTE,2000,88.1921081542969
+Latvia,LVA,2000,100.0
+Moldova,MDA,2000,95.0
+Madagascar,MDG,2000,65.0
+Maldives,MDV,2000,96.0
+Middle East & North Africa,MEA,2000,58.9530715942383
+Mexico,MEX,2000,89.0
+Middle income,MIC,2000,72.7409133911133
+Myanmar,MMR,2000,86.0
+Middle East & North Africa (excluding high income),MNA,2000,56.8886184692383
+Mongolia,MNG,2000,98.0
+Mauritania,MRT,2000,43.0
+Mauritius,MUS,2000,81.0
+Other small states,OSS,2000,75.2136306762695
+Panama,PAN,2000,91.0
+Philippines,PHL,2000,93.0
+Papua New Guinea,PNG,2000,51.0
+Pre-demographic dividend,PRE,2000,44.0108795166016
+Rwanda,RWA,2000,60.0
+South Asia,SAS,2000,44.9287490844727
+Saudi Arabia,SAU,2000,69.0
+Sudan,SDN,2000,52.0
+Singapore,SGP,2000,89.0
+Sub-Saharan Africa (excluding high income),SSA,2000,47.3392486572266
+Sub-Saharan Africa,SSF,2000,47.3460006713867
+Small states,SST,2000,79.3312301635742
+Eswatini,SWZ,2000,80.0
+Chad,TCD,2000,13.0
+East Asia & Pacific (IDA & IBRD countries),TEA,2000,86.2959213256836
+Europe & Central Asia (IDA & IBRD countries),TEC,2000,95.8181762695312
+Togo,TGO,2000,38.0
+Thailand,THA,2000,91.0
+Tajikistan,TJK,2000,99.0
+Latin America & the Caribbean (IDA & IBRD countries),TLA,2000,87.8553085327148
+Middle East & North Africa (IDA & IBRD countries),TMN,2000,56.6311988830566
+South Asia (IDA & IBRD),TSA,2000,44.9287490844727
+Sub-Saharan Africa (IDA & IBRD countries),TSS,2000,47.3460006713867
+Trinidad and Tobago,TTO,2000,97.0999984741211
+Upper middle income,UMC,2000,86.1647186279297
+Uzbekistan,UZB,2000,98.0
+Viet Nam,VNM,2000,87.0
+World,WLD,2000,75.6943511962891
+Africa Eastern and Southern,AFE,2001,55.6412506103516
+Africa Western and Central,AFW,2001,37.2136192321777
+Angola,AGO,2001,54.0
+Albania,ALB,2001,98.0
+Arab World,ARB,2001,54.7703285217285
+Argentina,ARG,2001,97.0
+Armenia,ARM,2001,99.0
+Antigua and Barbuda,ATG,2001,99.0
+Bangladesh,BGD,2001,41.0
+Bulgaria,BGR,2001,98.0
+Bahrain,BHR,2001,84.0
+Belize,BLZ,2001,81.3000030517578
+Bolivia,BOL,2001,81.0
+Brunei Darussalam,BRN,2001,90.0
+"Congo, Dem. Rep.",COD,2001,54.0
+Caribbean small states,CSS,2001,90.9726333618164
+Cyprus,CYP,2001,95.0
+East Asia & Pacific (excluding high income),EAP,2001,86.9706573486328
+Early-demographic dividend,EAR,2001,60.1137390136719
+East Asia & Pacific,EAS,2001,86.7910385131836
+Europe & Central Asia (excluding high income),ECA,2001,92.6148223876953
+Europe & Central Asia,ECS,2001,95.6156234741211
+Ecuador,ECU,2001,90.0
+Fragile and conflict affected situations,FCS,2001,54.2649383544922
+Greece,GRC,2001,94.0
+Honduras,HND,2001,80.0
+Heavily indebted poor countries (HIPC),HPC,2001,42.2231483459473
+Croatia,HRV,2001,97.0
+IBRD only,IBD,2001,77.2893829345703
+IDA & IBRD total,IBT,2001,71.7464904785156
+IDA total,IDA,2001,47.5605201721191
+IDA blend,IDB,2001,47.9043006896973
+IDA only,IDX,2001,47.3915481567383
+India,IND,2001,48.0
+Italy,ITA,2001,98.0
+Latin America & Caribbean (excluding high income),LAC,2001,87.6823577880859
+Lao PDR,LAO,2001,61.0
+Latin America & Caribbean,LCN,2001,88.3169021606445
+Least developed countries: UN classification,LDC,2001,43.7628402709961
+Low income,LIC,2001,42.4987602233887
+Sri Lanka,LKA,2001,89.0
+Lower middle income,LMC,2001,53.0787086486816
+Low & middle income,LMY,2001,71.3273391723633
+Late-demographic dividend,LTE,2001,88.5968399047852
+Lithuania,LTU,2001,100.0
+"Macao SAR, China",MAC,2001,88.0
+Middle East & North Africa,MEA,2001,60.3362083435059
+Middle income,MIC,2001,73.2731628417969
+Middle East & North Africa (excluding high income),MNA,2001,58.3152503967285
+Namibia,NAM,2001,84.0
+Niger,NER,2001,9.0
+Nicaragua,NIC,2001,77.0
+Nepal,NPL,2001,35.0
+Other small states,OSS,2001,75.7852325439453
+Pre-demographic dividend,PRE,2001,45.1035194396973
+South Asia,SAS,2001,45.9582786560059
+Sub-Saharan Africa (excluding high income),SSA,2001,48.2938194274902
+Sub-Saharan Africa,SSF,2001,48.3004112243652
+Small states,SST,2001,79.7881774902344
+Sao Tome and Principe,STP,2001,78.0
+Slovenia,SVN,2001,99.5999984741211
+East Asia & Pacific (IDA & IBRD countries),TEA,2001,86.7906112670898
+Europe & Central Asia (IDA & IBRD countries),TEC,2001,95.943733215332
+Latin America & the Caribbean (IDA & IBRD countries),TLA,2001,87.9952621459961
+Timor-Leste,TLS,2001,30.0
+Middle East & North Africa (IDA & IBRD countries),TMN,2001,58.0623817443848
+South Asia (IDA & IBRD),TSA,2001,45.9582786560059
+Sub-Saharan Africa (IDA & IBRD countries),TSS,2001,48.3004112243652
+Ukraine,UKR,2001,99.0
+Upper middle income,UMC,2001,86.5932235717773
+"Venezuela, RB",VEN,2001,93.0
+World,WLD,2001,76.1056976318359
+Africa Eastern and Southern,AFE,2002,55.4601898193359
+Africa Western and Central,AFW,2002,38.1161308288574
+Arab World,ARB,2002,56.0812683105469
+Benin,BEN,2002,23.0
+Chile,CHL,2002,96.0
+Caribbean small states,CSS,2002,91.1992568969727
+Cuba,CUB,2002,100.0
+Dominican Republic,DOM,2002,87.0
+Algeria,DZA,2002,60.0
+East Asia & Pacific (excluding high income),EAP,2002,87.4592666625977
+Early-demographic dividend,EAR,2002,60.8010101318359
+East Asia & Pacific,EAS,2002,87.2851104736328
+Europe & Central Asia (excluding high income),ECA,2002,92.8419799804688
+Europe & Central Asia,ECS,2002,95.7979202270508
+Eritrea,ERI,2002,40.0
+Fragile and conflict affected situations,FCS,2002,54.1939315795898
+Georgia,GEO,2002,100.0
+Guatemala,GTM,2002,63.0
+Heavily indebted poor countries (HIPC),HPC,2002,42.244701385498
+IBRD only,IBD,2002,77.8230133056641
+IDA & IBRD total,IBT,2002,72.2334899902344
+IDA total,IDA,2002,48.0789413452148
+IDA blend,IDB,2002,48.8137092590332
+IDA only,IDX,2002,47.7164688110352
+"Iran, Islamic Rep.",IRN,2002,70.0
+Latin America & Caribbean (excluding high income),LAC,2002,88.0182723999023
+Latin America & Caribbean,LCN,2002,88.6347122192383
+Least developed countries: UN classification,LDC,2002,44.0654716491699
+Low income,LIC,2002,42.1754112243652
+Lower middle income,LMC,2002,54.0183410644531
+Low & middle income,LMY,2002,71.8285903930664
+Late-demographic dividend,LTE,2002,88.9813232421875
+Middle East & North Africa,MEA,2002,61.6569709777832
+Mexico,MEX,2002,89.0
+Middle income,MIC,2002,73.8471221923828
+North Macedonia,MKD,2002,94.0
+Middle East & North Africa (excluding high income),MNA,2002,59.6269989013672
+Other small states,OSS,2002,76.5529327392578
+Pre-demographic dividend,PRE,2002,46.1293601989746
+Romania,ROU,2002,96.0
+Russian Federation,RUS,2002,99.0
+South Asia,SAS,2002,46.9998512268066
+Senegal,SEN,2002,29.0
+Sub-Saharan Africa (excluding high income),SSA,2002,48.5487594604492
+Sub-Saharan Africa,SSF,2002,48.5553016662598
+Small states,SST,2002,80.3766403198242
+Seychelles,SYC,2002,92.0
+Syrian Arab Republic,SYR,2002,74.0
+East Asia & Pacific (IDA & IBRD countries),TEA,2002,87.2875671386719
+Europe & Central Asia (IDA & IBRD countries),TEC,2002,96.0656509399414
+Latin America & the Caribbean (IDA & IBRD countries),TLA,2002,88.3267135620117
+Middle East & North Africa (IDA & IBRD countries),TMN,2002,59.3623695373535
+South Asia (IDA & IBRD),TSA,2002,46.9998512268066
+Sub-Saharan Africa (IDA & IBRD countries),TSS,2002,48.5553016662598
+Tanzania,TZA,2002,62.0
+Uganda,UGA,2002,59.0
+Upper middle income,UMC,2002,87.0633087158203
+World,WLD,2002,76.5043029785156
+Zambia,ZMB,2002,62.0
+Africa Eastern and Southern,AFE,2003,56.1388816833496
+Africa Western and Central,AFW,2003,39.003490447998
+Arab World,ARB,2003,58.5280990600586
+Burkina Faso,BFA,2003,15.0
+Botswana,BWA,2003,82.0
+Caribbean small states,CSS,2003,91.4108428955078
+East Asia & Pacific (excluding high income),EAP,2003,87.9780502319336
+Early-demographic dividend,EAR,2003,61.7117385864258
+East Asia & Pacific,EAS,2003,87.8226928710938
+Europe & Central Asia (excluding high income),ECA,2003,93.0611801147461
+Europe & Central Asia,ECS,2003,95.9312973022461
+Fragile and conflict affected situations,FCS,2003,54.5534400939941
+Guinea,GIN,2003,18.0
+Heavily indebted poor countries (HIPC),HPC,2003,43.0299491882324
+Haiti,HTI,2003,55.0
+IBRD only,IBD,2003,78.4969024658203
+IDA & IBRD total,IBT,2003,72.8534393310547
+IDA total,IDA,2003,48.6844100952148
+IDA blend,IDB,2003,48.9613189697266
+IDA only,IDX,2003,48.5481910705566
+Jordan,JOR,2003,85.0
+Latin America & Caribbean (excluding high income),LAC,2003,88.7823104858398
+Latin America & Caribbean,LCN,2003,89.3313064575195
+Least developed countries: UN classification,LDC,2003,44.9481010437012
+Low income,LIC,2003,42.8109092712402
+Lower middle income,LMC,2003,55.0194206237793
+Low & middle income,LMY,2003,72.4624328613281
+Late-demographic dividend,LTE,2003,89.462043762207
+Middle East & North Africa,MEA,2003,63.9267997741699
+Middle income,MIC,2003,74.5051422119141
+Mali,MLI,2003,16.0
+Middle East & North Africa (excluding high income),MNA,2003,61.9834785461426
+Montenegro,MNE,2003,96.0
+Mozambique,MOZ,2003,33.0
+North America,NAC,2003,98.5432586669922
+Nigeria,NGA,2003,43.0
+Oman,OMN,2003,74.0
+Other small states,OSS,2003,77.2199935913086
+Philippines,PHL,2003,94.0
+Pre-demographic dividend,PRE,2003,46.903678894043
+South Asia,SAS,2003,47.8515281677246
+Serbia,SRB,2003,94.0
+Sub-Saharan Africa (excluding high income),SSA,2003,49.3130302429199
+Sub-Saharan Africa,SSF,2003,49.319450378418
+Small states,SST,2003,80.8918304443359
+East Asia & Pacific (IDA & IBRD countries),TEA,2003,87.8151473999023
+Europe & Central Asia (IDA & IBRD countries),TEC,2003,96.1843032836914
+Latin America & the Caribbean (IDA & IBRD countries),TLA,2003,89.0497512817383
+Middle East & North Africa (IDA & IBRD countries),TMN,2003,61.7332992553711
+South Asia (IDA & IBRD),TSA,2003,47.8515281677246
+Sub-Saharan Africa (IDA & IBRD countries),TSS,2003,49.319450378418
+Upper middle income,UMC,2003,87.6196136474609
+World,WLD,2003,77.0090103149414
+Africa Eastern and Southern,AFE,2004,56.5084190368652
+Africa Western and Central,AFW,2004,40.1081504821777
+Arab World,ARB,2004,59.6798782348633
+Brazil,BRA,2004,89.0
+Colombia,COL,2004,93.0
+Caribbean small states,CSS,2004,91.6056594848633
+East Asia & Pacific (excluding high income),EAP,2004,88.4117202758789
+Early-demographic dividend,EAR,2004,62.5539398193359
+East Asia & Pacific,EAS,2004,88.2631378173828
+Europe & Central Asia (excluding high income),ECA,2004,93.2535934448242
+Europe & Central Asia,ECS,2004,96.0554504394531
+Spain,ESP,2004,96.0
+Ethiopia,ETH,2004,22.7999992370605
+Fragile and conflict affected situations,FCS,2004,55.0578117370605
+Heavily indebted poor countries (HIPC),HPC,2004,43.5509185791016
+IBRD only,IBD,2004,79.0157775878906
+IDA & IBRD total,IBT,2004,73.3681869506836
+IDA total,IDA,2004,49.4048004150391
+IDA blend,IDB,2004,49.8862686157227
+Indonesia,IDN,2004,87.0
+IDA only,IDX,2004,49.1680717468262
+Cambodia,KHM,2004,64.0
+Latin America & Caribbean (excluding high income),LAC,2004,89.1201324462891
+Latin America & Caribbean,LCN,2004,89.6518402099609
+Least developed countries: UN classification,LDC,2004,45.6014518737793
+Low income,LIC,2004,43.166088104248
+Lower middle income,LMC,2004,55.9456596374512
+Low & middle income,LMY,2004,72.9883499145508
+Late-demographic dividend,LTE,2004,89.8139038085938
+Morocco,MAR,2004,40.0
+Middle East & North Africa,MEA,2004,65.0543594360352
+Mexico,MEX,2004,90.0
+Middle income,MIC,2004,75.0654373168945
+Middle East & North Africa (excluding high income),MNA,2004,63.151611328125
+North America,NAC,2004,98.5586700439453
+Other small states,OSS,2004,77.8532333374023
+Peru,PER,2004,82.0
+Pre-demographic dividend,PRE,2004,47.5103492736816
+West Bank and Gaza,PSE,2004,89.0
+Qatar,QAT,2004,89.0
+South Asia,SAS,2004,48.8937492370605
+Saudi Arabia,SAU,2004,76.0
+Sierra Leone,SLE,2004,24.0
+Sub-Saharan Africa (excluding high income),SSA,2004,49.977668762207
+Sub-Saharan Africa,SSF,2004,49.983959197998
+Small states,SST,2004,81.3821563720703
+Suriname,SUR,2004,87.0
+Syrian Arab Republic,SYR,2004,74.0
+Chad,TCD,2004,18.0
+East Asia & Pacific (IDA & IBRD countries),TEA,2004,88.2556915283203
+Europe & Central Asia (IDA & IBRD countries),TEC,2004,96.2853469848633
+Latin America & the Caribbean (IDA & IBRD countries),TLA,2004,89.3830032348633
+Middle East & North Africa (IDA & IBRD countries),TMN,2004,62.9054489135742
+South Asia (IDA & IBRD),TSA,2004,48.8937492370605
+Sub-Saharan Africa (IDA & IBRD countries),TSS,2004,49.983959197998
+Tunisia,TUN,2004,65.0
+Turkiye,TUR,2004,80.0
+Upper middle income,UMC,2004,88.0634384155273
+Vanuatu,VUT,2004,76.1999969482422
+World,WLD,2004,77.4225311279297
+"Yemen, Rep.",YEM,2004,35.0
+Africa Eastern and Southern,AFE,2005,56.0260696411133
+Africa Western and Central,AFW,2005,40.3692092895508
+Arab World,ARB,2005,60.4492301940918
+United Arab Emirates,ARE,2005,91.0
+Burkina Faso,BFA,2005,17.0
+Bhutan,BTN,2005,39.0
+"Congo, Rep.",COG,2005,67.0
+Colombia,COL,2005,93.0
+Caribbean small states,CSS,2005,91.8345413208008
+East Asia & Pacific (excluding high income),EAP,2005,88.8684463500977
+Early-demographic dividend,EAR,2005,62.1905899047852
+East Asia & Pacific,EAS,2005,88.7313995361328
+Europe & Central Asia (excluding high income),ECA,2005,93.589973449707
+Europe & Central Asia,ECS,2005,96.1941070556641
+"Egypt, Arab Rep.",EGY,2005,56.0
+Spain,ESP,2005,97.0
+Ethiopia,ETH,2005,17.9771995544434
+Fragile and conflict affected situations,FCS,2005,55.3965110778809
+Heavily indebted poor countries (HIPC),HPC,2005,43.935230255127
+IBRD only,IBD,2005,78.85205078125
+IDA & IBRD total,IBT,2005,73.2476501464844
+IDA total,IDA,2005,49.6843490600586
+IDA blend,IDB,2005,49.5476112365723
+IDA only,IDX,2005,49.7515983581543
+"Iran, Islamic Rep.",IRN,2005,77.0
+Jordan,JOR,2005,87.0
+Kuwait,KWT,2005,91.0
+Latin America & Caribbean (excluding high income),LAC,2005,88.7517395019531
+Lao PDR,LAO,2005,63.0
+Latin America & Caribbean,LCN,2005,89.3398666381836
+Least developed countries: UN classification,LDC,2005,46.1992492675781
+Low income,LIC,2005,43.6273498535156
+Lower middle income,LMC,2005,55.3785095214844
+Low & middle income,LMY,2005,72.8681564331055
+Late-demographic dividend,LTE,2005,90.1844787597656
+Madagascar,MDG,2005,55.0
+Middle East & North Africa,MEA,2005,65.9251022338867
+Mexico,MEX,2005,90.0
+Middle income,MIC,2005,74.9259796142578
+Malta,MLT,2005,94.0
+Middle East & North Africa (excluding high income),MNA,2005,64.0413208007812
+North America,NAC,2005,98.5711898803711
+Niger,NER,2005,15.0
+Nicaragua,NIC,2005,78.0
+Other small states,OSS,2005,78.4730529785156
+Pakistan,PAK,2005,35.0
+Peru,PER,2005,82.0
+Pre-demographic dividend,PRE,2005,47.199089050293
+South Asia,SAS,2005,48.0866203308105
+Sub-Saharan Africa (excluding high income),SSA,2005,49.7925186157227
+Sub-Saharan Africa,SSF,2005,49.7987899780273
+Small states,SST,2005,81.8629684448242
+East Asia & Pacific (IDA & IBRD countries),TEA,2005,88.7195892333984
+Europe & Central Asia (IDA & IBRD countries),TEC,2005,96.4536666870117
+Thailand,THA,2005,92.0
+Turkmenistan,TKM,2005,99.1999969482422
+Latin America & the Caribbean (IDA & IBRD countries),TLA,2005,89.0618286132812
+Middle East & North Africa (IDA & IBRD countries),TMN,2005,63.7964782714844
+South Asia (IDA & IBRD),TSA,2005,48.0866203308105
+Sub-Saharan Africa (IDA & IBRD countries),TSS,2005,49.7987899780273
+Turkiye,TUR,2005,81.0
+Upper middle income,UMC,2005,88.3706893920898
+World,WLD,2005,77.3224792480469
+Africa Eastern and Southern,AFE,2006,54.0479316711426
+Africa Western and Central,AFW,2006,41.2950096130371
+Arab World,ARB,2006,59.2362213134766
+Benin,BEN,2006,18.4429092407227
+Burkina Faso,BFA,2006,16.0
+Brazil,BRA,2006,90.0
+Colombia,COL,2006,92.0
+Caribbean small states,CSS,2006,91.9608383178711
+Algeria,DZA,2006,64.0
+East Asia & Pacific (excluding high income),EAP,2006,89.3567199707031
+Early-demographic dividend,EAR,2006,62.5313491821289
+East Asia & Pacific,EAS,2006,89.2144317626953
+Europe & Central Asia (excluding high income),ECA,2006,93.4516372680664
+Europe & Central Asia,ECS,2006,96.2796478271484
+"Egypt, Arab Rep.",EGY,2006,58.0
+Spain,ESP,2006,97.0
+Fragile and conflict affected situations,FCS,2006,54.1495399475098
+Heavily indebted poor countries (HIPC),HPC,2006,42.3223686218262
+Haiti,HTI,2006,44.5994491577148
+IBRD only,IBD,2006,79.3115768432617
+IDA & IBRD total,IBT,2006,73.3795013427734
+IDA total,IDA,2006,48.6713600158691
+IDA blend,IDB,2006,50.4376602172852
+Indonesia,IDN,2006,89.0
+IDA only,IDX,2006,47.8036994934082
+India,IND,2006,51.0
+"Iran, Islamic Rep.",IRN,2006,77.0
+Kuwait,KWT,2006,91.0
+Latin America & Caribbean (excluding high income),LAC,2006,88.9044570922852
+Latin America & Caribbean,LCN,2006,89.5406265258789
+Least developed countries: UN classification,LDC,2006,44.0000114440918
+Low income,LIC,2006,41.7581901550293
+Sri Lanka,LKA,2006,89.0
+Lower middle income,LMC,2006,55.7310485839844
+Low & middle income,LMY,2006,72.9990997314453
+Late-demographic dividend,LTE,2006,90.5514984130859
+"Macao SAR, China",MAC,2006,91.0
+Maldives,MDV,2006,98.0
+Middle East & North Africa,MEA,2006,65.7394027709961
+Mexico,MEX,2006,90.0
+Middle income,MIC,2006,75.2248229980469
+Mali,MLI,2006,18.0
+Middle East & North Africa (excluding high income),MNA,2006,63.6839408874512
+North America,NAC,2006,98.5914535522461
+New Caledonia,NCL,2006,96.9000015258789
+Nigeria,NGA,2006,64.0
+Other small states,OSS,2006,78.1866073608398
+Pakistan,PAK,2006,40.0
+Peru,PER,2006,83.0
+Pre-demographic dividend,PRE,2006,46.1156311035156
+West Bank and Gaza,PSE,2006,90.0
+South Asia,SAS,2006,48.6133499145508
+Senegal,SEN,2006,33.0
+El Salvador,SLV,2006,81.0
+Sub-Saharan Africa (excluding high income),SSA,2006,48.9709815979004
+Sub-Saharan Africa,SSF,2006,48.9773406982422
+Small states,SST,2006,81.6776885986328
+East Asia & Pacific (IDA & IBRD countries),TEA,2006,89.2154083251953
+Europe & Central Asia (IDA & IBRD countries),TEC,2006,96.3966369628906
+Togo,TGO,2006,44.0
+Latin America & the Caribbean (IDA & IBRD countries),TLA,2006,89.2715835571289
+Middle East & North Africa (IDA & IBRD countries),TMN,2006,63.4260406494141
+Tonga,TON,2006,99.0
+South Asia (IDA & IBRD),TSA,2006,48.6133499145508
+Sub-Saharan Africa (IDA & IBRD countries),TSS,2006,48.9773406982422
+Turkiye,TUR,2006,80.0
+Uganda,UGA,2006,62.0
+Upper middle income,UMC,2006,88.7621612548828
+Uruguay,URY,2006,98.0
+World,WLD,2006,77.4337387084961
+Africa Eastern and Southern,AFE,2007,55.2990112304688
+Africa Western and Central,AFW,2007,39.923210144043
+Arab World,ARB,2007,60.2265815734863
+Azerbaijan,AZE,2007,99.0
+Burkina Faso,BFA,2007,21.0
+Bangladesh,BGD,2007,43.7408485412598
+Bolivia,BOL,2007,86.0
+Brazil,BRA,2007,90.0
+Cameroon,CMR,2007,63.0
+"Congo, Dem. Rep.",COD,2007,46.1042518615723
+Colombia,COL,2007,93.0
+Caribbean small states,CSS,2007,92.5783996582031
+Cayman Islands,CYM,2007,99.0
+Dominican Republic,DOM,2007,88.0
+East Asia & Pacific (excluding high income),EAP,2007,91.0501403808594
+Early-demographic dividend,EAR,2007,63.827880859375
+East Asia & Pacific,EAS,2007,90.8036575317383
+Europe & Central Asia (excluding high income),ECA,2007,93.7175064086914
+Europe & Central Asia,ECS,2007,96.3991165161133
+Ecuador,ECU,2007,91.0
+Spain,ESP,2007,97.0
+Ethiopia,ETH,2007,29.0
+Fragile and conflict affected situations,FCS,2007,54.2341003417969
+Honduras,HND,2007,83.0
+Heavily indebted poor countries (HIPC),HPC,2007,43.9621696472168
+IBRD only,IBD,2007,80.5228118896484
+IDA & IBRD total,IBT,2007,74.4173965454102
+IDA total,IDA,2007,49.2826690673828
+IDA blend,IDB,2007,49.5793800354004
+IDA only,IDX,2007,49.1370086669922
+Jordan,JOR,2007,89.0
+Kenya,KEN,2007,66.8631210327148
+Kuwait,KWT,2007,92.0
+Latin America & Caribbean (excluding high income),LAC,2007,90.122673034668
+Lebanon,LBN,2007,86.0
+Liberia,LBR,2007,27.0349102020264
+Latin America & Caribbean,LCN,2007,90.7268676757812
+Least developed countries: UN classification,LDC,2007,45.2425689697266
+Low income,LIC,2007,43.2131690979004
+Lower middle income,LMC,2007,56.5589790344238
+Low & middle income,LMY,2007,74.0482177734375
+Late-demographic dividend,LTE,2007,91.9520797729492
+Middle East & North Africa,MEA,2007,66.6721496582031
+Mexico,MEX,2007,91.0
+Middle income,MIC,2007,76.2801895141602
+Middle East & North Africa (excluding high income),MNA,2007,64.5603485107422
+Mauritania,MRT,2007,35.3484306335449
+North America,NAC,2007,98.6036987304688
+Namibia,NAM,2007,78.3509826660156
+Other small states,OSS,2007,77.7889099121094
+Pakistan,PAK,2007,38.0
+Peru,PER,2007,85.0
+Pre-demographic dividend,PRE,2007,45.3380317687988
+Paraguay,PRY,2007,93.0
+West Bank and Gaza,PSE,2007,90.0
+Qatar,QAT,2007,90.0
+South Asia,SAS,2007,49.7670516967773
+El Salvador,SLV,2007,80.0
+Sub-Saharan Africa (excluding high income),SSA,2007,49.1843681335449
+Sub-Saharan Africa,SSF,2007,49.1906585693359
+Small states,SST,2007,81.521598815918
+East Asia & Pacific (IDA & IBRD countries),TEA,2007,90.9317398071289
+Europe & Central Asia (IDA & IBRD countries),TEC,2007,96.5292510986328
+Latin America & the Caribbean (IDA & IBRD countries),TLA,2007,90.4984893798828
+Timor-Leste,TLS,2007,43.0
+Middle East & North Africa (IDA & IBRD countries),TMN,2007,64.304573059082
+South Asia (IDA & IBRD),TSA,2007,49.7670516967773
+Sub-Saharan Africa (IDA & IBRD countries),TSS,2007,49.1906585693359
+Tunisia,TUN,2007,69.0
+Turkiye,TUR,2007,81.0
+Upper middle income,UMC,2007,90.2290878295898
+Uruguay,URY,2007,98.0
+"Venezuela, RB",VEN,2007,95.0
+World,WLD,2007,78.2909088134766
+South Africa,ZAF,2007,87.0
+Zambia,ZMB,2007,51.7869682312012
+Africa Eastern and Southern,AFE,2008,55.5741996765137
+Africa Western and Central,AFW,2008,40.5154495239258
+Albania,ALB,2008,95.0
+Arab World,ARB,2008,61.5108299255371
+Burundi,BDI,2008,43.0
+Bolivia,BOL,2008,87.0
+Brazil,BRA,2008,90.0
+Colombia,COL,2008,93.0
+Caribbean small states,CSS,2008,92.7727432250977
+Algeria,DZA,2008,68.0
+East Asia & Pacific (excluding high income),EAP,2008,91.4657516479492
+Early-demographic dividend,EAR,2008,64.9086380004883
+East Asia & Pacific,EAS,2008,91.2227935791016
+Europe & Central Asia (excluding high income),ECA,2008,93.9079513549805
+Europe & Central Asia,ECS,2008,96.5767211914062
+Ecuador,ECU,2008,91.0
+Eritrea,ERI,2008,55.0
+Spain,ESP,2008,97.0
+Fragile and conflict affected situations,FCS,2008,54.7046394348145
+Heavily indebted poor countries (HIPC),HPC,2008,44.3913993835449
+IBRD only,IBD,2008,81.1361999511719
+IDA & IBRD total,IBT,2008,74.9826736450195
+IDA total,IDA,2008,49.9463500976562
+IDA blend,IDB,2008,50.522289276123
+Indonesia,IDN,2008,89.0
+IDA only,IDX,2008,49.6634902954102
+"Iran, Islamic Rep.",IRN,2008,78.0
+Cambodia,KHM,2008,70.0
+"Korea, Rep.",KOR,2008,98.0
+Kuwait,KWT,2008,92.0
+Latin America & Caribbean (excluding high income),LAC,2008,90.4724197387695
+Latin America & Caribbean,LCN,2008,91.0545196533203
+Least developed countries: UN classification,LDC,2008,45.7178916931152
+Low income,LIC,2008,44.2454490661621
+Sri Lanka,LKA,2008,89.0
+Lower middle income,LMC,2008,57.391529083252
+Low & middle income,LMY,2008,74.6257934570312
+Late-demographic dividend,LTE,2008,92.2506713867188
+Morocco,MAR,2008,43.0
+Middle East & North Africa,MEA,2008,68.9289321899414
+Mexico,MEX,2008,91.0
+Middle income,MIC,2008,76.8558120727539
+Middle East & North Africa (excluding high income),MNA,2008,66.9091873168945
+North America,NAC,2008,98.6305313110352
+Nigeria,NGA,2008,41.3867607116699
+Oman,OMN,2008,81.0
+Other small states,OSS,2008,78.5494918823242
+Pakistan,PAK,2008,40.0
+Philippines,PHL,2008,96.0
+Pre-demographic dividend,PRE,2008,45.7337188720703
+"Korea, Dem. People's Rep.",PRK,2008,100.0
+Paraguay,PRY,2008,92.0
+West Bank and Gaza,PSE,2008,91.0
+Qatar,QAT,2008,93.0
+South Asia,SAS,2008,50.9046401977539
+Sudan,SDN,2008,47.0
+El Salvador,SLV,2008,81.0
+Sub-Saharan Africa (excluding high income),SSA,2008,49.5908393859863
+South Sudan,SSD,2008,19.0
+Sub-Saharan Africa,SSF,2008,49.5970001220703
+Small states,SST,2008,82.0863723754883
+Sao Tome and Principe,STP,2008,60.0830307006836
+Suriname,SUR,2008,94.0
+East Asia & Pacific (IDA & IBRD countries),TEA,2008,91.3531494140625
+Europe & Central Asia (IDA & IBRD countries),TEC,2008,96.6995086669922
+Latin America & the Caribbean (IDA & IBRD countries),TLA,2008,90.8379669189453
+Middle East & North Africa (IDA & IBRD countries),TMN,2008,66.6686477661133
+South Asia (IDA & IBRD),TSA,2008,50.9046401977539
+Sub-Saharan Africa (IDA & IBRD countries),TSS,2008,49.5970001220703
+Tunisia,TUN,2008,69.0
+Upper middle income,UMC,2008,90.7956695556641
+Uruguay,URY,2008,98.0
+World,WLD,2008,78.7642364501953
+Africa Eastern and Southern,AFE,2009,56.4384613037109
+Africa Western and Central,AFW,2009,40.5085792541504
+Arab World,ARB,2009,60.0424995422363
+Azerbaijan,AZE,2009,100.0
+Belarus,BLR,2009,99.0
+Bolivia,BOL,2009,87.0
+Brazil,BRA,2009,90.0
+Colombia,COL,2009,93.0
+East Asia & Pacific (excluding high income),EAP,2009,91.9042816162109
+Early-demographic dividend,EAR,2009,65.8659591674805
+East Asia & Pacific,EAS,2009,91.6461029052734
+Europe & Central Asia (excluding high income),ECA,2009,95.3482513427734
+Europe & Central Asia,ECS,2009,96.9983291625977
+Ecuador,ECU,2009,91.0
+Spain,ESP,2009,97.0
+Fragile and conflict affected situations,FCS,2009,53.8899688720703
+Greece,GRC,2009,92.0
+Guyana,GUY,2009,87.2519836425781
+Heavily indebted poor countries (HIPC),HPC,2009,44.6898498535156
+IBRD only,IBD,2009,81.5836868286133
+IDA & IBRD total,IBT,2009,75.3708801269531
+IDA total,IDA,2009,50.3816184997559
+IDA blend,IDB,2009,51.3270797729492
+Indonesia,IDN,2009,90.0
+IDA only,IDX,2009,49.9167289733887
+Kazakhstan,KAZ,2009,100.0
+Kyrgyz Republic,KGZ,2009,99.0
+Cambodia,KHM,2009,69.0
+Latin America & Caribbean (excluding high income),LAC,2009,90.7022476196289
+Lebanon,LBN,2009,88.0
+Latin America & Caribbean,LCN,2009,91.2600936889648
+Least developed countries: UN classification,LDC,2009,46.3741989135742
+Low income,LIC,2009,44.7389602661133
+Lower middle income,LMC,2009,58.2235412597656
+Low & middle income,LMY,2009,75.0185012817383
+Lesotho,LSO,2009,84.9639587402344
+Late-demographic dividend,LTE,2009,92.640007019043
+Morocco,MAR,2009,44.0
+Madagascar,MDG,2009,61.6414108276367
+Middle East & North Africa,MEA,2009,67.7266235351562
+Mexico,MEX,2009,92.0
+Middle income,MIC,2009,77.2734603881836
+Middle East & North Africa (excluding high income),MNA,2009,65.3731002807617
+Mozambique,MOZ,2009,36.0
+Other small states,OSS,2009,77.8503494262695
+Pakistan,PAK,2009,40.0
+Pre-demographic dividend,PRE,2009,44.5751419067383
+Paraguay,PRY,2009,93.0
+West Bank and Gaza,PSE,2009,91.0
+Qatar,QAT,2009,93.0
+South Asia,SAS,2009,51.9638710021973
+Senegal,SEN,2009,37.0
+El Salvador,SLV,2009,82.0
+Sub-Saharan Africa (excluding high income),SSA,2009,50.1145210266113
+Sub-Saharan Africa,SSF,2009,50.1205711364746
+Small states,SST,2009,81.6096420288086
+East Asia & Pacific (IDA & IBRD countries),TEA,2009,91.7976989746094
+Europe & Central Asia (IDA & IBRD countries),TEC,2009,97.4484329223633
+Togo,TGO,2009,44.0
+Latin America & the Caribbean (IDA & IBRD countries),TLA,2009,91.053337097168
+Middle East & North Africa (IDA & IBRD countries),TMN,2009,65.1082000732422
+South Asia (IDA & IBRD),TSA,2009,51.9638710021973
+Sub-Saharan Africa (IDA & IBRD countries),TSS,2009,50.1205711364746
+Turkiye,TUR,2009,85.0
+Upper middle income,UMC,2009,91.074821472168
+Uruguay,URY,2009,99.0
+"Venezuela, RB",VEN,2009,95.0
+Viet Nam,VNM,2009,91.0
+World,WLD,2009,79.0794677734375
+South Africa,ZAF,2009,92.0
+Aruba,ABW,2010,97.0
+Africa Eastern and Southern,AFE,2010,57.3303909301758
+Africa Western and Central,AFW,2010,41.5085716247559
+Arab World,ARB,2010,60.8966102600098
+Azerbaijan,AZE,2010,100.0
+Brazil,BRA,2010,91.0
+Central African Republic,CAF,2010,24.355489730835
+China,CHN,2010,93.0
+Cameroon,CMR,2010,65.0
+Colombia,COL,2010,93.0
+Dominican Republic,DOM,2010,90.0
+East Asia & Pacific (excluding high income),EAP,2010,92.1824569702148
+Early-demographic dividend,EAR,2010,68.1757965087891
+East Asia & Pacific,EAS,2010,91.8562316894531
+Europe & Central Asia (excluding high income),ECA,2010,96.1520309448242
+Europe & Central Asia,ECS,2010,97.2441177368164
+Ecuador,ECU,2010,90.0
+"Egypt, Arab Rep.",EGY,2010,64.0
+Spain,ESP,2010,97.0
+Fragile and conflict affected situations,FCS,2010,54.4053115844727
+Ghana,GHA,2010,65.0
+Guinea,GIN,2010,12.0
+Equatorial Guinea,GNQ,2010,90.6760787963867
+Honduras,HND,2010,85.0
+Heavily indebted poor countries (HIPC),HPC,2010,46.1805305480957
+IBRD only,IBD,2010,82.6300811767578
+IDA & IBRD total,IBT,2010,76.5336990356445
+IDA total,IDA,2010,52.3255500793457
+IDA blend,IDB,2010,51.9972190856934
+IDA only,IDX,2010,52.4871482849121
+Jordan,JOR,2010,89.0
+Kazakhstan,KAZ,2010,99.7389907836914
+Kuwait,KWT,2010,93.0
+Latin America & Caribbean (excluding high income),LAC,2010,90.7395324707031
+Latin America & Caribbean,LCN,2010,91.2537002563477
+Least developed countries: UN classification,LDC,2010,48.9755592346191
+Low income,LIC,2010,45.5759086608887
+Sri Lanka,LKA,2010,90.0
+Lower middle income,LMC,2010,60.9461708068848
+Low & middle income,LMY,2010,76.209831237793
+Late-demographic dividend,LTE,2010,92.8477401733398
+Middle East & North Africa,MEA,2010,68.4610595703125
+Mexico,MEX,2010,92.0
+Middle income,MIC,2010,78.5253372192383
+Mali,MLI,2010,20.0
+Middle East & North Africa (excluding high income),MNA,2010,66.0334777832031
+Mongolia,MNG,2010,98.0
+Malawi,MWI,2010,51.2519683837891
+Malaysia,MYS,2010,91.0
+Oman,OMN,2010,82.0
+Other small states,OSS,2010,78.2458877563477
+Pakistan,PAK,2010,41.0
+Panama,PAN,2010,93.0
+Papua New Guinea,PNG,2010,57.9000015258789
+Pre-demographic dividend,PRE,2010,45.6080017089844
+Puerto Rico,PRI,2010,93.0
+Paraguay,PRY,2010,93.0
+West Bank and Gaza,PSE,2010,92.0
+Qatar,QAT,2010,95.0
+Russian Federation,RUS,2010,100.0
+Rwanda,RWA,2010,61.5486106872559
+South Asia,SAS,2010,55.7607383728027
+Singapore,SGP,2010,94.0
+El Salvador,SLV,2010,82.0
+Sub-Saharan Africa (excluding high income),SSA,2010,51.0536994934082
+Sub-Saharan Africa,SSF,2010,51.0595893859863
+Small states,SST,2010,81.8711929321289
+Suriname,SUR,2010,94.0
+Eswatini,SWZ,2010,82.4475479125977
+Seychelles,SYC,2010,94.0
+East Asia & Pacific (IDA & IBRD countries),TEA,2010,92.0797271728516
+Europe & Central Asia (IDA & IBRD countries),TEC,2010,97.8379592895508
+Thailand,THA,2010,96.0
+Tajikistan,TJK,2010,99.5999984741211
+Latin America & the Caribbean (IDA & IBRD countries),TLA,2010,91.0480804443359
+Timor-Leste,TLS,2010,53.0
+Middle East & North Africa (IDA & IBRD countries),TMN,2010,65.769172668457
+South Asia (IDA & IBRD),TSA,2010,55.7607383728027
+Sub-Saharan Africa (IDA & IBRD countries),TSS,2010,51.0595893859863
+Tunisia,TUN,2010,71.0
+Turkiye,TUR,2010,88.0
+Tanzania,TZA,2010,60.7526206970215
+Uganda,UGA,2010,65.0
+Upper middle income,UMC,2010,91.3875274658203
+Uruguay,URY,2010,98.0
+World,WLD,2010,80.0025482177734
+South Africa,ZAF,2010,92.0
+Zambia,ZMB,2010,78.0
+Africa Eastern and Southern,AFE,2011,59.7894287109375
+Afghanistan,AFG,2011,17.0
+Africa Western and Central,AFW,2011,42.3209495544434
+Albania,ALB,2011,96.0
+Arab World,ARB,2011,63.0181007385254
+Armenia,ARM,2011,100.0
+Azerbaijan,AZE,2011,100.0
+Bangladesh,BGD,2011,55.0
+Bulgaria,BGR,2011,98.0
+Bahrain,BHR,2011,90.6999969482422
+Bosnia and Herzegovina,BIH,2011,96.8037109375
+Bolivia,BOL,2011,88.0
+Brazil,BRA,2011,92.0
+Brunei Darussalam,BRN,2011,95.0
+Chile,CHL,2011,97.0
+"Congo, Rep.",COG,2011,72.8770599365234
+Colombia,COL,2011,94.0
+Costa Rica,CRI,2011,98.0
+Cyprus,CYP,2011,98.0
+Dominican Republic,DOM,2011,90.0
+East Asia & Pacific (excluding high income),EAP,2011,91.8830718994141
+Early-demographic dividend,EAR,2011,68.3873062133789
+East Asia & Pacific,EAS,2011,91.5229568481445
+Europe & Central Asia (excluding high income),ECA,2011,96.7943572998047
+Europe & Central Asia,ECS,2011,97.4497528076172
+Ecuador,ECU,2011,90.0
+Spain,ESP,2011,97.0
+Estonia,EST,2011,100.0
+Fragile and conflict affected situations,FCS,2011,54.5414695739746
+Honduras,HND,2011,85.0
+Heavily indebted poor countries (HIPC),HPC,2011,48.4520301818848
+IBRD only,IBD,2011,83.0376815795898
+IDA & IBRD total,IBT,2011,76.9010162353516
+IDA total,IDA,2011,52.8460884094238
+IDA blend,IDB,2011,52.7205085754395
+Indonesia,IDN,2011,90.0
+IDA only,IDX,2011,52.9079208374023
+India,IND,2011,59.0
+Italy,ITA,2011,99.0
+Jordan,JOR,2011,94.0
+Latin America & Caribbean (excluding high income),LAC,2011,91.5349884033203
+Lao PDR,LAO,2011,49.7230796813965
+Latin America & Caribbean,LCN,2011,91.9491271972656
+Least developed countries: UN classification,LDC,2011,49.4341316223145
+Low income,LIC,2011,48.0861015319824
+Lower middle income,LMC,2011,61.4856491088867
+Low & middle income,LMY,2011,76.5884017944336
+Late-demographic dividend,LTE,2011,93.3227691650391
+Lithuania,LTU,2011,100.0
+Latvia,LVA,2011,100.0
+"Macao SAR, China",MAC,2011,94.0
+Morocco,MAR,2011,58.0
+Middle East & North Africa,MEA,2011,69.232551574707
+Mexico,MEX,2011,92.0
+Marshall Islands,MHL,2011,98.0
+Middle income,MIC,2011,78.7750473022461
+Mali,MLI,2011,19.0
+Malta,MLT,2011,95.0
+Middle East & North Africa (excluding high income),MNA,2011,66.4258422851562
+Montenegro,MNE,2011,98.0
+Mauritius,MUS,2011,87.0
+Namibia,NAM,2011,88.0
+Nepal,NPL,2011,49.0
+Other small states,OSS,2011,78.8643264770508
+Pakistan,PAK,2011,42.0
+Pre-demographic dividend,PRE,2011,47.6782417297363
+Portugal,PRT,2011,93.0
+West Bank and Gaza,PSE,2011,92.0
+Qatar,QAT,2011,96.0
+Romania,ROU,2011,98.0
+South Asia,SAS,2011,56.7229690551758
+Senegal,SEN,2011,40.0
+Singapore,SGP,2011,94.0
+El Salvador,SLV,2011,83.0
+Serbia,SRB,2011,97.0
+Sub-Saharan Africa (excluding high income),SSA,2011,52.8676910400391
+Sub-Saharan Africa,SSF,2011,52.8732986450195
+Small states,SST,2011,82.3114166259766
+East Asia & Pacific (IDA & IBRD countries),TEA,2011,91.7765808105469
+Europe & Central Asia (IDA & IBRD countries),TEC,2011,98.1526184082031
+Togo,TGO,2011,48.0
+Latin America & the Caribbean (IDA & IBRD countries),TLA,2011,91.7666702270508
+Middle East & North Africa (IDA & IBRD countries),TMN,2011,66.1594161987305
+Tonga,TON,2011,99.0
+South Asia (IDA & IBRD),TSA,2011,56.7229690551758
+Sub-Saharan Africa (IDA & IBRD countries),TSS,2011,52.8732986450195
+Tunisia,TUN,2011,72.0
+Turkiye,TUR,2011,90.0
+Upper middle income,UMC,2011,91.5793380737305
+Uruguay,URY,2011,99.0
+"Venezuela, RB",VEN,2011,95.0
+World,WLD,2011,80.2862014770508
+Samoa,WSM,2011,99.0
+South Africa,ZAF,2011,92.0
+Zimbabwe,ZWE,2011,80.0656585693359
+Africa Eastern and Southern,AFE,2012,61.6372184753418
+Africa Western and Central,AFW,2012,42.8530807495117
+Albania,ALB,2012,96.0
+Arab World,ARB,2012,63.9691200256348
+Azerbaijan,AZE,2012,100.0
+Benin,BEN,2012,22.093879699707
+Bangladesh,BGD,2012,54.0
+Bolivia,BOL,2012,92.0
+Brazil,BRA,2012,92.0
+Bhutan,BTN,2012,45.0
+Cote d'Ivoire,CIV,2012,30.4617195129395
+"Congo, Dem. Rep.",COD,2012,63.0
+Comoros,COM,2012,42.6372909545898
+Cabo Verde,CPV,2012,80.0
+Cuba,CUB,2012,100.0
+Dominican Republic,DOM,2012,90.0
+East Asia & Pacific (excluding high income),EAP,2012,92.1989669799805
+Early-demographic dividend,EAR,2012,68.7323226928711
+East Asia & Pacific,EAS,2012,91.8424224853516
+Europe & Central Asia (excluding high income),ECA,2012,97.1769866943359
+Europe & Central Asia,ECS,2012,97.5913162231445
+Ecuador,ECU,2012,91.0
+"Egypt, Arab Rep.",EGY,2012,66.0
+Spain,ESP,2012,97.0
+Fragile and conflict affected situations,FCS,2012,54.8405990600586
+Gabon,GAB,2012,79.8789672851562
+Guatemala,GTM,2012,72.0
+Honduras,HND,2012,85.0
+Heavily indebted poor countries (HIPC),HPC,2012,50.0422782897949
+IBRD only,IBD,2012,83.5049362182617
+IDA & IBRD total,IBT,2012,77.2070388793945
+IDA total,IDA,2012,52.8432388305664
+IDA blend,IDB,2012,53.5262985229492
+IDA only,IDX,2012,52.507511138916
+"Iran, Islamic Rep.",IRN,2012,78.0
+Iraq,IRQ,2012,69.0
+Jordan,JOR,2012,97.0
+Kuwait,KWT,2012,95.0
+Latin America & Caribbean (excluding high income),LAC,2012,91.9759674072266
+Latin America & Caribbean,LCN,2012,92.3573379516602
+Least developed countries: UN classification,LDC,2012,48.984001159668
+Low income,LIC,2012,48.5568885803223
+Lower middle income,LMC,2012,62.033260345459
+Low & middle income,LMY,2012,76.9013824462891
+Late-demographic dividend,LTE,2012,93.5727996826172
+Morocco,MAR,2012,59.0
+Madagascar,MDG,2012,68.0
+Middle East & North Africa,MEA,2012,69.9536895751953
+Mexico,MEX,2012,93.0
+Middle income,MIC,2012,79.1110916137695
+North Macedonia,MKD,2012,96.4000015258789
+Middle East & North Africa (excluding high income),MNA,2012,67.2870864868164
+Mauritius,MUS,2012,89.0
+Niger,NER,2012,23.0
+Other small states,OSS,2012,79.3610229492188
+Pakistan,PAK,2012,43.0
+Peru,PER,2012,91.0
+Pre-demographic dividend,PRE,2012,49.1119117736816
+Paraguay,PRY,2012,94.0
+West Bank and Gaza,PSE,2012,93.0
+Qatar,QAT,2012,96.0
+Rwanda,RWA,2012,65.0
+South Asia,SAS,2012,56.8456916809082
+Singapore,SGP,2012,94.0
+Sub-Saharan Africa (excluding high income),SSA,2012,54.2010116577148
+Sub-Saharan Africa,SSF,2012,54.2064094543457
+Small states,SST,2012,82.6052398681641
+Sao Tome and Principe,STP,2012,85.0
+Suriname,SUR,2012,91.0
+East Asia & Pacific (IDA & IBRD countries),TEA,2012,92.0967636108398
+Europe & Central Asia (IDA & IBRD countries),TEC,2012,98.3438262939453
+Latin America & the Caribbean (IDA & IBRD countries),TLA,2012,92.1891632080078
+Middle East & North Africa (IDA & IBRD countries),TMN,2012,67.0170135498047
+South Asia (IDA & IBRD),TSA,2012,56.8456916809082
+Sub-Saharan Africa (IDA & IBRD countries),TSS,2012,54.2064094543457
+Tunisia,TUN,2012,72.0
+Turkiye,TUR,2012,92.0
+Tanzania,TZA,2012,73.0
+Uganda,UGA,2012,62.0
+Ukraine,UKR,2012,99.9581985473633
+Upper middle income,UMC,2012,91.928581237793
+Uruguay,URY,2012,99.0
+World,WLD,2012,80.5296936035156
+South Africa,ZAF,2012,93.0
+Africa Eastern and Southern,AFE,2013,62.6059303283691
+Africa Western and Central,AFW,2013,43.7332611083984
+Arab World,ARB,2013,64.9342269897461
+Azerbaijan,AZE,2013,100.0
+Bangladesh,BGD,2013,58.0
+Bosnia and Herzegovina,BIH,2013,95.0
+Brazil,BRA,2013,92.0
+Botswana,BWA,2013,87.4512100219727
+Central Europe and the Baltics,CEB,2013,99.1402969360352
+Chile,CHL,2013,96.0
+Dominican Republic,DOM,2013,91.0
+East Asia & Pacific (excluding high income),EAP,2013,92.3468780517578
+Early-demographic dividend,EAR,2013,69.5944290161133
+East Asia & Pacific,EAS,2013,91.9915618896484
+Europe & Central Asia (excluding high income),ECA,2013,97.3069686889648
+Europe & Central Asia,ECS,2013,97.6752090454102
+Ecuador,ECU,2013,92.0
+"Egypt, Arab Rep.",EGY,2013,63.0
+Spain,ESP,2013,97.0
+Fragile and conflict affected situations,FCS,2013,55.4872894287109
+"Gambia, The",GMB,2013,33.5753517150879
+Guatemala,GTM,2013,72.0
+Honduras,HND,2013,85.0
+Heavily indebted poor countries (HIPC),HPC,2013,51.1417083740234
+IBRD only,IBD,2013,83.8226623535156
+IDA & IBRD total,IBT,2013,77.652458190918
+IDA total,IDA,2013,54.0561599731445
+IDA blend,IDB,2013,53.5276794433594
+IDA only,IDX,2013,54.3152694702148
+"Iran, Islamic Rep.",IRN,2013,80.0
+Kuwait,KWT,2013,94.0
+Latin America & Caribbean (excluding high income),LAC,2013,91.9687118530273
+Latin America & Caribbean,LCN,2013,92.3406372070312
+Least developed countries: UN classification,LDC,2013,51.0599517822266
+Low income,LIC,2013,49.5067481994629
+Lower middle income,LMC,2013,63.1235198974609
+Low & middle income,LMY,2013,77.3580627441406
+Late-demographic dividend,LTE,2013,93.6652297973633
+Middle East & North Africa,MEA,2013,70.7403717041016
+Mexico,MEX,2013,93.0
+Middle income,MIC,2013,79.5577621459961
+Middle East & North Africa (excluding high income),MNA,2013,68.2288970947266
+Mauritania,MRT,2013,57.0
+Mauritius,MUS,2013,89.0
+Other small states,OSS,2013,79.7500915527344
+Pakistan,PAK,2013,42.0
+Philippines,PHL,2013,97.0
+Palau,PLW,2013,100.0
+Pre-demographic dividend,PRE,2013,50.1249694824219
+Paraguay,PRY,2013,94.0
+West Bank and Gaza,PSE,2013,94.0
+Qatar,QAT,2013,97.0
+South Asia,SAS,2013,58.0865287780762
+Saudi Arabia,SAU,2013,91.0
+Senegal,SEN,2013,34.0
+Singapore,SGP,2013,95.0
+Sierra Leone,SLE,2013,24.8566799163818
+El Salvador,SLV,2013,85.0
+Sub-Saharan Africa (excluding high income),SSA,2013,55.1475982666016
+Sub-Saharan Africa,SSF,2013,55.1528205871582
+Small states,SST,2013,82.8021697998047
+East Asia & Pacific (IDA & IBRD countries),TEA,2013,92.2467575073242
+Europe & Central Asia (IDA & IBRD countries),TEC,2013,98.4123306274414
+Thailand,THA,2013,92.0
+Latin America & the Caribbean (IDA & IBRD countries),TLA,2013,92.1730804443359
+Middle East & North Africa (IDA & IBRD countries),TMN,2013,67.9606781005859
+South Asia (IDA & IBRD),TSA,2013,58.0865287780762
+Sub-Saharan Africa (IDA & IBRD countries),TSS,2013,55.1528205871582
+Turkiye,TUR,2013,92.0
+Upper middle income,UMC,2013,92.0233917236328
+Uruguay,URY,2013,99.0
+Uzbekistan,UZB,2013,100.0
+World,WLD,2013,80.8821792602539
+Africa Eastern and Southern,AFE,2014,63.5007400512695
+Africa Western and Central,AFW,2014,44.6747398376465
+Angola,AGO,2014,53.0
+Arab World,ARB,2014,65.558349609375
+Azerbaijan,AZE,2014,100.0
+Burundi,BDI,2014,55.0
+Burkina Faso,BFA,2014,26.0
+Bangladesh,BGD,2014,58.0
+Brazil,BRA,2014,92.0
+Central Europe and the Baltics,CEB,2014,99.169563293457
+Cote d'Ivoire,CIV,2014,37.0
+Colombia,COL,2014,94.0
+Dominican Republic,DOM,2014,92.0
+East Asia & Pacific (excluding high income),EAP,2014,92.9701919555664
+Early-demographic dividend,EAR,2014,70.6785888671875
+East Asia & Pacific,EAS,2014,92.7011489868164
+Europe & Central Asia (excluding high income),ECA,2014,97.4052886962891
+Europe & Central Asia,ECS,2014,97.7356185913086
+Ecuador,ECU,2014,93.0
+Spain,ESP,2014,97.0
+Fragile and conflict affected situations,FCS,2014,56.00830078125
+Georgia,GEO,2014,100.0
+Guinea,GIN,2014,22.0
+Guinea-Bissau,GNB,2014,30.7685108184814
+Guatemala,GTM,2014,76.0
+Guyana,GUY,2014,85.0346069335938
+Honduras,HND,2014,87.0
+Heavily indebted poor countries (HIPC),HPC,2014,52.1377410888672
+IBRD only,IBD,2014,84.3642196655273
+IDA & IBRD total,IBT,2014,78.2534027099609
+IDA total,IDA,2014,55.1335296630859
+IDA blend,IDB,2014,54.8578681945801
+Indonesia,IDN,2014,93.0
+IDA only,IDX,2014,55.2683906555176
+"Iran, Islamic Rep.",IRN,2014,80.0
+Iraq,IRQ,2014,75.0
+Kenya,KEN,2014,74.0063171386719
+Cambodia,KHM,2014,72.0
+Latin America & Caribbean (excluding high income),LAC,2014,92.5126419067383
+Latin America & Caribbean,LCN,2014,92.8852615356445
+Least developed countries: UN classification,LDC,2014,52.1030082702637
+Low income,LIC,2014,49.9809112548828
+Lower middle income,LMC,2014,64.1640090942383
+Low & middle income,LMY,2014,77.9653472900391
+Lesotho,LSO,2014,84.9348907470703
+Late-demographic dividend,LTE,2014,93.9091033935547
+Morocco,MAR,2014,53.0
+Moldova,MDA,2014,99.0
+Maldives,MDV,2014,99.0
+Middle East & North Africa,MEA,2014,71.226432800293
+Mexico,MEX,2014,94.0
+Middle income,MIC,2014,80.1996002197266
+Middle East & North Africa (excluding high income),MNA,2014,68.696418762207
+Mauritius,MUS,2014,90.0
+Malawi,MWI,2014,55.130989074707
+Other small states,OSS,2014,80.1802978515625
+Pakistan,PAK,2014,44.0
+Peru,PER,2014,90.0
+Pre-demographic dividend,PRE,2014,51.0248184204102
+Paraguay,PRY,2014,94.0
+West Bank and Gaza,PSE,2014,94.0
+Qatar,QAT,2014,98.0
+Rwanda,RWA,2014,66.0
+South Asia,SAS,2014,59.1513786315918
+Singapore,SGP,2014,95.0
+Sub-Saharan Africa (excluding high income),SSA,2014,56.0730285644531
+Sub-Saharan Africa,SSF,2014,56.0780601501465
+Small states,SST,2014,83.1012496948242
+Syrian Arab Republic,SYR,2014,80.9000015258789
+East Asia & Pacific (IDA & IBRD countries),TEA,2014,92.8783493041992
+Europe & Central Asia (IDA & IBRD countries),TEC,2014,98.4671096801758
+Latin America & the Caribbean (IDA & IBRD countries),TLA,2014,92.7347030639648
+Middle East & North Africa (IDA & IBRD countries),TMN,2014,68.4273529052734
+South Asia (IDA & IBRD),TSA,2014,59.1513786315918
+Sub-Saharan Africa (IDA & IBRD countries),TSS,2014,56.0780601501465
+Tunisia,TUN,2014,72.0
+Turkiye,TUR,2014,92.0
+Upper middle income,UMC,2014,92.5363006591797
+Uruguay,URY,2014,99.0
+Uzbekistan,UZB,2014,100.0
+Vanuatu,VUT,2014,83.1999969482422
+World,WLD,2014,81.4116516113281
+South Africa,ZAF,2014,93.0
+Zimbabwe,ZWE,2014,88.2838287353516
+Africa Eastern and Southern,AFE,2015,64.1244277954102
+Afghanistan,AFG,2015,17.0862407684326
+Africa Western and Central,AFW,2015,45.6816596984863
+Angola,AGO,2015,51.9259796142578
+Arab World,ARB,2015,66.3804931640625
+Azerbaijan,AZE,2015,100.0
+Bangladesh,BGD,2015,62.0
+Belize,BLZ,2015,91.6316070556641
+Bolivia,BOL,2015,89.0
+Brazil,BRA,2015,92.0
+Central Europe and the Baltics,CEB,2015,99.2072525024414
+Chile,CHL,2015,97.0
+Colombia,COL,2015,94.0
+Cabo Verde,CPV,2015,82.0
+Dominican Republic,DOM,2015,92.0
+East Asia & Pacific (excluding high income),EAP,2015,93.1938095092773
+Early-demographic dividend,EAR,2015,71.7043228149414
+East Asia & Pacific,EAS,2015,92.9411468505859
+Europe & Central Asia (excluding high income),ECA,2015,97.4875030517578
+Europe & Central Asia,ECS,2015,97.7924118041992
+Ecuador,ECU,2015,93.0
+Spain,ESP,2015,98.0
+Fragile and conflict affected situations,FCS,2015,56.4925918579102
+"Gambia, The",GMB,2015,42.0
+Guatemala,GTM,2015,75.1361923217773
+Honduras,HND,2015,88.0
+Heavily indebted poor countries (HIPC),HPC,2015,52.9059982299805
+IBRD only,IBD,2015,84.6835327148438
+IDA & IBRD total,IBT,2015,78.7801284790039
+IDA total,IDA,2015,56.7267913818359
+IDA blend,IDB,2015,55.8170700073242
+Indonesia,IDN,2015,93.0
+IDA only,IDX,2015,57.1703910827637
+Cambodia,KHM,2015,75.0
+Kuwait,KWT,2015,94.0
+Latin America & Caribbean (excluding high income),LAC,2015,92.5973892211914
+Lao PDR,LAO,2015,79.0
+Latin America & Caribbean,LCN,2015,92.9796600341797
+Least developed countries: UN classification,LDC,2015,54.1871185302734
+Low income,LIC,2015,50.9287185668945
+Lower middle income,LMC,2015,65.4094772338867
+Low & middle income,LMY,2015,78.5051116943359
+Late-demographic dividend,LTE,2015,94.0946426391602
+Middle East & North Africa,MEA,2015,71.9916076660156
+Mexico,MEX,2015,93.0
+Middle income,MIC,2015,80.7364120483398
+Mali,MLI,2015,22.0
+Middle East & North Africa (excluding high income),MNA,2015,69.5011825561523
+Mozambique,MOZ,2015,43.0
+Mauritania,MRT,2015,57.4347305297852
+Mauritius,MUS,2015,91.0
+Malawi,MWI,2015,55.2041091918945
+Nicaragua,NIC,2015,82.7793502807617
+Oman,OMN,2015,86.0
+Other small states,OSS,2015,80.8243026733398
+Peru,PER,2015,91.0
+Philippines,PHL,2015,98.0
+Palau,PLW,2015,96.0
+Pre-demographic dividend,PRE,2015,51.8170204162598
+Paraguay,PRY,2015,95.0
+West Bank and Gaza,PSE,2015,95.0
+South Asia,SAS,2015,60.6964912414551
+Senegal,SEN,2015,35.1685104370117
+Singapore,SGP,2015,95.0
+El Salvador,SLV,2015,86.0
+Sub-Saharan Africa (excluding high income),SSA,2015,56.8557815551758
+Sub-Saharan Africa,SSF,2015,56.8606605529785
+Small states,SST,2015,83.5541763305664
+Chad,TCD,2015,13.9334096908569
+East Asia & Pacific (IDA & IBRD countries),TEA,2015,93.1049728393555
+Europe & Central Asia (IDA & IBRD countries),TEC,2015,98.5182266235352
+Togo,TGO,2015,51.0
+Thailand,THA,2015,91.0
+Latin America & the Caribbean (IDA & IBRD countries),TLA,2015,92.8390884399414
+Middle East & North Africa (IDA & IBRD countries),TMN,2015,69.2343902587891
+South Asia (IDA & IBRD),TSA,2015,60.6964912414551
+Sub-Saharan Africa (IDA & IBRD countries),TSS,2015,56.8606605529785
+Turkiye,TUR,2015,93.0
+Tanzania,TZA,2015,73.0
+Upper middle income,UMC,2015,92.6736221313477
+Uruguay,URY,2015,99.0
+Uzbekistan,UZB,2015,100.0
+"Venezuela, RB",VEN,2015,97.0
+World,WLD,2015,81.8472518920898
+South Africa,ZAF,2015,93.0
+Africa Eastern and Southern,AFE,2016,65.0112762451172
+Africa Western and Central,AFW,2016,46.3605194091797
+Arab World,ARB,2016,65.3165512084961
+Armenia,ARM,2016,100.0
+Azerbaijan,AZE,2016,100.0
+Burundi,BDI,2016,59.4406814575195
+Bangladesh,BGD,2016,70.0
+Brazil,BRA,2016,93.0
+Central Europe and the Baltics,CEB,2016,99.2277221679688
+Cote d'Ivoire,CIV,2016,40.7476615905762
+"Congo, Dem. Rep.",COD,2016,66.0
+Colombia,COL,2016,95.0
+Dominican Republic,DOM,2016,94.0
+East Asia & Pacific (excluding high income),EAP,2016,93.488899230957
+Early-demographic dividend,EAR,2016,72.5674667358398
+East Asia & Pacific,EAS,2016,93.2339401245117
+Europe & Central Asia (excluding high income),ECA,2016,97.6393280029297
+Europe & Central Asia,ECS,2016,97.8725891113281
+Ecuador,ECU,2016,93.0
+Spain,ESP,2016,98.0
+Ethiopia,ETH,2016,34.4190406799316
+Fragile and conflict affected situations,FCS,2016,57.1802787780762
+Guinea,GIN,2016,23.9352493286133
+Honduras,HND,2016,89.0
+Heavily indebted poor countries (HIPC),HPC,2016,53.8140602111816
+Haiti,HTI,2016,58.3005218505859
+IBRD only,IBD,2016,84.9838485717773
+IDA & IBRD total,IBT,2016,79.3039093017578
+IDA total,IDA,2016,58.3417015075684
+IDA blend,IDB,2016,56.7651100158691
+Indonesia,IDN,2016,94.0
+IDA only,IDX,2016,59.1085205078125
+"Iran, Islamic Rep.",IRN,2016,81.0
+Iraq,IRQ,2016,77.0
+Latin America & Caribbean (excluding high income),LAC,2016,93.0779724121094
+Latin America & Caribbean,LCN,2016,93.4474868774414
+Least developed countries: UN classification,LDC,2016,56.2880210876465
+Low income,LIC,2016,51.9512596130371
+Sri Lanka,LKA,2016,91.0
+Lower middle income,LMC,2016,66.3911514282227
+Low & middle income,LMY,2016,79.0310668945312
+Late-demographic dividend,LTE,2016,94.3862762451172
+"Macao SAR, China",MAC,2016,95.0
+Maldives,MDV,2016,98.0
+Middle East & North Africa,MEA,2016,71.0434722900391
+Mexico,MEX,2016,94.0
+Middle income,MIC,2016,81.2518997192383
+Myanmar,MMR,2016,71.8469924926758
+Middle East & North Africa (excluding high income),MNA,2016,68.4047927856445
+Mauritius,MUS,2016,91.0
+Malaysia,MYS,2016,93.0
+Nigeria,NGA,2016,49.0559501647949
+Nepal,NPL,2016,55.7490501403809
+Other small states,OSS,2016,81.255256652832
+Peru,PER,2016,91.0
+Pre-demographic dividend,PRE,2016,52.668098449707
+Paraguay,PRY,2016,94.0
+West Bank and Gaza,PSE,2016,95.0
+South Asia,SAS,2016,62.2699699401855
+Senegal,SEN,2016,37.6722793579102
+Singapore,SGP,2016,95.0
+El Salvador,SLV,2016,86.0
+Serbia,SRB,2016,98.0
+Sub-Saharan Africa (excluding high income),SSA,2016,57.672679901123
+Sub-Saharan Africa,SSF,2016,57.6773910522461
+Small states,SST,2016,83.8637313842773
+Chad,TCD,2016,14.0
+East Asia & Pacific (IDA & IBRD countries),TEA,2016,93.4040908813477
+Europe & Central Asia (IDA & IBRD countries),TEC,2016,98.5977783203125
+Thailand,THA,2016,92.681022644043
+Latin America & the Caribbean (IDA & IBRD countries),TLA,2016,93.3219680786133
+Timor-Leste,TLS,2016,59.6047592163086
+Middle East & North Africa (IDA & IBRD countries),TMN,2016,68.1202697753906
+South Asia (IDA & IBRD),TSA,2016,62.2699699401855
+Sub-Saharan Africa (IDA & IBRD countries),TSS,2016,57.6773910522461
+Turkiye,TUR,2016,93.0
+Uganda,UGA,2016,60.9974403381348
+Upper middle income,UMC,2016,92.9655838012695
+Uruguay,URY,2016,99.0
+Uzbekistan,UZB,2016,100.0
+"Venezuela, RB",VEN,2016,97.0
+World,WLD,2016,82.272819519043
+South Africa,ZAF,2016,91.9364700317383
+Africa Eastern and Southern,AFE,2017,65.2154388427734
+Africa Western and Central,AFW,2017,47.3756713867188
+Albania,ALB,2017,99.0490417480469
+Arab World,ARB,2017,65.9647979736328
+Armenia,ARM,2017,100.0
+Azerbaijan,AZE,2017,100.0
+Burundi,BDI,2017,61.0
+Benin,BEN,2017,28.5498504638672
+Bangladesh,BGD,2017,70.0
+Brazil,BRA,2017,93.0
+Bhutan,BTN,2017,57.0
+Central Europe and the Baltics,CEB,2017,99.2595596313477
+Chile,CHL,2017,96.0
+Cayman Islands,CYM,2017,99.0
+East Asia & Pacific (excluding high income),EAP,2017,93.791633605957
+Early-demographic dividend,EAR,2017,72.9335174560547
+East Asia & Pacific,EAS,2017,93.5327224731445
+Europe & Central Asia (excluding high income),ECA,2017,97.8082504272461
+Europe & Central Asia,ECS,2017,97.9788208007812
+Ecuador,ECU,2017,92.0
+"Egypt, Arab Rep.",EGY,2017,66.0
+Ethiopia,ETH,2017,44.4233818054199
+Fragile and conflict affected situations,FCS,2017,57.9722785949707
+Georgia,GEO,2017,99.0
+Ghana,GHA,2017,56.0202102661133
+Heavily indebted poor countries (HIPC),HPC,2017,55.1596908569336
+Haiti,HTI,2017,63.8743209838867
+IBRD only,IBD,2017,85.2584533691406
+IDA & IBRD total,IBT,2017,79.6049118041992
+IDA total,IDA,2017,59.0443382263184
+IDA blend,IDB,2017,56.7264289855957
+IDA only,IDX,2017,60.1667709350586
+Iraq,IRQ,2017,80.0
+Kuwait,KWT,2017,95.0
+Latin America & Caribbean (excluding high income),LAC,2017,93.1452484130859
+Liberia,LBR,2017,34.0922584533691
+Latin America & Caribbean,LCN,2017,93.4989318847656
+Least developed countries: UN classification,LDC,2017,57.4794082641602
+Low income,LIC,2017,53.3047485351562
+Sri Lanka,LKA,2017,91.0
+Lower middle income,LMC,2017,67.0491790771484
+Low & middle income,LMY,2017,79.3409805297852
+Late-demographic dividend,LTE,2017,94.6338882446289
+Maldives,MDV,2017,94.9146194458008
+Middle East & North Africa,MEA,2017,71.6356735229492
+Mexico,MEX,2017,94.0
+Middle income,MIC,2017,81.5136032104492
+Middle East & North Africa (excluding high income),MNA,2017,68.9960327148438
+Mozambique,MOZ,2017,50.0
+Malaysia,MYS,2017,94.0
+North America,NAC,2017,98.7181015014648
+Oman,OMN,2017,92.0
+Other small states,OSS,2017,81.7024688720703
+Pakistan,PAK,2017,46.0
+Peru,PER,2017,91.0
+Papua New Guinea,PNG,2017,61.5507888793945
+Pre-demographic dividend,PRE,2017,53.9563407897949
+Puerto Rico,PRI,2017,92.0
+West Bank and Gaza,PSE,2017,95.0
+South Asia,SAS,2017,62.9833908081055
+Saudi Arabia,SAU,2017,93.0
+Senegal,SEN,2017,40.0
+Singapore,SGP,2017,96.0
+Sierra Leone,SLE,2017,36.2379913330078
+El Salvador,SLV,2017,87.0
+Sub-Saharan Africa (excluding high income),SSA,2017,58.1956787109375
+Sub-Saharan Africa,SSF,2017,58.2002601623535
+Small states,SST,2017,84.1823196411133
+East Asia & Pacific (IDA & IBRD countries),TEA,2017,93.7109069824219
+Europe & Central Asia (IDA & IBRD countries),TEC,2017,98.6860198974609
+Tajikistan,TJK,2017,94.6219482421875
+Latin America & the Caribbean (IDA & IBRD countries),TLA,2017,93.3761215209961
+Middle East & North Africa (IDA & IBRD countries),TMN,2017,68.7119827270508
+South Asia (IDA & IBRD),TSA,2017,62.9833908081055
+Sub-Saharan Africa (IDA & IBRD countries),TSS,2017,58.2002601623535
+Turkiye,TUR,2017,93.0
+Upper middle income,UMC,2017,93.0594863891602
+Uruguay,URY,2017,99.0
+World,WLD,2017,82.5223083496094
+South Africa,ZAF,2017,86.0
+Africa Eastern and Southern,AFE,2018,65.8721923828125
+Africa Western and Central,AFW,2018,51.0471000671387
+Arab World,ARB,2018,66.4866180419922
+Burkina Faso,BFA,2018,31.0
+Bangladesh,BGD,2018,71.0
+Brazil,BRA,2018,93.0
+Central African Republic,CAF,2018,26.0
+Central Europe and the Baltics,CEB,2018,99.3820571899414
+Cameroon,CMR,2018,66.1617736816406
+"Congo, Dem. Rep.",COD,2018,61.600341796875
+Colombia,COL,2018,95.0
+Costa Rica,CRI,2018,94.118766784668
+Algeria,DZA,2018,75.3229675292969
+East Asia & Pacific (excluding high income),EAP,2018,93.92529296875
+Early-demographic dividend,EAR,2018,73.5070266723633
+East Asia & Pacific,EAS,2018,93.6723403930664
+Europe & Central Asia (excluding high income),ECA,2018,97.8878936767578
+Europe & Central Asia,ECS,2018,98.0906372070312
+Eritrea,ERI,2018,68.9461898803711
+Spain,ESP,2018,98.0
+Fragile and conflict affected situations,FCS,2018,57.9931411743164
+Georgia,GEO,2018,99.6481781005859
+Guinea,GIN,2018,28.0
+"Gambia, The",GMB,2018,43.3483581542969
+Guatemala,GTM,2018,77.0
+Honduras,HND,2018,87.0
+Heavily indebted poor countries (HIPC),HPC,2018,56.9196891784668
+IBRD only,IBD,2018,85.5801467895508
+IDA & IBRD total,IBT,2018,80.0602722167969
+IDA total,IDA,2018,60.2859191894531
+IDA blend,IDB,2018,57.6613807678223
+Indonesia,IDN,2018,94.0
+IDA only,IDX,2018,61.5540504455566
+Iraq,IRQ,2018,76.2786636352539
+Jordan,JOR,2018,94.1569595336914
+Kiribati,KIR,2018,98.6115112304688
+"Korea, Rep.",KOR,2018,98.4000015258789
+Kuwait,KWT,2018,95.0
+Latin America & Caribbean (excluding high income),LAC,2018,93.370002746582
+Lebanon,LBN,2018,90.0
+Latin America & Caribbean,LCN,2018,93.7052536010742
+Least developed countries: UN classification,LDC,2018,57.9440498352051
+Low income,LIC,2018,53.3277015686035
+Sri Lanka,LKA,2018,91.0
+Lower middle income,LMC,2018,68.1514587402344
+Low & middle income,LMY,2018,79.8054122924805
+Lesotho,LSO,2018,91.7942276000977
+Late-demographic dividend,LTE,2018,94.8361892700195
+Madagascar,MDG,2018,75.0
+Middle East & North Africa,MEA,2018,72.0980224609375
+Mexico,MEX,2018,95.0
+Middle income,MIC,2018,82.0518035888672
+North Macedonia,MKD,2018,97.7797393798828
+Mali,MLI,2018,26.0
+Middle East & North Africa (excluding high income),MNA,2018,69.4806518554688
+Montenegro,MNE,2018,97.9482269287109
+Mongolia,MNG,2018,97.9979705810547
+Malaysia,MYS,2018,94.0
+North America,NAC,2018,98.7260131835938
+Nigeria,NGA,2018,52.6564788818359
+Oman,OMN,2018,93.0
+Other small states,OSS,2018,82.11181640625
+Pakistan,PAK,2018,45.0
+Panama,PAN,2018,95.0
+Peru,PER,2018,92.0
+Pre-demographic dividend,PRE,2018,55.8156204223633
+"Korea, Dem. People's Rep.",PRK,2018,99.9976119995117
+Paraguay,PRY,2018,94.0
+West Bank and Gaza,PSE,2018,96.0
+Rwanda,RWA,2018,69.0
+South Asia,SAS,2018,63.7836494445801
+Sudan,SDN,2018,56.0632286071777
+Senegal,SEN,2018,40.578800201416
+Singapore,SGP,2018,96.0
+El Salvador,SLV,2018,87.0
+Sub-Saharan Africa (excluding high income),SSA,2018,60.0403900146484
+South Sudan,SSD,2018,28.8642597198486
+Sub-Saharan Africa,SSF,2018,60.0446891784668
+Small states,SST,2018,84.474853515625
+East Asia & Pacific (IDA & IBRD countries),TEA,2018,93.8464889526367
+Europe & Central Asia (IDA & IBRD countries),TEC,2018,98.819450378418
+Thailand,THA,2018,92.0
+Latin America & the Caribbean (IDA & IBRD countries),TLA,2018,93.5894470214844
+Middle East & North Africa (IDA & IBRD countries),TMN,2018,69.1947479248047
+South Asia (IDA & IBRD),TSA,2018,63.7836494445801
+Sub-Saharan Africa (IDA & IBRD countries),TSS,2018,60.0446891784668
+Tunisia,TUN,2018,71.5483627319336
+Upper middle income,UMC,2018,93.2754898071289
+Uruguay,URY,2018,99.0
+Uzbekistan,UZB,2018,100.0
+World,WLD,2018,82.8914566040039
+Zambia,ZMB,2018,62.1824989318848
+Africa Eastern and Southern,AFE,2019,67.2694473266602
+Africa Western and Central,AFW,2019,51.0505294799805
+Arab World,ARB,2019,66.9575576782227
+United Arab Emirates,ARE,2019,97.0
+Azerbaijan,AZE,2019,100.0
+Burkina Faso,BFA,2019,25.0
+Bangladesh,BGD,2019,72.0
+Belarus,BLR,2019,100.0
+Central African Republic,CAF,2019,27.1308307647705
+Central Europe and the Baltics,CEB,2019,99.4093627929688
+Cote d'Ivoire,CIV,2019,87.0
+Colombia,COL,2019,95.0
+Cuba,CUB,2019,96.3534317016602
+Dominican Republic,DOM,2019,87.372673034668
+Algeria,DZA,2019,74.2101974487305
+East Asia & Pacific (excluding high income),EAP,2019,94.4189300537109
+Early-demographic dividend,EAR,2019,73.9110717773438
+East Asia & Pacific,EAS,2019,94.1887588500977
+Europe & Central Asia (excluding high income),ECA,2019,98.0803604125977
+Europe & Central Asia,ECS,2019,98.1756362915039
+Ethiopia,ETH,2019,40.3826713562012
+Fragile and conflict affected situations,FCS,2019,58.7957382202148
+Guinea-Bissau,GNB,2019,40.3379783630371
+Honduras,HND,2019,89.0
+Heavily indebted poor countries (HIPC),HPC,2019,57.3472290039062
+IBRD only,IBD,2019,85.6885986328125
+IDA & IBRD total,IBT,2019,80.2699584960938
+IDA total,IDA,2019,61.1665115356445
+IDA blend,IDB,2019,58.0456199645996
+IDA only,IDX,2019,62.6696701049805
+Italy,ITA,2019,99.0
+Kyrgyz Republic,KGZ,2019,99.5
+Latin America & Caribbean (excluding high income),LAC,2019,93.5746078491211
+Latin America & Caribbean,LCN,2019,93.8907775878906
+Least developed countries: UN classification,LDC,2019,59.1696395874023
+Low income,LIC,2019,53.6645317077637
+Sri Lanka,LKA,2019,92.0
+Lower middle income,LMC,2019,68.4591522216797
+Low & middle income,LMY,2019,80.0236129760742
+Late-demographic dividend,LTE,2019,95.0135269165039
+Maldives,MDV,2019,98.2551879882812
+Middle East & North Africa,MEA,2019,72.5779571533203
+Middle income,MIC,2019,82.3033828735352
+Myanmar,MMR,2019,86.0
+Middle East & North Africa (excluding high income),MNA,2019,70.0149307250977
+Malaysia,MYS,2019,94.0
+North America,NAC,2019,98.732536315918
+Nepal,NPL,2019,59.4137191772461
+Other small states,OSS,2019,82.5192031860352
+Pakistan,PAK,2019,46.0
+Panama,PAN,2019,95.0
+Philippines,PHL,2019,97.0
+Pre-demographic dividend,PRE,2019,56.2528305053711
+Paraguay,PRY,2019,93.0
+West Bank and Gaza,PSE,2019,96.0
+South Asia,SAS,2019,63.6927909851074
+Senegal,SEN,2019,38.5151901245117
+Singapore,SGP,2019,96.0
+Sierra Leone,SLE,2019,33.942211151123
+El Salvador,SLV,2019,87.0
+Serbia,SRB,2019,99.0
+Sub-Saharan Africa (excluding high income),SSA,2019,60.8932914733887
+Sub-Saharan Africa,SSF,2019,60.8974304199219
+Small states,SST,2019,84.7841110229492
+Sao Tome and Principe,STP,2019,82.7525329589844
+Chad,TCD,2019,18.6425495147705
+East Asia & Pacific (IDA & IBRD countries),TEA,2019,94.3467330932617
+Europe & Central Asia (IDA & IBRD countries),TEC,2019,98.9179534912109
+Togo,TGO,2019,55.0
+Thailand,THA,2019,90.1832962036133
+Turkmenistan,TKM,2019,99.6492919921875
+Latin America & the Caribbean (IDA & IBRD countries),TLA,2019,93.7814102172852
+Middle East & North Africa (IDA & IBRD countries),TMN,2019,69.7298889160156
+Tonga,TON,2019,97.5791702270508
+South Asia (IDA & IBRD),TSA,2019,63.6927909851074
+Sub-Saharan Africa (IDA & IBRD countries),TSS,2019,60.8974304199219
+Tunisia,TUN,2019,74.0
+Turkiye,TUR,2019,94.0
+Upper middle income,UMC,2019,93.6348876953125
+Uruguay,URY,2019,99.0
+Uzbekistan,UZB,2019,100.0
+Viet Nam,VNM,2019,95.0
+World,WLD,2019,83.0747299194336
+Samoa,WSM,2019,97.6584167480469
+South Africa,ZAF,2019,95.0
+Zimbabwe,ZWE,2019,93.3581237792969
+Aruba,ABW,2020,98.0
+Africa Eastern and Southern,AFE,2020,67.5523300170898
+Africa Western and Central,AFW,2020,51.2901382446289
+Arab World,ARB,2020,67.4393005371094
+Armenia,ARM,2020,100.0
+Bangladesh,BGD,2020,72.0
+Bolivia,BOL,2020,91.0
+Central African Republic,CAF,2020,26.2000007629395
+Central Europe and the Baltics,CEB,2020,99.437629699707
+China,CHN,2020,95.0
+Cameroon,CMR,2020,73.120002746582
+Colombia,COL,2020,96.0
+East Asia & Pacific (excluding high income),EAP,2020,94.6906585693359
+Early-demographic dividend,EAR,2020,74.5339736938477
+East Asia & Pacific,EAS,2020,94.460319519043
+Europe & Central Asia (excluding high income),ECA,2020,98.1478729248047
+Europe & Central Asia,ECS,2020,98.2269973754883
+Ecuador,ECU,2020,92.0
+Spain,ESP,2020,98.0
+Fragile and conflict affected situations,FCS,2020,58.7222213745117
+Ghana,GHA,2020,76.1900024414062
+Guyana,GUY,2020,86.8998336791992
+Heavily indebted poor countries (HIPC),HPC,2020,57.7105293273926
+IBRD only,IBD,2020,86.0542068481445
+IDA & IBRD total,IBT,2020,80.5646514892578
+IDA total,IDA,2020,61.5386581420898
+IDA blend,IDB,2020,58.5747909545898
+Indonesia,IDN,2020,95.0
+IDA only,IDX,2020,62.9617195129395
+Kazakhstan,KAZ,2020,99.8000030517578
+Kuwait,KWT,2020,95.0
+Latin America & Caribbean (excluding high income),LAC,2020,93.6383514404297
+Latin America & Caribbean,LCN,2020,93.9520568847656
+Least developed countries: UN classification,LDC,2020,59.5096397399902
+Low income,LIC,2020,53.9129409790039
+Sri Lanka,LKA,2020,92.0
+Lower middle income,LMC,2020,69.2241821289062
+Low & middle income,LMY,2020,80.3301696777344
+Late-demographic dividend,LTE,2020,95.1848297119141
+Middle East & North Africa,MEA,2020,73.0613403320312
+Mexico,MEX,2020,94.0
+Middle income,MIC,2020,82.6615371704102
+Mali,MLI,2020,22.0
+Middle East & North Africa (excluding high income),MNA,2020,70.4440994262695
+Mongolia,MNG,2020,99.0
+Mozambique,MOZ,2020,49.0
+Mauritania,MRT,2020,51.8120994567871
+Malawi,MWI,2020,62.6842613220215
+North America,NAC,2020,98.7386093139648
+OECD members,OED,2020,96.6091766357422
+Other small states,OSS,2020,82.8848266601562
+Peru,PER,2020,92.0
+Philippines,PHL,2020,99.0
+Pre-demographic dividend,PRE,2020,56.6447296142578
+Paraguay,PRY,2020,94.0
+West Bank and Gaza,PSE,2020,96.0
+Rwanda,RWA,2020,77.8100891113281
+South Asia,SAS,2020,64.6005630493164
+Saudi Arabia,SAU,2020,96.0
+Singapore,SGP,2020,96.0
+El Salvador,SLV,2020,89.0
+Sub-Saharan Africa (excluding high income),SSA,2020,61.1645317077637
+Sub-Saharan Africa,SSF,2020,61.1685791015625
+Small states,SST,2020,85.0407409667969
+Eswatini,SWZ,2020,89.4700012207031
+Seychelles,SYC,2020,96.6999969482422
+East Asia & Pacific (IDA & IBRD countries),TEA,2020,94.6221923828125
+Europe & Central Asia (IDA & IBRD countries),TEC,2020,98.9534225463867
+Latin America & the Caribbean (IDA & IBRD countries),TLA,2020,93.8450775146484
+Timor-Leste,TLS,2020,66.5
+Middle East & North Africa (IDA & IBRD countries),TMN,2020,70.1619873046875
+South Asia (IDA & IBRD),TSA,2020,64.6005630493164
+Sub-Saharan Africa (IDA & IBRD countries),TSS,2020,61.1685791015625
+Upper middle income,UMC,2020,93.7980270385742
+World,WLD,2020,83.3208694458008
+Zambia,ZMB,2020,84.3000030517578
+Africa Eastern and Southern,AFE,2021,67.4571075439453
+Afghanistan,AFG,2021,23.0
+Africa Western and Central,AFW,2021,51.6307182312012
+Arab World,ARB,2021,67.9970397949219
+United Arab Emirates,ARE,2021,97.0
+Benin,BEN,2021,33.1344985961914
+Burkina Faso,BFA,2021,31.0312004089355
+Bangladesh,BGD,2021,74.0
+Bulgaria,BGR,2021,98.1699981689453
+Brunei Darussalam,BRN,2021,96.8600006103516
+Central Europe and the Baltics,CEB,2021,99.4620971679688
+Cote d'Ivoire,CIV,2021,40.2550888061523
+"Congo, Rep.",COG,2021,75.370002746582
+Costa Rica,CRI,2021,98.0999984741211
+Cuba,CUB,2021,99.7171478271484
+Cyprus,CYP,2021,99.1500015258789
+East Asia & Pacific (excluding high income),EAP,2021,94.89208984375
+Early-demographic dividend,EAR,2021,75.0648803710938
+East Asia & Pacific,EAS,2021,94.6568832397461
+Europe & Central Asia (excluding high income),ECA,2021,98.2341384887695
+Europe & Central Asia,ECS,2021,98.2852096557617
+Ecuador,ECU,2021,94.0
+Estonia,EST,2021,99.879997253418
+Fragile and conflict affected situations,FCS,2021,58.8910102844238
+Fiji,FJI,2021,92.4281463623047
+Gabon,GAB,2021,87.0662002563477
+Guinea,GIN,2021,31.2700004577637
+"Gambia, The",GMB,2021,40.4522895812988
+Heavily indebted poor countries (HIPC),HPC,2021,58.3485107421875
+Croatia,HRV,2021,99.2399978637695
+Hungary,HUN,2021,99.0999984741211
+IBRD only,IBD,2021,86.3677062988281
+IDA & IBRD total,IBT,2021,80.8622970581055
+IDA total,IDA,2021,62.0894584655762
+IDA blend,IDB,2021,59.0729598999023
+IDA only,IDX,2021,63.5345497131348
+Cambodia,KHM,2021,63.6409111022949
+Latin America & Caribbean (excluding high income),LAC,2021,93.8697814941406
+Latin America & Caribbean,LCN,2021,94.1651382446289
+Least developed countries: UN classification,LDC,2021,60.2000617980957
+Low income,LIC,2021,54.5760612487793
+Sri Lanka,LKA,2021,92.0
+Lower middle income,LMC,2021,69.9624404907227
+Low & middle income,LMY,2021,80.6311492919922
+Late-demographic dividend,LTE,2021,95.3573303222656
+Lithuania,LTU,2021,99.8499984741211
+Latvia,LVA,2021,99.9100036621094
+"Macao SAR, China",MAC,2021,95.879997253418
+Moldova,MDA,2021,99.5
+Madagascar,MDG,2021,71.7537612915039
+Maldives,MDV,2021,98.4100036621094
+Middle East & North Africa,MEA,2021,73.5906295776367
+Middle income,MIC,2021,82.9748992919922
+Malta,MLT,2021,96.4199981689453
+Middle East & North Africa (excluding high income),MNA,2021,70.9716873168945
+Montenegro,MNE,2021,98.5400009155273
+Mauritania,MRT,2021,62.1699981689453
+Mauritius,MUS,2021,90.4599990844727
+North America,NAC,2021,98.7469329833984
+Namibia,NAM,2021,92.3300018310547
+Nigeria,NGA,2021,53.25244140625
+Nepal,NPL,2021,63.3300018310547
+Other small states,OSS,2021,83.2243270874023
+Poland,POL,2021,99.8000030517578
+Pre-demographic dividend,PRE,2021,57.2521286010742
+Puerto Rico,PRI,2021,92.4000015258789
+Portugal,PRT,2021,95.9199981689453
+Romania,ROU,2021,99.0
+Russian Federation,RUS,2021,100.0
+South Asia,SAS,2021,65.5572967529297
+Singapore,SGP,2021,96.0
+Sub-Saharan Africa (excluding high income),SSA,2021,61.2423706054688
+Sub-Saharan Africa,SSF,2021,61.2463302612305
+Small states,SST,2021,85.2913284301758
+Suriname,SUR,2021,93.4000015258789
+Syrian Arab Republic,SYR,2021,92.0
+East Asia & Pacific (IDA & IBRD countries),TEA,2021,94.8264465332031
+Europe & Central Asia (IDA & IBRD countries),TEC,2021,99.0002365112305
+Thailand,THA,2021,92.8000030517578
+Latin America & the Caribbean (IDA & IBRD countries),TLA,2021,94.0656509399414
+Middle East & North Africa (IDA & IBRD countries),TMN,2021,70.6903533935547
+Tonga,TON,2021,99.5
+South Asia (IDA & IBRD),TSA,2021,65.5572967529297
+Sub-Saharan Africa (IDA & IBRD countries),TSS,2021,61.2463302612305
+Ukraine,UKR,2021,100.0
+Upper middle income,UMC,2021,93.8753433227539
+Uzbekistan,UZB,2021,100.0
+Vanuatu,VUT,2021,88.4000015258789
+World,WLD,2021,83.5589599609375
+Samoa,WSM,2021,99.3000030517578
+South Africa,ZAF,2021,89.0
+Africa Eastern and Southern,AFE,2022,67.9772567749023
+Afghanistan,AFG,2022,26.5965595245361
+Africa Western and Central,AFW,2022,51.9547805786133
+Angola,AGO,2022,62.5
+Albania,ALB,2022,98.3000030517578
+Arab World,ARB,2022,68.4637222290039
+United Arab Emirates,ARE,2022,98.0
+Burundi,BDI,2022,69.4400024414062
+Benin,BEN,2022,36.4000015258789
+Burkina Faso,BFA,2022,29.1200008392334
+Bahrain,BHR,2022,96.0
+Bosnia and Herzegovina,BIH,2022,97.0999984741211
+Brazil,BRA,2022,94.9199981689453
+Bhutan,BTN,2022,63.9000015258789
+Central Europe and the Baltics,CEB,2022,99.4763793945312
+Chile,CHL,2022,97.120002746582
+"Congo, Dem. Rep.",COD,2022,71.7300033569336
+Comoros,COM,2022,56.8699989318848
+Cabo Verde,CPV,2022,87.6100006103516
+Dominican Republic,DOM,2022,95.5999984741211
+East Asia & Pacific (excluding high income),EAP,2022,95.0957336425781
+Early-demographic dividend,EAR,2022,75.7134628295898
+East Asia & Pacific,EAS,2022,94.8533477783203
+Europe & Central Asia (excluding high income),ECA,2022,98.311393737793
+Europe & Central Asia,ECS,2022,98.3143920898438
+Ecuador,ECU,2022,93.0
+"Egypt, Arab Rep.",EGY,2022,68.9499969482422
+Fragile and conflict affected situations,FCS,2022,59.0803298950195
+Gabon,GAB,2022,85.0400009155273
+Georgia,GEO,2022,100.0
+"Gambia, The",GMB,2022,52.25
+Guinea-Bissau,GNB,2022,41.0
+Guatemala,GTM,2022,78.6087493896484
+Guyana,GUY,2022,89.6600036621094
+Heavily indebted poor countries (HIPC),HPC,2022,58.9537582397461
+IBRD only,IBD,2022,86.7789077758789
+IDA & IBRD total,IBT,2022,81.2246322631836
+IDA total,IDA,2022,62.6076583862305
+IDA blend,IDB,2022,59.5557708740234
+IDA only,IDX,2022,64.0677719116211
+India,IND,2022,69.0
+"Iran, Islamic Rep.",IRN,2022,84.870002746582
+Jamaica,JAM,2022,90.8148727416992
+Kenya,KEN,2022,80.2699966430664
+Cambodia,KHM,2022,79.6500015258789
+Latin America & Caribbean (excluding high income),LAC,2022,94.037353515625
+Lao PDR,LAO,2022,83.370002746582
+Latin America & Caribbean,LCN,2022,94.3220901489258
+Least developed countries: UN classification,LDC,2022,60.8404006958008
+Low income,LIC,2022,55.1924514770508
+Sri Lanka,LKA,2022,92.0
+Lower middle income,LMC,2022,70.7207717895508
+Low & middle income,LMY,2022,81.0017318725586
+Lesotho,LSO,2022,89.7600021362305
+Late-demographic dividend,LTE,2022,95.5273895263672
+Morocco,MAR,2022,69.0800018310547
+Madagascar,MDG,2022,76.0299987792969
+Middle East & North Africa,MEA,2022,74.0603408813477
+Middle income,MIC,2022,83.3676605224609
+Middle East & North Africa (excluding high income),MNA,2022,71.5294570922852
+Malawi,MWI,2022,65.0899963378906
+Malaysia,MYS,2022,95.0
+North America,NAC,2022,98.7488708496094
+Niger,NER,2022,29.7000007629395
+Oman,OMN,2022,95.0
+Other small states,OSS,2022,83.4377517700195
+Philippines,PHL,2022,97.0015029907227
+Pre-demographic dividend,PRE,2022,57.8782081604004
+West Bank and Gaza,PSE,2022,97.0
+Rwanda,RWA,2022,77.0
+South Asia,SAS,2022,66.5561218261719
+Senegal,SEN,2022,47.0800018310547
+Sierra Leone,SLE,2022,41.310001373291
+San Marino,SMR,2022,100.0
+Somalia,SOM,2022,44.0
+Sub-Saharan Africa (excluding high income),SSA,2022,61.6872787475586
+Sub-Saharan Africa,SSF,2022,61.6911201477051
+Small states,SST,2022,85.4476165771484
+Sao Tome and Principe,STP,2022,91.0699996948242
+Eswatini,SWZ,2022,90.4126586914062
+Chad,TCD,2022,18.8700008392334
+East Asia & Pacific (IDA & IBRD countries),TEA,2022,95.0329437255859
+Europe & Central Asia (IDA & IBRD countries),TEC,2022,99.0364379882812
+Thailand,THA,2022,91.4859619140625
+Latin America & the Caribbean (IDA & IBRD countries),TLA,2022,94.2283477783203
+Middle East & North Africa (IDA & IBRD countries),TMN,2022,71.2479934692383
+South Asia (IDA & IBRD),TSA,2022,66.5561218261719
+Sub-Saharan Africa (IDA & IBRD countries),TSS,2022,61.6911201477051
+Trinidad and Tobago,TTO,2022,93.8321380615234
+Tunisia,TUN,2022,78.2611312866211
+Tanzania,TZA,2022,78.6999969482422
+Uganda,UGA,2022,76.5299987792969
+Upper middle income,UMC,2022,94.0716323852539
+Uruguay,URY,2022,99.0
+Uzbekistan,UZB,2022,100.0
+"Venezuela, RB",VEN,2022,97.7300033569336
+Viet Nam,VNM,2022,95.0
+World,WLD,2022,83.8527297973633
+Zimbabwe,ZWE,2022,91.1999969482422
+Africa Eastern and Southern,AFE,2023,68.4257125854492
+Africa Western and Central,AFW,2023,52.2019195556641
+Arab World,ARB,2023,68.8911666870117
+Azerbaijan,AZE,2023,100.0
+Bahrain,BHR,2023,96.0
+East Asia & Pacific (excluding high income),EAP,2023,95.289436340332
+Early-demographic dividend,EAR,2023,76.3357620239258
+East Asia & Pacific,EAS,2023,95.0429000854492
+Europe & Central Asia (excluding high income),ECA,2023,98.3591995239258
+Europe & Central Asia,ECS,2023,98.3508224487305
+Fragile and conflict affected situations,FCS,2023,59.0675582885742
+Heavily indebted poor countries (HIPC),HPC,2023,59.445930480957
+IBRD only,IBD,2023,87.1676483154297
+IDA & IBRD total,IBT,2023,81.5577926635742
+IDA total,IDA,2023,63.079891204834
+IDA blend,IDB,2023,60.0448684692383
+IDA only,IDX,2023,64.5311889648438
+India,IND,2023,70.0
+Jordan,JOR,2023,92.0
+Latin America & Caribbean (excluding high income),LAC,2023,94.1992568969727
+Latin America & Caribbean,LCN,2023,94.4765701293945
+Least developed countries: UN classification,LDC,2023,61.3816986083984
+Low income,LIC,2023,55.7443199157715
+Lower middle income,LMC,2023,71.4219284057617
+Low & middle income,LMY,2023,81.3233184814453
+Late-demographic dividend,LTE,2023,95.690559387207
+Middle East & North Africa,MEA,2023,74.4934692382812
+Middle income,MIC,2023,83.7181091308594
+Middle East & North Africa (excluding high income),MNA,2023,72.005729675293
+Other small states,OSS,2023,83.7849273681641
+Pre-demographic dividend,PRE,2023,58.4050712585449
+South Asia,SAS,2023,67.4998779296875
+El Salvador,SLV,2023,88.0
+Sub-Saharan Africa (excluding high income),SSA,2023,62.055061340332
+Sub-Saharan Africa,SSF,2023,62.058780670166
+East Asia & Pacific (IDA & IBRD countries),TEA,2023,95.2293701171875
+Europe & Central Asia (IDA & IBRD countries),TEC,2023,99.0769119262695
+Latin America & the Caribbean (IDA & IBRD countries),TLA,2023,94.3881301879883
+Middle East & North Africa (IDA & IBRD countries),TMN,2023,71.7244033813477
+South Asia (IDA & IBRD),TSA,2023,67.4998779296875
+Sub-Saharan Africa (IDA & IBRD countries),TSS,2023,62.058780670166
+Upper middle income,UMC,2023,94.2479019165039
+World,WLD,2023,84.1165313720703
+"Yemen, Rep.",YEM,2023,54.132740020752
