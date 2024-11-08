@@ -1,0 +1,138 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/countries-by-income-classification.csv"
+  },
+  "title": {
+    "text": "Global Income Distribution by Country",
+    "subtitle": [
+      "Number of countries split by income level: High, Medium, Low"
+    ],
+    "subtitleFontWeight": "lighter",
+    "align": "center",
+    "fontSize": 12,
+    "subtitleFontSize": 10
+  },
+  "params": [
+    {
+      "value": "World",
+      "name": "Region",
+      "bind": {
+        "input": "radio",
+        "options": [
+          "Africa",
+          "Asia",
+          "Europe",
+          "Oceania",
+          "North America",
+          "South America",
+          "World"
+        ]
+      },
+      "orient": "none",
+      "direction": "horizontal",
+      "legendX": 10,
+      "legendY": 5
+    }
+  ],
+  "layer": [
+    {
+      "transform": [
+        {"filter": "datum.Entity == Region"},
+        {
+          "fold": [
+            "Number of high-income countries",
+            "Number of upper-middle-income countries",
+            "Number of lower-middle-income countries",
+            "Number of low-income countries"
+          ],
+          "as": ["series", "value"]
+        },
+        {
+          "calculate": "indexof([  'Number of high-income countries','Number of upper-middle-income countries','Number of lower-middle-income countries','Number of low-income countries'],datum.series)",
+          "as": "stackOrder"
+        }
+      ],
+      "layer": [
+        {"mark": {"type": "area", "stroke": "white", "strokeWidth": 1}},
+        {
+          "transform": [{"filter": "year(datum.Year) == 2023"}],
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "dx": 5,
+            "dy": {
+              "expr": "Region == 'South America' ? {'Number of low-income countries': -10}[datum.series] :Region == 'Europe' ?  {'Number of low-income countries': -100}[datum.series] : 0"
+            }
+          },
+          "encoding": {
+            "text": {"field": "series"},
+            "y": {"field": "value", "stack": "zero"}
+          }
+        }
+      ],
+      "params": [{"name": "select", "select": "point"}],
+      "encoding": {
+        "x": {"field": "Year", "type": "temporal", "title": ""},
+        "y": {"aggregate": "sum", "field": "value", "type": "quantitative"},
+        "order": {"field": "stackOrder", "sort": "descending"},
+        "color": {
+          "field": "series",
+          "legend": null,
+          "scale": {"scheme": "viridis"},
+          "title": "Income Level:"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "aggregate": [
+            {
+              "op": "sum",
+              "field": "Number of high-income countries",
+              "as": "Number of high-income countries"
+            },
+            {
+              "op": "sum",
+              "field": "Number of upper-middle-income countries",
+              "as": "Number of upper-middle-income countries"
+            }
+          ],
+          "groupby": ["Year"]
+        },
+        {
+          "calculate": "datum['Number of high-income countries']",
+          "as": "High Income Countries"
+        }
+      ],
+      "mark": {"type": "rule", "opacity": 0},
+      "encoding": {
+        "x": {"field": "Year", "type": "temporal"},
+        "y": null,
+        "tooltip": [
+          {"field": "Year", "type": "temporal", "format": "%Y"},
+          {"field": "Number of high-income countries"},
+          {"field": "Number of upper-middle-income countries"}
+        ],
+        "opacity": {
+          "condition": [{"test": "datum.Year == hover.Year", "value": 0.3}],
+          "value": 0
+        }
+      },
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "fields": ["Year"],
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ]
+    }
+  ],
+  "config": {}
+}
