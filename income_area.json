@@ -3,6 +3,14 @@
     "data": {
       "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/countries-by-income-classification.csv"
     },
+    "title": {
+      "text": "Global Income Distribution by Country",
+      "subtitle": ["Number of countries split by income level: High, Medium, Low"],
+      "subtitleFontWeight": "lighter",
+      "align": "center",
+      "fontSize": 12,
+      "subtitleFontSize": 10
+    },
     "params": [
       {
         "value": "Female",
