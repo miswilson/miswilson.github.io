@@ -1,182 +1,192 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": {
-      "text": "Measures of CPI for Inflation",
-      "fontSize": 14,
-      "subtitle": "Interactive brush to highlight CPI values relative to 'All Goods' over specific intervals.",
-      "subtitleFontSize": 12,
-      "anchor": "middle",
-      "color": "black"
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Measures of CPI for Inflation",
+    "fontSize": 14,
+    "subtitle": "Click for Interactive brush to highlight CPI values relative to 'All Goods' over specific intervals.",
+    "subtitleFontSize": 12,
+    "anchor": "middle",
+    "color": "black"
+  },
+  "config": {
+    "view": {
+      "continuousWidth": 150,
+      "continuousHeight": 150
     },
-    "vconcat": [
-      {
-        "hconcat": [
-          {
-            "data": {
-              "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/l52f.json",
-              "format": {"type": "json", "property": "years", "parse": {"date": "utc:'%Y'"}
-            }
-            },
-            "params": [
-              {
-                "name": "brush",
-                "select": {"type": "interval", "encodings": ["x", "y"]},
-                "value": {"x": [55, 160], "y": [13, 37]}
-              }
-            ],
-            "mark": "circle",
-            "encoding": {
-              "x": {"field": "date", "type": "temporal", "title": ""},
-              "y": {"field": "value", "type": "quantitative", "title": "All Goods"},
-              "color": {
-      "condition": {
-        "param": "brush",
-        "field": "value",
-        "scale": {"scheme": "greenblue"},
-        "type": "quantitative",
-        "title": "CPI"
-      },
+    "concat": {
+      "spacing": 15
     }
-            }
-          },
-          {
-            "data": {
-              "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/l5jj.json",
-              "format": {"type": "json", "property": "years", "parse": {"date": "utc:'%Y'"}
-            }
-            },
-            "mark": "circle",
-            "encoding": {
-              "x": {"field": "date", "type": "temporal", "title": ""},
-              "y": {"field": "value", "type": "quantitative", "title": "Energy"},
-              "color": {
-                "condition": {"param": "brush", "field": "value", "type": "quantitative"},
-                "value": "black"
-              }
-            }
-          },
-          {
-            "data": {
-              "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/l528.json",
-              "format": {"type": "json", "property": "years", "parse": {"date": "utc:'%Y'"}
-            }
-            },
-            "mark": "circle",
-            "encoding": {
-              "x": {"field": "date", "type": "temporal", "title": ""},
-              "y": {"field": "value", "type": "quantitative", "title": "Health"},
-              "color": {
-                "condition": {"param": "brush", "field": "value", "type": "quantitative"},
-                "value": "black"
-              }
-            }
+  },
+  "vconcat": [
+    {
+      "hconcat": [
+        {
+          "data": {
+            "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/l52f.json",
+            "format": {"type": "json", "property": "years", "parse": {"date": "utc:'%Y'"}
           }
-        ]
-      },
-      {
-        "hconcat": [
-          {
-            "data": {
-              "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/l525.json",
-              "format": {"type": "json", "property": "years", "parse": {"date": "utc:'%Y'"}
-            }
-            },
-            "mark": "circle",
-            "encoding": {
-              "x": {"field": "date", "type": "temporal", "title": ""},
-              "y": {"field": "value", "type": "quantitative", "title": "Clothing and Footwear"},
-              "color": {
-                "condition": {"param": "brush", "field": "value", "type": "quantitative"},
-                "value": "black"
-              }
-            }
           },
-          {
-            "data": {
-              "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/j2me.json",
-              "format": {"type": "json", "property": "years", "parse": {"date": "utc:'%Y'"}
+          "width": 750,
+          "height": 250,
+          "params": [
+            {
+              "name": "brush",
+              "select": {"type": "interval", "encodings": ["x", "y"]},
+              "value": {"x": [55, 160], "y": [13, 37]}
             }
-            },
-            "mark": "circle",
-            "encoding": {
-              "x": {"field": "date", "type": "temporal", "title": ""},
-              "y": {"field": "value", "type": "quantitative", "title": "Chocolate"},
-              "color": {
-                "condition": {"param": "brush", "field": "value", "type": "quantitative"},
-                "value": "black"
-              }
-            }
-          },
-          {
-            "data": {
-              "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/j2m9.json",
-              "format": {"type": "json", "property": "years", "parse": {"date": "utc:'%Y'"}
-            }
-            },
-            "mark": "circle",
-            "encoding": {
-              "x": {"field": "date", "type": "temporal", "title": ""},
-              "y": {"field": "value", "type": "quantitative", "title": "Potatoes"},
-              "color": {
-                "condition": {"param": "brush", "field": "value", "type": "quantitative"},
-                "value": "black"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "hconcat": [
-          {
-            "data": {
-              "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/j2i9.json",
-              "format": {"type": "json", "property": "years", "parse": {"date": "utc:'%Y'"}
-            }
-            },
-            "mark": "circle",
-            "encoding": {
-              "x": {"field": "date", "type": "temporal", "title": ""},
-              "y": {"field": "value", "type": "quantitative", "title": "Bread"},
-              "color": {
-                "condition": {"param": "brush", "field": "value", "type": "quantitative"},
-                "value": "black"
-              }
-            }
-          },
-          {
-            "data": {
-              "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/l53e.json",
-              "format": {"type": "json", "property": "years", "parse": {"date": "utc:'%Y'"}
-            }
-            },
-            "mark": "circle",
-            "encoding": {
-              "x": {"field": "date", "type": "temporal", "title": ""},
-              "y": {"field": "value", "type": "quantitative", "title": "Electricity"},
-              "color": {
-                "condition": {"param": "brush", "field": "value", "type": "quantitative"},
-                "value": "black"
-              }
-            }
-          },
-          {
-            "data": {
-              "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/l552.json",
-              "format": {"type": "json", "property": "years", "parse": {"date": "utc:'%Y'"}
-            }
-            },
-            "mark": "circle",
-            "encoding": {
-              "x": {"field": "date", "type": "temporal", "title": ""},
-              "y": {"field": "value", "type": "quantitative", "title": "Sugar"},
-              "color": {
-                "condition": {"param": "brush", "field": "value", "type": "quantitative"},
-                "value": "black"
-              }
-            }
-          }
-        ]
-      }
-    ]
+          ],
+          "mark": "circle",
+          "encoding": {
+            "x": {"field": "date", "type": "temporal", "title": ""},
+            "y": {"field": "value", "type": "quantitative", "title": "All Goods"},
+            "color": {
+    "condition": {
+      "param": "brush",
+      "field": "value",
+      "scale": {"scheme": "greenblue"},
+      "type": "quantitative",
+      "title": "CPI"
+    },
   }
-  
+          }
+        }
+      ]
+    },
+    {
+      "hconcat": [
+        {
+          "data": {
+            "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/l525.json",
+            "format": {"type": "json", "property": "years", "parse": {"date": "utc:'%Y'"}
+          }
+          },
+          "mark": "circle",
+          "encoding": {
+            "x": {"field": "date", "type": "temporal", "title": ""},
+            "y": {"field": "value", "type": "quantitative", "title": "Clothing and Footwear"},
+            "color": {
+              "condition": {"param": "brush", "field": "value", "type": "quantitative"},
+              "value": "black"
+            }
+          }
+        },
+                  {
+          "data": {
+            "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/l5jj.json",
+            "format": {"type": "json", "property": "years", "parse": {"date": "utc:'%Y'"}
+          }
+          },
+          "mark": "circle",
+          "encoding": {
+            "x": {"field": "date", "type": "temporal", "title": ""},
+            "y": {"field": "value", "type": "quantitative", "title": "Energy"},
+            "color": {
+              "condition": {"param": "brush", "field": "value", "type": "quantitative"},
+              "value": "black"
+            }
+          }
+        },
+        {
+          "data": {
+            "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/j2me.json",
+            "format": {"type": "json", "property": "years", "parse": {"date": "utc:'%Y'"}
+          }
+          },
+          "mark": "circle",
+          "encoding": {
+            "x": {"field": "date", "type": "temporal", "title": ""},
+            "y": {"field": "value", "type": "quantitative", "title": "Chocolate"},
+            "color": {
+              "condition": {"param": "brush", "field": "value", "type": "quantitative"},
+              "value": "black"
+            }
+          }
+        },
+        {
+          "data": {
+            "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/j2m9.json",
+            "format": {"type": "json", "property": "years", "parse": {"date": "utc:'%Y'"}
+          }
+          },
+          "mark": "circle",
+          "encoding": {
+            "x": {"field": "date", "type": "temporal", "title": ""},
+            "y": {"field": "value", "type": "quantitative", "title": "Potatoes"},
+            "color": {
+              "condition": {"param": "brush", "field": "value", "type": "quantitative"},
+              "value": "black"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "hconcat": [
+        {
+          "data": {
+            "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/j2i9.json",
+            "format": {"type": "json", "property": "years", "parse": {"date": "utc:'%Y'"}
+          }
+          },
+          "mark": "circle",
+          "encoding": {
+            "x": {"field": "date", "type": "temporal", "title": ""},
+            "y": {"field": "value", "type": "quantitative", "title": "Bread"},
+            "color": {
+              "condition": {"param": "brush", "field": "value", "type": "quantitative"},
+              "value": "black"
+            }
+          }
+        },
+        {
+          "data": {
+            "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/l53e.json",
+            "format": {"type": "json", "property": "years", "parse": {"date": "utc:'%Y'"}
+          }
+          },
+          "mark": "circle",
+          "encoding": {
+            "x": {"field": "date", "type": "temporal", "title": ""},
+            "y": {"field": "value", "type": "quantitative", "title": "Electricity"},
+            "color": {
+              "condition": {"param": "brush", "field": "value", "type": "quantitative"},
+              "value": "black"
+            }
+          }
+        },
+                  {
+          "data": {
+            "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/l528.json",
+            "format": {"type": "json", "property": "years", "parse": {"date": "utc:'%Y'"}
+          }
+          },
+          "mark": "circle",
+          "encoding": {
+            "x": {"field": "date", "type": "temporal", "title": ""},
+            "y": {"field": "value", "type": "quantitative", "title": "Health"},
+            "color": {
+              "condition": {"param": "brush", "field": "value", "type": "quantitative"},
+              "value": "black"
+            }
+          }
+        },
+        {
+          "data": {
+            "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/l552.json",
+            "format": {"type": "json", "property": "years", "parse": {"date": "utc:'%Y'"}
+          }
+          },
+          "mark": "circle",
+          "encoding": {
+            "x": {"field": "date", "type": "temporal", "title": ""},
+            "y": {"field": "value", "type": "quantitative", "title": "Sugar"},
+            "color": {
+              "condition": {"param": "brush", "field": "value", "type": "quantitative"},
+              "value": "black"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
