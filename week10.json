@@ -1,0 +1,71 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "TAKEAWAY COFFEE LATTE",
+    "subtitle": "Inflation as a measure of Takeaway Coffees in UK Coffee Shops",
+    "fontSize": 14,
+    "anchor": "middle",
+    "color": "black"
+  },
+  "width": 300,
+  "height": 450,
+  "data": {
+    "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/latte_df.csv"
+  },
+  "params": [
+    {
+      "name": "Year",
+      "value": 2024,
+      "bind": {
+        "input": "range",
+        "min": 2003,
+        "max": 2024,
+        "step": 1,
+        "name": "Year:"
+      }
+    }
+  ],
+  "transform": [
+    {
+      "lookup": "id",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/uk_region_map.json",
+          "format": { "property": "features" }
+        },
+        "key": "properties.id",
+        "fields": ["geometry", "properties", "type"]
+      }
+    },
+    {
+      "filter": "datum.year == Year"
+    },
+    {
+      "calculate": "'£' + format(datum.price, ',.2f')",
+      "as": "formatted_price"
+    }
+  ],
+  "mark": {
+    "type": "geoshape"
+  },
+  "encoding": {
+    "color": {
+      "field": "price",
+      "type": "quantitative",
+      "legend": {
+        "title": "Price per Latte",
+        "labelExpr": "'£' + datum.label + '/ latte'"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "properties.NUTS_NAME",
+        "title": "Region"
+      },
+      {
+        "field": "formatted_price",
+        "title": "Price"
+      }
+    ]
+  }
+}
