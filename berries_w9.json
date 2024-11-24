@@ -1,0 +1,91 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Stacked bar chart with a hover tool for interactive exploration.",
+    "data": {
+      "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/berries_df.csv"
+    },
+    "title": {
+          "text": "Consumption of Berries",
+          "subtitle": "United Kingdom (Per Punnet) Median Price by Year",
+          "subtitleFontStyle":"italic",
+          "subtitleFontSize":10,
+          "anchor": "start",
+          "color": "black"},
+    "height": 300,
+    "transform": [
+      {"filter": "datum.description !== 'IBM'"},
+      {
+        "window": [{"op": "sum", "field": "price", "as": "cumulative_price"}],
+        "frame": [null, 0],
+        "groupby": ["year"]
+      }
+    ],
+    "encoding": {
+      "x": {
+        "field": "year",
+        "type": "temporal",
+        "title": "",
+        "axis": {"format": "%Y"}
+      },
+      "y": {
+        "field": "price",
+        "type": "quantitative",
+        "title": "Accumulative Price Spent on Berries (£)",
+        "axis": {
+          "titleFontSize": 12, 
+          "titleFontWeight": "lighter"
+        }
+      },
+      "color": {
+    "field": "description",
+    "type": "nominal",
+    "scale": {
+      "domain": ["Strawberries", "Blueberries", "Raspberries"],
+      "range": ["red", "blue", "pink"]
+    },
+    "title": "Berry Type"
+      },
+      "tooltip": [
+        {"field": "year", "type": "temporal", "title": "Year", "format": "%Y"},
+        {"field": "description", "type": "nominal", "title": "Berry Type"},
+        {"field": "price", "type": "quantitative", "title": "Price (£)", "format": ".2f"},
+       {"field": "cumulative_price", "type": "quantitative", "title": "Cumulative £ spent on Berries", "format": ".2f"}
+      ]
+    },
+    "layer": [
+      {
+        "mark": {"type": "bar"},
+        "encoding": {
+          "opacity": {
+            "condition": {
+              "param": "hover",
+              "value": 1
+            },
+            "value": 0.6
+          }
+        }
+      },
+      {
+        "params": [
+          {
+            "name": "hover",
+            "select": {
+              "type": "point",
+              "fields": ["description"],
+              "on": "mouseover",
+              "clear": "mouseout"
+            }
+          }
+        ],
+        "mark": {"type": "rule", "color": "black", "size": 1},
+        "encoding": {
+          "x": {"field": "year"}
+        }
+      }
+    ],
+    "config": {
+      "view": {"stroke": null},
+      "axis": {"labelFontSize": 12, "titleFontSize": 14}
+    }
+  }
+  

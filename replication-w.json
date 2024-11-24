@@ -1,0 +1,205 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+    "text": ["", "The state of the markets"],
+    "fontSize": 14
+    },
+    "config": {
+      "background": "white",
+      "view": {
+        "stroke": "transparent"
+      }
+    },
+    "hconcat": [
+      {
+        "title": {
+      "text": ["", "──","Currencies against the $"],
+      "subtitle": ["January-August 2019, %change", ""],
+      "subtitleFontStyle": "",
+      "subtitleFontSize": 11,
+      "fontSize": 12,
+      "subtitleFontWeight": 100,
+      "anchor": "start",
+      "color": "black"
+    },
+        "data": {
+          "values": [
+            {"currency": "Gold", "change": 15},
+            {"currency": "Japanese yen", "change": 10},
+            {"currency": "Swiss franc", "change": 8},
+            {"currency": "Chinese yuan", "change": 5},
+            {"currency": "Euro", "change": 3},
+            {"currency": "Australian dollar", "change": -5},
+            {"currency": "British pound", "change": -10},
+            {"currency": "Turkish lira", "change": -15},
+            {"currency": "South Korean won", "change": -20},
+            {"currency": "Argentine peso", "change": -40}
+          ]
+        },
+        "mark": {
+        "type": "bar",
+        "color": "#50be15"},
+        "encoding": {
+          "y": {
+            "field": "change",
+            "type": "quantitative",
+            "title": "",
+            "axis": {
+              "gridColor": "#bbb5b5",
+              "orient": "left",
+              "domainColor": "black",
+              "tickColor": "aliceblue",
+              "labelColor": "black"
+            }
+          },
+          "x": {
+            "field": "currency",
+            "type": "nominal",
+            "title": "",
+            "axis": {
+              "domainColor": "black",
+              "tickColor": "aliceblue",
+              "labelColor": "black"
+            }
+          }
+        }
+      },
+      {
+         "title": {
+      "text": ["", "──","United States, government-bond yields, %"],
+      "subtitle": ["By maturity", "", ""],
+      "subtitleFontStyle": "",
+      "subtitleFontSize": 11,
+      "fontSize": 12,
+      "subtitleFontWeight": 100,
+      "anchor": "start",
+      "color": "black"
+    },
+        "data": {
+          "values": [
+            {"maturity": "01-03-2001", "may2019": 2.5, "aug2019": 2.0},
+            {"maturity": "01-06-2001", "may2019": 2.4, "aug2019": 1.9},
+            {"maturity": "01-01-2002", "may2019": 2.3, "aug2019": 1.8},
+            {"maturity": "01-01-2003", "may2019": 2.2, "aug2019": 1.7},
+            {"maturity": "01-01-2004", "may2019": 2.1, "aug2019": 1.6},
+            {"maturity": "01-01-2006", "may2019": 2.0, "aug2019": 1.5},
+            {"maturity": "01-01-2007", "may2019": 1.9, "aug2019": 1.4},
+            {"maturity": "01-01-2010", "may2019": 1.8, "aug2019": 1.3}
+          ]
+        },
+        "layer": [
+          {
+            "mark": {
+              "type": "bar",
+              "color": "#5ed4ef",
+              "strokeWidth": 2.5
+            },
+            "encoding": {
+              "x": {
+                "field": "maturity",
+                "type": "ordinal",
+                "axis": {
+                  "title": null,
+              "gridColor": "#bbb5b5",
+              "orient": "bottom",
+              "domainColor": "black",
+              "tickColor": "black",
+              "labelColor": "black",
+             "labelAngle": 360
+                }
+              },
+              "y": {
+                "field": "may2019",
+                "type": "quantitative",
+                "axis": {
+                  "title": null,
+              "gridColor": "#bbb5b5",
+              "orient": "right",
+              "domainColor": "aliceblue",
+              "tickColor": "black",
+              "labelColor": "black"
+               }
+              }
+            }
+          },
+          {
+            "mark": {
+              "type": "bar",
+              "color": "#1e5fa4",
+              "strokeWidth": 2.5
+            },
+            "encoding": {
+              "x": {
+                "field": "maturity",
+                "type": "ordinal"
+              },
+              "y": {
+                "field": "aug2019",
+                "type": "quantitative"
+              }
+            }
+          },
+          {
+              "mark": {
+              "type": "text",
+              "align": "left",
+              "dx": 5,
+              "dy": -5,
+              "font": "Arial",
+              "fontSize": 12,
+              "fill": "#000000"
+            },
+            "encoding": {
+              "x": {
+                "field": "maturity",
+                "type": "ordinal"
+              },
+              "y": {
+                "field": "may2019",
+                "type": "quantitative"
+              }
+            }
+          },
+          {
+              "mark": {
+              "type": "text",
+              "align": "left",
+              "dx": 5,
+              "dy": -5,
+              "font": "Arial",
+              "fontSize": 12,
+              "fill": "#000000"
+            },
+            "encoding": {
+              "x": {
+                "field": "maturity",
+                "type": "ordinal"
+              },
+              "y": {
+                "field": "aug2019",
+                "type": "quantitative"
+              }
+            }
+          },
+          {
+        "data": {"values": [{"date": "Aug 14th 2019"}]},
+        "mark": {"type": "text", "color": "#1e5fa4"},
+        "encoding": {
+          "text": {"field": "date", "type": "nominal"},
+          "x": {"value": 200},
+          "y": {"value": 100}
+        }
+      },
+      {
+        "data": {"values": [{"country": "May 1st 2019"}]},
+        "mark": {"type": "text", "color": "#5ed4ef"},
+        "encoding": {
+          "text": {"field": "country", "type": "nominal"},
+          "x": {"value": 200},
+          "y": {"value": 65}
+        }
+      }
+        ]
+      }
+    ]
+  }

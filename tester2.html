@@ -6,47 +6,14 @@
     <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="medianqueries.css" />
 
     <style>
         /* Reset some default margins */
         body, h1, p {
             margin: 0;
             padding: 0;
-        }
-
-        /* Full viewport layout */
-        body {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: center;
-            min-height: 100vh;
-            background-color: rgb(255, 255, 255);
-            color: rgb(12, 12, 12);
-            font-family: Arial, sans-serif;
-        }
-
-        /* Navigation styles */
-        .nav-bar {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background-color: rgb(0, 0, 139);
-            text-align: center;
-            padding: 10px 0;
-            z-index: 100;
-        }
-
-        .nav-bar a {
-            color: white;
-            text-decoration: none;
-            font-size: 1.2rem;
-            padding: 0 15px;
-            display: inline-block;
-        }
-
-        .nav-bar a:hover {
-            text-decoration: underline;
         }
 
         /* Container for chart and text */
@@ -56,29 +23,30 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: center;
     max-width: 1200px;
-    margin-top: 150px; /* Increased margin-top to bring chart down */
+    margin-top: 10px; /* Increased margin-top to bring chart down */
     padding: 20px;
 }
 
 /* Chart container to ensure it's centered but with more space */
 .chart-container {
     width: 100%;
-    height: 400px;  /* Adjust based on your needs */
+    height: 100%;  /* Adjust based on your needs */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-
         /* Text section: title and description */
         .info-section {
             text-align: center;
             margin-top: 20px;
+            justify-content: center;
+            align-items: center;
         }
 
-        /* Navigation buttons (arrows) */
+        /* Arrow buttons (arrows) */
         .nav-button {
             position: fixed;
             top: 50%;
@@ -90,32 +58,11 @@
         }
 
         .nav-button.prev {
-            left: 10%;
+            left: 5%;
         }
 
         .nav-button.next {
-            right: 10%;
-        }
-
-        /* Hamburger menu (Mobile menu) */
-        .hamburger-menu {
-            display: none;
-        }
-
-        /* Media query for mobile devices */
-        @media (max-width: 768px) {
-            .nav-bar a {
-                font-size: 1rem;
-                padding: 10px;
-            }
-
-            .hamburger-menu {
-                display: block;
-            }
-
-            .nav-bar {
-                text-align: left;
-            }
+            right: 5%;
         }
 
     </style>
@@ -123,12 +70,33 @@
 
 <body>
     <!-- Navigation Bar -->
-    <div class="nav-bar">
-        <a href="index.html" onclick="toggleMenu()">About</a>
-        <a href="scrolling.html" onclick="toggleMenu()">Portfolio</a>
-        <a href="index.html" onclick="toggleMenu()">Project</a>
-        <a href="index.html" onclick="toggleMenu()">Conclusions</a>
-    </div>
+    <nav id="desktop-nav">
+        <div class="logo">Mia Wilson</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="tester2.html">Portfolio</a></li>
+                <li><a href="index.html#project">Project</a></li>
+                <li><a href="index.html#contact">Conclusions</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Mia Wilson</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+                <a href="tester2.html">Portfolio</a>
+                <li><a href="index.html#project" onclick="toggleMenu()">Project</a></li>
+                <li><a href="index.html#contact" onclick="toggleMenu()">Conclusions</a></li>
+            </div>
+        </div>
+    </nav>
 
     <!-- Container for chart and info -->
     <div class="container">
@@ -148,26 +116,49 @@
     <div class="nav-button prev" id="prev">◀</div>
     <div class="nav-button next" id="next">▶</div>
 
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="tester2.html">Portfolio</a></li>
+                <li><a href="index.html#project">Project</a></li>
+                <li><a href="index.html#contact">Conclusions</a></li>
+                </ul>  
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Mia Wilson</p>
+    </footer>
+
     <script>
         let currentIndex = 0;
         let chartData = [];
 
         const charts = [
-            ['https://raw.githubusercontent.com/EconomicsObservatory/courses/main/2/s2_chart2.json'],
-            ['DataSc/wk1_chart1.json'],
-            ['DataSc/wk1_chart2.json'],
-            ['DataSc/visualization.vl.json'],
-            ['DataSc/fr_uk.json'],
-            ['DataSc/habits.json'],
-            ['DataSc/empire.json'],
-            ['DataSc/colonies_powers.json'],
-            ['DataSc/cpi_loop.json'],
-            ['DataSc/literacy_map.json'],
-            ['DataSc/map_compare.json'],
-            ['DataSc/without.json'],
-            ['DataSc/gni_hover_concat.json'],
-            ['DataSc/berries_w9.json'],
-            ['DataSc/week10.json']
+            ['https://raw.githubusercontent.com/EconomicsObservatory/courses/main/2/s2_chart2.json', 'Hosting'],
+            ['DataSc/wk1_chart1.json', 'Hosting'],
+            ['DataSc/wk1_chart2.json', 'Hosting'],
+            ['DataSc/visualization.vl.json', 'Building'],
+            ['DataSc/fr_uk.json', 'Building'],
+            ['DataSc/habits.json', 'Building'],
+            ['DataSc/empire.json', 'Debating: The Legacies of Empire', 'The pannel discussed the long-term repercussions of the British Empire, particularly The Slave Trade. They discussed the influence on the wealth of Britain and the scale of resources Britain provided across the world. This chart supports the materialistic image of Empire. Though many records were destroyed, it is important to highlight the role in providing Britain with the resources it needed. Note that there is little discussion of status imperial entrepreneurism in 1799 to protect people with the imperial resources set out in the chart.'], 
+            ['DataSc/colonies_powers.json', 'Debating', 'My chart illustrates that the history of British imperialism sits at the underbelly of the struggles of cost of living crisis — facilitated by the British empire and private capital. It supports the view that there is a link between the East India company, Slave trade, Gulf of Guinea and contemporary capitalism from British history. Indeed there is a widening gap between assets and subsistence between European Colonial Powers and their former Colonies. Evidently the architecture of Empire is still dominent in the global economy today, and it is interesting that the top 3 corporate tax savers in the world are British territory that were colonies made under the jurisdiction of the UK. The status of India, as the country with the lowest GDP per capita in 1998, emphasises the enduring impact of imperial inequality and systemic exploitation.'], 
+            ['DataSc/replication_original.json', 'Replication'],
+            ['DataSc/replication-w.json', 'Replication', "To improve the chart The Economist had created, I remodelled the chart on 'Currencies against the $' by switching the x and y-axis. I found the horizontal bars makes the chart more compelling to illustrate the discrepancies between currencies. Transforming the chart on 'Government-bond yields' into a bar chart, not only allows for cross-comparision between May and August, but also highlights the percentage decline in maturity from May to August more explicitly. This approach makes the data more accessible to readers who want to quickly grasp the difference between two specific points in time, without the need to follow trends over time on a line graph."], //xaxis and red line at x=0
+                    //Insert 2 replication graphs from FT or Economist 
+                    // <img src=".Explore/economist_chart.png" 
+                    // alt="economist" 
+                    // class="icon"/>
+            ['DataProj/line_trend.json', 'Scraper', 'The reason I chose to scrap my data from the Vogue Archieves was an experiment into my project. I wanted to ensure that the site was accessible and could collate a group of terms that were releveant to fashion trends in the 20s. This data corroborates well with the theme of my project and will be useful against data on the economy over this decade.', 'href="Explore/counting_vogue.ipynb"'], //Add python notebook link
+            ['DataSc/cpi_loop.json', 'Loops'], //Add link to python notebook
+            ['DataSc/basemap.json', 'Base Map', 'I created 2 maps and a base map of The World for this porfolio task. This base map has a tooltip to explore the countries associated with the point on the map, I found this to be useful as a base for my next 2 charts. See the next 2 slides for my choropleth map and concatenated maps collating information on male and female literacy rates.'],
+            ['DataSc/literacy_map.json', 'Maps', "I created this map by layering an API on global literacy rates with a world map using Vega-Lite's layer function. The color scale quickly compares countries by literacy rates, with darker shades representing higher rates, allowing for quick cross-country comparisons and an added tooltip for additional details. Countries with limited data are shown in grey, as earlier decades had more gaps in the data. Note that the large data frame affects the map's responsiveness."], 
+            ['DataSc/map_compare.json', 'Maps', 'This map horizontally concatenates the data to enable a side-by-side comparison with the colour scale highlighting differences in literacy rates by decade.'], 
+            ['DataSc/without.json', 'Analytics'], 
+            ['DataSc/gni_hover_concat.json', 'Analytics'], 
+            ['DataSc/berries_w9.json', 'Big Data', "Using UK price data, I created a layered bar chart visualising annual spending on berries (blueberries, raspberries, strawberries). Each berry's data is represented individually, with an accumulative total layer. I scraped the data, converted it into a CSV, and created a chart in Vega-Lite, adding a tooltip for further insights."], 
+            ['DataSc/week10.json', 'Big Data', ''], //Explain
+            ['DataProj/effect_rpi_silhouette.json', 'Interactive Visualisations'] //Interactive chart insert
         ];
 
         let path = ''; // Path to the folder with your charts
@@ -183,6 +174,17 @@
 
             document.querySelector('.chart-title').textContent = charts[index][1];
             document.querySelector('.chart-description').textContent = charts[index][2];
+            
+            // find how to get this link to work
+            //let linkElement = document.querySelector('.chart-link');
+           // let linkPath = charts[index][3];
+           // if (linkPath) {
+              //  linkElement.href = linkPath;
+             //   linkElement.textContent = linkPath;
+         //   } else {  
+          //      linkElement.href = '#';
+      //  }
+
         }
 
         embedChart(currentIndex);
