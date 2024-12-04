@@ -1,0 +1,91 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Two vertically concatenated charts that show a histogram of precipitation in Seattle and the relationship between min and max temperature.",
+    "data": {
+      "url": "data/weather.csv"
+    },
+    "transform": [{
+      "filter": "datum.location === 'Seattle'"
+    }],
+    "hconcat": [
+         {
+        "data": {
+      "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/sssdf.csv"
+    },
+        "title": "Shoulder Pads",
+        "mark": "line",
+        "encoding": {
+          "x": {
+            "field": "start_date",
+            "type": "temporal",
+            "title": "Year"
+          },
+          "y": {
+            "field": "count",
+            "type": "quantitative",
+            "title": "Count"
+          },
+          "color": {
+            "value": "blue"
+          }
+        },
+        "transform": [
+          {
+            "filter": {
+              "field": "term",
+              "equal": "Shoulder Pads"
+            }
+          }
+        ]
+      },
+   {"description": "Basic world map showing military expenditure as a percentage of GDP.",
+     "width": 400,
+    "height": 500,
+    "projection": {"type": "equalEarth"},
+    "layer": [
+      {
+        "data": {
+          "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/map_world.geojson",
+          "format": {"property": "features"}
+        },
+        "mark": {"type": "geoshape", "color": "lightgrey", "stroke": "white", "strokeWidth": 0.5}
+      },
+      {
+        "data": {
+          "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/military-spending-as-a-share-of-gdp-gmsd.csv"
+        },
+        "transform": [
+          {
+            "lookup": "Code",
+            "from": {
+              "data": {
+                "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/map_world.geojson",
+                "format": {"property": "features"}
+              },
+              "key": "properties.ISO3",
+              "fields": ["properties.ADMIN"]
+            }
+          }
+        ],
+        "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 0.1},
+        "encoding": {
+          "color": {
+            "field": "milexgdp",
+            "type": "quantitative",
+            "scale": {"scheme": "reds"},
+            "legend": {"title": "Military Spending (% GDP)"},
+            "aggregate": {
+              "orient": "bottom"
+            }
+          },
+          "tooltip": [
+            {"field": "properties.ADMIN", "title": "Country"},
+            {"field": "milexgdp", "title": "Military Spending (% GDP)", "format": ".2f"}
+          ]
+        }
+      }
+    ]
+    }
+    ]
+  }
+  

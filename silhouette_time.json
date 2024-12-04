@@ -1,0 +1,67 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/cleaned_silhouettes_lis.csv"
+    },
+     "title": {
+        "text": "Trendline: Mentions of Silhouette Type Across Time",
+        "fontSize": 14,
+        "subtitle": "",
+        "subtitleFontSize": 12,
+        "anchor": "middle",
+        "color": "black"
+      },
+      "transform": [
+        {"filter": "datum['End Date'] != '2023-01-01'"}
+      ],
+    "width": 500,
+    "height": 300,
+    "layer": [
+      {
+        "params": [{
+          "name": "Result Count", 
+          "value": [{"x": {"year": 2005, "month": 1, "date": 1}}],
+          "select": {
+            "type": "point",
+            "encodings": ["x"],
+            "on": "pointerover",
+            "nearest": true
+          }
+        }],
+        "mark": "point",
+        "encoding": {
+          "x": {"field": "Start Date", "type": "temporal", "axis": null},
+          "opacity": {"value": 0}
+        }
+      },
+      {
+        "mark": "line",
+        "encoding": {
+          "x": {"field": "Start Date", "type": "temporal", "axis": null},
+          "y": {
+            "field": "Result Count", "title": "Mentions","type": "quantitative",
+            "axis": {"format": "a"}
+          },
+          "color": {"field": "Term", "type": "nominal"}
+        }
+      },
+      {
+        "transform": [{"filter": {"param": "Result Count"}}],
+        "encoding": {
+          "x": {"field": "Start Date", "type": "temporal", "axis": null},
+          "color": {"value": "firebrick"}
+        },
+        "layer": [
+          {"mark": {"type": "rule", "strokeWidth": 0.5}},
+          {
+            "mark": {"type": "text", "align": "center", "fontWeight": 100},
+            "encoding": {
+              "text": {"field": "Start Date", "timeUnit": "yearmonth"},
+              "y": {"value": 310}
+            }
+          }
+        ]
+      }
+    ]
+  }
+  

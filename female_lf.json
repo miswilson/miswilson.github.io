@@ -1,0 +1,119 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/female-labor-force-participation-oecd.csv"
+    },
+    "title": {
+      "text": "Female Labour Force Participation",
+      "fontSize": 14,
+      "subtitle": "Share of women in the workforce: Proportion of the female population aged 15+ that is economically active.",
+      "subtitleFontSize": 12,
+      "anchor": "middle",
+      "color": "black"
+    },
+    "selection": {
+      "hover": {
+        "type": "point",
+        "on": "pointerover",
+        "clear": "pointerout",
+        "encodings": ["x", "y"]
+      }
+    },
+    "mark": "line",
+    "encoding": {
+      "x": {
+        "field": "Year",
+        "type": "temporal",
+        "title": ""
+      },
+      "y": {
+        "field": "Participation",
+        "type": "quantitative",
+        "title": "",
+        "scale": {
+          "type": "linear"
+        }
+      },
+      "color": {
+        "field": "Entity",
+        "type": "nominal",
+        "title": "Country"
+      }
+    },
+    "layer": [
+      {
+        "mark": "circle"
+      },
+      {
+        "params": [
+          {
+            "name": "hover",
+            "select": {
+              "type": "point",
+              "fields": ["Year"],
+              "on": "mouseover",
+              "clear": "mouseout"
+            }
+          }
+        ],
+        "mark": {
+          "type": "circle",
+          "tooltip": true
+        },
+        "encoding": {
+          "x": {
+            "field": "Year",
+            "type": "temporal"
+          },
+          "y": {
+            "field": "Participation",
+            "type": "quantitative"
+          },
+          "color": {
+            "field": "Entity",
+            "type": "nominal"
+          },
+          "tooltip": [
+            {
+              "field": "Year",
+              "type": "temporal",
+              "title": "Year",
+              "format": "%Y"
+            },
+            {
+              "field": "Entity",
+              "type": "nominal",
+              "title": "Country"
+            },
+            {
+              "field": "Participation",
+              "type": "quantitative",
+              "title": "Participation (%)",
+              "format": ".2f"
+            }
+          ],
+          "opacity": {
+            "condition": {
+              "test": {
+                "param": "hover",
+                "empty": false
+              },
+              "value": 1
+            },
+            "value": 0
+          },
+          "size": {
+            "condition": {
+              "test": {
+                "param": "hover",
+                "empty": false
+              },
+              "value": 48
+            },
+            "value": 100
+          }
+        }
+      }
+    ]
+  }
+  

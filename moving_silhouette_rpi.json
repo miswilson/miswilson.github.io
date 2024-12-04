@@ -1,0 +1,126 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "Trendline: Popularity of Silhouette Type Comparative to Inflation",
+      "subtitle": [
+        "Annual % Change in RPI in the UK (inflation) [ONS, PB-N2SA],",
+        "Compared to Silhouette mentions in Vogue [Vogue Archives]"
+      ],
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 12,
+      "anchor": "start",
+      "color": "black"
+    },
+    "config": {
+      "concat": {
+        "spacing": 15
+      }
+    },
+    "vconcat": [
+      {
+        "data": {
+          "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/rpi_uk_1900.csv"
+        },
+        "width": 500,
+        "height": 300,
+        "mark": {
+          "type": "line",
+          "color": "black"
+        },
+        "encoding": {
+          "x": {
+            "field": "year",
+            "type": "temporal",
+            "title": "",
+            "scale": {
+              "domain": ["1900-01-01", "2021-01-01"]
+            }
+          },
+          "y": {
+            "field": "unit",
+            "type": "quantitative",
+            "title": "Annual % Change"
+          },
+          "tooltip": [
+            {"field": "year", "type": "temporal", "title": "Year"},
+            {"field": "unit", "type": "quantitative", "title": "Annual Percentage Change"}
+          ]
+        },
+        "selection": {
+          "highlight": {
+            "type": "interval",
+            "encodings": ["x"],
+            "bind": "scales",
+            "zoom": true
+          }
+        }
+      },
+      {
+        "data": {
+          "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/cleaned_silhouettes_lis.csv"
+        },
+        "transform": [
+          {"filter": "datum['End Date'] != '2023-01-01'"}
+        ],
+        "width": 500,
+        "height": 300,
+        "layer": [
+          {
+            "params": [{
+              "name": "Result Count",
+              "value": [{"x": {"year": 2005, "month": 1, "date": 1}}],
+              "select": {
+                "type": "point",
+                "encodings": ["x"],
+                "on": "pointerover",
+                "nearest": true
+              }
+            }],
+            "mark": "point",
+            "encoding": {
+              "x": {"field": "Start Date", "type": "temporal", "axis": null},
+              "opacity": {"value": 0}
+            }
+          },
+          {
+            "mark": "line",
+            "encoding": {
+              "x": {"field": "Start Date", "type": "temporal", "axis": null},
+              "y": {
+                "field": "Result Count",
+                "title": "Mentions",
+                "type": "quantitative",
+                "axis": {"format": "a"}
+              },
+              "color": {"field": "Term", "type": "nominal"}
+            }
+          },
+          {
+            "transform": [{"filter": {"param": "Result Count"}}],
+            "encoding": {
+              "x": {"field": "Start Date", "type": "temporal", "axis": null},
+              "color": {"value": "firebrick"}
+            },
+            "layer": [
+              {"mark": {"type": "rule", "strokeWidth": 0.5}},
+              {
+                "mark": {"type": "text", "align": "center", "fontWeight": 100},
+                "encoding": {
+                  "text": {"field": "Start Date", "timeUnit": "yearmonth"},
+                  "y": {"value": 310}
+                }
+              }
+            ]
+          }
+        ],
+        "selection": {
+          "highlight": {
+            "type": "interval",
+            "encodings": ["x"],
+            "bind": "scales",
+            "zoom": true
+          }
+        }
+      }
+    ]
+  }
