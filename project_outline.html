@@ -44,6 +44,8 @@
     justify-content: center;
     align-items: center;
     margin-top: 0%;
+    margin-left: auto;
+    margin-right: auto; /*ensures image is in center of page */
 }
 
 .trends-chart {
@@ -55,6 +57,12 @@
     margin-top: 0%;
 }
 
+.sequin_chart {
+    height: auto;  
+    margin-top: 20px; 
+    margin-left: auto;
+    margin-right: auto;
+}
 .vtr_chart {
     display: flex;
     justify-content: center;
@@ -166,11 +174,11 @@
 
         const charts = [
     ['','Do shifts in the global economy influence the popularity and evolution of fashion trends?', '<video class="proj_chart" src="./DataProj/assets/voguecovers.mp4" alt="voguecovers" autoplay muted></video>'],
-    ['DataProj/line_trend.json', 'Trend Analysis', '<img class="trends-chart" src="DataProj/assets/trends.png"></img>'],
+    ['DataProj/line_trend.json', 'Trend Occurance in the 20s','<video class="sequin_chart" src="./DataProj/assets/vid_style.mp4" alt="voguecovers" autoplay muted></video>'],
     ['DataProj/rpi_term_time.json', 'RPI Over Time', ''],
     ['DataProj/ss_df.json', 'Trajectory of Clothing as Women join the Labour Force', ""],
-    ['DataProj/brazil,india,etc.json', 'Economic Impact on Fashion Leadership', '<img class="image_chart" src="DataProj/assets/Poppins.png"></img>'],
-    ['DataProj/clarityonshoulderpads.json', 'An Analysis of the Shoulder Pad', ""],
+    ['DataProj/brazil,india,etc.json', 'Economies Shaping Fashion Trends in Brazil, France, Japan, and India', '<img class="image_chart" src="DataProj/assets/Poppins.png"></img>'],
+    ['DataProj/clarityonshoulderpads.json', 'An Analysis of the Shoulder Pad', "<h3>Implementing hover functionality also resolved overlapping labels, without recoding their dy values.</h3>"],
     ['blossom_trend.json', 'Japanese Style Trendline', '<video class="proj_chart" src="./DataProj/assets/Images taken from the Vogue Archives.mp4" alt="bloom" autoplay muted></video>'],
     ['DataProj/countries_rank.json', "Countries Voted 'Most Fashionable'", ""]
         ];
