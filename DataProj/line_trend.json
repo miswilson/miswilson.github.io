@@ -1,0 +1,99 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/fashion_20s.csv",
+    "format": {"parse": {"Start Date": "date"}}
+  },
+  "title": {
+    "text": "Trend Patterns in Economic Boom",
+    "fontSize": 14,
+    "subtitle": "Interactive Chart on Trending Fashion Features, Measured by Mentions in Vogue by Release Date (Roaring 20s)",
+    "subtitleFontSize": 12,
+    "anchor": "middle",
+    "color": "black"
+  },
+  "transform": [
+    {
+      "calculate": "datum.Term === 'fur' ? 'Fur' : datum.Term === 'sequins' ? 'Sequins' : datum.Term === 'glitter' ? 'Glitter' : datum.Term === 'flapper' ? 'Flapper' : datum.Term",
+      "as": "RenamedTerm"
+    }
+  ],
+  "facet": {
+    "column": {"field": "RenamedTerm", "type": "nominal", "title": " "}
+  },
+  "selection": {
+    "hover": {
+      "type": "point",
+      "on": "pointerover",
+      "clear": "pointerout",
+      "encodings": ["x", "y"]
+    }
+  },
+  "spec": {
+    "mark": "line",
+    "encoding": {
+      "x": {"field": "Start Date", "type": "temporal", "title": ""},
+      "y": {
+        "field": "Result Count",
+        "type": "quantitative",
+        "title": "",
+        "scale": {"type": "linear"}
+      },
+      "color": {
+        "field": "RenamedTerm",
+        "type": "nominal",
+        "title": "Trending Design"
+      }
+    },
+    "layer": [
+      {"mark": "line"},
+      {
+        "params": [
+          {
+            "name": "hover",
+            "select": {
+              "type": "point",
+              "fields": ["Start Date"],
+              "on": "mouseover",
+              "clear": "mouseout"
+            }
+          }
+        ],
+        "mark": {"type": "circle", "tooltip": true},
+        "encoding": {
+          "x": {"field": "Start Date", "type": "temporal"},
+          "y": {"field": "Result Count", "type": "quantitative"},
+          "color": {"field": "RenamedTerm", "type": "nominal"},
+          "tooltip": [
+            {
+              "field": "Start Date",
+              "title": "Year",
+              "type": "temporal",
+              "format": "%Y"
+            },
+            {
+              "field": "Result Count",
+              "title": "Mentions",
+              "type": "quantitative"
+            }
+          ],
+          "opacity": {
+            "condition": {
+              "test": {"param": "hover", "empty": false},
+              "value": 1
+            },
+            "value": 0
+          },
+          "size": {
+            "condition": {
+              "test": {"param": "hover", "empty": false},
+              "value": 48
+            },
+            "value": 100
+          }
+        }
+      }
+    ]
+  },
+  "resolve": {"scale": {"y": "independent"}}
+}
