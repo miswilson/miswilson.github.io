@@ -1,524 +1,628 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "height":500,
+    "height": 500,
     "width": 400,
     "title": {
-      "text": ["","The role of Shoulder Pads", "──", "Economies and Material Innovation"],
-      "subtitle": ["Shoulder pad popularity by mentions with correlations to societial conditions:", "Economic Power and Female Empowerment; War and Military Influence; Economic Cycles and Material Innovation;", "Shoulder Pads and Economic Inequality"],
+      "text": [
+        "",
+        "The role of Shoulder Pads",
+        "──",
+        "Economies and Material Innovation"
+      ],
+      "subtitle": [
+        "Shoulder pad popularity by mentions with correlations to societial conditions:",
+        "Economic Power and Female Empowerment; War and Military Influence; Economic Cycles and Material Innovation;",
+        "Shoulder Pads and Economic Inequality"
+      ],
       "subtitleFontSize": 11,
       "fontSize": 12,
       "subtitleFontWeight": 100,
       "anchor": "start",
       "color": "black"
     },
-    "config": {
-      "axisX": {
-      "grid": false,
-      "title": null
-      }
-    },
-     "vconcat": [
-      { "hconcat":[
-              {
-         "data": {
-      "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/sssdf.csv"
-    },
-    "title": {
-      "text": ["──", "Shoulder Pads"],
-      "subtitle": ["Data on the popularity of Shoulder Pads", "Shoulder pads are an emblem of women equating themselves with men, not only in pay or respect, but in stature, as well.", ""],
-      "subtitleFontSize": 11,
-      "fontSize": 12,
-      "subtitleFontWeight": 100,
-      "anchor": "start",
-      "color": "black"
-    },
-    "hconcat": [
+    "config": {"axisX": {"grid": false, "title": null},
+    "view": {"strokeOpacity": 0}},
+    "vconcat": [
       {
-        "title": "",
-        "mark": {"type": "area",
-        "interpolate": "step-after",
-        "width": 30
-        },
-          "params": [{
-        "name": "highlight",
-        "select": {
-          "type": "point",
-              "fields": ["Year"],
-          "on": "pointerover"
-        }
-      }],
-         "width": 500,
-        "encoding": {
-          "x": {
-            "field": "start_date",
-            "type": "temporal",
-            "title": "",
-            "timeUnit": "year"
-          },
-          "y": {
-            "field": "count",
-            "type": "quantitative",
-            "title": "Mentions of Shoulder Pads in Vogue",
-            "axis": {
-  "titleAngle": 0,
-  "titleY": -3,
-  "titleX": 0,
-  "titleAlign": "left",
-  "titleFontWeight": "lighter",
-  "titleFontSize": 10
-            }
-          },
-          "color": {
-            "value": "grey"
-          },
-          "opacity": {
-            "condition": {
-              "param": "highlight",
-              "value": 1},
-              "value": 0.2
-          },
-          "tooltip": [
-            {"field": "start_date", "type": "temporal", "title": "Year",
-            "format": "%Y"},
-            {"field": "count", "type": "quantitative", "title": "Mentions"}
-          ]
-        },
-        "transform": [
+        "hconcat": [
           {
-            "filter": {
-              "field": "term",
-              "equal": "Shoulder Pads"
-            }
+            "data": {
+              "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/sssdf.csv"
+            },
+            "title": {
+              "text": ["──", "Shoulder Pads"],
+              "subtitle": [
+                "Data on the popularity of Shoulder Pads",
+                "Shoulder pads are an emblem of women equating themselves with men, not only in pay or respect, but in stature, as well.",
+                ""
+              ],
+              "subtitleFontSize": 11,
+              "fontSize": 12,
+              "subtitleFontWeight": 100,
+              "anchor": "start",
+              "color": "black"
+            },
+            "hconcat": [
+              {
+                "title": "",
+                "mark": {
+                  "type": "area",
+                  "interpolate": "step-after",
+                  "width": 30
+                },
+                "params": [
+                  {
+                    "name": "highlight",
+                    "select": {
+                      "type": "point",
+                      "fields": ["Year"],
+                      "on": "pointerover"
+                    }
+                  }
+                ],
+                "width": 500,
+                "encoding": {
+                  "x": {
+                    "field": "start_date",
+                    "type": "temporal",
+                    "title": "",
+                    "timeUnit": "year"
+                  },
+                  "y": {
+                    "field": "count",
+                    "type": "quantitative",
+                    "title": "Mentions of Shoulder Pads in Vogue",
+                    "axis": {
+                      "titleAngle": 0,
+                      "titleY": -3,
+                      "titleX": 0,
+                      "titleAlign": "left",
+                      "titleFontWeight": "lighter",
+                      "titleFontSize": 10
+                    }
+                  },
+                  "color": {"value": "grey"},
+                  "opacity": {
+                    "condition": {"param": "highlight", "value": 1},
+                    "value": 0.2
+                  },
+                  "tooltip": [
+                    {
+                      "field": "start_date",
+                      "type": "temporal",
+                      "title": "Year",
+                      "format": "%Y"
+                    },
+                    {
+                      "field": "count",
+                      "type": "quantitative",
+                      "title": "Mentions"
+                    }
+                  ]
+                },
+                "transform": [
+                  {"filter": {"field": "term", "equal": "Shoulder Pads"}}
+                ]
+              }
+            ]
           }
         ]
-      }
-    ]
-      }
-          ]
       },
-       {
+      {
         "hconcat": [
-   { "vconcat":[
-    {
-        "data": {"url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/cleaned_internet_usage.csv"},
-    "title": {
-      "text": ["", "──", "Economic Cycles and Material Innovation"],
-      "subtitle": ["Share of the population using the Internet"," Do shoulder pad mentions correlate with periods of boom (e.g., 1980s)?", ""],
-      "subtitleFontSize": 11,
-      "fontSize": 12,
-      "subtitleFontWeight": 100,
-      "anchor": "start",
-      "color": "black"
-    },
-    "encoding": {
-      "x": {
-    "field": "Year",
-    "type": "temporal",
-    "title": ""
-    },
-      "y": {"field": "it_net_user_zs", 
-      "type": "quantitative", "title": ""},
-      "color": {
-        "condition": {
-          "param": "hover",
-          "field":"Entity",
-          "type":"nominal",
-          "legend": null
-        },
-        "value": "grey"
-      },
-      "opacity": {
-        "condition": {
-          "param": "hover",
-          "value": 1
-        },
-        "value": 0.2
-      }
-    },
-    "layer": [{
-      "description": "transparent layer to make it easier to trigger selection",
-      "params": [{
-        "name": "hover",
-        "select": {
-          "type": "point",
-          "fields": ["Entity"],
-          "on": "pointerover"
-        }
-      }],
-      "mark": {"type": "line", "strokeWidth": 8, "stroke": "transparent"}
-    }, {
-      "mark": "line"
-    }, {
-      "encoding": {
-        "x": {"aggregate": "max", "field": "Year"},
-        "y": {"aggregate": {"argmax": "Year"}, "field": "it_net_user_zs"}
-      },
-      "layer": [{
-        "mark": {"type": "circle"}
-      }, {
-        "mark": {"type": "text", "align": "left", "dx": 4},
-        "encoding": {"text": {"field":"Entity", "type": "nominal"}}
-      }]
-    }],
-    "config": {"view": {"stroke": null}}
-      }
-      ]
-      }
-        ]
-      },
-            {
-      "title": {
-      "text": ["", "──", "Female Empowerment and Bolder Fashion Choices"],
-      "subtitle": ["Does the popularity of shoulder pad mentions correlate with periods women empowerment?","Does the role of women in parliament correlate to bigger shoulder pads?", "An exaggerated display of masculinity: the shoulder size signifying assertiveness.", ""],
-      "subtitleFontSize": 11,
-      "fontSize": 12,
-      "subtitleFontWeight": 100,
-      "anchor": "start",
-      "color": "black"
-    },
-        "hconcat": [
-   { "hconcat":[
-     {
-        "data": {"url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/female-labor-force-participation-oecd%20(2).csv"},
-      "title": {
-      "text": ["──"],
-      "subtitle":  [""],
-      "subtitleFontSize": 11,
-      "fontSize": 12,
-      "subtitleFontWeight": 100,
-      "anchor": "start",
-      "color": "black"
-    },
-    "encoding": {
-      "x": {"field": "Year", "type": "temporal", "title": ""},
-      "y": {"field": "Female labor force participation rate (OWID based on OECD 2017 and others)", "type": "quantitative", "title": "Women's workforce participation rates by decade",
-       "axis": {
-  "titleAngle": 0,
-  "titleY": -3,
-  "titleX": 0,
-  "titleAlign": "left",
-  "titleFontWeight": "lighter",
-  "titleFontSize": 10
-            }},
-      "color": {
-        "condition": {
-          "param": "hover",
-          "field":"Entity",
-          "type":"nominal",
-          "legend": null
-        },
-        "value": "grey"
-      },
-      "opacity": {
-        "condition": {
-          "param": "hover",
-          "value": 1
-        },
-        "value": 0.2
-      }
-    },
-    "layer": [{
-      "description": "transparent layer to make it easier to trigger selection",
-      "params": [{
-        "name": "hover",
-        "select": {
-          "type": "point",
-          "fields": ["Entity"],
-          "on": "pointerover"
-        }
-      }],
-      "mark": {"type": "line", "strokeWidth": 8, "stroke": "transparent"}
-    }, {
-      "mark": "line"
-    }, {
-      "encoding": {
-        "x": {"aggregate": "max", "field": "Year"},
-        "y": {"aggregate": {"argmax": "Year"}, "field": "Female labor force participation rate (OWID based on OECD 2017 and others)"}
-      },
-      "layer": [{
-        "mark": {"type": "circle"}
-      }, {
-        "mark": {"type": "text", "align": "left", "dx": 4},
-        "encoding": {"text": {"field":"Entity", "type": "nominal"}}
-      }]
-    }],
-    "config": {"view": {"stroke": null}}
-      },
-     {
-        "data": {"url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/renamed_fem_par_long.csv"},
-        "title": {
-      "text": ["──"],
-      "subtitle":  [""],
-      "subtitleFontSize": 11,
-      "fontSize": 12,
-      "subtitleFontWeight": 100,
-      "anchor": "start",
-      "color": "black"
-    },
-    "encoding": {
-      "x": {
-    "field": "year",
-    "type": "temporal",
-    "title": ""
-    },
-      "y": {"field": "Value", 
-      "type": "quantitative", "title": "The average share of female representatives in parliament",
-       "axis": {
-  "titleAngle": 0,
-  "titleY": -3,
-  "titleX": 0,
-  "titleAlign": "left",
-  "titleFontWeight": "lighter",
-  "titleFontSize": 10
-            }
-            },
-      "color": {
-        "condition": {
-          "param": "hover",
-          "field":"Entity",
-          "type":"nominal",
-          "legend": null
-        },
-        "value": "grey"
-      },
-      "opacity": {
-        "condition": {
-          "param": "hover",
-          "value": 1
-        },
-        "value": 0.2
-      }
-    },
-    "layer": [{
-      "description": "transparent layer to make it easier to trigger selection",
-      "params": [{
-        "name": "hover",
-        "select": {
-          "type": "point",
-          "fields": ["Entity"],
-          "on": "pointerover"
-        }
-      }],
-      "mark": {"type": "line", "strokeWidth": 8, "stroke": "transparent"}
-    }, {
-      "mark": "line"
-    }, {
-      "encoding": {
-        "x": {"aggregate": "max", "field": "Year"},
-        "y": {"aggregate": {"argmax": "year"}, "field": "Value"}
-      },
-      "layer": [{
-        "mark": {"type": "circle"}
-      }, {
-        "mark": {"type": "text", "align": "left", "dx": 4},
-        "encoding": {"text": {"field":"Entity", "type": "nominal"}}
-      }]
-    }],
-    "config": {"view": {"stroke": null}}
-      }
-      ]
-      }
-        ]
-      },
           {
+            "vconcat": [
+              {
+                "data": {
+                  "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/cleaned_internet_usage.csv"
+                },
+                "title": {
+                  "text": ["", "──", "Economic Cycles and Material Innovation"],
+                  "subtitle": [
+                    "Share of the population using the Internet",
+                    " Do shoulder pad mentions correlate with periods of boom (e.g., 1980s)?",
+                    ""
+                  ],
+                  "subtitleFontSize": 11,
+                  "fontSize": 12,
+                  "subtitleFontWeight": 100,
+                  "anchor": "start",
+                  "color": "black"
+                },
+                "encoding": {
+                  "x": {"field": "Year", "type": "temporal", "title": ""},
+                  "y": {
+                    "field": "it_net_user_zs",
+                    "type": "quantitative",
+                    "title": ""
+                  },
+                  "color": {
+                    "condition": {
+                      "param": "hover",
+                      "field": "Entity",
+                      "type": "nominal",
+                      "legend": null
+                    },
+                    "value": "grey"
+                  },
+                  "opacity": {
+                    "condition": {"param": "hover", "value": 1},
+                    "value": 0.2
+                  }
+                },
+                "layer": [
+                  {
+                    "description": "transparent layer to make it easier to trigger selection",
+                    "params": [
+                      {
+                        "name": "hover",
+                        "select": {
+                          "type": "point",
+                          "fields": ["Entity"],
+                          "on": "pointerover"
+                        }
+                      }
+                    ],
+                    "mark": {
+                      "type": "line",
+                      "strokeWidth": 8,
+                      "stroke": "transparent"
+                    }
+                  },
+                  {"mark": "line"},
+                  {
+                    "encoding": {
+                      "x": {"aggregate": "max", "field": "Year"},
+                      "y": {
+                        "aggregate": {"argmax": "Year"},
+                        "field": "it_net_user_zs"
+                      }
+                    },
+                    "layer": [
+                      {"mark": {"type": "circle"}},
+                      {
+                        "mark": {"type": "text", "align": "left", "dx": 4},
+                        "encoding": {
+                          "text": {"field": "Entity", "type": "nominal"}
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "config": {"view": {"stroke": null}}
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": {
+          "text": ["", "──", "Female Empowerment and Bolder Fashion Choices"],
+          "subtitle": [
+            "Does the popularity of shoulder pad mentions correlate with periods women empowerment?",
+            "Does the role of women in parliament correlate to bigger shoulder pads?",
+            "An exaggerated display of masculinity: the shoulder size signifying assertiveness.",
+            ""
+          ],
+          "subtitleFontSize": 11,
+          "fontSize": 12,
+          "subtitleFontWeight": 100,
+          "anchor": "start",
+          "color": "black"
+        },
         "hconcat": [
-   { "vconcat":[
-     {
-        "data": {"url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/world_data.csv"},
-    "title": {
-      "text": ["──"],
-      "subtitle": [""],
-      "subtitleFontSize": 11,
-      "fontSize": 12,
-      "subtitleFontWeight": 100,
-      "anchor": "start",
-      "color": "black"
-    },
-    "encoding": {
-      "x": {
-    "field": "Year",
-    "type": "temporal",
-    "title": ""
-    },
-      "y": {"field": "equality_value", 
-      "type": "quantitative", "title": "The number of countries with key economic and social rights for women",
-       "axis": {
-  "titleAngle": 0,
-  "titleY": -3,
-  "titleX": 0,
-  "titleAlign": "left",
-  "titleFontWeight": "lighter",
-  "titleFontSize": 10
-            }
+          {
+            "hconcat": [
+              {
+                "data": {
+                  "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/female-labor-force-participation-oecd%20(2).csv"
+                },
+                "title": {
+                  "text": ["──"],
+                  "subtitle": [""],
+                  "subtitleFontSize": 11,
+                  "fontSize": 12,
+                  "subtitleFontWeight": 100,
+                  "anchor": "start",
+                  "color": "black"
+                },
+                "encoding": {
+                  "x": {"field": "Year", "type": "temporal", "title": ""},
+                  "y": {
+                    "field": "Female labor force participation rate (OWID based on OECD 2017 and others)",
+                    "type": "quantitative",
+                    "title": "Women's workforce participation rates by decade",
+                    "axis": {
+                      "titleAngle": 0,
+                      "titleY": -3,
+                      "titleX": 0,
+                      "titleAlign": "left",
+                      "titleFontWeight": "lighter",
+                      "titleFontSize": 10
+                    }
+                  },
+                  "color": {
+                    "condition": {
+                      "param": "hover",
+                      "field": "Entity",
+                      "type": "nominal",
+                      "legend": null
+                    },
+                    "value": "grey"
+                  },
+                  "opacity": {
+                    "condition": {"param": "hover", "value": 1},
+                    "value": 0.2
+                  }
+                },
+                "layer": [
+                  {
+                    "description": "transparent layer to make it easier to trigger selection",
+                    "params": [
+                      {
+                        "name": "hover",
+                        "select": {
+                          "type": "point",
+                          "fields": ["Entity"],
+                          "on": "pointerover"
+                        }
+                      }
+                    ],
+                    "mark": {
+                      "type": "line",
+                      "strokeWidth": 8,
+                      "stroke": "transparent"
+                    }
+                  },
+                  {"mark": "line"},
+                  {
+                    "encoding": {
+                      "x": {"aggregate": "max", "field": "Year"},
+                      "y": {
+                        "aggregate": {"argmax": "Year"},
+                        "field": "Female labor force participation rate (OWID based on OECD 2017 and others)"
+                      }
+                    },
+                    "layer": [
+                      {"mark": {"type": "circle"}},
+                      {
+                        "mark": {"type": "text", "align": "left", "dx": 4},
+                        "encoding": {
+                          "text": {"field": "Entity", "type": "nominal"}
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "config": {"view": {"stroke": null}}
+              },
+              {
+                "data": {
+                  "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/renamed_fem_par_long.csv"
+                },
+                "title": {
+                  "text": ["──"],
+                  "subtitle": [""],
+                  "subtitleFontSize": 11,
+                  "fontSize": 12,
+                  "subtitleFontWeight": 100,
+                  "anchor": "start",
+                  "color": "black"
+                },
+                "encoding": {
+                  "x": {"field": "year", "type": "temporal", "title": ""},
+                  "y": {
+                    "field": "Value",
+                    "type": "quantitative",
+                    "title": "The average share of female representatives in parliament",
+                    "axis": {
+                      "titleAngle": 0,
+                      "titleY": -3,
+                      "titleX": 0,
+                      "titleAlign": "left",
+                      "titleFontWeight": "lighter",
+                      "titleFontSize": 10
+                    }
+                  },
+                  "color": {
+                    "condition": {
+                      "param": "hover",
+                      "field": "Entity",
+                      "type": "nominal",
+                      "legend": null
+                    },
+                    "value": "grey"
+                  },
+                  "opacity": {
+                    "condition": {"param": "hover", "value": 1},
+                    "value": 0.2
+                  }
+                },
+                "layer": [
+                  {
+                    "description": "transparent layer to make it easier to trigger selection",
+                    "params": [
+                      {
+                        "name": "hover",
+                        "select": {
+                          "type": "point",
+                          "fields": ["Entity"],
+                          "on": "pointerover"
+                        }
+                      }
+                    ],
+                    "mark": {
+                      "type": "line",
+                      "strokeWidth": 8,
+                      "stroke": "transparent"
+                    }
+                  },
+                  {"mark": "line"},
+                  {
+                    "encoding": {
+                      "x": {"aggregate": "max", "field": "year"},
+                      "y": {"aggregate": {"argmax": "year"}, "field": "Value"}
+                    },
+                    "layer": [
+                      {"mark": {"type": "circle"}},
+                      {
+                        "mark": {"type": "text", "align": "left", "dx": 4},
+                        "encoding": {
+                          "text": {"field": "Entity", "type": "nominal"}
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "config": {"view": {"stroke": null}}
+              }
+            ]
+          }
+        ]
       },
-      "color": {
-        "condition": {
-          "param": "hover",
-          "field":"equality_type",
-          "type":"nominal",
-          "legend": null
-        },
-        "value": "grey"
-      },
-      "opacity": {
-        "condition": {
-          "param": "hover",
-          "value": 1
-        },
-        "value": 0.2
-      }
-    },
-    "layer": [{
-      "description": "transparent layer to make it easier to trigger selection",
-      "params": [{
-        "name": "hover",
-        "select": {
-          "type": "point",
-          "fields": ["equality_type"],
-          "on": "pointerover"
-        }
-      }],
-      "mark": {"type": "point", "strokeWidth": 8, "stroke": "transparent"}
-    }, {
-      "mark": "line"
-    }, {
-      "encoding": {
-        "x": {"aggregate": "max", "field": "Year"},
-        "y": {"aggregate": {"argmax": "Year"}, "field": "equality_value"}
-      },
-      "layer": [{
-        "mark": {"type": "circle"}
-      }, {
-        "mark": {"type": "text", "align": "left", "dx": 8},
-        "encoding": {"text": {"field":"equality_type", "type": "nominal"}}
-      }]
-    }],
-    "config": {"view": {"stroke": null}}
-      },
-           {
-        "data": {"url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/income-share-top-1-before-tax-wid-extrapolations.csv"},
-    "title": {
-      "text": ["", "──", "Shoulder Pads and Economic Inequality"],
-      "subtitle": ["Data on income inequality (Income share of the richest 1%)","The rise of minimalism in the 90s, decline of shoulder pads", ""],
-      "subtitleFontSize": 11,
-      "fontSize": 12,
-      "subtitleFontWeight": 100,
-      "anchor": "start",
-      "color": "black"
-    },
-    "encoding": {
-      "x": {
-    "field": "Year",
-    "type": "temporal",
-    "title": ""
-    },
-      "y": {"field": "p99p100_share_pretax_extrapolated", 
-      "type": "quantitative", "title": ""},
-      "color": {
-        "condition": {
-          "param": "hover",
-          "field":"Entity",
-          "type":"nominal",
-          "legend": null
-        },
-        "value": "grey"
-      },
-      "opacity": {
-        "condition": {
-          "param": "hover",
-          "value": 1
-        },
-        "value": 0.2
-      }
-    },
-    "layer": [{
-      "description": "transparent layer to make it easier to trigger selection",
-      "params": [{
-        "name": "hover",
-        "select": {
-          "type": "point",
-          "fields": ["Entity"],
-          "on": "pointerover"
-        }
-      }],
-      "mark": {"type": "line", "strokeWidth": 8, "stroke": "transparent"}
-    }, {
-      "mark": "line"
-    }, {
-      "encoding": {
-        "x": {"aggregate": "max", "field": "Year"},
-        "y": {"aggregate": {"argmax": "Year"}, "field": "p99p100_share_pretax_extrapolated"}
-      },
-      "layer": [{
-        "mark": {"type": "circle"}
-      }, {
-        "mark": {"type": "text", "align": "left", "dx": 4},
-        "encoding": {"text": {"field":"Entity", "type": "nominal"}}
-      }]
-    }],
-    "config": {"view": {"stroke": null}}
-      },
-       {
-        "data": {"url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/filtered_military.csv"},
-        "width": 210,
-              "title": {
-      "text": ["──", "War and Military Influence"],
-      "subtitle": ["Defense spending as a percentage of GDP (can act as a proxy for wartime influence)", ""],
-      "subtitleFontSize": 11,
-      "fontSize": 12,
-      "subtitleFontWeight": 100,
-      "anchor": "start",
-      "color": "black"
-    },
-    "encoding": {
-      "x": {"field": "Year", "type": "temporal", "title": ""},
-      "y": {"field": "milexgdp", "type": "quantitative", "title": ""},
-      "color": {
-        "condition": {
-          "param": "hover",
-          "field":"Entity",
-          "type":"nominal",
-          "legend": null
-        },
-        "value": "grey"
-      },
-      "opacity": {
-        "condition": {
-          "param": "hover",
-          "value": 1
-        },
-        "value": 0.2
-      }
-    },
-    "layer": [{
-      "description": "transparent layer to make it easier to trigger selection",
-      "params": [{
-        "name": "hover",
-        "select": {
-          "type": "point",
-          "fields": ["Entity"],
-          "on": "pointerover"
-        }
-      }],
-      "mark": {"type": "line", "strokeWidth": 8, "stroke": "transparent"}
-    }, {
-      "mark": "line"
-    }, {
-      "encoding": {
-        "x": {"aggregate": "max", "field": "Year"},
-        "y": {"aggregate": {"argmax": "Entity"}, "field": "milexgdp"}
-      },
-      "layer": [{
-        "mark": {"type": "circle"}
-      }, {
-        "mark": {"type": "text", "align": "left", "dx": 4},
-        "encoding": {"text": {"field":"Entity", "type": "nominal"}}
-      }]
-    }],
-    "config": {"view": {"stroke": null}}
-      }
-      ]
-      }
+      {
+        "hconcat": [
+          {
+            "vconcat": [
+              {
+                "data": {
+                  "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/world_data.csv"
+                },
+                "title": {
+                  "text": ["──"],
+                  "subtitle": [""],
+                  "subtitleFontSize": 11,
+                  "fontSize": 12,
+                  "subtitleFontWeight": 100,
+                  "anchor": "start",
+                  "color": "black"
+                },
+                "encoding": {
+                  "x": {"field": "Year", "type": "temporal", "title": ""},
+                  "y": {
+                    "field": "equality_value",
+                    "type": "quantitative",
+                    "title": "The number of countries with key economic and social rights for women",
+                    "axis": {
+                      "titleAngle": 0,
+                      "titleY": -3,
+                      "titleX": 0,
+                      "titleAlign": "left",
+                      "titleFontWeight": "lighter",
+                      "titleFontSize": 10
+                    }
+                  },
+                  "color": {
+                    "condition": {
+                      "param": "hover",
+                      "field": "equality_type",
+                      "type": "nominal",
+                      "legend": null
+                    },
+                    "value": "grey"
+                  },
+                  "opacity": {
+                    "condition": {"param": "hover", "value": 1},
+                    "value": 0.2
+                  }
+                },
+                "layer": [
+                  {
+                    "description": "transparent layer to make it easier to trigger selection",
+                    "params": [
+                      {
+                        "name": "hover",
+                        "select": {
+                          "type": "point",
+                          "fields": ["equality_type"],
+                          "on": "pointerover"
+                        }
+                      }
+                    ],
+                    "mark": {
+                      "type": "point",
+                      "strokeWidth": 8,
+                      "stroke": "transparent"
+                    }
+                  },
+                  {"mark": "line"},
+                  {
+                    "encoding": {
+                      "x": {"aggregate": "max", "field": "Year"},
+                      "y": {
+                        "aggregate": {"argmax": "Year"},
+                        "field": "equality_value"
+                      }
+                    },
+                    "layer": [
+                      {"mark": {"type": "circle"}},
+                      {
+                        "mark": {"type": "text", "align": "left", "dx": 8},
+                        "encoding": {
+                          "text": {"field": "equality_type", "type": "nominal"}
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "config": {"view": {"stroke": null}}
+              },
+              {
+                "data": {
+                  "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/income-share-top-1-before-tax-wid-extrapolations.csv"
+                },
+                "title": {
+                  "text": ["", "──", "Shoulder Pads and Economic Inequality"],
+                  "subtitle": [
+                    "Data on income inequality (Income share of the richest 1%)",
+                    "The rise of minimalism in the 90s, decline of shoulder pads",
+                    ""
+                  ],
+                  "subtitleFontSize": 11,
+                  "fontSize": 12,
+                  "subtitleFontWeight": 100,
+                  "anchor": "start",
+                  "color": "black"
+                },
+                "encoding": {
+                  "x": {"field": "Year", "type": "temporal", "title": ""},
+                  "y": {
+                    "field": "p99p100_share_pretax_extrapolated",
+                    "type": "quantitative",
+                    "title": ""
+                  },
+                  "color": {
+                    "condition": {
+                      "param": "hover",
+                      "field": "Entity",
+                      "type": "nominal",
+                      "legend": null
+                    },
+                    "value": "grey"
+                  },
+                  "opacity": {
+                    "condition": {"param": "hover", "value": 1},
+                    "value": 0.2
+                  }
+                },
+                "layer": [
+                  {
+                    "description": "transparent layer to make it easier to trigger selection",
+                    "params": [
+                      {
+                        "name": "hover",
+                        "select": {
+                          "type": "point",
+                          "fields": ["Entity"],
+                          "on": "pointerover"
+                        }
+                      }
+                    ],
+                    "mark": {
+                      "type": "line",
+                      "strokeWidth": 8,
+                      "stroke": "transparent"
+                    }
+                  },
+                  {"mark": "line"},
+                  {
+                    "encoding": {
+                      "x": {"aggregate": "max", "field": "Year"},
+                      "y": {
+                        "aggregate": {"argmax": "Year"},
+                        "field": "p99p100_share_pretax_extrapolated"
+                      }
+                    },
+                    "layer": [
+                      {"mark": {"type": "circle"}},
+                      {
+                        "mark": {"type": "text", "align": "left", "dx": 4},
+                        "encoding": {
+                          "text": {"field": "Entity", "type": "nominal"}
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "config": {"view": {"stroke": null}}
+              },
+              {
+                "data": {
+                  "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/filtered_military.csv"
+                },
+                "width": 210,
+                "title": {
+                  "text": ["──", "War and Military Influence"],
+                  "subtitle": [
+                    "Defense spending as a percentage of GDP (can act as a proxy for wartime influence)",
+                    ""
+                  ],
+                  "subtitleFontSize": 11,
+                  "fontSize": 12,
+                  "subtitleFontWeight": 100,
+                  "anchor": "start",
+                  "color": "black"
+                },
+                "encoding": {
+                  "x": {"field": "Year", "type": "temporal", "title": ""},
+                  "y": {"field": "milexgdp", "type": "quantitative", "title": ""},
+                  "color": {
+                    "condition": {
+                      "param": "hover",
+                      "field": "Entity",
+                      "type": "nominal",
+                      "legend": null
+                    },
+                    "value": "grey"
+                  },
+                  "opacity": {
+                    "condition": {"param": "hover", "value": 1},
+                    "value": 0.2
+                  }
+                },
+                "layer": [
+                  {
+                    "description": "transparent layer to make it easier to trigger selection",
+                    "params": [
+                      {
+                        "name": "hover",
+                        "select": {
+                          "type": "point",
+                          "fields": ["Entity"],
+                          "on": "pointerover"
+                        }
+                      }
+                    ],
+                    "mark": {
+                      "type": "line",
+                      "strokeWidth": 8,
+                      "stroke": "transparent"
+                    }
+                  },
+                  {"mark": "line"},
+                  {
+                    "encoding": {
+                      "x": {"aggregate": "max", "field": "Year"},
+                      "y": {
+                        "aggregate": {"argmax": "Entity"},
+                        "field": "milexgdp"
+                      }
+                    },
+                    "layer": [
+                      {"mark": {"type": "circle"}},
+                      {
+                        "mark": {"type": "text", "align": "left", "dx": 4},
+                        "encoding": {
+                          "text": {"field": "Entity", "type": "nominal"}
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "config": {"view": {"stroke": null}}
+              }
+            ]
+          }
         ]
       }
     ]
