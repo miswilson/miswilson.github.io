@@ -18,6 +18,17 @@ body {
         color: rgb(0, 0, 139);
       }
 
+      h2 {
+margin-top: 5%;
+margin-bottom: 5%;
+      }
+
+      h3 {
+        color: rgb(0, 0, 0);
+        font-family: "Poppins", sans-serif;
+        font-weight: lighter;
+      }
+
 /* Transition */
 
 a, .btn {
@@ -94,11 +105,12 @@ a:hover {
     position: absolute;
     top: 100%;
     right: 0;
-    background-color: white;
+    background-color: rgb(0, 0, 139);
     width: fit-content;
     max-height: 0;
     overflow: hidden;
     transition: all 0.3 ease-in-out;
+    z-index: 1000;
 }
 
 .menu-links a {
@@ -106,9 +118,10 @@ a:hover {
     padding: 10px;
     text-align: center;
     font-size: 1.5rem;
-    color: black;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     transition: all 0.3 ease-in-out;
+    z-index: 1000;
 }
 
 .menu-links li {
@@ -203,6 +216,13 @@ section {
     gap: 1rem;
 }
 
+#portfolio-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
 /* Icons */
 
 .icon {
@@ -272,6 +292,7 @@ background: rgb(0, 0, 0);
 .about-details-container {
     justify-content: center;
     flex-direction: column;
+    background: white;
 }
 
 .about-containers, .about-details-container {
@@ -371,13 +392,23 @@ article.icon {
  
  .portfolio-btn {
     color: black;
-    border-color: rgb(163,163,163);
+    border-color: rgb(255, 251, 251);
  } 
 
 /* project */
 
 #project {
     position: relative;
+}
+
+.project-pic-container {
+    display: flex;
+    height: 400px;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 3%;
+    justify-content: center;
 }
 
 .arrow {
@@ -399,6 +430,11 @@ article.icon {
     height: 400px;
     width: 400px;
     margin-top: 4rem;
+}
+
+.img-conclusion{
+    width: 100%;
+    height: 100%;
 }
 
 /* Footer */

@@ -1,0 +1,76 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "World map showing military expenditure as a percentage of GDP by year.",
+     "params": [
+      {
+        "name": "Year",
+        "value": 1919,
+        "bind": {
+          "input": "range",
+          "min": 1919,
+          "max": 2019,
+          "step": 1,
+          "name": "Year:"
+        }
+      }
+    ],
+  "hconcat": [
+    {
+      "width": 500,
+    "projection": {"type": "equalEarth"},
+    "layer": [
+      {
+        "data": {
+          "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/map_world.geojson",
+          "format": {"property": "features"}
+        },
+        "mark": {"type": "geoshape", "color": "lightgrey", "stroke": "white", "strokeWidth": 0.5}
+      },
+      {
+        "data": {
+          "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/military-spending-as-a-share-of-gdp-gmsd.csv"
+        },
+        "transform": [
+          {
+            "filter": "datum.Year == Year"
+          },
+          {
+            "lookup": "Code",
+            "from": {
+              "data": {
+                "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/map_world.geojson",
+                "format": {"property": "features"}
+              },
+              "key": "properties.ISO3",
+              "fields": ["properties.COUNTRY", "type", "geometry"]
+            }
+          },
+          {
+            "filter": "datum.milexgdp != null && datum.milexgdp > 0" 
+          }
+        ],
+        "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 0.1},
+        "encoding": {
+          "color": {
+            "field": "milexgdp",
+            "type": "quantitative",
+            "scale": {
+              "scheme": "reds",
+              "domain": [0,10]
+            },
+            "legend": {
+              "title": "Military Spending (% GDP)",
+              "orient": "bottom"
+            }
+          },
+          "tooltip": [
+            {"field": "properties.COUNTRY", "title": "Country"},
+            {"field": "milexgdp", "title": "Military Spending (% GDP)", "format": ".2f"}
+          ]
+        }
+      }
+    ]
+    }
+  ]
+  }
+  
