@@ -5,12 +5,22 @@
     "format": {"parse": {"Start Date": "date"}}
   },
   "title": {
-    "text": "Trend Patterns in Economic Boom",
-    "fontSize": 14,
-    "subtitle": "Interactive Chart on Trending Fashion Features, Measured by Mentions in Vogue by Release Date (Roaring 20s)",
-    "subtitleFontSize": 12,
-    "anchor": "middle",
+    "text": ["", "──", "Trend Patterns in Economic Boom"],
+    "subtitle": [
+      "Interactive Chart on Trending Fashion Features", "Measured by Mentions in Vogue by Release Date (Roaring 20s)",
+      "Source: Vogue Archieves",
+      ""
+    ],
+    "subtitleFontStyle": "",
+    "subtitleFontSize": 11,
+    "fontSize": 12,
+    "subtitleFontWeight": 100,
+    "anchor": "start",
     "color": "black"
+  },
+  "config": {
+    "axisX": {"grid": false, "title": null},
+    "view": {"strokeOpacity": 0}
   },
   "transform": [
     {
@@ -42,7 +52,8 @@
       "color": {
         "field": "RenamedTerm",
         "type": "nominal",
-        "title": "Trending Design"
+        "title": "Trending Design",
+        "scale": {"range": ["pink", "orange", "turquoise", "green"]}
       }
     },
     "layer": [
@@ -62,7 +73,15 @@
         "mark": {"type": "circle", "tooltip": true},
         "encoding": {
           "x": {"field": "Start Date", "type": "temporal"},
-          "y": {"field": "Result Count", "type": "quantitative"},
+          "y": {"field": "Result Count", "type": "quantitative", "title": "Popularity by Article Mentions",
+          "axis": {
+                "titleAngle": 0,
+                "titleY": -3,
+                "titleX": 0,
+                "titleAlign": "left",
+                "titleFontWeight": "lighter",
+                "titleFontSize": 10
+              }},
           "color": {"field": "RenamedTerm", "type": "nominal"},
           "tooltip": [
             {
