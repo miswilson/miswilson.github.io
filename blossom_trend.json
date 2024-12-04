@@ -1,181 +1,178 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "config": {"background": "white", "view": {"stroke": "transparent"}},
-    "title": {
-      "text": ["", "──", "Japanese Style Trendline"],
-      "subtitle": [
-        "The influence of cherry blossom on fashion, measured by the amount of mentions of 'bloom' in Vogue",
-        "Day of the year with peak cherry tree blossom in Kyoto, Japan",
-        "Source: Yasuyuki Aono (2021; 2024)",
-        ""
-      ],
-      "subtitleFontStyle": "",
-      "subtitleFontSize": 11,
-      "fontSize": 12,
-      "subtitleFontWeight": 100,
-      "anchor": "start",
-      "color": "black"
-    },
-    "hconcat": [
-      {
-        "config": {"background": "white", "view": {"stroke": "transparent"}},
-        "data": {
-          "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/date-of-the-peak-cherry-tree-blossom-in-kyoto.csv"
-        },
-        "width": 300,
-        "height": 200,
-        "layer": [
-          {
-            "mark": {"type": "line", "tooltip": true, "color": "hotpink"},
-            "encoding": {
-              "x": {
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {"background": "white", "view": {"stroke": "transparent"}},
+  "title": {
+    "text": ["", "──", "Japanese Style Trendline"],
+    "subtitle": [
+      "The influence of cherry blossom on fashion, measured by the amount of mentions of 'bloom' in Vogue",
+      "Day of the year with peak cherry tree blossom in Kyoto, Japan",
+      "Source: Yasuyuki Aono (2021; 2024)",
+      ""
+    ],
+    "subtitleFontStyle": "",
+    "subtitleFontSize": 11,
+    "fontSize": 12,
+    "subtitleFontWeight": 100,
+    "anchor": "start",
+    "color": "black"
+  },
+  "hconcat": [
+    {
+      "config": {"background": "white", "view": {"stroke": "transparent"}},
+      "data": {
+        "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/date-of-the-peak-cherry-tree-blossom-in-kyoto.csv"
+      },
+      "width": 300,
+      "height": 200,
+      "layer": [
+        {
+          "mark": {"type": "line", "tooltip": true, "color": "hotpink"},
+          "encoding": {
+            "x": {
+              "field": "Year",
+              "type": "temporal",
+              "title": "",
+              "axis": {"labelAngle": 0}
+            },
+            "y": {
+              "field": "average_20_years",
+              "type": "quantitative",
+              "title": "Day of the Year (365)",
+              "scale": { "zero": false},
+            "axis": {
+            "titleAngle": 0,
+            "titleY": -3,
+            "titleX": 0,
+            "titleAlign": "left",
+            "titleFontWeight": "lighter",
+            "titleFontSize": 10
+          }
+            },
+            "tooltip": [
+              {
                 "field": "Year",
                 "type": "temporal",
-                "title": "",
-                "axis": {"labelAngle": 0}
+                "title": "Year",
+                "format": "%Y"
               },
-              "y": {
+              {
                 "field": "average_20_years",
                 "type": "quantitative",
-                "title": "Day of the Year (365)",
-                "scale": { "zero": false},
-              "axis": {
-              "titleAngle": 0,
-              "titleY": -3,
-              "titleX": 0,
-              "titleAlign": "left",
-              "titleFontWeight": "lighter",
-              "titleFontSize": 10
-            }
+                "title": "20 Year Average"
               },
-              "tooltip": [
-                {
-                  "field": "Year",
-                  "type": "temporal",
-                  "title": "Year",
-                  "format": "%Y"
-                },
-                {
-                  "field": "average_20_years",
-                  "type": "quantitative",
-                  "title": "20 Year Average"
-                },
-                {
-                  "field": "full_flowering_date",
-                  "type": "quantitative",
-                  "title": "Full Flowering Date"
-                }
-              ]
-            },
-            "params": [
               {
-                "name": "hover",
-                "select": {
-                  "type": "point",
-                  "fields": ["Year"],
-                  "on": "pointerover"
-                }
+                "field": "full_flowering_date",
+                "type": "quantitative",
+                "title": "Full Flowering Date"
               }
             ]
           },
-          {
-            "mark": {
-              "type": "circle",
-              "size": 50,
-              "color": "hotpink",
-              "fillOpacity": {
-                "expr": "(datum.Year == hover.Year | datum.Year == hover['Start Date'])?1:0"
-              },
-              "opacity": {
-                "expr": "(datum.Year == hover.Year | datum.Year == hover['Start Date'])?1:0.5"
-              },
-              "stroke": "pink"
-            },
-            "encoding": {
-              "x": {"field": "Year", "type": "temporal"},
-              "y": {"field": "full_flowering_date", "type": "quantitative"},
-              "tooltip": [
-                {
-                  "field": "Year",
-                  "type": "temporal",
-                  "title": "Year",
-                  "format": "%Y"
-                },
-                {
-                  "field": "full_flowering_date",
-                  "type": "quantitative",
-                  "title": "Full Flowering Date"
-                },
-                {
-                  "field": "average_20_years",
-                  "type": "quantitative",
-                  "title": "20 Year Average"
-                }
-              ]
-            }
-          }
-        ]
-      },
-      {
-        "data": {
-          "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/blossom_df.csv"
-        },
-        "mark": {"type": "circle", 
-        "size": 40,
-        "color": "hotpink"
-              },
-        "width": 300,
-        "height": 200,
-        "encoding": {
-          "x": {
-            "field": "Start Date",
-            "type": "temporal",
-            "axis": {"labelAngle": 0},
-            "title": ""
-          },
-          "y": {
-            "field": "Result Count",
-            "type": "quantitative",
-            "title": "Bloom Result Count",
-            "axis": {
-              "titleAngle": 0,
-              "titleY": -3,
-              "titleX": 0,
-              "titleAlign": "left",
-              "titleFontWeight": "lighter",
-              "titleFontSize": 10
-            }
-          },
-            "opacity": {
-            "expr": "(datum['Start Date'] == hover['Start Date'] | datum['Start Date'] == hover.Year)?1:0.5",
-            "condition": {"param": "hover", "value": 1},
-            "value": 0.2
-          },
-          "tooltip": [
+          "params": [
             {
-              "field": "Start Date",
-              "type": "temporal",
-              "title": "Year",
-              "format": "%Y"
-            },
-            {
-              "field": "Result Count",
-              "type": "quantitative",
-              "title": "Vogue mentions: Bloom"
+              "name": "hover",
+              "select": {
+                "type": "point",
+                "fields": ["Year"],
+                "on": "pointerover"
+              }
             }
           ]
         },
-        "params": [
+        {
+          "mark": {
+            "type": "circle",
+            "size": 50,
+            "color": "hotpink",
+            "fillOpacity": {
+              "expr": "(datum.Year == hover.Year | datum.Year == hover['Start Date'])?1:0"
+            },
+            "opacity": {
+              "expr": "(datum.Year == hover.Year | datum.Year == hover['Start Date'])?1:0.5"
+            },
+            "stroke": "pink"
+          },
+          "encoding": {
+            "x": {"field": "Year", "type": "temporal"},
+            "y": {"field": "full_flowering_date", "type": "quantitative"},
+            "tooltip": [
+              {
+                "field": "Year",
+                "type": "temporal",
+                "title": "Year",
+                "format": "%Y"
+              },
+              {
+                "field": "full_flowering_date",
+                "type": "quantitative",
+                "title": "Full Flowering Date"
+              },
+              {
+                "field": "average_20_years",
+                "type": "quantitative",
+                "title": "20 Year Average"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/blossom_df.csv"
+      },
+      "mark": {"type": "circle", 
+      "size": 40,
+      "color": "hotpink",
+       "opacity": {
+          "expr": "((datum['Start Date'] == hover['Start Date'] | datum['Start Date'] == hover.Year)|!hover.Year)?1:0.2"
+        }
+            },
+      "width": 300,
+      "height": 200,
+      "encoding": {
+        "x": {
+          "field": "Start Date",
+          "type": "temporal",
+          "axis": {"labelAngle": 0},
+          "title": ""
+        },
+        "y": {
+          "field": "Result Count",
+          "type": "quantitative",
+          "title": "Occurrence of 'bloom' in fashion",
+          "axis": {
+            "titleAngle": 0,
+            "titleY": -3,
+            "titleX": 0,
+            "titleAlign": "left",
+            "titleFontWeight": "lighter",
+            "titleFontSize": 10
+          }
+        },
+        "tooltip": [
           {
-            "name": "hover",
-            "select": {
-              "type": "point",
-              "fields": ["Start Date"],
-              "on": "pointerover"
-            }
+            "field": "Start Date",
+            "type": "temporal",
+            "title": "Year",
+            "format": "%Y"
+          },
+          {
+            "field": "Result Count",
+            "type": "quantitative",
+            "title": "Vogue mentions: Bloom"
           }
         ]
-      }
-    ]
-  }
-  
+      },
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "fields": ["Start Date"],
+            "on": "pointerover"
+          }
+        }
+      ]
+    }
+  ]
+}
