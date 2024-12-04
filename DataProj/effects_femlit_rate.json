@@ -1,0 +1,162 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Global literacy rate by gender",
+    "width": "container",
+    "height": 300,
+    "params": [
+      {
+        "name": "year",
+        "value": 1970,
+        "bind": {
+          "input": "range",
+          "min": 1970,
+          "step": 10,
+          "max": 2020,
+          "name": "Decade:"
+        }
+      },
+    ],
+    "config": {"view": {"stroke": null}, "padding": 0},
+    "title": {
+      "text": "The Effect of Female Literacy Rates on Trends",
+      "fontSize": 12,
+      "subtitle": [
+        "Female Literacy rate by Decade (% of population ages 15 and above). Source: World Bank"
+      ],
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "anchor": "middle",
+      "color": "black"
+    },
+    "projection": {"type": "equalEarth"},
+  "hconcat": [
+    {
+    "layer": [
+      {
+        "data": {
+          "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/map_world.geojson",
+          "format": {"property": "features"}
+        },
+        "mark": {"type": "geoshape"},
+        "encoding": {"color": {"value": "lightgrey"}}
+      },
+      {
+        "data": {
+          "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/litr.csv"
+        },
+        "transform": [
+          {
+            "filter": "toNumber(datum.decade) == year"
+          },
+          {
+            "filter": "datum.Gender == 'Female'"
+          },
+          {
+            "lookup": "code",
+            "from": {
+              "data": {
+                "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/map_world.geojson",
+                "format": {"property": "features"}
+              },
+              "key": "properties.ISO3",
+              "fields": ["type", "properties", "geometry"]
+            }
+          },
+          {
+            "filter": "datum['properties.COUNTRY'] != null"
+          }
+        ],
+        "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 0.1},
+        "encoding": {
+          "color": {
+            "field": "rate",
+            "legend": {
+            "title": "Literacy Rate (%)",
+              "titleFontWeight": "lighter",
+              "titleFontSize": "10",
+                "orient": "none",
+                "direction": "vertcal", 
+                "legendX": 1,
+                "legendY": 180    
+          },
+            "type": "quantitative",
+            "scale": {
+              "type": "linear",
+              "scheme": "inferno",
+              "domain": [0, 100]
+            }
+          },
+          "tooltip": [
+            {"field": "properties.COUNTRY", "title": "Country"},
+            {"field": "rate", "title": "Literacy Rate", "format": ".1f"}
+          ]
+        }
+      }
+    ]
+  },
+    {
+    "layer": [
+      {
+        "data": {
+          "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/map_world.geojson",
+          "format": {"property": "features"}
+        },
+        "mark": {"type": "geoshape"},
+        "encoding": {"color": {"value": "lightgrey"}}
+      },
+      {
+        "data": {
+          "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/litr.csv"
+        },
+        "transform": [
+          {
+            "filter": "toNumber(datum.decade) == year"
+          },
+          {
+            "filter": "datum.Gender == 'Female'"
+          },
+          {
+            "lookup": "code",
+            "from": {
+              "data": {
+                "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/map_world.geojson",
+                "format": {"property": "features"}
+              },
+              "key": "properties.ISO3",
+              "fields": ["type", "properties", "geometry"]
+            }
+          },
+          {
+            "filter": "datum['properties.COUNTRY'] != null"
+          }
+        ],
+        "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 0.1},
+        "encoding": {
+          "color": {
+            "field": "rate",
+            "legend": {
+            "title": "Literacy Rate (%)",
+              "titleFontWeight": "lighter",
+              "titleFontSize": "10",
+                "orient": "none",
+                "direction": "vertcal", 
+                "legendX": 200,
+                "legendY": 180    
+          },
+            "type": "quantitative",
+            "scale": {
+              "type": "linear",
+              "scheme": "inferno",
+              "domain": [0, 100]
+            }
+          },
+          "tooltip": [
+            {"field": "properties.COUNTRY", "title": "Country"},
+            {"field": "rate", "title": "Literacy Rate", "format": ".1f"}
+          ]
+        }
+      }
+    ]
+  }
+  ]
+}
