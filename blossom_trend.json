@@ -38,15 +38,16 @@
                 "field": "average_20_years",
                 "type": "quantitative",
                 "title": "Day of the Year (365)",
-                "scale": { "zero": false},
-              "axis": {
-              "titleAngle": 0,
-              "titleY": -3,
-              "titleX": 0,
-              "titleAlign": "left",
-              "titleFontWeight": "lighter",
-              "titleFontSize": 10
-            }
+                "scale": {"zero": false},
+                "axis": {
+                  "titleAngle": 0,
+                  "titleY": -3,
+                   "titleX": 0,
+                  "titleAlign": "left",
+                  "titleFontWeight": "lighter",
+                  "titleFontSize": 10,
+                  "labelExpr": "datum.value == 85 ? 'March 26th' : datum.value == 90 ? 'March 31st' : datum.value == 95 ? 'April 5th' : datum.value == 100 ? 'April 10th' : datum.value == 105 ? 'April 15th' : datum.value == 110 ? 'April 20th' : null"
+                }
               },
               "tooltip": [
                 {
@@ -120,13 +121,14 @@
         "data": {
           "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/blossom_df.csv"
         },
-        "mark": {"type": "circle", 
-        "size": 40,
-        "color": "hotpink",
-         "opacity": {
+        "mark": {
+          "type": "circle",
+          "size": 40,
+          "color": "hotpink",
+          "opacity": {
             "expr": "((datum['Start Date'] == hover['Start Date'] | datum['Start Date'] == hover.Year)|!hover.Year)?1:0.2"
           }
-              },
+        },
         "width": 300,
         "height": 200,
         "encoding": {
