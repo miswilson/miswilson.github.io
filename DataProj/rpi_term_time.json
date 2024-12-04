@@ -1,200 +1,214 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": {
-      "text": "Trendline: Effect of Inflation on Silhouette",
-      "subtitle": [
-        "Annual % change in RPI in the UK (inflation) [ONS, PB-N2SA],",
-        "compared to popularity of silhouette structures, by term mentions in Vogue [Vogue Archives]"
-      ],
-      "subtitleFontStyle": "italic",
-      "subtitleFontSize": 12,
-      "anchor": "start",
-      "color": "black"
-    },
-    "config": {"concat": {"spacing": 15}},
-    "vconcat": [
-      {
-        "data": {
-          "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/rpi_uk_1900.csv"
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Trendline: Effect of Inflation on Silhouette",
+    "subtitle": [
+      "Annual % change in RPI in the UK (inflation) [ONS, PB-N2SA],",
+      "compared to popularity of silhouette structures, by term mentions in Vogue [Vogue Archives]"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 12,
+    "anchor": "start",
+    "color": "black"
+  },
+  "config": {"concat": {"spacing": 15}},
+  "vconcat": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/rpi_uk_1900.csv"
+      },
+      "transform": [{"calculate": "datum.unit /100", "as": "unit"}],
+      "width": 500,
+      "height": 300,
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "temporal",
+          "title": "",
+          "scale": {"domain": ["1900-01-01", "2021-01-01"]}
         },
-        "transform": [{"calculate": "datum.unit /100", "as": "unit"}],
-        "width": 500,
-        "height": 300,
-        "encoding": {
-          "x": {
-            "field": "year",
-            "type": "temporal",
-            "title": "",
-            "scale": {"domain": ["1900-01-01", "2021-01-01"]}
-          },
-          "tooltip": [
-            {"field": "year", "type": "temporal", "title": "Year"},
-            {
+        "tooltip": [
+          {"field": "year", "type": "temporal", "title": "Year"},
+          {
+            "field": "unit",
+            "type": "quantitative",
+            "title": "Annual Percentage Change",
+            "format": ".1%"
+          }
+        ]
+      },
+      "layer": [
+        {
+          "mark": {"size": 1, "type": "line", "color": "black"},
+          "encoding": {
+            "y": {
               "field": "unit",
-              "type": "quantitative",
-              "title": "Annual Percentage Change",
-              "format": ".1%"
-            }
-          ]
-        },
-        "layer": [
-          {
-            "mark": {"size": 1, "type": "line", "color": "black"},
-            "encoding": {
-              "y": {
-                "field": "unit",
-                "axis": {"format": ".0%"},
-                "type": "quantitative",
-                "title": "Annual % Change"
-              }
-            }
+              "axis": {
+            "titleAngle": 0,
+            "titleY": -3,
+            "titleX": 0,
+            "titleAlign": "left",
+            "titleFontWeight": "lighter",
+            "titleFontSize": 10
           },
-          {
-            "params": [
-              {
-                "name": "rpiHover",
-                "value": [{"x": {"year": 2005, "month": 1, "date": 1}}],
-                "select": {
-                  "type": "point",
-                  "encodings": ["x"],
-                  "on": "pointerover",
-                  "nearest": true
-                }
-              }
-            ],
-            "mark": {"type": "rule", "strokeWidth": 0.5},
-            "encoding": {
-              "color": {
-                "condition": [
-                  {
-                    "test": "datum['year'] == termHover['Start Date']",
-                    "value": "red"
-                  },
-                  {"test": "datum['year'] == rpiHover['year']", "value": "blue"}
-                ]
-              },
-              "opacity": {
-                "condition": [
-                  {
-                    "test": "datum['year'] == termHover['Start Date'] | datum['year'] == rpiHover['year']",
-                    "value": 1
-                  }
-                ],
-                "value": 0
-              }
+              "type": "quantitative",
+              "title": "Annual % Change"
             }
           }
-        ],
-        "selection": {
-          "highlight": {
-            "type": "interval",
-            "encodings": ["x"],
-            "bind": "scales",
-            "zoom": true
+        },
+        {
+          "params": [
+            {
+              "name": "rpiHover",
+              "value": [{"x": {"year": 2005, "month": 1, "date": 1}}],
+              "select": {
+                "type": "point",
+                "encodings": ["x"],
+                "on": "pointerover",
+                "nearest": true
+              }
+            }
+          ],
+          "mark": {"type": "rule", "strokeWidth": 0.5},
+          "encoding": {
+            "color": {
+              "condition": [
+                {
+                  "test": "datum['year'] == termHover['Start Date']",
+                  "value": "red"
+                },
+                {"test": "datum['year'] == rpiHover['year']", "value": "blue"}
+              ]
+            },
+            "opacity": {
+              "condition": [
+                {
+                  "test": "datum['year'] == termHover['Start Date'] | datum['year'] == rpiHover['year']",
+                  "value": 1
+                }
+              ],
+              "value": 0
+            }
           }
         }
-      },
-      {
-        "data": {
-          "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/cleaned_silhouettes_lis.csv"
-        },
-        "transform": [{"filter": "datum['End Date'] != '2023-01-01'"}],
-        "width": 500,
-        "height": 300,
-        "layer": [
-          {
-            "params": [
-              {
-                "name": "termHover",
-                "value": [{"x": {"year": 2005, "month": 1, "date": 1}}],
-                "select": {
-                  "type": "point",
-                  "encodings": ["x"],
-                  "clear": true,
-                  "on": "pointerover",
-                  "nearest": true
-                }
-              }
-            ],
-            "mark": "point",
-            "encoding": {
-              "x": {"field": "Start Date", "type": "temporal", "axis": null},
-              "opacity": {"value": 0}
-            }
-          },
-          {
-            "mark": {"size": 1, "type": "line"},
-            "encoding": {
-              "x": {"field": "Start Date", "type": "temporal", "axis": null},
-              "y": {
-                "field": "Result Count",
-                "title": "Mentions",
-                "type": "quantitative",
-                "axis": {"format": "a"}
-              },
-              "color": {"field": "Term", "type": "nominal"}
-            }
-          },
-          {
-            "transform": [
-              {
-                "filter": "datum['Start Date'] == termHover['Start Date'] | datum['Start Date'] == rpiHover['year']"
-              }
-            ],
-            "encoding": {
-              "x": {"field": "Start Date", "type": "temporal", "axis": null},
-              "color": {"value": "firebrick"}
-            },
-            "layer": [
-              {
-                "transform": [
-                  {
-                    "pivot": "Term",
-                    "groupby": ["Start Date"],
-                    "value": "Result Count"
-                  }
-                ],
-                "mark": {"type": "rule", "strokeWidth": 0.5},
-                "encoding": {
-                  "tooltip": [
-                    {"field": "Start Date", "type": "temporal", "title": "Year"},
-                    {"field": "Fabric"},
-                    {"field": "Fitted"},
-                    {"field": "Long"},
-                    {"field": "Short"}
-                  ],
-                  "color": {
-                    "condition": [
-                      {
-                        "test": "datum['Start Date'] == termHover['Start Date']",
-                        "value": "red"
-                      },
-                      {
-                        "test": "datum['Start Date'] == rpiHover['year']",
-                        "value": "blue"
-                      }
-                    ]
-                  }
-                }
-              },
-              {
-                "mark": {"type": "text", "align": "center", "fontWeight": 100},
-                "encoding": {
-                  "text": {"field": "Start Date", "timeUnit": "year"},
-                  "y": {"value": 310}
-                }
-              }
-            ]
-          }
-        ],
-        "selection": {
-          "highlight": {
-            "type": "interval",
-            "encodings": ["x"],
-            "bind": "scales",
-            "zoom": true
-          }
+      ],
+      "selection": {
+        "highlight": {
+          "type": "interval",
+          "encodings": ["x"],
+          "bind": "scales",
+          "zoom": true
         }
       }
-    ]
-  }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/cleaned_silhouettes_lis.csv"
+      },
+      "transform": [{"filter": "datum['End Date'] != '2023-01-01'"}],
+      "width": 500,
+      "height": 300,
+      "layer": [
+        {
+          "params": [
+            {
+              "name": "termHover",
+              "value": [{"x": {"year": 2005, "month": 1, "date": 1}}],
+              "select": {
+                "type": "point",
+                "encodings": ["x"],
+                "clear": true,
+                "on": "pointerover",
+                "nearest": true
+              }
+            }
+          ],
+          "mark": "point",
+          "encoding": {
+            "x": {"field": "Start Date", "type": "temporal", "axis": null},
+            "opacity": {"value": 0}
+          }
+        },
+        {
+          "mark": {"size": 1, "type": "line"},
+          "encoding": {
+            "x": {"field": "Start Date", "type": "temporal", "axis": null},
+            "y": {
+              "field": "Result Count",
+              "title": "Silhouette Popularity by Occurance in Vogue",
+              "type": "quantitative",
+              "axis": {
+            "titleAngle": 0,
+            "titleY": -3,
+            "titleX": 0,
+            "titleAlign": "left",
+            "titleFontWeight": "lighter",
+            "titleFontSize": 10
+          }
+            },
+            "color": {"field": "Term", "type": "nominal"}
+          }
+        },
+        {
+          "transform": [
+            {
+              "filter": "datum['Start Date'] == termHover['Start Date'] | datum['Start Date'] == rpiHover['year']"
+            }
+          ],
+          "encoding": {
+            "x": {"field": "Start Date", "type": "temporal", "axis": null},
+            "color": {"value": "firebrick"}
+          },
+          "layer": [
+            {
+              "transform": [
+                {
+                  "pivot": "Term",
+                  "groupby": ["Start Date"],
+                  "value": "Result Count"
+                }
+              ],
+              "mark": {"type": "rule", "strokeWidth": 0.5},
+              "encoding": {
+                "tooltip": [
+                  {"field": "Start Date", "type": "temporal", "title": "Year"},
+                  {"field": "Fabric"},
+                  {"field": "Fitted"},
+                  {"field": "Long"},
+                  {"field": "Short"}
+                ],
+                "color": {
+                  "condition": [
+                    {
+                      "test": "datum['Start Date'] == termHover['Start Date']",
+                      "value": "red"
+                    },
+                    {
+                      "test": "datum['Start Date'] == rpiHover['year']",
+                      "value": "blue"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "mark": {"type": "text", "align": "center", "fontWeight": 100},
+              "encoding": {
+                "text": {"field": "Start Date", "timeUnit": "year"},
+                "y": {"value": 310}
+              }
+            }
+          ]
+        }
+      ],
+      "selection": {
+        "highlight": {
+          "type": "interval",
+          "encodings": ["x"],
+          "bind": "scales",
+          "zoom": true
+        }
+      }
+    }
+  ]
+}
