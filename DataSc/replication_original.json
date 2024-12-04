@@ -1,0 +1,220 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+    "text": ["", "The state of the markets"],
+    "fontSize": 14
+    },
+    "config": {
+      "background": "aliceblue",
+      "view": {
+        "stroke": "transparent"
+      }
+    },
+    "hconcat": [
+      {
+        "title": {
+      "text": ["", "──","Currencies against the $"],
+      "subtitle": ["January-August 2019, %change", ""],
+      "subtitleFontStyle": "",
+      "subtitleFontSize": 11,
+      "fontSize": 12,
+      "subtitleFontWeight": 100,
+      "anchor": "start",
+      "color": "black"
+    },
+        "data": {
+          "values": [
+            {"currency": "Gold", "change": 18},
+            {"currency": "Japanese yen", "change": 10},
+            {"currency": "Swiss franc", "change": 8},
+            {"currency": "Chinese yuan", "change": 5},
+            {"currency": "Euro", "change": 3},
+            {"currency": "Australian dollar", "change": -5},
+            {"currency": "British pound", "change": -10},
+            {"currency": "Turkish lira", "change": -15},
+            {"currency": "South Korean won", "change": -20},
+            {"currency": "Argentine peso", "change": -37}
+          ]
+        },
+        "mark": {
+        "type": "bar",
+        "color": "#1e5fa4"},
+        "encoding": {
+          "x": {
+            "field": "change",
+            "type": "quantitative",
+            "title": "",
+            "axis": {
+              "gridColor": 
+              {"expr": "datum.value == 0 ? 'red': '#bbb5b5'"},
+              "gridWidth":{"expr": "datum.value == 0 ? 2: 1"},
+              "orient": "top",
+              "domainColor": "aliceblue",
+              "tickColor": "aliceblue",
+              "labelColor": "black"
+            },
+            "scale" : {
+              "domain" : [-40, 20]
+            }
+          },
+          "y": {
+            "field": "currency",
+            "type": "nominal",
+            "title": "",
+            "axis": {
+              "domainColor": "#bbb5b5",
+              "tickColor": "aliceblue",
+              "labelColor": "black"
+            },
+            "sort": null
+          }
+        }
+      },
+      {
+         "title": {
+      "text": ["", "──","United States, government-bond yields, %"],
+      "subtitle": ["By maturity", "", ""],
+      "subtitleFontStyle": "",
+      "subtitleFontSize": 11,
+      "fontSize": 12,
+      "subtitleFontWeight": 100,
+      "anchor": "start",
+      "color": "black"
+    },
+        "data": {
+          "values": [
+            {"maturity": "3M", "may2019": 2.45, "aug2019": 1.99},
+            {"maturity": "6M", "may2019": 2.46, "aug2019": 1.96},
+            {"maturity": "1Y", "may2019": 2.40, "aug2019": 1.8},
+            {"maturity": "2Y", "may2019": 2.30, "aug2019": 1.6},
+            {"maturity": "3Y", "may2019": 2.20, "aug2019": 1.5},
+            {"maturity": "4Y", "may2019": 2.21, "aug2019": 1.45},
+            {"maturity": "5Y", "may2019": 2.20, "aug2019": 1.45},
+            {"maturity": "6Y", "may2019": 2.25, "aug2019": 1.5},
+            {"maturity": "7Y", "may2019": 2.30, "aug2019": 1.51},
+            {"maturity": "8Y", "may2019": 2.35, "aug2019": 1.52},
+            {"maturity": "9Y", "may2019": 2.45, "aug2019": 1.53},
+            {"maturity": "10Y", "may2019": 2.50, "aug2019": 1.54}
+          ]
+        },
+        "layer": [
+          {
+            "mark": {
+              "type": "line",
+              "color": "#5ed4ef",
+              "strokeWidth": 2.5
+            },
+            "encoding": {
+              "x": {
+                "field": "maturity",
+                "type": "ordinal",
+                "scale": {
+        "domain": ["3M", "6M", "1Y", "2Y", "3Y", "4Y", "5Y","6Y", "7Y", "8Y", "9Y","10Y"]},
+                "axis": {
+                  "title": null,
+              "gridColor": "#bbb5b5",
+              "orient": "bottom",
+              "domainColor": "black",
+              "tickColor": "black",
+              "labelColor": "black",
+             "labelAngle": 360
+                }
+              },
+              "y": {
+                "field": "may2019",
+                "type": "quantitative",
+                "axis": {
+                  "title": null,
+              "gridColor": "#bbb5b5",
+              "orient": "right",
+              "domainColor": "aliceblue",
+              "tickColor": "aliceblue",
+              "labelColor": "black"
+               }
+              }
+            }
+          },
+          {
+            "mark": {
+              "type": "line",
+              "color": "#1e5fa4",
+              "strokeWidth": 2.5
+            },
+            "encoding": {
+              "x": {
+                "field": "maturity",
+                "type": "ordinal"
+              },
+              "y": {
+                "field": "aug2019",
+                "type": "quantitative"
+              }
+            }
+          },
+          {
+              "mark": {
+              "type": "text",
+              "align": "left",
+              "dx": 5,
+              "dy": -5,
+              "font": "Arial",
+              "fontSize": 12,
+              "fill": "#000000"
+            },
+            "encoding": {
+              "x": {
+                "field": "maturity",
+                "type": "ordinal"
+              },
+              "y": {
+                "field": "may2019",
+                "type": "quantitative"
+              }
+            }
+          },
+          {
+              "mark": {
+              "type": "text",
+              "align": "left",
+              "dx": 5,
+              "dy": -5,
+              "font": "Arial",
+              "fontSize": 12,
+              "fill": "#000000"
+            },
+            "encoding": {
+              "x": {
+                "field": "maturity",
+                "type": "ordinal",
+                "scale": {
+            "domain": ["3M", "6M", "1Y", "2Y", "3Y", "4Y", "5Y", "6Y", "7Y", "8Y", "9Y", "10Y"]
+          }
+              },
+              "y": {
+                "field": "aug2019",
+                "type": "quantitative"
+              }
+            }
+          },
+          {
+        "data": {"values": [{"date": "Aug 14th 2019"}]},
+        "mark": {"type": "text", "color": "black"},
+        "encoding": {
+          "text": {"field": "date", "type": "nominal"},
+          "x": {"value": 110},
+          "y": {"value": 100}
+        }
+      },
+      {
+        "data": {"values": [{"country": "May 1st 2019"}]},
+        "mark": {"type": "text", "color": "black"},
+        "encoding": {
+          "text": {"field": "country", "type": "nominal"},
+          "x": {"value": 175},
+          "y": {"value": 40}
+        }
+      }
+        ]
+      }
+    ]
+  }

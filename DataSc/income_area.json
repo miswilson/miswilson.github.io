@@ -1,0 +1,69 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/countries-by-income-classification.csv"
+    },
+    "title": {
+      "text": "Global Income Distribution by Country",
+      "subtitle": ["Number of countries split by income level: High, Medium, Low"],
+      "subtitleFontWeight": "lighter",
+      "align": "center",
+      "fontSize": 12,
+      "subtitleFontSize": 10
+    },
+    "params": [
+      {
+        "value": "Female",
+        "bind": {
+          "input": "radio",
+          "options": [
+            "Africa",
+            "Asia",
+            "Europe",
+            "Oceania",
+            "North America",
+            "South America",
+            "World"
+          ]
+        },
+        "orient": "none",
+        "direction": "horizontal",
+        "legendX": 10,
+        "legendY": 5
+      }
+    ],
+    "transform": [
+      {"filter": "datum.Entity != 'World'"},
+      {
+        "fold": [
+          "Number of high-income countries",
+          "Number of upper-middle-income countries",
+          "Number of lower-middle-income countries",
+          "Number of low-income countries"
+        ],
+        "as": ["series", "value"]
+      }
+    ],
+    "repeat": {
+      "layer": [
+        "Number of high-income countries",
+        "Number of upper-middle-income countries",
+        "Number of lower-middle-income countries",
+        "Number of low-income countries"
+      ]
+    },
+    "spec": {
+      "layer": [
+        {
+          "mark": {"type": "area", "stroke": "white", "strokeWidth": 1},
+          "encoding": {
+            "x": {"field": "Year", "type": "temporal", "title": ""},
+            "y": {"aggregate": "sum", "field": "value", "type": "quantitative"},
+            "color": {"field": "series",
+            "title": "Income Level:"}
+          }
+        }
+      ]
+    },
+    "config": {}
+  }

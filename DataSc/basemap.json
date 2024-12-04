@@ -1,0 +1,42 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "World map with countries in pink with stroke",
+    "width": 500,
+    "height": 300,
+    "data": {
+      "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/map_world.geojson",
+      "format": {
+        "property": "features"
+      }
+    },
+    "mark": {
+      "type": "geoshape",
+      "stroke": "black",        
+      "strokeWidth": 0.5
+    },
+    "title": {
+      "text": "Base Map",
+      "fontSize": 12,
+      "subtitle": [
+        "World Map with Hover on Country"
+      ],
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "anchor": "middle",
+      "color": "black"
+    },
+    "projection": {
+      "type": "equalEarth"
+    },
+    "encoding": {
+      "color": {
+        "value": "pink"
+      },
+      "tooltip": [
+        {
+          "field": "properties.COUNTRY",
+          "title": "Country"
+        }
+      ]
+    }
+  }

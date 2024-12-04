@@ -1,0 +1,259 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+        "text": "Measures of CPI for Inflation",
+        "fontSize": 14,
+        "subtitle": "Using live charts, with a drag out rectangular brush to highlight points for rate comparison in time.",
+        "subtitleFontSize": 12,
+        "anchor": "middle",
+        "color": "black"
+      },
+    "vconcat": [
+      {
+        "hconcat": [
+          {
+            "data": {
+              "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/j2i9.json",
+              "format": {
+                "type": "json",
+                "property": "years",
+                "parse": {"date": "utc:'%Y'"}
+              }
+            },
+            "params": [
+              {
+                "name": "brush",
+                "select": "interval",
+                "value": {"x": [55, 160], "y": [13, 37]}
+              }
+            ],
+            "mark": "circle",
+            "encoding": {
+              "x": {"field": "date", "type": "temporal", "title": ""},
+              "y": {"field": "value", "type": "quantitative", "title": "Inflation (CPI)"},
+              "color": {
+                "condition": {"param": "brush", "field": "value", "type": "quantitative", "title": "CPI"},
+                "value": "grey"
+              }
+            }
+          },
+          {
+            "data": {
+              "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/l528.json",
+              "format": {
+                "type": "json",
+                "property": "years",
+                "parse": {"date": "utc:'%Y'"}
+              }
+            },
+            "params": [
+              {
+                "name": "brush",
+                "select": "interval",
+                "value": {"x": [55, 160], "y": [13, 37]}
+              }
+            ],
+            "mark": "circle",
+            "encoding": {
+              "x": {"field": "date", "type": "temporal", "title": ""},
+              "y": {"field": "value", "type": "quantitative", "title": "Inflation (CPI)"},
+              "color": {
+                "condition": {"param": "brush", "field": "value", "type": "quantitative", "title": "CPI"},
+                "value": "grey"
+              }
+            }
+          },
+          {
+            "data": {
+              "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/j2mc.json",
+              "format": {
+                "type": "json",
+                "property": "years",
+                "parse": {"date": "utc:'%Y'"}
+              }
+            },
+            "params": [
+              {
+                "name": "brush",
+                "select": "interval",
+                "value": {"x": [55, 160], "y": [13, 37]}
+              }
+            ],
+            "mark": "circle",
+            "encoding": {
+              "x": {"field": "date", "type": "temporal", "title": ""},
+              "y": {"field": "value", "type": "quantitative", "title": "Inflation (CPI)"},
+              "color": {
+                "condition": {"param": "brush", "field": "value", "type": "quantitative", "title": "CPI"},
+                "value": "grey"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "hconcat": [
+          {
+            "data": {
+              "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/j2m9.json",
+              "format": {
+                "type": "json",
+                "property": "years",
+                "parse": {"date": "utc:'%Y'"}
+              }
+            },
+            "params": [
+              {
+                "name": "brush",
+                "select": "interval",
+                "value": {"x": [55, 160], "y": [13, 37]}
+              }
+            ],
+            "mark": "circle",
+            "encoding": {
+              "x": {"field": "date", "type": "temporal", "title": ""},
+              "y": {"field": "value", "type": "quantitative", "title": "Inflation (CPI)"},
+              "color": {
+                "condition": {"param": "brush", "field": "value", "type": "quantitative", "title": "CPI"},
+                "value": "grey"
+              }
+            }
+          },
+          {
+            "data": {
+              "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/l552.json",
+              "format": {
+                "type": "json",
+                "property": "years",
+                "parse": {"date": "utc:'%Y'"}
+              }
+            },
+            "params": [
+              {
+                "name": "brush",
+                "select": "interval",
+                "value": {"x": [55, 160], "y": [13, 37]}
+              }
+            ],
+            "mark": "circle",
+            "encoding": {
+              "x": {"field": "date", "type": "temporal", "title": ""},
+              "y": {"field": "value", "type": "quantitative", "title": "Inflation (CPI)"},
+              "color": {
+                "condition": {"param": "brush", "field": "value", "type": "quantitative", "title": "CPI"},
+                "value": "grey"
+              }
+            }
+          },
+          {
+            "data": {
+              "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/l5jj.json",
+              "format": {
+                "type": "json",
+                "property": "years",
+                "parse": {"date": "utc:'%Y'"}
+              }
+            },
+            "params": [
+              {
+                "name": "brush",
+                "select": "interval",
+                "value": {"x": [55, 160], "y": [13, 37]}
+              }
+            ],
+            "mark": "circle",
+            "encoding": {
+              "x": {"field": "date", "type": "temporal", "title": ""},
+              "y": {"field": "value", "type": "quantitative", "title": "Inflation (CPI)"},
+              "color": {
+                "condition": {"param": "brush", "field": "value", "type": "quantitative", "title": "CPI"},
+                "value": "grey"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "hconcat": [
+          {
+            "data": {
+              "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/l53e.json",
+              "format": {
+                "type": "json",
+                "property": "years",
+                "parse": {"date": "utc:'%Y'"}
+              }
+            },
+            "params": [
+              {
+                "name": "brush",
+                "select": "interval",
+                "value": {"x": [55, 160], "y": [13, 37]}
+              }
+            ],
+            "mark": "circle",
+            "encoding": {
+              "x": {"field": "date", "type": "temporal", "title": ""},
+              "y": {"field": "value", "type": "quantitative", "title": "Inflation (CPI)"},
+              "color": {
+                "condition": {"param": "brush", "field": "value", "type": "quantitative", "title": "CPI"},
+                "value": "grey"
+              }
+            }
+          },
+          {
+            "data": {
+              "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/l2su.json",
+              "format": {
+                "type": "json",
+                "property": "years",
+                "parse": {"date": "utc:'%Y'"}
+              }
+            },
+            "params": [
+              {
+                "name": "brush",
+                "select": "interval",
+                "value": {"x": [55, 160], "y": [13, 37]}
+              }
+            ],
+            "mark": "circle",
+            "encoding": {
+              "x": {"field": "date", "type": "temporal", "title": ""},
+              "y": {"field": "value", "type": "quantitative", "title": "Inflation (CPI)"},
+              "color": {
+                "condition": {"param": "brush", "field": "value", "type": "quantitative", "title": "CPI"},
+                "value": "grey"
+              }
+            }
+          },
+          {
+            "data": {
+              "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/l52w.json",
+              "format": {
+                "type": "json",
+                "property": "years",
+                "parse": {"date": "utc:'%Y'"}
+              }
+            },
+            "params": [
+              {
+                "name": "brush",
+                "select": "interval",
+                "value": {"x": [55, 160], "y": [13, 37]}
+              }
+            ],
+            "mark": "circle",
+            "encoding": {
+              "x": {"field": "date", "type": "temporal", "title": ""},
+              "y": {"field": "value", "type": "quantitative", "title": "Inflation (CPI)"},
+              "color": {
+                "condition": {"param": "brush", "field": "value", "type": "quantitative", "title": "CPI"},
+                "value": "grey"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }

@@ -1,0 +1,107 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Global literacy rate by gender",
+    "width": "container",
+    "height": 300,
+    "params": [
+      {
+        "name": "year",
+        "value": 1970,
+        "bind": {
+          "input": "range",
+          "min": 1970,
+          "step": 1,
+          "max": 2023,
+          "name": "Year:"
+        }
+      },
+      {
+        "name": "gender",
+        "value": "Female",
+        "bind": {
+          "input": "select",
+          "options": ["Total", "Female", "Male"],
+          "name": "Gender:"
+        }
+      }
+    ],
+    "config": {"view": {"stroke": null}, "padding": 0},
+    "title": {
+      "text": "Global Literacy Rates by Gender",
+      "fontSize": 12,
+      "subtitle": [
+        "Literacy rate (% of population ages 15 and above). Source: World Bank"
+      ],
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 9,
+      "anchor": "middle",
+      "color": "black"
+    },
+    "projection": {"type": "equalEarth"},
+    "layer": [
+      {
+        "data": {
+          "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/map_world.geojson",
+          "format": {"property": "features"}
+        },
+        "mark": {"type": "geoshape"},
+        "encoding": {"color": {"value": "lightgrey"}},
+        "transform": [{"filter": "datum['properties.COUNTRY'] != 'Antarctica'"}]
+      },
+      {
+        "data": {
+          "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/cleaned_genders_literacy_data.csv"
+        },
+        "transform": [
+          {
+            "filter": "toNumber(datum.dates) == year"
+          },
+          {
+            "filter": "datum.Gender == gender"
+          },
+          {
+            "lookup": "code",
+            "from": {
+              "data": {
+                "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/map_world.geojson",
+                "format": {"property": "features"}
+              },
+              "key": "properties.ISO3",
+              "fields": ["type", "properties", "geometry"]
+            }
+          },
+          {
+            "filter": "datum['properties.COUNTRY'] != null"
+          },
+          {
+            "filter": "datum['properties.COUNTRY'] != 'Antarctica'"
+          }
+        ],
+        "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 0.5},
+        "encoding": {
+          "color": {
+            "field": "rate",
+            "legend": {
+              "title": "Literacy Rate (%)",
+              "orient": "bottom-left",
+              "direction": "vertical",
+              "format": ".1f",
+              "fillColor": null,
+              "offset": 0
+            },
+            "type": "quantitative",
+            "scale": {
+              "type": "linear",
+              "scheme": "inferno",
+              "domain": [0, 100]
+            }
+          },
+          "tooltip": [
+            {"field": "properties.COUNTRY", "title": "Country"},
+            {"field": "rate", "title": "Literacy Rate", "format": ".1f"}
+          ]
+        }
+      }
+    ],
+    "autosize": {"type": "fit", "contains": "padding", "resize": false}
+  }  

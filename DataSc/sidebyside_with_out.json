@@ -1,0 +1,134 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 500,
+    "height": 300,
+    "params": [
+      {
+        "name": "Region",
+        "value": "World",
+        "bind": {
+          "input": "radio",
+          "options": ["Africa", "Asia", "Europe", "Oceania", "North America", "South America", "World"],
+          "name": "Region: "
+        }
+      },
+      {
+        "name": "hover",
+        "select": {
+          "type": "point",
+          "fields": ["Year"],
+          "nearest": true,
+          "on": "pointerover",
+          "clear": "pointerout"
+        }
+      }
+    ],
+    "title": {
+      "text": "Global Income Distribution by Country",
+      "fontSize": 14,
+      "subtitle": "Number of countries by income level: High, Upper-Middle, Lower-Middle, Low",
+      "subtitleFontSize": 12,
+      "anchor": "middle",
+      "color": "black"
+    },
+    "hconcat": [
+      {
+        "data": {
+          "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/countries-by-income-classification.csv"
+        },
+        "transform": [
+          {"filter": "datum.Entity == Region"},
+          {
+            "fold": [
+              "Number of high-income countries",
+              "Number of upper-middle-income countries",
+              "Number of lower-middle-income countries",
+              "Number of low-income countries"
+            ],
+            "as": ["IncomeLevel", "Value"]
+          }
+        ],
+        "layer": [
+          {
+            "mark": "bar",
+            "encoding": {
+              "x": {"field": "Year", "type": "temporal", "title": "Year"},
+              "y": {"aggregate": "sum", "field": "Value", "type": "quantitative", "title": "Count of Countries"},
+              "color": {
+                "field": "IncomeLevel",
+                "type": "nominal",
+                "scale": {"scheme": "inferno"},
+                "title": "Income Level"
+              },
+              "opacity": {
+                "condition": [
+                  {"test": "datum.Year == hover.Year", "value": 0.3}
+                ],
+                "value": 1
+              }
+            }
+          },
+          {
+            "mark": {"type": "rule", "opacity": 0},
+            "encoding": {
+              "x": {"field": "Year", "type": "temporal"},
+              "y": null,
+              "tooltip": [
+                {"field": "Year", "type": "temporal", "format": "%Y"},
+                {"field": "Number of high-income countries", "title": "High Income Countries"},
+                {"field": "Number of upper-middle-income countries", "title": "Upper-Middle Income Countries"},
+                {"field": "Number of lower-middle-income countries", "title": "Lower-Middle Income Countries"},
+                {"field": "Number of low-income countries", "title": "Low Income Countries"}
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "data": {
+          "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/countries-by-income-classification.csv"
+        },
+        "transform": [
+          {"filter": "datum.Entity == Region"},
+          {
+            "fold": [
+              "Number of high-income countries",
+              "Number of upper-middle-income countries",
+              "Number of lower-middle-income countries",
+              "Number of low-income countries"
+            ],
+            "as": ["IncomeLevel", "Value"]
+          }
+        ],
+        "layer": [
+          {
+            "mark": "bar",
+            "encoding": {
+              "x": {"field": "Year", "type": "temporal", "title": "Year"},
+              "y": {"aggregate": "sum", "field": "Value", "type": "quantitative", "title": "Count of Countries"},
+              "color": {
+                "field": "IncomeLevel",
+                "type": "nominal",
+                "scale": {"scheme": "yellowgreen"},
+                "title": "Income Level"
+              }
+            }
+          },
+          {
+            "mark": {"type": "rule", "opacity": 0},
+            "encoding": {
+              "x": {"field": "Year", "type": "temporal"},
+              "y": null,
+              "tooltip": [
+                {"field": "Year", "type": "temporal", "format": "%Y"},
+                {"field": "Number of high-income countries", "title": "High Income Countries"},
+                {"field": "Number of upper-middle-income countries", "title": "Upper-Middle Income Countries"},
+                {"field": "Number of lower-middle-income countries", "title": "Lower-Middle Income Countries"},
+                {"field": "Number of low-income countries", "title": "Low Income Countries"}
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
