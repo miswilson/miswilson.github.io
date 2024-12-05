@@ -8,7 +8,8 @@
     "text": ["", "──", "Trend Patterns in Economic Boom"],
     "subtitle": [
       "Interactive Chart on Trending Fashion Features",
-      "Source: Vogue Archieves", ""
+      "Source: Vogue Archieves",
+      ""
     ],
     "subtitleFontStyle": "",
     "subtitleFontSize": 11,
@@ -28,11 +29,16 @@
     }
   ],
   "facet": {
-    "column": {"field": "RenamedTerm", "type": "nominal", "title": null,
-    "header": {"labelAlign":"left",
-    "labelAnchor": "start",
-    "labelFontSize": 11,
-    "labelFontStyle": "bold"}
+    "column": {
+      "field": "RenamedTerm",
+      "type": "nominal",
+      "title": null,
+      "header": {
+        "labelAlign": "left",
+        "labelAnchor": "start",
+        "labelFontSize": 11,
+        "labelFontStyle": "bold"
+      }
     }
   },
   "selection": {
@@ -88,7 +94,8 @@
               "titleX": 0,
               "titleAlign": "left",
               "titleFontWeight": "lighter",
-              "titleFontSize": 10
+              "titleFontSize": 10,
+                 "labelExpr": "datum.value == 0 ? 'No Mentions' : datum.value == 5 ? '5' : datum.value == 10 ? '10' : datum.value == 15 ? '15' : datum.value == 20 ? '20' : datum.value == 25 ? '25': datum.value == 100 ?'100' : datum.value == 200 ? '200' : datum.value == 300 ? '300': datum.value == 400 ? '400' : datum.value == 500 ? '500': datum.value == 600 ? '600': null"
             }
           },
           "color": {"field": "RenamedTerm", "type": "nominal"},
