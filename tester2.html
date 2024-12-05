@@ -73,6 +73,99 @@
             right: 5%;
         }
 
+            /* Making it fit the screen */
+
+    @media  screen and (max-width: 800px) {
+        .chart_title {
+        display: block;
+    }
+
+    .nav-button.next {
+            right: 3%;
+            font-size: 22px;
+            height: fit-content;
+            display: block;
+        }
+
+        .nav-button.prev {
+            left: 3%;
+            font-size: 22px;
+            height: fit-content;
+            display: block;
+        }   
+
+        .info-section {
+            text-align: center;
+            margin-top: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            display: block;
+height: fit-content;
+}
+
+.chart_title {
+    display: flex;
+    margin: 0, 5%;
+}
+
+/* Chart container to ensure it's centered but with more space */
+.chart-container {
+    width: 275px;
+    margin: 0 auto 2rem;
+}
+
+canvas {
+    width: 100% !important;
+    height: fit-content!important;
+    margin: 0 auto 2rem;
+    transition: all 0.3 ease-in-out;
+}
+
+.image_chart {
+    width: 275px;
+    height: fit-content;
+    margin: 0 auto 2rem; 
+}
+
+.chart-section {
+    width: 275px;
+    height: fit-content;
+    margin: 0 auto 2rem;
+}
+
+.container {
+    width: 275px;
+    height: fit-content;
+    margin: 0 auto 2rem;
+}
+
+.chart_title {
+    display: block;
+}
+
+
+body, h1, p {
+            margin: 0;
+            height: fit-content;
+            font: optional;
+        }
+}
+
+@media  screen and (min-width: 900px) {
+        /* Text section: title and description */
+        .info-section {
+            text-align: center;
+            margin-top: 20px;
+            justify-content: center;
+            align-items: center;
+            padding-left: 12%;
+            padding-right: 12%;
+        }
+}
+
     </style>
 </head>
 
