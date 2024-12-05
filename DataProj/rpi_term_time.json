@@ -2,9 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": ["", "──", "Trendline: Effect of Inflation on Silhouettes"],
-    "subtitle": [
-      "Sources: ONS, PB-N2SA, & Vogue Archieves", ""
-    ],
+    "subtitle": ["Sources: ONS, PB-N2SA, & Vogue Archieves", ""],
     "subtitleFontStyle": "",
     "subtitleFontSize": 11,
     "fontSize": 12,
@@ -12,9 +10,11 @@
     "anchor": "start",
     "color": "black"
   },
-  "config": {"concat": {"spacing": 15},
-      "axisX": {"grid": false, "title": null},
-    "view": {"strokeOpacity": 0}},
+  "config": {
+    "concat": {"spacing": 15},
+    "axisX": {"grid": false, "title": null},
+    "view": {"strokeOpacity": 0}
+  },
   "vconcat": [
     {
       "data": {
@@ -31,7 +31,7 @@
           "scale": {"domain": ["1900-01-01", "2021-01-01"]}
         },
         "tooltip": [
-          {"field": "year", "type": "temporal", "title": "Year"},
+          {"field": "year", "type": "temporal", "title": "Year", "format": "%Y"},
           {
             "field": "unit",
             "type": "quantitative",
@@ -53,7 +53,7 @@
                 "titleAlign": "left",
                 "titleFontWeight": "lighter",
                 "titleFontSize": 10,
-                  "labelExpr": "datum.value == 0 ? '0%' : datum.value == -0.15 ? '-0.15%' : datum.value == -0.1 ? '-0.10%' : datum.value == -0.05 ? '-0.05%' : datum.value == 0.05 ? '0.05%' : datum.value == 0.10 ?'0.10%' : datum.value == 0.15 ? '0.15%' : datum.value == 0.20 ? '0.20%' :datum.value == 0.25 ? '0.25%' :datum.value == 0.30 ? '0.30%' : null"
+                "labelExpr": "datum.value == 0 ? '0%' : datum.value == -0.15 ? '-0.15%' : datum.value == -0.1 ? '-0.10%' : datum.value == -0.05 ? '-0.05%' : datum.value == 0.05 ? '0.05%' : datum.value == 0.10 ?'0.10%' : datum.value == 0.15 ? '0.15%' : datum.value == 0.20 ? '0.20%' :datum.value == 0.25 ? '0.25%' :datum.value == 0.30 ? '0.30%' : null"
               },
               "type": "quantitative",
               "title": "Annual % Change in RPI (UK)"
@@ -105,158 +105,168 @@
         }
       }
     },
-
-{
-  "data": {
-    "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/cleaned_silhouettes_lis.csv"
-  },
-  "transform": [{"filter": "datum['End Date'] != '2023-01-01'"}],
-  "width": 500,
-  "height": 300,
-  "layer": [
     {
-      "params": [
+      "data": {
+        "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/cleaned_silhouettes_lis.csv"
+      },
+      "transform": [{"filter": "datum['End Date'] != '2023-01-01'"}],
+      "width": 500,
+      "height": 300,
+      "layer": [
         {
-          "name": "termHover",
-          "value": [{"x": {"year": 2005, "month": 1, "date": 1}}],
-          "select": {
-            "type": "point",
-            "encodings": ["x"],
-            "clear": true,
-            "on": "pointerover",
-            "nearest": true
-          }
-        }
-      ],
-      "mark": "point",
-      "encoding": {
-        "x": {"field": "Start Date", "type": "temporal", "axis": null},
-        "opacity": {"value": 0}
-      }
-    },
-    {
-      "mark": {"size": 1, "type": "line"},
-      "encoding": {
-        "x": {"field": "Start Date", "type": "temporal", "axis": null},
-        "y": {
-          "field": "Result Count",
-          "title": "Silhouette Popularity by Occurrence in Vogue",
-          "type": "quantitative",
-          "axis": {
-            "titleAngle": 0,
-            "titleY": -3,
-            "titleX": 0,
-            "titleAlign": "left",
-            "titleFontWeight": "lighter",
-            "titleFontSize": 10,
-             "labelExpr": "datum.value == 0 ? 'No Mentions' : datum.value == 200 ? '200' : datum.value == 400 ? '400' : datum.value == 600 ? '600' : datum.value == 800 ? '800' : datum.value == 1000 ?'1000' : datum.value == 1200 ? '1200' : datum.value == 1400 ? '1400' :datum.value == 1600 ? '1600' :datum.value == 1800 ? '1800' : null"
+          "params": [
+            {
+              "name": "termHover",
+              "value": [{"x": {"year": 2005, "month": 1, "date": 1}}],
+              "select": {
+                "type": "point",
+                "encodings": ["x"],
+                "clear": true,
+                "on": "pointerover",
+                "nearest": true
+              }
+            }
+          ],
+          "mark": "point",
+          "encoding": {
+            "x": {"field": "Start Date", "type": "temporal", "axis": null},
+            "opacity": {"value": 0}
           }
         },
-        "color": {"field": "Term", "type": "nominal",
-        "scale": {
-      "domain": ["Long", "Short", "Fitted", "Fabric"],
-      "range": ["cornflowerblue", "limegreen", "coral", "deeppink"]
-    },
-    "legend":null
-    }
-      }
-    },
-    {
-      "transform": [
         {
-          "filter": "datum['Start Date'] == termHover['Start Date'] | datum['Start Date'] == rpiHover['year']"
-        }
-      ],
-      "encoding": {
-        "x": {"field": "Start Date", "type": "temporal", "axis": null},
-        "color": {"value": "firebrick"}
-      },
-      "layer": [
+          "mark": {"size": 1, "type": "line"},
+          "encoding": {
+            "x": {"field": "Start Date", "type": "temporal", "axis": null},
+            "y": {
+              "field": "Result Count",
+              "title": "Silhouette Popularity by Occurrence in Vogue",
+              "type": "quantitative",
+              "axis": {
+                "titleAngle": 0,
+                "titleY": -3,
+                "titleX": 0,
+                "titleAlign": "left",
+                "titleFontWeight": "lighter",
+                "titleFontSize": 10,
+                "labelExpr": "datum.value == 0 ? 'No Mentions' : datum.value == 200 ? '200' : datum.value == 400 ? '400' : datum.value == 600 ? '600' : datum.value == 800 ? '800' : datum.value == 1000 ?'1000' : datum.value == 1200 ? '1200' : datum.value == 1400 ? '1400' :datum.value == 1600 ? '1600' :datum.value == 1800 ? '1800' : null"
+              }
+            },
+            "color": {
+              "field": "Term",
+              "type": "nominal",
+              "scale": {
+                "domain": ["Long", "Short", "Fitted", "Fabric"],
+                "range": ["cornflowerblue", "limegreen", "coral", "deeppink"]
+              },
+              "legend": null
+            }
+          }
+        },
         {
           "transform": [
             {
-              "pivot": "Term",
-              "groupby": ["Start Date"],
-              "value": "Result Count"
+              "filter": "datum['Start Date'] == termHover['Start Date'] | datum['Start Date'] == rpiHover['year']"
             }
           ],
-          "mark": {"type": "rule", "strokeWidth": 0.5},
           "encoding": {
-            "tooltip": [
-              {"field": "Start Date", "type": "temporal", "title": "Year"},
-              {"field": "Fabric"},
-              {"field": "Fitted"},
-              {"field": "Long"},
-              {"field": "Short"}
-            ],
-            "color": {
-              "condition": [
+            "x": {"field": "Start Date", "type": "temporal", "axis": null},
+            "color": {"value": "firebrick"}
+          },
+          "layer": [
+            {
+              "transform": [
                 {
-                  "test": "datum['Start Date'] == termHover['Start Date']",
-                  "value": "red"
-                },
-                {
-                  "test": "datum['Start Date'] == rpiHover['year']",
-                  "value": "blue"
+                  "pivot": "Term",
+                  "groupby": ["Start Date"],
+                  "value": "Result Count"
                 }
-              ]
+              ],
+              "mark": {"type": "rule", "strokeWidth": 0.5},
+              "encoding": {
+                "tooltip": [
+                  {"field": "Start Date", "type": "temporal", "title": "Year", "format": "%Y"},
+                  {"field": "Fabric", "type": "quantitative"},
+                  {"field": "Fitted", "type": "quantitative"},
+                  {"field": "Long", "type": "quantitative"},
+                  {"field": "Short", "type": "quantitative"}
+                ],
+                "color": {
+                  "condition": [
+                    {
+                      "test": "datum['Start Date'] == termHover['Start Date']",
+                      "value": "red"
+                    },
+                    {
+                      "test": "datum['Start Date'] == rpiHover['year']",
+                      "value": "blue"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "mark": {"type": "text", "align": "center", "fontWeight": 100},
+              "encoding": {
+                "text": {"field": "Start Date", "timeUnit": "year"},
+                "y": {"value": 310}
+              }
             }
+          ]
+        },
+        {
+          "transform": [
+            {"filter": "datum['Start Date'] == max(datum['Start Date'])"}
+          ],
+  "params": [{
+    "name": "hover",
+                "type": "point",
+                "encodings": ["x"],
+                "clear": true,
+                "on": "pointerover",
+                "nearest": true
+              
+  }],
+            "mark": {"type": "line", "strokeWidth": 0.5},
+          "encoding": {
+            "x": {"field": "Start Date", "type": "temporal"},
+            "y": {"field": "Result Count", "type": "quantitative"},
+            "color": {"field": "Term", "type": "nominal"}
           }
         },
         {
-          "mark": {"type": "text", "align": "center", "fontWeight": 100},
+          "transform": [
+            {"filter": "datum['Start Date'] == max(datum['Start Date'])"}
+          ],
+          "layer": [
+            {"mark": {"type": "circle"}},
+            {
+              "mark": {
+                "type": "text",
+                "align": "left",
+                "dx": 4,
+                "dy": {
+                  "expr": "datum.Term == 'Fitted' ? 4 : datum.Term == 'Short' ? -12 : datum.Term == 'Fabric' ? -5 : datum.Term == 'Long' ? -6 : datum.Term == 'Long'"
+                }
+              },
+              "encoding": {"text": {"field": "Term", "type": "nominal"}}
+            }
+          ],
           "encoding": {
-            "text": {"field": "Start Date", "timeUnit": "year"},
-            "y": {"value": 310}
+            "color": {"field": "Term", "type": "nominal"},
+            "text": {"field": "Term", "type": "nominal"},
+            "x": {
+              "field": "Start Date",
+              "type": "temporal",
+              "aggregate": "max"
+            },
+            "y": {
+              "field": "Result Count",
+              "type": "quantitative",
+              "aggregate": {"argmax": "Start Date"}
+            }
           }
         }
       ]
-    },
-    {
-      "transform": [
-        {
-          "filter": "datum['Start Date'] == max(datum['Start Date'])"
-        }
-      ],
-      "mark": {
-        "type": "line",
-        "strokeWidth": 0.5
-      },
-      "encoding": {
-        "x": {"field": "Start Date", "type": "temporal"},
-        "y": {"field": "Result Count", "type": "quantitative"},
-        "color": {"field": "Term", "type": "nominal"}
-      }
-    },
-    {
-      "transform": [
-        {
-          "filter": "datum['Start Date'] == max(datum['Start Date'])"
-        }
-      ],
-      "layer": [
-    {"mark": {"type": "circle"}},
-                {"mark": {"type": "text", "align": "left", "dx": 4,
-               "dy": {
-  "expr": "datum.Term == 'Fitted' ? 4 : datum.Term == 'Short' ? -12 : datum.Term == 'Fabric' ? -5 : datum.Term == 'Long' ? -6 : datum.Term == 'Long'"
-}
-}, 
-     "encoding": {"text": {"field": "Term", "type": "nominal"}}
-                }
-      ],
-      "encoding": {
-        "color": {"field": "Term", "type": "nominal"},
-        "text": {"field": "Term", "type": "nominal"},
-        "x": {"field": "Start Date", "type": "temporal", 
-        "aggregate": "max"
-        },
-        "y": {"field": "Result Count", "type": "quantitative",
-        "aggregate":{"argmax": "Start Date"}}
-      }
     }
-  ]
-}
-
-
   ]
 }
