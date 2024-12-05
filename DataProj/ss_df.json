@@ -3,16 +3,18 @@
     "title": {
       "text": [
         "",
-        "How the Female Labor Force Shapes Fashion Trends",
-        "The Changing Trajectory of Clothes as Women Join the Labour Force Worldwide"
-      ],
-      "fontSize": 14
+        "How the Female Labor Force Shapes Fashion Trends", "──"],
+        "subtitle":[ 
+        "The Changing Trajectory of Clothes as Women Join the Labour Force Worldwide"],
+      "fontSize": 13,
+      "subtitleFontSize": 13,
+      "subtitleFontWeight": "lighter"
     },
     "config": {"background": "white", "view": {"stroke": "transparent"}},
     "hconcat": [
       {
         "title": {
-          "text": ["", "──", "Female Labour Force Participation"],
+          "text": ["──", "Female Labour Force Participation"],
           "subtitle": [
             "Share of women in the workforce, 1900-2016",
             "",
@@ -21,7 +23,7 @@
           "subtitleFontStyle": "",
           "subtitleFontSize": 11,
           "fontSize": 12,
-          "subtitleFontWeight": 100,
+          "subtitleFontWeight": "lighter",
           "anchor": "start",
           "color": "black"
         },
@@ -124,7 +126,7 @@
       },
       {
         "title": {
-          "text": ["", "──", "Trendline of Women in Suits vs Skirts"],
+          "text": ["──", "Trendline of Women in Suits vs Skirts"],
           "subtitle": [
             "Emergence of women in suits vs skirts",
             "Source: Vogue Archives",
@@ -133,7 +135,7 @@
           "subtitleFontStyle": "",
           "subtitleFontSize": 11,
           "fontSize": 12,
-          "subtitleFontWeight": 100,
+          "subtitleFontWeight": "lighter",
           "anchor": "start",
           "color": "black"
         },
@@ -203,7 +205,8 @@
               "titleX": 0,
               "titleAlign": "left",
               "titleFontWeight": "lighter",
-              "titleFontSize": 10
+              "titleFontSize": 10,
+                "labelExpr": "datum.value == 0 ? 'No Mentions' : datum.value == 2000 ? '2,000' : datum.value == 4000 ? '4,000' : datum.value == 6000 ? '6,000' : datum.value == 8000 ? '8,000' : datum.value == 10000 ?'10,000' : datum.value == 12000 ? '12,000' : null"
             }
           },
           "x": {
