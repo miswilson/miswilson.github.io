@@ -9,7 +9,8 @@
         "Compare 'Stylish' ranking against GDP per Capita, Life Satisfaction, Population"
       ],
       "subtitle": [
-        "──","Drag mouse over chart to compare countries' Economic Data to 'Style' Ranking, with hover over circles for more information.",
+        "──",
+        "Drag mouse over chart to compare countries' Economic Data to 'Style' Ranking, with hover over circles for more information.",
         "Data Source: USN",
         ""
       ],
@@ -28,11 +29,7 @@
     },
     "vconcat": [
       {
-        "mark": {
-          "type": "point",
-          "stroke": "black", 
-          "strokeWidth": 1.2
-        },
+        "mark": {"type": "point", "stroke": "black", "strokeWidth": 1.2},
         "encoding": {
           "y": {
             "field": "GDP per Capita, PPP",
@@ -48,26 +45,20 @@
               "labelExpr": "datum.value == 0 ? '$0' : datum.value == 10000 ? '$10,000' :datum.value == 20000 ? '$20,000' :datum.value == 30000 ? '$30,000' :datum.value == 40000 ? '$40,000' :datum.value == 50000 ? '$50,000' :datum.value == 60000 ? '$60,000' :datum.value == 70000 ? '$70,000' :datum.value == 80000 ? '$80,000' :datum.value == 90000 ? '$90,000' :datum.value == 100000 ? '$100,000' : null"
             }
           },
-          "opacity": {
-            "condition": {
-              "param": "brush",
-              "value": 1
-            },
-            "value": 0.2
-          },
+          "opacity": {"condition": {"param": "brush", "value": 1}, "value": 0.2},
           "tooltip": [
             {"field": "Country", "title": "Country"},
             {"field": "Fashionable Rank", "title": "Fashionable Rank"},
-            {"field": "Overall Rank", "title": "Life Satisfaction"},
-            {"field": "GDP per Capita, PPP", "title": "GDP per Capita, PPP"},
+            {"field": "Overall Rank", "title": "Life Satisfaction Rank"},
+            {"field": "GDP per Capita, PPP", "title": "GDP per Capita, PPP", "format": "$,"},
             {"field": "Population", "title": "Population"}
           ],
           "size": {
             "title": "Life Satisfaction",
             "field": "Overall Rank",
             "type": "quantitative",
-            "legend":null,
-    "scale": {"range": [100, 3000]}
+            "legend": null,
+            "scale": {"range": [100, 3000]}
           },
           "x": {
             "field": "Country",

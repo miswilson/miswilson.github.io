@@ -1,11 +1,10 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": {
-      "text": [
-        "",
-        "How the Female Labor Force Shapes Fashion Trends", "──"],
-        "subtitle":[ 
-        "The Changing Trajectory of Clothes as Women Join the Labour Force Worldwide"],
+      "text": ["", "How the Female Labor Force Shapes Fashion Trends", "──"],
+      "subtitle": [
+        "The Changing Trajectory of Clothes as Women Join the Labour Force Worldwide"
+      ],
       "fontSize": 13,
       "subtitleFontSize": 13,
       "subtitleFontWeight": "lighter"
@@ -15,11 +14,7 @@
       {
         "title": {
           "text": ["──", "Female Labour Force Participation"],
-          "subtitle": [
-            "Share of women in the workforce, 1900-2016",
-            "",
-            ""
-          ],
+          "subtitle": ["Share of women in the workforce, 1900-2016", "", ""],
           "subtitleFontStyle": "",
           "subtitleFontSize": 11,
           "fontSize": 12,
@@ -31,6 +26,9 @@
         "data": {
           "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/female-labor-force-participation-oecd.csv"
         },
+        "transform": [
+      {"calculate": "datum.Participation / 100", "as": "Participation"}
+    ],
         "selection": {
           "hover": {
             "type": "point",
@@ -54,7 +52,7 @@
               "titleAlign": "left",
               "titleFontWeight": "lighter",
               "titleFontSize": 10,
-              "labelExpr": "datum.value == 0 ? '0%' : datum.value == 10 ? '10%' : datum.value == 20 ? '20%' : datum.value == 30 ? '30%' : datum.value == 40 ? '40%' : datum.value == 50 ?'50%' : datum.value == 60 ? '60%' : null"
+                 "labelExpr": "datum.value == 0.0 ? '0%' : datum.value == 0.10 ? '10%' : datum.value == 0.20 ? '20%' : datum.value == 0.30 ? '30%' : datum.value == 0.40 ? '40%' : datum.value == 0.50 ?'50%' : datum.value == 0.60 ? '60%' : null"
             }
           },
           "fill": {
@@ -102,8 +100,8 @@
                 {
                   "field": "Participation",
                   "type": "quantitative",
-                  "title": "Participation (%)",
-                  "format": ".2f"
+                  "title": "Participation",
+                  "format": ".2%"
                 }
               ],
               "opacity": {
@@ -206,7 +204,7 @@
               "titleAlign": "left",
               "titleFontWeight": "lighter",
               "titleFontSize": 10,
-                "labelExpr": "datum.value == 0 ? 'No Mentions' : datum.value == 2000 ? '2,000' : datum.value == 4000 ? '4,000' : datum.value == 6000 ? '6,000' : datum.value == 8000 ? '8,000' : datum.value == 10000 ?'10,000' : datum.value == 12000 ? '12,000' : null"
+              "labelExpr": "datum.value == 0 ? 'No Mentions' : datum.value == 2000 ? '2,000' : datum.value == 4000 ? '4,000' : datum.value == 6000 ? '6,000' : datum.value == 8000 ? '8,000' : datum.value == 10000 ?'10,000' : datum.value == 12000 ? '12,000' : null"
             }
           },
           "x": {

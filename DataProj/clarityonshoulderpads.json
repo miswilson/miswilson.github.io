@@ -78,10 +78,10 @@
                       "titleAlign": "left",
                       "titleFontWeight": "lighter",
                       "titleFontSize": 10,
-                       "labelExpr": "datum.value == 0 ? 'No Mentions' : datum.value == 20 ? '20' : datum.value == 40 ? '40' : datum.value == 60 ? '60' : datum.value == 80 ? '80' : datum.value == 100 ?'100' : datum.value == 120 ? '120' : null"
+                      "labelExpr": "datum.value == 0 ? 'No Mentions' : datum.value == 20 ? '20' : datum.value == 40 ? '40' : datum.value == 60 ? '60' : datum.value == 80 ? '80' : datum.value == 100 ?'100' : datum.value == 120 ? '120' : null"
                     }
                   },
-                  "color": {"value": "grey"},
+                  "color": {"value": "green"},
                   "opacity": {
                     "condition": {"param": "highlight", "value": 1},
                     "value": 0.2
@@ -134,13 +134,14 @@
                     "field": "it_net_user_zs",
                     "type": "quantitative",
                     "title": "Share of the population using the Internet",
-                    "axis": {"titleAngle": 0,
+                    "axis": {
+                      "titleAngle": 0,
                       "titleY": -3,
                       "titleX": 0,
                       "titleAlign": "left",
                       "titleFontWeight": "lighter",
                       "titleFontSize": 10,
-   "labelExpr": "datum.value == 0 ? '0%' : datum.value == 20 ? '20%' : datum.value == 40 ? '40%' : datum.value == 60 ? '60%' : datum.value == 80 ? '80%' : datum.value == 100 ?'100%' : null"
+                      "labelExpr": "datum.value == 0 ? '0%' : datum.value == 20 ? '20%' : datum.value == 40 ? '40%' : datum.value == 60 ? '60%' : datum.value == 80 ? '80%' : datum.value == 100 ?'100%' : null"
                     }
                   },
                   "color": {
@@ -188,7 +189,10 @@
                     "layer": [
                       {"mark": {"type": "circle"}},
                       {
-                        "mark": {"type": "text", "align": "left", "dx": 4},
+                        "mark": {"type": "text", "align": "left",
+                       "dy": {
+          "expr": "datum.Entity == 'Europe and Central Asia'? 5 : datum.Entity == 'East Asia and Pacific'? 15 : datum.Entity == 'Latin America and Caribbean'? 4 : datum.Entity == 'Middle East and North Africa'? -5 : 0"
+        }, "dx": 6},
                         "encoding": {
                           "text": {"field": "Entity", "type": "nominal"}
                         }
@@ -253,6 +257,7 @@
                     "condition": {
                       "param": "hover",
                       "field": "Entity",
+                      "axis": {"labelOverlap": "false"},
                       "type": "nominal",
                       "legend": null
                     },
@@ -294,7 +299,10 @@
                     "layer": [
                       {"mark": {"type": "circle"}},
                       {
-                        "mark": {"type": "text", "align": "left", "dx": 4},
+                        "mark": {"type": "text", "align": "left", "dx": 4,
+                         "dy": {
+          "expr": "datum.Entity == 'Ethiopia'?8 : datum.Entity == 'Brazil'? 12 : datum.Entity == 'United Kingdom'? -6 : datum.Entity == 'Singapore'? 13 : datum.Entity == 'United States'? -1: datum.Entity == 'France'? 14 : datum.Entity == 'China'? -5 : datum.Entity == 'Canada'? -7 : datum.Entity == 'Germany'? 5 : datum.Entity == 'Japan'? 18 : datum.Entity == 'Italy'? 24: datum.Entity == 'Mexico'? 20 : datum.Entity == 'Spain'? 40 :0"
+        }},
                         "encoding": {
                           "text": {"field": "Entity", "type": "nominal"}
                         }
@@ -337,6 +345,9 @@
                     "condition": {
                       "param": "hover",
                       "field": "Entity",
+                            "scale": {
+                      "scheme": "category20"
+                    },
                       "type": "nominal",
                       "legend": null
                     },
@@ -466,7 +477,10 @@
                     "layer": [
                       {"mark": {"type": "circle"}},
                       {
-                        "mark": {"type": "text", "align": "left", "dx": 8},
+                        "mark": {"type": "text", "align": "left", "dx": 8,
+                        "dy": {
+                    "expr": "datum.equality_type == 'The law prohibits discrimination in employment based on gender' ? 10 : datum.equality_type == 'Law mandates equal remuneration for females and males for work of equal value' ? 0 : datum.equality_type == 'Paid leave of at least 14 weeks available to mothers' ? 0 : datum.equality_type == 'There is legislation specifically addressing domestic violence' ? 2 : datum.equality_type == 'Women and men have equal ownership rights to immovable property' ? -2.8: datum.equality_type == null"
+                  }},
                         "encoding": {
                           "text": {"field": "equality_type", "type": "nominal"}
                         }
@@ -498,14 +512,15 @@
                     "field": "p99p100_share_pretax_extrapolated",
                     "type": "quantitative",
                     "title": "Income share of the richest 1%",
-                    "axis": { 
+                    "axis": {
                       "labelExpr": "datum.value == 0 ? '0%' : datum.value == 20 ? '20%' : datum.value == 25 ? '25%' : datum.value == 15 ? '15%' : datum.value == 10 ? '10%' : datum.value == 30 ?'30%' : datum.value == 5 ?'5%':  datum.value == 35 ?'35%':null",
                       "titleAngle": 0,
                       "titleY": -3,
                       "titleX": 0,
                       "titleAlign": "left",
                       "titleFontWeight": "lighter",
-                      "titleFontSize": 10}
+                      "titleFontSize": 10
+                    }
                   },
                   "color": {
                     "condition": {
@@ -552,7 +567,10 @@
                     "layer": [
                       {"mark": {"type": "circle"}},
                       {
-                        "mark": {"type": "text", "align": "left", "dx": 4},
+                        "mark": {"type": "text", "align": "left", "dx": 4,
+                              "dy": {
+          "expr": "datum.Entity == 'Ethiopia'?8 : datum.Entity == 'Italy'? -5 : datum.Entity == 'United Kingdom'? 24 : datum.Entity == 'Singapore'? 13 : datum.Entity == 'United States'? -8: datum.Entity == 'Hong Kong'? -6 : datum.Entity == 'China'? -5 : datum.Entity == 'Canada'? 3 :0"
+        }},
                         "encoding": {
                           "text": {"field": "Entity", "type": "nominal"}
                         }
@@ -581,8 +599,11 @@
                 },
                 "encoding": {
                   "x": {"field": "Year", "type": "temporal", "title": ""},
-                  "y": {"field": "milexgdp", "type": "quantitative", "title": "Defense spending as a percentage of GDP",
-                   "axis": {
+                  "y": {
+                    "field": "milexgdp",
+                    "type": "quantitative",
+                    "title": "Defense spending as a percentage of GDP",
+                    "axis": {
                       "titleAngle": 0,
                       "titleY": -3,
                       "titleX": 0,
@@ -590,7 +611,8 @@
                       "titleFontWeight": "lighter",
                       "titleFontSize": 10,
                       "labelExpr": "datum.value == 0 ? '0%' : datum.value == 20 ? '20%' : datum.value == 40 ? '40%' : datum.value == 60 ? '60%' : datum.value == 10 ? '10%' : datum.value == 30 ?'30%' : datum.value == 50 ?'50%': null"
-                    }},
+                    }
+                  },
                   "color": {
                     "condition": {
                       "param": "hover",
@@ -636,7 +658,10 @@
                     "layer": [
                       {"mark": {"type": "circle"}},
                       {
-                        "mark": {"type": "text", "align": "left", "dx": 4},
+                        "mark": {"type": "text", "align": "left", "dx": 4,
+                               "dy": {
+          "expr": "datum.Entity == 'Russia'?-70 : datum.Entity == 'Brazil'? 12 : datum.Entity == 'United Kingdom'? -25 : datum.Entity == 'Singapore'? 13 : datum.Entity == 'United States'? -25: datum.Entity == 'France'? 14 : datum.Entity == 'China'? -60 : datum.Entity == 'Canada'? -7 : datum.Entity == 'Germany'? 0 : datum.Entity == 'Japan'? -14 : datum.Entity == 'Italy'? 24: datum.Entity == 'Mexico'? 20 : datum.Entity == 'Spain'? 40 :0"
+        }},
                         "encoding": {
                           "text": {"field": "Entity", "type": "nominal"}
                         }

@@ -17,16 +17,16 @@
       "anchor": "start",
       "color": "black"
     },
-                    "config": {
+    "config": {
       "axisX": {"grid": false, "title": null},
       "view": {"strokeOpacity": 0},
       "axisY": {
-            "titleAngle": 0,
-            "titleY": -6,
-            "titleX": 0,
-            "titleAlign": "left",
-            "titleFontWeight": "lighter",
-            "titleFontSize": 10
+        "titleAngle": 0,
+        "titleY": -6,
+        "titleX": 0,
+        "titleAlign": "left",
+        "titleFontWeight": "lighter",
+        "titleFontSize": 10
       }
     },
     "hconcat": [
@@ -38,11 +38,7 @@
             },
             "title": {
               "text": ["Does Wealth influence Style?", "──", "GDP per capita"],
-              "subtitle": [
-                "Data source: World Bank (2023)",
-                "",
-                ""
-              ],
+              "subtitle": ["Data source: World Bank (2023)", "", ""],
               "subtitleFontSize": 11,
               "fontSize": 12,
               "subtitleFontWeight": 100,
@@ -56,8 +52,8 @@
                 "type": "quantitative",
                 "title": "Expressed at 2017 prices",
                 "axis": {
-                      "labelExpr": "datum.value == 0 ? '$0' : datum.value == 10000 ? '$10,000' : datum.value == 20000 ? '$20,000' : datum.value == 30000 ? '$30,000' : datum.value == 40000 ? '$40,000' : datum.value == 50000 ?'$50,000' : datum.value == 12 ? '12 years' : null"
-                    }
+                  "labelExpr": "datum.value == 0 ? '$0' : datum.value == 10000 ? '$10,000' : datum.value == 20000 ? '$20,000' : datum.value == 30000 ? '$30,000' : datum.value == 40000 ? '$40,000' : datum.value == 50000 ?'$50,000' : datum.value == 12 ? '12 years' : null"
+                }
               },
               "color": {
                 "condition": {
@@ -65,9 +61,9 @@
                   "field": "Entity",
                   "type": "nominal",
                   "scale": {
-        "domain": ["France", "Brazil", "Japan", "India"],
-        "range": ["steelblue", "limegreen", "red", "hotpink"]
-      },
+                    "domain": ["France", "Brazil", "Japan", "India"],
+                    "range": ["#0055A4", "#6b8e23", "red", "hotpink"]
+                  },
                   "legend": null
                 },
                 "value": "grey"
@@ -127,11 +123,7 @@
                 "──",
                 "Average per capita fruit intake"
               ],
-              "subtitle": [
-                "Data source: World Bank (2021)",
-                "",
-                ""
-              ],
+              "subtitle": ["Data source: World Bank (2021)", "", ""],
               "subtitleFontSize": 11,
               "fontSize": 12,
               "subtitleFontWeight": 100,
@@ -145,8 +137,8 @@
                 "type": "quantitative",
                 "title": "World Health Organisation: 200g a day guidline",
                 "axis": {
-                      "labelExpr": "datum.value == 0 ? '0g' : datum.value == 100 ? '100g' : datum.value == 200 ? '200g' : datum.value == 300 ? '300g' : datum.value == 400 ? '400g' : datum.value == 500 ?'500g' : datum.value == 12 ? '12 years' : null"
-                    }
+                  "labelExpr": "datum.value == 0 ? '0g' : datum.value == 100 ? '100g' : datum.value == 200 ? '200g' : datum.value == 300 ? '300g' : datum.value == 400 ? '400g' : datum.value == 500 ?'500g' : datum.value == 12 ? '12 years' : null"
+                }
               },
               "color": {
                 "condition": {
@@ -218,11 +210,7 @@
                     "──",
                     "Average years of schooling 2020"
                   ],
-                  "subtitle": [
-                    "Data source: World Bank (2023)",
-                    "",
-                    ""
-                  ],
+                  "subtitle": ["Data source: World Bank (2023)", "", ""],
                   "subtitleFontSize": 11,
                   "fontSize": 12,
                   "subtitleFontWeight": 100,
@@ -230,10 +218,12 @@
                   "color": "black"
                 },
                 "encoding": {
-                  "x": {"field": "Entity", "type": "nominal", "title": "",
-                  "axis": {
-                    "labelAngle": 0
-                  }},
+                  "x": {
+                    "field": "Entity",
+                    "type": "nominal",
+                    "title": "",
+                    "axis": {"labelAngle": 0}
+                  },
                   "y": {
                     "field": "mf_youth_and_adults__15_64_years__average_years_of_education",
                     "type": "quantitative",
@@ -308,11 +298,7 @@
                     "──",
                     "Domestic material consumption"
                   ],
-                  "subtitle": [
-                    "Data source: World Bank (2000 to 2022)",
-                    "",
-                    ""
-                  ],
+                  "subtitle": ["Data source: World Bank (2000 to 2022)", "", ""],
                   "subtitleFontSize": 11,
                   "fontSize": 12,
                   "subtitleFontWeight": 100,
@@ -326,7 +312,7 @@
                     "type": "quantitative",
                     "title": "Per Capita",
                     "axis": {
-                    "labelExpr": "datum.value == 0 ? '$0' : datum.value == 5 ? '$5' : datum.value == 10 ? '$10' : datum.value == 15 ? '$15' : datum.value == 20 ? '$20' : null"
+                      "labelExpr": "datum.value == 0 ? '$0' : datum.value == 5 ? '$5' : datum.value == 10 ? '$10' : datum.value == 15 ? '$15' : datum.value == 20 ? '$20' : null"
                     }
                   },
                   "color": {
@@ -374,7 +360,8 @@
                     "layer": [
                       {"mark": {"type": "circle"}},
                       {
-                        "mark": {"type": "text", "align": "left", "dx": 4},
+                        "mark": {"type": "text", "align": "left", "dx": 4,
+                        "dy": {"expr": "datum.Entity == 'Japan'? 5 : 0"}},
                         "encoding": {
                           "text": {"field": "Entity", "type": "nominal"}
                         }
