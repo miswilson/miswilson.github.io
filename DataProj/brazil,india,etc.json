@@ -1,266 +1,391 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": {
-      "text": ["","Economic Impact on Style", "──", "France, Japan, India, Brazil"],
-      "subtitle": ["Does certain economic culture impact a country's style? Trendlines and their effects on the trajectories of style, by country.", ""],
+      "text": [
+        "",
+        "Economic Impact on Style",
+        "──",
+        "France, Japan, India, Brazil"
+      ],
+      "subtitle": [
+        "Does certain economic culture impact a country's style? Trendlines and their effects on the trajectories of style, by country.",
+        ""
+      ],
       "subtitleFontSize": 11,
       "fontSize": 12,
       "subtitleFontWeight": 100,
       "anchor": "start",
       "color": "black"
+    },
+                    "config": {
+      "axisX": {"grid": false, "title": null},
+      "view": {"strokeOpacity": 0},
+      "axisY": {
+            "titleAngle": 0,
+            "titleY": -6,
+            "titleX": 0,
+            "titleAlign": "left",
+            "titleFontWeight": "lighter",
+            "titleFontSize": 10
+      }
     },
     "hconcat": [
-      { "vconcat":[
-            {
-        "data": {"url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/gdp-per-capita-worldbank.csv"},
-    "title": {
-      "text": ["Does Wealth influence Style?", "──", "GDP per capita"],
-      "subtitle": ["Data source: World Bank (2023)","Data is expressed in international-$ at 2017 prices.", ""],
-      "subtitleFontSize": 11,
-      "fontSize": 12,
-      "subtitleFontWeight": 100,
-      "anchor": "start",
-      "color": "black"
-    },
-    "encoding": {
-      "x": {"field": "Year", "type": "temporal", "title": ""},
-      "y": {"field": "ny_gdp_pcap_pp_kd", "type": "quantitative", "title": ""},
-      "color": {
-        "condition": {
-          "param": "hover",
-          "field":"Entity",
-          "type":"nominal",
-          "legend": null
-        },
-        "value": "grey"
-      },
-      "opacity": {
-        "condition": {
-          "param": "hover",
-          "value": 1
-        },
-        "value": 0.2
-      }
-    },
-    "layer": [{
-      "description": "transparent layer to make it easier to trigger selection",
-      "params": [{
-        "name": "hover",
-        "select": {
-          "type": "point",
-          "fields": ["Entity"],
-          "on": "pointerover"
-        }
-      }],
-      "mark": {"type": "line", "strokeWidth": 8, "stroke": "transparent"}
-    }, {
-      "mark": "line"
-    }, {
-      "encoding": {
-        "x": {"aggregate": "max", "field": "Year"},
-        "y": {"aggregate": {"argmax": "Year"}, "field": "ny_gdp_pcap_pp_kd"}
-      },
-      "layer": [{
-        "mark": {"type": "circle"}
-      }, {
-        "mark": {"type": "text", "align": "left", "dx": 4},
-        "encoding": {"text": {"field":"Entity", "type": "nominal"}}
-      }]
-    }],
-    "config": {"view": {"stroke": null}}
-      },
-         {
-        "data": {"url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/filtered_countries_1960_2021%20(1).csv"},
-    "title": {
-      "text": ["","Does healthy living correlate with better style?", "──", "Average per capita fruit intake"],
-      "subtitle": ["Data source: World Bank (2021)","National and World Health Organization (WHO) typically set a", " guideline of 200g per day.", ""],
-      "subtitleFontSize": 11,
-      "fontSize": 12,
-      "subtitleFontWeight": 100,
-      "anchor": "start",
-      "color": "black"
-    },
-    "encoding": {
-      "x": {
-    "field": "Year",
-    "type": "temporal",
-    "title": ""
-    },
-      "y": {"field": "fruit__00002919__food_available_for_consumption__0645pc__kilograms_per_year_per_capita", 
-      "type": "quantitative", "title": ""},
-      "color": {
-        "condition": {
-          "param": "hover",
-          "field":"Entity",
-          "type":"nominal",
-          "legend": null
-        },
-        "value": "grey"
-      },
-      "opacity": {
-        "condition": {
-          "param": "hover",
-          "value": 1
-        },
-        "value": 0.2
-      }
-    },
-    "layer": [{
-      "description": "transparent layer to make it easier to trigger selection",
-      "params": [{
-        "name": "hover",
-        "select": {
-          "type": "point",
-          "fields": ["Entity"],
-          "on": "pointerover"
-        }
-      }],
-      "mark": {"type": "line", "strokeWidth": 8, "stroke": "transparent"}
-    }, {
-      "mark": "line"
-    }, {
-      "encoding": {
-        "x": {"aggregate": "max", "field": "Year"},
-        "y": {"aggregate": {"argmax": "Year"}, "field": "fruit__00002919__food_available_for_consumption__0645pc__kilograms_per_year_per_capita"}
-      },
-      "layer": [{
-        "mark": {"type": "circle"}
-      }, {
-        "mark": {"type": "text", "align": "left", "dx": 4},
-        "encoding": {"text": {"field":"Entity", "type": "nominal"}}
-      }]
-    }],
-    "config": {"view": {"stroke": null}}
-      }
-      ]
-      },
+      {
+        "vconcat": [
           {
+            "data": {
+              "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/gdp-per-capita-worldbank.csv"
+            },
+            "title": {
+              "text": ["Does Wealth influence Style?", "──", "GDP per capita"],
+              "subtitle": [
+                "Data source: World Bank (2023)",
+                "",
+                ""
+              ],
+              "subtitleFontSize": 11,
+              "fontSize": 12,
+              "subtitleFontWeight": 100,
+              "anchor": "start",
+              "color": "black"
+            },
+            "encoding": {
+              "x": {"field": "Year", "type": "temporal", "title": ""},
+              "y": {
+                "field": "ny_gdp_pcap_pp_kd",
+                "type": "quantitative",
+                "title": "Expressed at 2017 prices",
+                "axis": {
+                      "labelExpr": "datum.value == 0 ? '$0' : datum.value == 10000 ? '$10,000' : datum.value == 20000 ? '$20,000' : datum.value == 30000 ? '$30,000' : datum.value == 40000 ? '$40,000' : datum.value == 50000 ?'$50,000' : datum.value == 12 ? '12 years' : null"
+                    }
+              },
+              "color": {
+                "condition": {
+                  "param": "hover",
+                  "field": "Entity",
+                  "type": "nominal",
+                  "scale": {
+        "domain": ["France", "Brazil", "Japan", "India"],
+        "range": ["steelblue", "limegreen", "red", "hotpink"]
+      },
+                  "legend": null
+                },
+                "value": "grey"
+              },
+              "opacity": {
+                "condition": {"param": "hover", "value": 1},
+                "value": 0.2
+              }
+            },
+            "layer": [
+              {
+                "description": "transparent layer to make it easier to trigger selection",
+                "params": [
+                  {
+                    "name": "hover",
+                    "select": {
+                      "type": "point",
+                      "fields": ["Entity"],
+                      "on": "pointerover"
+                    }
+                  }
+                ],
+                "mark": {
+                  "type": "line",
+                  "strokeWidth": 8,
+                  "stroke": "transparent"
+                }
+              },
+              {"mark": "line"},
+              {
+                "encoding": {
+                  "x": {"aggregate": "max", "field": "Year"},
+                  "y": {
+                    "aggregate": {"argmax": "Year"},
+                    "field": "ny_gdp_pcap_pp_kd"
+                  }
+                },
+                "layer": [
+                  {"mark": {"type": "circle"}},
+                  {
+                    "mark": {"type": "text", "align": "left", "dx": 4},
+                    "encoding": {"text": {"field": "Entity", "type": "nominal"}}
+                  }
+                ]
+              }
+            ],
+            "config": {"view": {"stroke": null}}
+          },
+          {
+            "data": {
+              "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/filtered_countries_1960_2021%20(1).csv"
+            },
+            "title": {
+              "text": [
+                "",
+                "Does healthy living correlate with better style?",
+                "──",
+                "Average per capita fruit intake"
+              ],
+              "subtitle": [
+                "Data source: World Bank (2021)",
+                "",
+                ""
+              ],
+              "subtitleFontSize": 11,
+              "fontSize": 12,
+              "subtitleFontWeight": 100,
+              "anchor": "start",
+              "color": "black"
+            },
+            "encoding": {
+              "x": {"field": "Year", "type": "temporal", "title": ""},
+              "y": {
+                "field": "fruit__00002919__food_available_for_consumption__0645pc__kilograms_per_year_per_capita",
+                "type": "quantitative",
+                "title": "World Health Organisation: 200g a day guidline",
+                "axis": {
+                      "labelExpr": "datum.value == 0 ? '0g' : datum.value == 100 ? '100g' : datum.value == 200 ? '200g' : datum.value == 300 ? '300g' : datum.value == 400 ? '400g' : datum.value == 500 ?'500g' : datum.value == 12 ? '12 years' : null"
+                    }
+              },
+              "color": {
+                "condition": {
+                  "param": "hover",
+                  "field": "Entity",
+                  "type": "nominal",
+                  "legend": null
+                },
+                "value": "grey"
+              },
+              "opacity": {
+                "condition": {"param": "hover", "value": 1},
+                "value": 0.2
+              }
+            },
+            "layer": [
+              {
+                "description": "transparent layer to make it easier to trigger selection",
+                "params": [
+                  {
+                    "name": "hover",
+                    "select": {
+                      "type": "point",
+                      "fields": ["Entity"],
+                      "on": "pointerover"
+                    }
+                  }
+                ],
+                "mark": {
+                  "type": "line",
+                  "strokeWidth": 8,
+                  "stroke": "transparent"
+                }
+              },
+              {"mark": "line"},
+              {
+                "encoding": {
+                  "x": {"aggregate": "max", "field": "Year"},
+                  "y": {
+                    "aggregate": {"argmax": "Year"},
+                    "field": "fruit__00002919__food_available_for_consumption__0645pc__kilograms_per_year_per_capita"
+                  }
+                },
+                "layer": [
+                  {"mark": {"type": "circle"}},
+                  {
+                    "mark": {"type": "text", "align": "left", "dx": 4},
+                    "encoding": {"text": {"field": "Entity", "type": "nominal"}}
+                  }
+                ]
+              }
+            ],
+            "config": {"view": {"stroke": null}}
+          }
+        ]
+      },
+      {
         "hconcat": [
-   { "vconcat":[
-    {
-        "data": {"url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/filtered_education.csv"},
-        "width": 210,
-    "title": {
-      "text": ["Does increased Education influence Style?", "──", "Average years of schooling 2020"],
-      "subtitle": ["Data source: World Bank (2023)","The average years of schooling completed by individuals aged 25 and older.", ""],
-      "subtitleFontSize": 11,
-      "fontSize": 12,
-      "subtitleFontWeight": 100,
-      "anchor": "start",
-      "color": "black"
-    },
-    "encoding": {
-      "x": {"field": "Entity", "type": "nominal", "title": ""},
-      "y": {"field": "mf_youth_and_adults__15_64_years__average_years_of_education", "type": "quantitative", "title": ""},
-      "color": {
-        "condition": {
-          "param": "hover",
-          "field":"Entity",
-          "type":"nominal",
-          "legend": null
-        },
-        "value": "grey"
-      },
-      "opacity": {
-        "condition": {
-          "param": "hover",
-          "value": 1
-        },
-        "value": 0.2
-      }
-    },
-    "layer": [{
-      "description": "transparent layer to make it easier to trigger selection",
-      "params": [{
-        "name": "hover",
-        "select": {
-          "type": "point",
-          "fields": ["Entity"],
-          "on": "pointerover"
-        }
-      }],
-      "mark": {"type": "line", "strokeWidth": 8, "stroke": "transparent"}
-    }, {
-      "mark": "line"
-    }, {
-      "encoding": {
-        "x": {"aggregate": "max", "field": "Entity"},
-        "y": {"aggregate": {"argmax": "Entity"}, "field": "mf_youth_and_adults__15_64_years__average_years_of_education"}
-      },
-      "layer": [{
-        "mark": {"type": "circle"}
-      }, {
-        "mark": {"type": "text", "align": "left", "dx": 4},
-        "encoding": {"text": {"field":"Entity", "type": "nominal"}}
-      }]
-    }],
-    "config": {"view": {"stroke": null}}
-      },
-       {
-        "data": {"url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/domestic-material-consumption-per-capita.csv"},
-    "title": {
-      "text": ["","Material consumption & it's correlation to Style", "──", "Domestic material consumption per capita, 2000 to 2022"],
-      "subtitle": ["Data source: World Bank","Domestic material consumption reports the amount of materials", "used in the national economy.", ""],
-      "subtitleFontSize": 11,
-      "fontSize": 12,
-      "subtitleFontWeight": 100,
-      "anchor": "start",
-      "color": "black"
-    },
-    "encoding": {
-      "x": {
-    "field": "Year",
-    "type": "temporal",
-    "title": ""
-    },
-      "y": {"field": "_12_2_2__en_mat_domcmpc__total_or_no_breakdown", 
-      "type": "quantitative", "title": ""},
-      "color": {
-        "condition": {
-          "param": "hover",
-          "field":"Entity",
-          "type":"nominal",
-          "legend": null
-        },
-        "value": "grey"
-      },
-      "opacity": {
-        "condition": {
-          "param": "hover",
-          "value": 1
-        },
-        "value": 0.2
-      }
-    },
-    "layer": [{
-      "description": "transparent layer to make it easier to trigger selection",
-      "params": [{
-        "name": "hover",
-        "select": {
-          "type": "point",
-          "fields": ["Entity"],
-          "on": "pointerover"
-        }
-      }],
-      "mark": {"type": "line", "strokeWidth": 8, "stroke": "transparent"}
-    }, {
-      "mark": "line"
-    }, {
-      "encoding": {
-        "x": {"aggregate": "max", "field": "Year"},
-        "y": {"aggregate": {"argmax": "Year"}, "field": "_12_2_2__en_mat_domcmpc__total_or_no_breakdown"}
-      },
-      "layer": [{
-        "mark": {"type": "circle"}
-      }, {
-        "mark": {"type": "text", "align": "left", "dx": 4},
-        "encoding": {"text": {"field":"Entity", "type": "nominal"}}
-      }]
-    }],
-    "config": {"view": {"stroke": null}}
-      }
-      ]
-      }
+          {
+            "vconcat": [
+              {
+                "data": {
+                  "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/filtered_education.csv"
+                },
+                "width": 210,
+                "title": {
+                  "text": [
+                    "Does increased Education influence Style?",
+                    "──",
+                    "Average years of schooling 2020"
+                  ],
+                  "subtitle": [
+                    "Data source: World Bank (2023)",
+                    "",
+                    ""
+                  ],
+                  "subtitleFontSize": 11,
+                  "fontSize": 12,
+                  "subtitleFontWeight": 100,
+                  "anchor": "start",
+                  "color": "black"
+                },
+                "encoding": {
+                  "x": {"field": "Entity", "type": "nominal", "title": "",
+                  "axis": {
+                    "labelAngle": 0
+                  }},
+                  "y": {
+                    "field": "mf_youth_and_adults__15_64_years__average_years_of_education",
+                    "type": "quantitative",
+                    "title": "Average years of schooling aged 25+",
+                    "axis": {
+                      "labelExpr": "datum.value == 0 ? '0' : datum.value == 2 ? '2' : datum.value == 4 ? '4' : datum.value == 6 ? '6' : datum.value == 8 ? '8' : datum.value == 10 ?'10' : datum.value == 12 ? '12 years' : null"
+                    }
+                  },
+                  "color": {
+                    "condition": {
+                      "param": "hover",
+                      "field": "Entity",
+                      "type": "nominal",
+                      "legend": null
+                    },
+                    "value": "grey"
+                  },
+                  "opacity": {
+                    "condition": {"param": "hover", "value": 1},
+                    "value": 0.2
+                  }
+                },
+                "layer": [
+                  {
+                    "description": "transparent layer to make it easier to trigger selection",
+                    "params": [
+                      {
+                        "name": "hover",
+                        "select": {
+                          "type": "point",
+                          "fields": ["Entity"],
+                          "on": "pointerover"
+                        }
+                      }
+                    ],
+                    "mark": {
+                      "type": "line",
+                      "strokeWidth": 8,
+                      "stroke": "transparent"
+                    }
+                  },
+                  {"mark": "line"},
+                  {
+                    "encoding": {
+                      "x": {"aggregate": "max", "field": "Entity"},
+                      "y": {
+                        "aggregate": {"argmax": "Entity"},
+                        "field": "mf_youth_and_adults__15_64_years__average_years_of_education"
+                      }
+                    },
+                    "layer": [
+                      {"mark": {"type": "circle"}},
+                      {
+                        "mark": {"type": "text", "align": "left", "dx": 4},
+                        "encoding": {
+                          "text": {"field": "Entity", "type": "nominal"}
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "config": {"view": {"stroke": null}}
+              },
+              {
+                "data": {
+                  "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/domestic-material-consumption-per-capita.csv"
+                },
+                "title": {
+                  "text": [
+                    "",
+                    "Material consumption & it's correlation to Style",
+                    "──",
+                    "Domestic material consumption"
+                  ],
+                  "subtitle": [
+                    "Data source: World Bank (2000 to 2022)",
+                    "",
+                    ""
+                  ],
+                  "subtitleFontSize": 11,
+                  "fontSize": 12,
+                  "subtitleFontWeight": 100,
+                  "anchor": "start",
+                  "color": "black"
+                },
+                "encoding": {
+                  "x": {"field": "Year", "type": "temporal", "title": ""},
+                  "y": {
+                    "field": "_12_2_2__en_mat_domcmpc__total_or_no_breakdown",
+                    "type": "quantitative",
+                    "title": "Per Capita",
+                    "axis": {
+                    "labelExpr": "datum.value == 0 ? '$0' : datum.value == 5 ? '$5' : datum.value == 10 ? '$10' : datum.value == 15 ? '$15' : datum.value == 20 ? '$20' : null"
+                    }
+                  },
+                  "color": {
+                    "condition": {
+                      "param": "hover",
+                      "field": "Entity",
+                      "type": "nominal",
+                      "legend": null
+                    },
+                    "value": "grey"
+                  },
+                  "opacity": {
+                    "condition": {"param": "hover", "value": 1},
+                    "value": 0.2
+                  }
+                },
+                "layer": [
+                  {
+                    "description": "transparent layer to make it easier to trigger selection",
+                    "params": [
+                      {
+                        "name": "hover",
+                        "select": {
+                          "type": "point",
+                          "fields": ["Entity"],
+                          "on": "pointerover"
+                        }
+                      }
+                    ],
+                    "mark": {
+                      "type": "line",
+                      "strokeWidth": 8,
+                      "stroke": "transparent"
+                    }
+                  },
+                  {"mark": "line"},
+                  {
+                    "encoding": {
+                      "x": {"aggregate": "max", "field": "Year"},
+                      "y": {
+                        "aggregate": {"argmax": "Year"},
+                        "field": "_12_2_2__en_mat_domcmpc__total_or_no_breakdown"
+                      }
+                    },
+                    "layer": [
+                      {"mark": {"type": "circle"}},
+                      {
+                        "mark": {"type": "text", "align": "left", "dx": 4},
+                        "encoding": {
+                          "text": {"field": "Entity", "type": "nominal"}
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "config": {"view": {"stroke": null}}
+              }
+            ]
+          }
         ]
       }
     ]

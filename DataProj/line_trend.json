@@ -7,9 +7,8 @@
   "title": {
     "text": ["", "──", "Trend Patterns in Economic Boom"],
     "subtitle": [
-      "Interactive Chart on Trending Fashion Features", "Measured by Mentions in Vogue by Release Date (Roaring 20s)",
-      "Source: Vogue Archieves",
-      ""
+      "Interactive Chart on Trending Fashion Features",
+      "Source: Vogue Archieves", ""
     ],
     "subtitleFontStyle": "",
     "subtitleFontSize": 11,
@@ -29,7 +28,12 @@
     }
   ],
   "facet": {
-    "column": {"field": "RenamedTerm", "type": "nominal", "title": " "}
+    "column": {"field": "RenamedTerm", "type": "nominal", "title": null,
+    "header": {"labelAlign":"left",
+    "labelAnchor": "start",
+    "labelFontSize": 11,
+    "labelFontStyle": "bold"}
+    }
   },
   "selection": {
     "hover": {
@@ -52,8 +56,9 @@
       "color": {
         "field": "RenamedTerm",
         "type": "nominal",
-        "title": "Trending Design",
-        "scale": {"range": ["pink", "orange", "turquoise", "green"]}
+        "title": "",
+        "scale": {"range": ["pink", "orange", "turquoise", "green"]},
+        "legend": null
       }
     },
     "layer": [
@@ -73,15 +78,19 @@
         "mark": {"type": "circle", "tooltip": true},
         "encoding": {
           "x": {"field": "Start Date", "type": "temporal"},
-          "y": {"field": "Result Count", "type": "quantitative", "title": "Popularity by Article Mentions",
-          "axis": {
-                "titleAngle": 0,
-                "titleY": -3,
-                "titleX": 0,
-                "titleAlign": "left",
-                "titleFontWeight": "lighter",
-                "titleFontSize": 10
-              }},
+          "y": {
+            "field": "Result Count",
+            "type": "quantitative",
+            "title": ["──", "Popularity by Article Mentions"],
+            "axis": {
+              "titleAngle": 0,
+              "titleY": -20,
+              "titleX": 0,
+              "titleAlign": "left",
+              "titleFontWeight": "lighter",
+              "titleFontSize": 10
+            }
+          },
           "color": {"field": "RenamedTerm", "type": "nominal"},
           "tooltip": [
             {

@@ -14,8 +14,8 @@
         "title": {
           "text": ["", "──", "Female Labour Force Participation"],
           "subtitle": [
-            "Share of women in the workforce (%), 1900-2016",
-            "Proportion of economically active women, aged 15+",
+            "Share of women in the workforce, 1900-2016",
+            "",
             ""
           ],
           "subtitleFontStyle": "",
@@ -43,8 +43,17 @@
           "y": {
             "field": "Participation",
             "type": "quantitative",
-            "title": "",
-            "scale": {"type": "linear"}
+            "title": "Proportion of economically active women, aged 15+",
+            "scale": {"type": "linear"},
+            "axis": {
+              "titleAngle": 0,
+              "titleY": -3,
+              "titleX": 0,
+              "titleAlign": "left",
+              "titleFontWeight": "lighter",
+              "titleFontSize": 10,
+              "labelExpr": "datum.value == 0 ? '0%' : datum.value == 10 ? '10%' : datum.value == 20 ? '20%' : datum.value == 30 ? '30%' : datum.value == 40 ? '40%' : datum.value == 50 ?'50%' : datum.value == 60 ? '60%' : null"
+            }
           },
           "fill": {
             "field": "Entity",
@@ -117,7 +126,7 @@
         "title": {
           "text": ["", "──", "Trendline of Women in Suits vs Skirts"],
           "subtitle": [
-            "Trendline of the emergence of women in suits vs skirts, 1900-2022",
+            "Emergence of women in suits vs skirts",
             "Source: Vogue Archives",
             ""
           ],
