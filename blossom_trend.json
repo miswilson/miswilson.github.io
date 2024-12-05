@@ -22,8 +22,7 @@
         "data": {
           "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/date-of-the-peak-cherry-tree-blossom-in-kyoto.csv"
         },
-        "width": 300,
-        "height": 200,
+    "width": 275,
         "layer": [
           {
             "mark": {"type": "line", "tooltip": true, "color": "hotpink"},
@@ -42,7 +41,7 @@
                 "axis": {
                   "titleAngle": 0,
                   "titleY": -3,
-                   "titleX": 0,
+                  "titleX": 0,
                   "titleAlign": "left",
                   "titleFontWeight": "lighter",
                   "titleFontSize": 10,
@@ -121,6 +120,7 @@
         "data": {
           "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/blossom_df.csv"
         },
+    "width": 275,
         "mark": {
           "type": "circle",
           "size": 40,
@@ -129,8 +129,7 @@
             "expr": "((datum['Start Date'] == hover['Start Date'] | datum['Start Date'] == hover.Year)|!hover.Year)?1:0.2"
           }
         },
-        "width": 300,
-        "height": 200,
+  
         "encoding": {
           "x": {
             "field": "Start Date",
@@ -148,7 +147,8 @@
               "titleX": 0,
               "titleAlign": "left",
               "titleFontWeight": "lighter",
-              "titleFontSize": 10
+              "titleFontSize": 10,
+                   "labelExpr": "datum.value == 0 ? 'No Mentions' : datum.value == 20 ? '20' : datum.value == 40 ? '40' : datum.value == 60 ? '60' : datum.value == 80 ? '80' : datum.value == 100 ?'100' : datum.value == 120 ? '120' : null"
             }
           },
           "tooltip": [
