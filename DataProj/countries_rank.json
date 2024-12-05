@@ -1,36 +1,52 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": {
-      "text": ["","Countries Voted 'Most Fashionable'", "──", "Comparing ranking against GDP per Capita and Population"],
-      "subtitle": ["Drag mouse over countries to compare rank against population size by country, and hover over circles for more information.", "Data Source: USN", ""],
+      "text": [
+        "",
+        "Countries Voted 'Most Fashionable'",
+        "──",
+        "Correlating Economic Data with Style",
+        "Compare 'Stylish' ranking against GDP per Capita, Life Satisfaction, Population"
+      ],
+      "subtitle": [
+        "──","Drag mouse over chart to compare countries' Economic Data to 'Style' Ranking, with hover over circles for more information.",
+        "Data Source: USN",
+        ""
+      ],
       "subtitleFontSize": 11,
       "fontSize": 12,
       "subtitleFontWeight": 100,
       "anchor": "start",
       "color": "black"
     },
+    "config": {
+      "axisX": {"grid": false, "title": null},
+      "view": {"strokeOpacity": 0}
+    },
     "data": {
       "url": "https://raw.githubusercontent.com/miswilson/miswilson.github.io/refs/heads/main/fashionable_countries.csv"
     },
     "vconcat": [
       {
-        "mark": "point",
+        "mark": {
+          "type": "point",
+          "stroke": "black", 
+          "strokeWidth": 1.2
+        },
         "encoding": {
           "y": {
             "field": "GDP per Capita, PPP",
             "type": "quantitative",
-            "title": "GDP per Capita, PPP",
-               "axis": {
+            "title": "GDP per Capita, PPP                                                                                                                                               Life Satisfaction by size",
+            "axis": {
               "titleAngle": 0,
               "titleY": -3,
               "titleX": 0,
               "titleAlign": "left",
               "titleFontWeight": "lighter",
-              "titleFontSize": 10
+              "titleFontSize": 10,
+              "labelExpr": "datum.value == 0 ? '$0' : datum.value == 10000 ? '$10,000' :datum.value == 20000 ? '$20,000' :datum.value == 30000 ? '$30,000' :datum.value == 40000 ? '$40,000' :datum.value == 50000 ? '$50,000' :datum.value == 60000 ? '$60,000' :datum.value == 70000 ? '$70,000' :datum.value == 80000 ? '$80,000' :datum.value == 90000 ? '$90,000' :datum.value == 100000 ? '$100,000' : null"
             }
-          },
-          "color": {
-            "value": "grey"
           },
           "opacity": {
             "condition": {
@@ -42,69 +58,75 @@
           "tooltip": [
             {"field": "Country", "title": "Country"},
             {"field": "Fashionable Rank", "title": "Fashionable Rank"},
-            {"field": "Overall Rank", "title": "Overall World Rank"},
+            {"field": "Overall Rank", "title": "Life Satisfaction"},
             {"field": "GDP per Capita, PPP", "title": "GDP per Capita, PPP"},
             {"field": "Population", "title": "Population"}
           ],
           "size": {
-            "title": "Overall World Rank",
+            "title": "Life Satisfaction",
             "field": "Overall Rank",
-            "scale": {
-              "domain": [1, 30],
-              "range": [10, 500]
-            },
-            "type": "quantitative"
+            "type": "quantitative",
+            "legend":null,
+    "scale": {"range": [100, 3000]}
           },
           "x": {
             "field": "Country",
             "type": "nominal",
             "title": "",
-          "axis": {
-              "labelAngle": 45
-            }
+            "axis": {"labelAngle": 0}
           }
         },
         "width": 600,
         "height": 300,
-        "params": [{
-          "name": "brush",
-          "select": {
-            "type": "interval",
-            "encodings": ["x"]
-          }
-        }]
+        "params": [
+          {"name": "brush", "select": {"type": "interval", "encodings": ["x"]}}
+        ]
       },
       {
         "mark": "bar",
         "encoding": {
           "color": {
             "condition": {
-              "param": "brush", 
+              "param": "brush",
               "field": "Fashionable Rank",
               "type": "quantitative",
+              "legend": null,
               "scale": {
                 "domain": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
-                "range": ["#e7ba52", "#a7a7a7", "#aec7e8", "#1f77b4", "#9467bd", "#ff7f0e", "#2ca02c", "#d62728", "#8c564b", "#7f7f7f"]
+                "range": [
+                  "#e7ba52",
+                  "#a7a7a7",
+                  "#aec7e8",
+                  "#1f77b4",
+                  "#9467bd",
+                  "#ff7f0e",
+                  "#2ca02c",
+                  "#d62728",
+                  "#8c564b",
+                  "#7f7f7f"
+                ]
               }
             },
-            "value": "lightgray"
+            "value": "lightgrey"
           },
           "x": {
-            "field": "Population",
-            "title": "Population",
-                 "axis": {
+            "field": "Country",
+            "title": "",
+            "axis": {
               "titleAngle": 0,
               "titleY": -10,
               "titleX": 550,
               "titleAlign": "left",
               "titleFontWeight": "lighter",
-              "titleFontSize": 10
+              "titleFontSize": 10,
+              "labelAngle": 0
             }
           },
           "y": {
             "title": "Fashionable Rank",
+            "type": "quantitative",
             "field": "Fashionable Rank",
-                 "axis": {
+            "axis": {
               "titleAngle": 0,
               "titleY": -3,
               "titleX": 0,
@@ -116,12 +138,7 @@
         },
         "width": 600,
         "height": 300,
-        "transform": [{
-          "filter": {
-            "param": "brush",
-            "empty": "none"
-          }
-        }]
+        "transform": [{"filter": {"param": "brush", "empty": "none"}}]
       }
     ]
   }
