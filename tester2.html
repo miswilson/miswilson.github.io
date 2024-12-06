@@ -46,6 +46,13 @@
     align-items: center;
 }
 
+.intro_chart {
+    width: 600px;
+    height: 400px;  /* Adjust based on your needs */
+    justify-content: center;
+    align-items: center;
+}
+
         /* Text section: title and description */
         .info-section {
             text-align: center;
@@ -129,6 +136,12 @@ canvas {
     height: fit-content!important;
     margin: 0 auto 2rem;
     transition: all 0.3 ease-in-out;
+}
+
+.intro_chart {
+    width: 275px;
+    height: fit-content;
+    margin: 0 auto 2rem; 
 }
 
 .image_chart {
@@ -243,6 +256,7 @@ body, h1, p {
         let chartData = [];
 
         const charts = [
+            ['', 'My Portfolio', '<br><h3>My Portfolio underscores the importance of measuring variation across time and countries to test relationships and hypothesis.</h3><br><video class="intro_chart" src="./DataProj/assets/EXPLORING FASHION.mp4" autoplay muted></video><h2>Aims<h2/><h3>Through this portfolio I aim to demonstrate the successful completion of the visualisations. The outcomes of my 21 charts are representative of the 10 coding challenges. I strive to showcase my ability to analyse and interpret data effectively.<br><br>This website is mobile responsive and all links to ipynb are attatched.</h3>'],
             ['https://raw.githubusercontent.com/EconomicsObservatory/courses/main/2/s2_chart2.json', 'Hosting'],
             ['DataSc/wk1_chart1.json', 'Hosting'],
             ['DataSc/wk1_chart2.json', 'Hosting'],
@@ -270,6 +284,8 @@ body, h1, p {
 
         function embedChart(index) {
             const chartPath = path + charts[index][0];
+
+            document.querySelector('.chart-section').innerHTML=' '
 
             vegaEmbed('.chart-section', chartPath, {
                 "config": {
